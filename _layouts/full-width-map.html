@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-lg-12">
+    {% if page.map %}
+    <div id="map"></div>
+    {% endif %}
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+    {% if page.info %}
+      <table class="table table-bordered">
+      {% for info in page.info %}
+      <tr><th>{{info[0]}}</th><td>{{info[1] | markdownify}}</td></tr>
+      {% endfor %}
+      </table>
+    {% endif %}
+      </div>
+      <div class="col-lg-8">
+        {{ content }}
+      </div>
+    </div>
+    <div class="row">
+    </div>
+</div>
