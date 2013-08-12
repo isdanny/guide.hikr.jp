@@ -49,7 +49,7 @@
 //http://a.tiles.mapbox.com/v3/hikr.map-bcefinb2/page.html
 //'http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png
       var bg = L.tileLayer('http://{s}.tiles.mapbox.com/v3/hikr.map-bcefinb2/{z}/{x}/{y}.png', {
-          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">MapBox</a>',
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">MapBox</a>, Photos from Panoraio are copyright of their respctive owners.',
             maxZoom: 15
       });
       map.zoomControl.setPosition("bottomleft");
@@ -58,8 +58,8 @@
       map.addLayer(bg);
       map.addLayer(panoramio);
       var layers = { "Map": bg };
-      var overlays = { "Panoramio": panoramio };
-      control_layers = new L.Control.Layers(layers, overlays);
+      var overlays = { "Photos": panoramio };
+      var control_layers = new L.Control.Layers(layers, overlays).addTo(map);
 
       var icons = {
         none: L.icon({iconUrl:"/icons/train.png",  labelAnchor: [1, 1], iconSize: [1,1], iconAnchor: [1,1]}),
