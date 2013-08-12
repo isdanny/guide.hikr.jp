@@ -47,7 +47,7 @@
       };
 
       $(document).ready(function(){
-        $.get('{{site.url}}/data/{{page.map}}',function(data){
+        $.get('{{page.map}}',function(data){
           var geojsonFeature = data;
           // L.geoJson(geojsonFeature).addTo(map);
           var myLayer = L.geoJson().addTo(map);

@@ -1,6 +1,6 @@
 ---
 layout: map
-title: Chichibu
+title: Kamakita lake hike
 category: Chichibu
 map: chichibu.geojson
 info:

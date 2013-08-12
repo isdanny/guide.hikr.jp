@@ -4,13 +4,14 @@ server:      true
 server_port: 4000
 baseurl:    /
 url: 		http://localhost:4000
-
 destination: ./_site
 plugins:     ./_plugins
-
 future:      true
 lsi:         false
 pygments:    true
 markdown:    redcarpet
 permalink:   /:year-:month-:day/:title.html
-
+categories:
+ - Chichibu
+ - Okutama
+ - Tanzawa

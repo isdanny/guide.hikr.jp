@@ -2,7 +2,7 @@
 layout: full-width-map
 title: Mt Ryokami
 category: Kanto, Chichibu
-map: ryokami.geojson
+map: ryokami.json
 level: 3
 elevation_change: 1053
 info:

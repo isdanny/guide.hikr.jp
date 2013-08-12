@@ -2,17 +2,14 @@
 layout: default
 ---
 
-<div class="row map-on-left">
-  <div class="col-lg-6 map-column">
+<div class="container">
+<div class="row">
+  <div class="col-lg-6">
     {% if page.map %}
     <div id="map"></div>
     {% endif %}
   </div>
   <div class="col-lg-6">
-
-<div class="container">
-    <div class="row">
-      <div class="col-lg-6">
     {% if page.info %}
       <table class="table table-bordered">
       {% for info in page.info %}
@@ -20,13 +17,8 @@ layout: default
       {% endfor %}
       </table>
     {% endif %}
-
         {{ content }}
-
-      </div>
-    </div>
-</div>
-
   </div>
+</div>
 </div>
 

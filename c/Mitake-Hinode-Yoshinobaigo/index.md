@@ -2,7 +2,7 @@
 layout: full-width-map
 title: Mitake-Hinode-Yoshinobaigo
 author: Leszek
-map: course/mitake-hinode-yoshinobaigo.json
+map: mitake-hinode-yoshinobaigo.json
 level: 4
 time: 6
 tags: flowers, onsen
