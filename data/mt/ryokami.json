@@ -3,7 +3,11 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "type": "summit",
+        "name": "Ryokami",
+        "jname": "両神山"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [

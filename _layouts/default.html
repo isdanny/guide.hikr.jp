@@ -23,9 +23,12 @@
 
   {{content}}
 
+  {% include footer.html %}
+
   <script type="text/javascript" src="{{site.url}}/js/jquery-2.0.3.min.js"></script>
   <script type="text/javasceipt" src="{{site.url}}/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="{{site.url}}/js/leaflet.js"></script>
+  <script type="text/javascript" src="http://www.panoramio.com/wapi/wapi.js?v=1"></script>
   <script type="text/javascript" src="{{site.url}}/js/hikr.js"></script>
 
 {% if page.map %}
@@ -49,7 +52,17 @@
           // L.geoJson(geojsonFeature).addTo(map);
           var myLayer = L.geoJson().addTo(map);
           myLayer.addData(geojsonFeature).setStyle(myStyle);
-          map.fitBounds(myLayer.getBounds());
+          var bounds = myLayer.getBounds();
+          map.fitBounds(bounds);
+          var myRequest = {
+            'rect': {'sw': bounds.getSouthWest(), 'ne': bounds.getNorthEast()}
+          };
+            var sandRequest = new panoramio.PhotoRequest(myRequest);
+  var attr_ex_photo_options = {
+    'width': 300,
+    'height': 300};
+  var attr_ex_photo_widget = new panoramio.PhotoWidget(
+      'div_attr_ex_photo', sandRequest, attr_ex_photo_options);
         })
       })
     </script>
