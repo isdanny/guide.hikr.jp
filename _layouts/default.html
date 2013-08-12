@@ -4,10 +4,10 @@
   <title>Hikr - {{ page.title }} </title>
   <link rel="stylesheet" href="{{site.url}}/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="{{site.url}}/css/leaflet.css"/>
+  <link rel="stylesheet" href="{{site.url}}/css/leaflet.label.css"/>
   <link rel="stylesheet" href="{{site.url}}/css/hikr.css"/>
 </head>
 <body>
-
 
   <div class="navbar">
     <div class="container">
@@ -20,6 +20,17 @@
       </ul>
     </div>
   </div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_floating_style addthis_32x32_style" style="left:50px;top:50px;">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520873ed40bfdc8e"></script>
+<!-- AddThis Button END -->
 
   {{content}}
 
@@ -28,42 +39,58 @@
   <script type="text/javascript" src="{{site.url}}/js/jquery-2.0.3.min.js"></script>
   <script type="text/javasceipt" src="{{site.url}}/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="{{site.url}}/js/leaflet.js"></script>
+  <script type="text/javascript" src="{{site.url}}/js/leaflet.label.js"></script>
   <script type="text/javascript" src="http://www.panoramio.com/wapi/wapi.js?v=1"></script>
   <script type="text/javascript" src="{{site.url}}/js/hikr.js"></script>
 
 {% if page.map %}
     <script>
-      var map = L.map('map').setView([51.505, -0.09], 13);
+      var map = L.map('map').setView([ 35.358, 138.731], 6);
 
       L.tileLayer('http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png', {
           attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">MapBox</a>',
-          maxZoom: 15
+            maxZoom: 15
       }).addTo(map);
+      map.zoomControl.setPosition("bottomleft");
+
+      var icons = {
+        none: L.icon({iconUrl:"/icons/train.png",  labelAnchor: [6, -12], iconSize: [1,1], iconAnchor: [1,1]}),
+        station: L.icon({iconUrl:"/icons/train.png",  labelAnchor: [6, -12], iconSize: [32,37], iconAnchor: [16,37]}),
+        toilet: L.icon({iconUrl:"/icons/toilets.png", labelAnchor: [6, -12], iconSize: [32,37], iconAnchor: [16,37]}),
+        waterfall: L.icon({iconUrl:"/icons/waterfall.png", labelAnchor: [6, -12], iconSize: [32,37], iconAnchor: [16,37]})
+      }
 
       var myStyle = {
-          "color": "#000000",
-          "weight": 3,
-          "opacity": 0.65
+          "color": "#ff2200",
+          "weight": 2,
+          "opacity": 0.85
       };
 
       $(document).ready(function(){
         $.get('{{page.map}}',function(data){
           var geojsonFeature = data;
           // L.geoJson(geojsonFeature).addTo(map);
-          var myLayer = L.geoJson().addTo(map);
-          myLayer.addData(geojsonFeature).setStyle(myStyle);
+          var myLayer = L.geoJson(data,{
+            style: myStyle,
+            pointToLayer: function(feature, latlng){
+              var marker=L.marker(latlng, {icon:icons.none});
+              if(feature && feature.properties.hasOwnProperty("type")){
+                var type = feature.properties.type;
+                if(icons.hasOwnProperty(type)) marker =  L.marker(latlng, {icon:icons[type]});
+                else console.log(type);
+              }
+              if(feature.properties.hasOwnProperty("name")) 
+                marker.bindLabel(feature.properties.name,{noHide: true});
+              marker.addTo(map).showLabel();
+              return marker;
+            },
+            onEachFeature: function(feature, latLng){
+            }
+          }).addTo(map);
+          // myLayer.addData(geojsonFeature).setStyle(myStyle);
           var bounds = myLayer.getBounds();
           map.fitBounds(bounds);
-          var myRequest = {
-            'rect': {'sw': bounds.getSouthWest(), 'ne': bounds.getNorthEast()}
-          };
-            var sandRequest = new panoramio.PhotoRequest(myRequest);
-  var attr_ex_photo_options = {
-    'width': 300,
-    'height': 300};
-  var attr_ex_photo_widget = new panoramio.PhotoWidget(
-      'div_attr_ex_photo', sandRequest, attr_ex_photo_options);
-        })
+        });
       })
     </script>
 {% endif %}

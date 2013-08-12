@@ -2,7 +2,7 @@
 layout: map
 title: Kamakita lake hike
 category: Chichibu
-map: chichibu.geojson
+map: kamakita-lake.json
 info:
   level: easy
   elevation: 400m
