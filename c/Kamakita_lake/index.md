@@ -1,5 +1,5 @@
 ---
-layout: map
+layout: map-on-left
 title: Kamakita lake hike
 category: Chichibu
 map: kamakita-lake.json
