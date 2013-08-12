@@ -40,29 +40,37 @@
   <script type="text/javasceipt" src="{{site.url}}/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="{{site.url}}/js/leaflet.js"></script>
   <script type="text/javascript" src="{{site.url}}/js/leaflet.label.js"></script>
-  <script type="text/javascript" src="http://www.panoramio.com/wapi/wapi.js?v=1"></script>
+  <script type="text/javascript" src="{{site.url}}/js/Panoramio.js"></script>
   <script type="text/javascript" src="{{site.url}}/js/hikr.js"></script>
 
 {% if page.map %}
     <script>
       var map = L.map('map').setView([ 35.358, 138.731], 6);
-
-      L.tileLayer('http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png', {
+//http://a.tiles.mapbox.com/v3/hikr.map-bcefinb2/page.html
+//'http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png
+      var bg = L.tileLayer('http://{s}.tiles.mapbox.com/v3/hikr.map-bcefinb2/{z}/{x}/{y}.png', {
           attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">MapBox</a>',
             maxZoom: 15
-      }).addTo(map);
+      });
       map.zoomControl.setPosition("bottomleft");
 
+      var panoramio = new L.Panoramio({maxLoad: 50, maxTotal: 250}); 
+      map.addLayer(bg);
+      map.addLayer(panoramio);
+      var layers = { "Map": bg };
+      var overlays = { "Panoramio": panoramio };
+      control_layers = new L.Control.Layers(layers, overlays);
+
       var icons = {
-        none: L.icon({iconUrl:"/icons/train.png",  labelAnchor: [6, -12], iconSize: [1,1], iconAnchor: [1,1]}),
-        station: L.icon({iconUrl:"/icons/train.png",  labelAnchor: [6, -12], iconSize: [32,37], iconAnchor: [16,37]}),
-        toilet: L.icon({iconUrl:"/icons/toilets.png", labelAnchor: [6, -12], iconSize: [32,37], iconAnchor: [16,37]}),
-        waterfall: L.icon({iconUrl:"/icons/waterfall.png", labelAnchor: [6, -12], iconSize: [32,37], iconAnchor: [16,37]})
+        none: L.icon({iconUrl:"/icons/train.png",  labelAnchor: [1, 1], iconSize: [1,1], iconAnchor: [1,1]}),
+        station: L.icon({iconUrl:"/icons/train.png",  labelAnchor: [0, 0], iconSize: [32,37], iconAnchor: [24,30]}),
+        toilet: L.icon({iconUrl:"/icons/toilets.png", labelAnchor: [0, 0], iconSize: [32,37], iconAnchor: [24,30]}),
+        waterfall: L.icon({iconUrl:"/icons/waterfall.png", labelAnchor: [0, 0], iconSize: [32,37], iconAnchor: [24,30]})
       }
 
       var myStyle = {
           "color": "#ff2200",
-          "weight": 2,
+          "weight": 4,
           "opacity": 0.85
       };
 
