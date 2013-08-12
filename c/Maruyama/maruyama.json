@@ -339,13 +339,14 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "toilet"
+        "name": "station",
+        "type": "station"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.13392782211304,
-          35.98092335649322
+          139.13607358932495,
+          35.97647809344072
         ]
       }
     },
@@ -357,8 +358,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.13594484329224,
-          35.98399669274631
+          139.13392782211304,
+          35.98092335649322
         ]
       }
     },
@@ -385,6 +386,21 @@
         "coordinates": [
           139.14030075073242,
           35.98837208359989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "丸山",
+        "type": "summit",
+        "elevation": "960"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.15995597839355,
+          35.9884762566153
         ]
       }
     },

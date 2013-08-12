@@ -325,7 +325,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Mitsumuroyama",
+        "name": "Mimuroyama",
         "elevation": "646.9",
         "jname": "三室山",
         "type": "summit"
@@ -341,7 +341,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Hinode-san",
+        "name": "Hinodeyama",
         "type": "summit",
         "elevation": "902",
         "jname": "日出山"
@@ -357,7 +357,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Mitake san",
+        "name": "Mitakesan",
         "type": "summit",
         "elevation": "929",
         "jname": "御岳山"

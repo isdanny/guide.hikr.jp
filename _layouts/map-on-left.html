@@ -8,10 +8,35 @@ layout: default
     <div id="map"></div>
     {% endif %}
   </div>
-  <div class="col-lg-5">
+  <div class="col-lg-6">
     <div class="article">
       <h1>{{ page.title }}</h1>
+              <!-- AddThis Button BEGIN -->
+        <div class="addthis_toolbox addthis_default_style ">
+        <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+        <a class="addthis_button_tweet"></a>
+        <a class="addthis_button_pinterest_pinit"></a>
+        <a class="addthis_counter addthis_pill_style"></a>
+        </div>
+        <!-- AddThis Button END -->
+
+        {% if page.info %}
+        <div class="infobox">
+          <ul>
+            {% if page.info.author %} <li><strong>author</strong>: {{page.info.author}}</li> {% endif %}
+            {% if page.info.license %} <li><strong>license</strong>: {{page.info.license}}</li> {% endif %}
+            {% if page.info.level %} <li><strong>level</strong>: {{page.info.level}}</li> {% endif %}
+            {% if page.info.time %} <li><strong>walking time</strong>: {{page.info.time}}</li> {% endif %}
+          </ul>
+          {% for tag in page.tags %}
+            <span class="badge">{{tag}}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+
       {{ content }}
     </div>
   </div>
 </div>
+        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520873ed40bfdc8e"></script>

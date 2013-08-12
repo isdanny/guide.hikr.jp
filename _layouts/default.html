@@ -8,9 +8,18 @@
   <link rel="stylesheet" href="{{site.url}}/css/hikr.css"/>
 </head>
 <body>
-  <a href="{{site.url}}" class="logo">
-    HIKR.jp
-  </a>
+  <div class="dropdown">
+    <a href="{{site.url}}" data-toggle="dropdown" class="logo">
+      HIKR.jp
+    </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+    <li><a tabindex="-1" href="#">Action</a></li>
+    <li><a tabindex="-1" href="#">Another action</a></li>
+    <li><a tabindex="-1" href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a tabindex="-1" href="#">Separated link</a></li>
+  </ul>
+  </div>
 
   {{content}}
 
@@ -32,7 +41,7 @@
       });
       map.zoomControl.setPosition("topright");
 
-      var panoramio = new L.Panoramio({maxLoad: 50, maxTotal: 250}); 
+      var panoramio = new L.Panoramio({maxLoad: 50, maxTotal: 250});
       map.addLayer(bg);
       map.addLayer(panoramio);
       var layers = { "Map": bg };
@@ -43,11 +52,12 @@
         none: L.icon({iconUrl:"/icons/train.png",  labelAnchor: [1, 1], iconSize: [1,1], iconAnchor: [1,1]}),
         station: L.icon({iconUrl:"/icons/train.png",  labelAnchor: [0, 0], iconSize: [32,37], iconAnchor: [24,30]}),
         toilet: L.icon({iconUrl:"/icons/toilets.png", labelAnchor: [0, 0], iconSize: [32,37], iconAnchor: [24,30]}),
+        pass: L.icon({iconUrl:"/icons/pass.png", labelAnchor: [0, 0], iconSize: [32,37], iconAnchor: [24,30]}),
         waterfall: L.icon({iconUrl:"/icons/waterfall.png", labelAnchor: [0, 0], iconSize: [32,37], iconAnchor: [24,30]})
       }
 
       var myStyle = {
-          "color": "#ff2200",
+          "color": "#ff3300",
           "weight": 4,
           "opacity": 0.85
       };
@@ -65,7 +75,7 @@
                 if(icons.hasOwnProperty(type)) marker =  L.marker(latlng, {icon:icons[type]});
                 else console.log(type);
               }
-              if(feature.properties.hasOwnProperty("name")) 
+              if(feature.properties.hasOwnProperty("name"))
                 marker.bindLabel(feature.properties.name,{noHide: true});
               marker.addTo(map).showLabel();
               return marker;
