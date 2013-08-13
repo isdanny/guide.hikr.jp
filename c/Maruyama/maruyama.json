@@ -339,7 +339,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "station",
+        "name": "ashigakubo",
+        "label": "芦ケ久保駅",
         "type": "station"
       },
       "geometry": {
@@ -392,7 +393,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "丸山",
+        "name": "maruyama",
+        "label": "丸山",
         "type": "summit",
         "elevation": "960"
       },
@@ -407,22 +409,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "丸山",
-        "type": "summit",
-        "elevation": "960"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.15995597839355,
-          35.9884762566153
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "大野峠",
+        "name": "Oono pass",
+        "label": "大野峠",
         "type": "pass"
       },
       "geometry": {

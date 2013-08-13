@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Hikr - {{ page.title }} </title>
-  <link rel="stylesheet" href="{{site.url}}/css/bootstrap.min.css"/>
+  <!-- <link rel="stylesheet" href="{{site.url}}/css/bootstrap.min.css"/> -->
   <link rel="stylesheet" href="{{site.url}}/css/leaflet.css"/>
   <link rel="stylesheet" href="{{site.url}}/css/leaflet.label.css"/>
   <link rel="stylesheet" href="{{site.url}}/css/hikr.css"/>
@@ -75,7 +75,9 @@
                 if(icons.hasOwnProperty(type)) marker =  L.marker(latlng, {icon:icons[type]});
                 else console.log(type);
               }
-              if(feature.properties.hasOwnProperty("name"))
+              if(feature.properties.hasOwnProperty("label"))
+                marker.bindLabel(feature.properties.label,{noHide: true});
+              else if(feature.properties.hasOwnProperty("name"))
                 marker.bindLabel(feature.properties.name,{noHide: true});
               marker.addTo(map).showLabel();
               return marker;
