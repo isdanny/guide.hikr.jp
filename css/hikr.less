@@ -1,9 +1,18 @@
+
+@sea1: #2CA9AD;
+@sea2: #025772;
+@sea3: #170027;
+@accent: #ff3300;
+
 body, html{
   height: 100%;
   background: #fafafa;
   margin: 0;
   padding: 0;
-  border-top: 2px solid #ff3300;
+  border-top: 2px solid @accent;
+  a{
+    color: @sea2;
+  }
 }
 .dropdown{
   ul{
@@ -22,6 +31,50 @@ body, html{
   text-indent: 100%;
   overflow: hidden;
   background: url(../img/hikr-jp.png);
+}
+.column{
+  border-left: 1px solid white;
+}
+.header{
+  &.hero{
+    img{
+      width: 100%;
+    }
+  }
+  width: 100%;
+  min-height: 120px;
+  background: #096;
+  position: relative;
+  h1{
+    position: absolute;
+    bottom: 5px;
+    text-shadow: 0 0 5px black, 1px 0 3px black,0 1px 3px black;
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    padding-top: 5px;
+    margin: 0;
+    text-indent: 20px;
+    font-family: helvetica, Arial, sans-serif;
+    color: white;
+  }
+}
+.info{
+  min-height: 80px;
+  background-color: @sea3;
+  position: relative;
+}
+.listing{
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+.plot{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 50%;
+  background-color: @sea2;
+  height: 100%;
 }
 .map-on-left, .map-on-left > .column{
   height: 100%;
@@ -42,9 +95,6 @@ body, html{
     height: 100%;
   }
   .article{
-    h1{
-      margin-top: 0;
-    }
     padding: 20px 20px;
   }
 }
@@ -60,7 +110,7 @@ body, html{
 .article{
   font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.8;
   p{
     text-shadow: 2px 2px 0px #fff!important;

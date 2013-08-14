@@ -1,7 +1,10 @@
 ---
 layout: map-on-left
 title: Nokogiri-yama (Chiba)
-map: nokogiri.json
+map: 
+ - nokogiri.json
+license: CC-BY-NC
+author: hikr.jp
 info:
   author: Leszek
   level: 3

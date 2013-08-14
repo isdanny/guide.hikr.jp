@@ -2,11 +2,13 @@
 layout: map-on-left
 title: Mt Ryokami 両神山
 category: Kanto, Chichibu
-map: ryokami.json
+map: 
+ - ryokami.json
+license: CC-BY-NC
+author: '[Wes](http://japanhike.wordpress.com/2008/02/17/mt-ryokami/)'
 level: 3
 elevation_change: 1053
 info:
-  author: '[Wes](http://japanhike.wordpress.com/2008/02/17/mt-ryokami/)'
 ---
 
 Mt. Ryokami is an ancient, rocky peak sitting on the border of Gunma and Saitama Prefectures. The top offers wonderful panoramic views of the surrounding mountainous landscape and is a part of Chichibu-Tama-Kai National Park.

@@ -63,7 +63,10 @@
       };
 
       $(document).ready(function(){
-        $.get('{{page.map}}',function(data){
+        var maps = ['{{page.map | sentence}}'];
+        for( i in maps){
+          var url = maps[i];
+          $.get(url,function(data){
           var geojsonFeature = data;
           // L.geoJson(geojsonFeature).addTo(map);
           var myLayer = L.geoJson(data,{
@@ -89,6 +92,8 @@
           var bounds = myLayer.getBounds();
           map.fitBounds(bounds);
         });
+        }
+
       })
     </script>
 {% endif %}

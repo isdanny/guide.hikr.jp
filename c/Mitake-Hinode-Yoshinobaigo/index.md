@@ -1,21 +1,26 @@
 ---
 layout: map-on-left
 title: Mitake - Hinode - Yoshino baigo
-map: mitake-hinode-yoshinobaigo.json
-info:
-  author: Leszek
-  level: 4
-  time: 6 hours
+map: 
+ - mitake-hinode-yoshinobaigo.json
+author: hikr.jp
+hero: 8547970375_7af97466c1_c.jpg
+license: CC-BY-NC
+level: 4
+time: 6 hours
 tags: [flowers, onsen]
 area: Okutama
+info:
+  foo: bar
 ---
 
+**Access**:
+From Shinjuku, take the JR Chuo line going towards Okutama. 
 
+**Course**:
 From [Kori station](/kori-station) go South (there's a 7-11 on the way), follow signs pointing to [Ootsukayama](/ootsukayama). 
 
 There's a nice lunch place between [Ootsukayama](/ootsukayama) and [Mitake](#mitake). Alternatively, you can stop for lunch at the top station of the Mitake cable car, enjoy the viewpoint there.
-
-![Simple hike map](8547970375_7af97466c1_c.jpg)
 
 On top of [Mitake](#mitake-san), be sure to visit Mitake Shrine and note the ancient tree.
 
@@ -30,3 +35,7 @@ From the top of Hinode, take the path leading to [Mimuro-yama](#mimuroyama).
 ![Yoshino Plum Park](8547968767_75e8289014_c.jpg)
 
 Optionally, on the way back, you can stop at [Kabe onsen](/kabe-onsen) ([Kabe station](/kabe-station)).
+
+**When to go**:
+The course is not hard and Mitake shrine is interesting in all four seasons, so any time of year is good for this hike.
+

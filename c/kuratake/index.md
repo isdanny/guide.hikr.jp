@@ -1,16 +1,22 @@
 ---
 layout: map-on-left
 title: Kuratake hike
-map: kuratake.json
+map: 
+ - kuratake.json
+author: hikr.jp
+license: CC-BY-NC
 info:
-  author: Leszek
   level: 4
+  course: ["Torisawa station", Kuratake, "Yanagawa station"]
 tags: [river]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Access**: 
+From Shinjuku take the JR Chuo line to Takao. In Takao switch to a train going towards [FIXME]. Get off at Kuratake station.
+
+**Course**:
+
+...
+
+**When to go**:
+Spring or autumn are best, but if you get up early, you'll be rewarded by a stream shimmering to your left and you'll be rewarded by a nice afternoon swim near Yanagawa river.
