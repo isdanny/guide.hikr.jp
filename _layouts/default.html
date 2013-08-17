@@ -5,6 +5,9 @@
   <!-- <link rel="stylesheet" href="{{site.url}}/css/bootstrap.min.css"/> -->
   <link rel="stylesheet" href="{{site.url}}/css/leaflet.css"/>
   <link rel="stylesheet" href="{{site.url}}/css/leaflet.label.css"/>
+  <link rel="stylesheet" href="{{site.url}}/css/tuktuk.css"/>
+  <link rel="stylesheet" href="{{site.url}}/css/tuktuk.icons.css"/>
+  <link rel="stylesheet" href="{{site.url}}/css/tuktuk.theme.css"/>
   <link rel="stylesheet" href="{{site.url}}/css/hikr.css"/>
 </head>
 <body>
@@ -24,7 +27,7 @@
   {{content}}
 
   <script type="text/javascript" src="{{site.url}}/js/jquery-2.0.3.min.js"></script>
-  <script type="text/javasceipt" src="{{site.url}}/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{{site.url}}/js/tuktuk.js"></script>
   <script type="text/javascript" src="{{site.url}}/js/leaflet.js"></script>
   <script type="text/javascript" src="{{site.url}}/js/leaflet.label.js"></script>
   <script type="text/javascript" src="{{site.url}}/js/Panoramio.js"></script>
@@ -37,7 +40,7 @@
 //'http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png
       var bg = L.tileLayer('http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png', {
           attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">MapBox</a>, Photos from Panoraio are copyright of their respctive owners.',
-            maxZoom: 15
+            maxZoom: 16
       });
       map.zoomControl.setPosition("topright");
 
