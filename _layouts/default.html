@@ -5,9 +5,9 @@
   <!-- <link rel="stylesheet" href="{{site.url}}/css/bootstrap.min.css"/> -->
   <link rel="stylesheet" href="{{site.url}}/css/leaflet.css"/>
   <link rel="stylesheet" href="{{site.url}}/css/leaflet.label.css"/>
-  <link rel="stylesheet" href="{{site.url}}/css/tuktuk.css"/>
+ <!--  <link rel="stylesheet" href="{{site.url}}/css/tuktuk.css"/>
   <link rel="stylesheet" href="{{site.url}}/css/tuktuk.icons.css"/>
-  <link rel="stylesheet" href="{{site.url}}/css/tuktuk.theme.css"/>
+  <link rel="stylesheet" href="{{site.url}}/css/tuktuk.theme.css"/> -->
   <link rel="stylesheet" href="{{site.url}}/css/hikr.css"/>
 </head>
 <body>
@@ -39,7 +39,7 @@
 //http://a.tiles.mapbox.com/v3/hikr.map-bcefinb2/page.html
 //'http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png
       var bg = L.tileLayer('http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png', {
-          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">MapBox</a>, Photos from Panoraio are copyright of their respctive owners.',
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">MapBox</a>, Photos from Panoramio are copyright of their respctive owners.',
             maxZoom: 16
       });
       map.zoomControl.setPosition("topright");
@@ -75,17 +75,31 @@
           var myLayer = L.geoJson(data,{
             style: myStyle,
             pointToLayer: function(feature, latlng){
-              var marker=L.marker(latlng, {icon:icons.none});
+              var marker = L.circleMarker(latlng);
               if(feature && feature.properties.hasOwnProperty("type")){
                 var type = feature.properties.type;
                 if(icons.hasOwnProperty(type)) marker =  L.marker(latlng, {icon:icons[type]});
-                else console.log(type);
+                else marker = L.marker(latlng, {icon:icons.none});
               }
-              if(feature.properties.hasOwnProperty("label"))
-                marker.bindLabel(feature.properties.label,{noHide: true});
-              else if(feature.properties.hasOwnProperty("name"))
-                marker.bindLabel(feature.properties.name,{noHide: true});
-              marker.addTo(map).showLabel();
+              var label = false;
+              if(feature.geometry.type=="Point"){
+                if(feature.properties.hasOwnProperty("label")){
+                  marker.bindLabel(feature.properties.label,{noHide: true});
+                  label = true;
+                } else if(feature.properties.hasOwnProperty("name")){
+                  console.log(feature);
+                  label = true;
+                  marker.bindLabel(feature.properties.name,{noHide: true});
+                }
+              }
+              if(feature.properties.hasOwnProperty("popup"))
+                marker.bindPopup(feature.properties.popup);
+              if(label){
+                marker.addTo(map);
+                try{
+                  marker.showLabel();
+                }catch(e){}
+              }
               return marker;
             },
             onEachFeature: function(feature, latLng){

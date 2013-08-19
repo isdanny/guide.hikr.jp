@@ -1,6 +1,7 @@
 ---
 layout: map-on-left
 title: Mitake - Hinode - Yoshino baigo
+center:  [139.14969921112058, 35.7830062563083]
 map: 
  - mitake-hinode-yoshinobaigo.json
 author: hikr.jp

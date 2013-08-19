@@ -2,6 +2,7 @@
 layout: map-on-left
 title: Kamakita lake hike
 category: Chichibu
+center: [ 139.2893886566162, 35.91710290351792 ]
 map: 
  - kamakita-lake.json
 copyright: CC-BY-NC

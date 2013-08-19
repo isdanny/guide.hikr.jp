@@ -2,6 +2,7 @@
 layout: map-on-left
 title: Mt Ryokami 両神山
 category: Kanto, Chichibu
+center: [138.841389, 36.023333]
 map: 
  - ryokami.json
 license: CC-BY-NC

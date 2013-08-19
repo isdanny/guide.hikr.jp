@@ -1,5 +1,6 @@
 ---
 title: Maruyama hike (丸山)
+center: [139.15995597839355, 35.9884762566153]
 map: 
  - maruyama.json
 layout: map-on-left

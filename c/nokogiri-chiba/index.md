@@ -1,6 +1,7 @@
 ---
 layout: map-on-left
 title: Nokogiri-yama (Chiba)
+center: [139.822284579277, 35.16833575377093]
 map: 
  - nokogiri.json
 license: CC-BY-NC
