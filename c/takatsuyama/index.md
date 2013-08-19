@@ -1,6 +1,6 @@
 ---
 layout: map-on-left
-title: Takatsu-yama
+title: Takatsu-yama hike
 center: [139.08901691436768, 35.59450649082071]
 map: 
  - takatsuyama.json
