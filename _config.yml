@@ -1,7 +1,7 @@
 safe:        true
 auto:        true
 baseurl:    /
-url: 	        http://guide.hikr.jp
+url: http://guide.hikr.jp
 destination: ./_site
 plugins:     ./_plugins
 future:      true
