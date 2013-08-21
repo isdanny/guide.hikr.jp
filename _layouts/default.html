@@ -115,7 +115,7 @@
                 }
                 for(var i in feature.geometry.coordinates){
                   var dd = d(previous, feature.geometry.coordinates[i]);
-                  if(dd>0.0005){
+                  if(dd>0.0005 && feature.geometry.coordinates[i][2]<4000){
                     dist += dd;
                     plot.push([dist,feature.geometry.coordinates[i][2]]);
                     previous = feature.geometry.coordinates[i];
