@@ -107,9 +107,17 @@
             },
             onEachFeature: function(feature, latLng){
               if(feature.geometry.type!="Point"){
-                var plot = []
+                var plot = [];
+                var dist = 0;
+                var previous = feature.geometry.coordinates[0];
+                function d(a,b){
+                  return Math.sqrt((a[0]-b[0])*(a[0]-b[0])+(a[1]-b[1])*(a[1]-b[1]));
+                }
                 for(var i in feature.geometry.coordinates){
-                   plot.push([i,feature.geometry.coordinates[i][2]]);
+                   var dd = d(previous, feature.geometry.coordinates[i]);
+                   dist += dd;
+                   plot.push([dist,feature.geometry.coordinates[i][2]]);
+                   previous = feature.geometry.coordinates[i];
                 }
                 $.plot("#plot", 
                     [{ data:plot, lines:{color: "red", show:true, fill:true}} ], 
