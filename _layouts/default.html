@@ -29,6 +29,7 @@
   {{content}}
 
   <script type="text/javascript" src="{{site.url}}/js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="{{site.url}}/js/jquery.flot.js"></script>
   <script type="text/javascript" src="{{site.url}}/js/tuktuk.js"></script>
   <script type="text/javascript" src="{{site.url}}/js/leaflet.js"></script>
   <script type="text/javascript" src="{{site.url}}/js/leaflet.label.js"></script>
@@ -105,6 +106,16 @@
               return marker;
             },
             onEachFeature: function(feature, latLng){
+              if(feature.geometry.type!="Point"){
+                var plot = []
+                for(var i in feature.geometry.coordinates){
+                   plot.push([i,feature.geometry.coordinates[i][2]]);
+                }
+                $.plot("#plot", 
+                    [{ data:plot, lines:{color: "red", show:true, fill:true}} ], 
+                    {colors: ["#2ca9ad"], grid:{show:false}});
+                console.log(plot);
+              }
             }
           }).addTo(map);
           // myLayer.addData(geojsonFeature).setStyle(myStyle);
