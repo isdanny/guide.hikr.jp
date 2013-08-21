@@ -116,7 +116,7 @@
                 for(var i in feature.geometry.coordinates){
                    var dd = d(previous, feature.geometry.coordinates[i]);
                    dist += dd;
-                   plot.push([dist,feature.geometry.coordinates[i][2]]);
+                   if(dd>0.0005) plot.push([dist,feature.geometry.coordinates[i][2]]);
                    previous = feature.geometry.coordinates[i];
                 }
                 $.plot("#plot", 
