@@ -1,9 +1,15 @@
 .leaflet-label {
 	background-clip: padding-box;
-	color: #fff;
-	text-shadow: 0 0 2px #000, 1px 0 2px #000, 0 1px 2px #000;
+	color: #222;
+	text-shadow: 
+		0 0 0px #fff, 
+		1px 0 0px #fff, 
+		0 1px 0px #fff,
+		-1px 0 0px #fff, 
+		0 -1px 0px #fff;
+		  -webkit-text-stroke: 1px white outside;
 	display: block;
-	font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font: 13px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	padding: 1px 3px;
 	position: absolute;
@@ -22,6 +28,6 @@
 .leaflet-label:before {
 	content: '\25C0';
 	position: absolute;
-	text-shadow: 0 0 2px #000, 1px 0 2px #000, 0 1px 2px #000, -1px 0 2px #000, 0 -1px 2px #000;
+	text-shadow: 0 0 2px #fff, 1px 0 1px #fff, 0 1px 1px #fff, -1px 0 1px #fff, 0 -1px 1px #fff;
 	left: -10px;
 }
