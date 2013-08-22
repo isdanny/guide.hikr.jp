@@ -5,8 +5,8 @@ layout: default
 <div class="map-on-left">
 {% if page.map %}
 <div id="map"></div>
-{% endif %}
 
+{% endif %}
   <div class="column">
       {% if page.hero %}
       <div class="header hero">
@@ -19,11 +19,9 @@ layout: default
       </div>
 
       <div class="info">
-        <div class="listing">
-        
-        </div>
-        <div class="plot"><div id="plot"></div>
-        </div>
+        <div class="col"><div id="info">123</div></div>
+        <div class="col"><div id="plot"></div></div>
+        <br style="clear: both">
       </div>
           <div class="article">
 
@@ -36,24 +34,18 @@ layout: default
 <a class="addthis_button_compact"></a>
 <a class="addthis_counter addthis_bubble_style"></a>
 </div>
+
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520873ed40bfdc8e"></script><br>
 <!-- AddThis Button END -->
-        {% if page.info %}
-        <div class="infobox">
-          <ul>
-            {% if page.info.author %} <li><strong>author</strong>: {{page.info.author}}</li> {% endif %}
-            {% if page.info.license %} <li><strong>license</strong>: {{page.info.license}}</li> {% endif %}
-            {% if page.info.level %} <li><strong>level</strong>: {{page.info.level}}</li> {% endif %}
-            {% if page.info.time %} <li><strong>walking time</strong>: {{page.info.time}}</li> {% endif %}
-          </ul>
-          {% for tag in page.tags %}
-            <span class="badge">{{tag}}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
 
       {{ content }}
-        
+
 
   </div>
 </div>
+ <script type="text/javascript">
+  window.onload = function(){
+    var maps = [ {% for url in page.map %} "{{url}}", {% endfor %} false];
+    Hikr(maps, "map");
+  };
+ </script>

@@ -1,12 +1,13 @@
 
-@sea1: #2CA9AD;
-@sea2: #025772;
-@sea3: #170027;
+@sand: #F6F5F3;
+@sea1: #036564;
+@sea2: #033649;
+@sea3: #031634;
 @accent: #ff3300;
 
 body, html{
   height: 100%;
-  background: #F6F5F3;
+  background: @sand;
   margin: 0;
   padding: 0;
   a{
@@ -50,7 +51,7 @@ body, html{
     position: absolute;
     bottom: 0px;
     text-shadow: 0 0 3px black, 1px 0 2px black,0 1px 2px black;
-    background: rgba(0,0,0,0.2);
+    background: fadeout(@sea2,50%);
     width: 100%;
     padding: 5px 0;
     margin: 0;
@@ -64,19 +65,21 @@ body, html{
   min-height: 80px;
   background-color: @sea3;
   position: relative;
-}
-.listing{
-  left: 0;
-  top: 0;
-  width: 50%;
-}
-.plot{
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 50%;
-  background-color: @sea2;
-  height: 100px;
+  .col{
+    width: 50%;
+    margin: 0;
+    float: left;
+  }
+  #info{
+    font-family: helvetica, Arial, sans-serif;
+    padding: 10px 20px;
+    color: @sea1;
+  }
+  #plot{
+    background-color: @sea2;
+    height: 100px;
+    float: left;
+  }
 }
 .map-on-left, .map-on-left > .column{
   height: 100%;
@@ -114,6 +117,9 @@ body, html{
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
+  a{
+    color: @sea1;
+  }
   ul{
     margin: 0 3em;
   }
