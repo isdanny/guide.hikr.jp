@@ -11,31 +11,30 @@ level: 4
 time: 6 hours
 tags: [flowers, onsen]
 area: Okutama
-info:
-  foo: bar
+
 ---
 
 **Access**:
 From Shinjuku, take the JR Chuo line going towards Okutama. 
 
 **Course**:
-From [Kori station](/kori-station) go South (there's a 7-11 on the way), follow signs pointing to [Ootsukayama](/ootsukayama). 
+From Kori station go South (there's a 7-11 on the way), follow signs pointing to Ootsukayama. 
 
-There's a nice lunch place between [Ootsukayama](/ootsukayama) and [Mitake](#mitake). Alternatively, you can stop for lunch at the top station of the Mitake cable car, enjoy the viewpoint there.
+There's a nice lunch place between Ootsukayama and Mitake. Alternatively, you can stop for lunch at the top station of the Mitake cable car, enjoy the viewpoint there.
 
-On top of [Mitake](#mitake-san), be sure to visit Mitake Shrine and note the ancient tree.
+On top of Mitake, be sure to visit Mitake Shrine and note the ancient tree.
 
-Follow signs to [Hinode-yama](#hinode-yama) (日の出山). 
+Follow signs to Hinode-yama (日の出山). 
 
 ![Gate on the way](8547965265_2899193332_c.jpg)
 
-From the top of Hinode, take the path leading to [Mimuro-yama](#mimuroyama).
+From the top of Hinode, take the path leading to Mimuro-yama.
 
-[Yoshino Baigo](/yoshino-baigo) will be on your right. The entrance fee is ¥200, free at times. Opposite of Yoshino Baigo, there's a nice little local food place with beer. Not too expensive.
+Yoshino Baigo will be on your right. The entrance fee is ¥200, free at times. Opposite of Yoshino Baigo, there's a nice little local food place with beer. Not too expensive.
 
 ![Yoshino Plum Park](8547968767_75e8289014_c.jpg)
 
-Optionally, on the way back, you can stop at [Kabe onsen](/kabe-onsen) ([Kabe station](/kabe-station)).
+Optionally, on the way back, you can stop at Kabe onsen (Kabe station).
 
 **When to go**:
 The course is not hard and Mitake shrine is interesting in all four seasons, so any time of year is good for this hike.

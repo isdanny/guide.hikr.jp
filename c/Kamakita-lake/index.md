@@ -7,6 +7,7 @@ map:
  - kamakita-lake.json
 copyright: CC-BY-NC
 author: hikr.jp
+
 ---
 
 **Access**:

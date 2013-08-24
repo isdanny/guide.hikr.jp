@@ -12,7 +12,7 @@ var Hikr = function(maps, container){
       //http://a.tiles.mapbox.com/v3/hikr.map-bcefinb2/page.html
       //'http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png
   this.lineStyle = {
-    "color": "#ff3300",
+    "color": "#ff4400",
     "weight": 4,
     "opacity": 0.7
   };

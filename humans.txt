@@ -9,6 +9,8 @@ Location: Tokyo, Japan
 
 GitHub
 Jekyll
+MapBox
+Jambo International
 
 /* PROJECT */
 
