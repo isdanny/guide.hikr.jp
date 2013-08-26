@@ -9,8 +9,12 @@ license: CC-BY-NC
 info:
   level: 2
   walking_time: 3.5h
-  highest_point: 240m
+  highest_point: 270m
   lowest_point: 110m
 ---
 
-.
+## Links
+
+ - [Okumusashi Guide Maps](http://okumusashi.life.coocan.jp/tenran.html)
+ - [Meizan navi](http://meizan-navi.com/route/294)
+ - [video](http://www.youtube.com/watch?v=Su0-5dYuft4)
