@@ -20,7 +20,7 @@ var Hikr = function(maps, container){
   this.init = function(container){
     this.map = L.map('map').setView([ 35.358, 138.731], 6);
     var map = this.map;
-    var bg = L.tileLayer('http://{s}.tiles.mapbox.com/v3/hikr.map-bcefinb2/{z}/{x}/{y}.png', {
+    var bg = L.tileLayer('http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://mapbox.com">MapBox</a>, Photos from Panoramio are copyright of their respective authors.',
       maxZoom: 16
     });
