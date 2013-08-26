@@ -20,7 +20,7 @@ body, html{
 }
 #plot{
   width: 100%;
-  height: 100px;
+  height: 120px;
 }
 .logo{
   position: fixed;
@@ -70,10 +70,19 @@ body, html{
     margin: 0;
     float: left;
   }
-  #info{
+  #infobox{
     font-family: helvetica, Arial, sans-serif;
     padding: 10px 20px;
     color: @sea1;
+    font-weight: bold;
+    line-height: 25px;
+    strong{
+      display: inline-block;
+      width: 50%;
+      text-align: right;
+      font-weight: 100!important;
+      text-transform: uppercase;
+    }
   }
   #plot{
     background-color: @sea2;
