@@ -1,6 +1,6 @@
 ---
 layout: map-on-left
-title: Takatsu-yama hike and swim
+title: Takatsuyama hike and swim
 center: [139.08901691436768, 35.59450649082071]
 map: 
  - takatsuyama.json
