@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-
+  <div class="dropdown">
+    <a href="{{site.url}}" data-toggle="dropdown" class="logo-float">
+      hikr.jp
+    </a>
+  </div>
 <div class="map-on-left">
 {% if page.map %}
 <div id="map"></div>
@@ -39,6 +43,7 @@ layout: default
        <div class="author">by {{page.author}}</div>
     </div>
   </div>
+</div>
 </div>
  <script type="text/javascript">
   window.onload = function(){

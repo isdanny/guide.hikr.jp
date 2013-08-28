@@ -1,29 +1,60 @@
 
 @sand: #F6F5F3;
-@sea1: #2CA9AD;
-@sea2: #025772;
-@sea3: #170027;
-@accent: #eb5505;
+@sea1: #A1BBC5;
+@sea2: #738790;
+@sea3: #4A5A61;
+@accent: #E95223;
 
 body, html{
   height: 100%;
-  background: @sand;
+  background: white;
   margin: 0;
   padding: 0;
   a{
   }
 }
-.dropdown{
-  ul{
-    display: none;
+
+header{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  background: rgba(255,255,255,0.9);
+  border-bottom: 1px solid white;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  .logo{
+    margin-top: -2px;
+    margin-right: 10px;
+    max-height: 50px;
+    vertical-align: baseline!important;
   }
 }
+
+.hero{
+  background: url(../img/trees.jpg);
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  .row{
+    position: relative;
+    top: 160px;
+    .on-photo{
+      color: white;
+      text-shadow: 0px 0px 3px black, 0px 0px 3px black, 0px 0px 12px black;
+      // -webkit-text-stroke: 1px black;
+    }
+  }
+  img{
+    max-width: 100%;
+  }
+}
+
 #plot{
   width: 100%;
   height: 100%;
   margin: 0;
 }
-.logo{
+.logo-float{
   position: fixed;
   top: 20px;
   left: 20px;
@@ -31,10 +62,18 @@ body, html{
   width: 120px;
   height: 80px;
   z-index: 20;
-  background-repeat: none;
+  background: url(../img/hikr-jp-big.png) center center no-repeat;
+  background-size: 100%;
   text-indent: 100%;
   overflow: hidden;
-  background: url(../img/hikr-jp.png);
+}
+header{
+  .logo{
+    margin-top: -2px;
+    margin-right: 10px;
+    max-height: 50px;
+    vertical-align: baseline!important;
+  }
 }
 .column{
 }
