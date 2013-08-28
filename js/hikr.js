@@ -85,7 +85,7 @@ var Hikr = function(maps, container){
         }
         $.plot("#plot",
             [{ data:plot, lines:{color: "red", show:true, fill:true}} ],
-            {colors: ["#2ca9ad"], grid:{show:false}, yaxis: { max: 1500} });
+            {colors: ["#4A5A61"], grid:{show:false}, yaxis: { max: 1500} });
       }
     };
 
