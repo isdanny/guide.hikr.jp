@@ -93,8 +93,9 @@ var Hikr = function(maps, container){
           }
         }
         $.plot("#plot",
-            [{ data:plot, lines:{color: "red", show:true, fill:true}} ],
-            {colors: ["#4A5A61"], grid:{show:false}, yaxis: { max: 1500} });
+            [{ data:plot, lines:{fillColor: "#4A5A61", show:true, fill:true}} ],
+            {colors: ["#4A5A61"], grid:{show:true, markings: { xaxis: false }, borderWidth: 0}, yaxis: { max: 1500} }
+            );
       }
     };
 
@@ -115,9 +116,9 @@ var Hikr = function(maps, container){
         // myLayer.addData(geojsonFeature).setStyle(myStyle);
         var bounds = myLayer.getBounds();
         map.fitBounds(bounds);
-      } ); // get
+      }); // get
     }// for
- }
+ };
 
  Hikr.prototype.adjustInterface = function(){
     var zoom = this.map.getZoom();
@@ -127,4 +128,4 @@ var Hikr = function(maps, container){
 
   window.Hikr = Hikr;
 
-})()
+})();
