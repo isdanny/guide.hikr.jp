@@ -7,7 +7,11 @@ map:
  - kamakita-lake.json
 copyright: CC-BY-NC
 author: hikr.jp
-
+info: 
+  level: intermediate
+  walking_time: 4.5h
+  highest_point: 375m
+  lowest_point: 
 ---
 
 **Access**:
