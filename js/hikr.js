@@ -1,4 +1,6 @@
-
+/*
+	Hikr - Hiking. With friends.
+*/
 (function(){
 
 
