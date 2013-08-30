@@ -288,11 +288,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "kotakuji onsen",
+        "name": "nanasawa onsen",
         "type": "onsen",
         "label": {
-          "jp": "小託児温泉",
-          "en": "Kotakuji spa"
+          "jp": "七沢温泉",
+          "en": "Nanasawa onsen"
         }
       },
       "geometry": {
@@ -312,9 +312,59 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.27780151367188,
-          35.45430786331487,
+          139.294968,35.449763 ,
           207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.25127983093262,
+          35.45374853480092
+        ]
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "type": "campsite"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.25127983093262,
+          35.45374853480092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.26724433898926,
+          35.454412736978384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+139.270914,35.481693 
         ]
       }
     }
