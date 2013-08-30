@@ -13,16 +13,18 @@ info:
   lowest_point: 230m
 ---
 
-**Starting Point**: Shiotsu Station on the Chuo Line
+### Starting Point ###
 
-**Points of Interest**
+Shiotsu Station on the Chuo Line
+
+### Points of Interest ###
 
  - Cedar Forest (杉林）
  - Katsuragawa River（桂川）
  - Nice Views of Shiotsu River Valley and nearby mountains
  - Mt. Takatsuka（高柄山）(optional)
 
-**Course**
+### Course ###
 
 This is a pleasant, well-marked course.
 

@@ -539,9 +539,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Higashi Agano station",
-        "type": "station",
-        "jp_name": "東吾野駅"
+        "name": "higashiagano-station",
+        "type": "rail",
+        "label":{
+            "en":"Higashi Agano station",
+            "jp":"東吾野駅"
+          } 
       },
       "geometry": {
         "type": "Point",
@@ -555,7 +558,7 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "toilet"
+        "type": "toilets"
       },
       "geometry": {
         "type": "Point",
@@ -571,7 +574,10 @@
       "properties": {
         "type": "waterfall",
         "name": "Gojo Waterfall",
-        "jp_name": "五常の滝"
+        "label":{
+          "en":"Gojo Waterfall",
+          "jp":"五常の滝"
+        }
       },
       "geometry": {
         "type": "Point",
@@ -585,7 +591,7 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "toilet"
+        "type": "toilets"
       },
       "geometry": {
         "type": "Point",
@@ -614,9 +620,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Musashi Yokote station",
-        "type": "station",
-        "jp_name": "武蔵横手駅"
+        "name": "musashiyokote-station",
+        "type": "rail",
+        "label":{
+          "jp":"武蔵横手駅",
+          "en":"Musashi Yokote station"
+          } 
       },
       "geometry": {
         "type": "Point",
@@ -630,8 +639,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Shukuya waterfall",
-        "jp_name": "宿谷の滝",
+        "label":{
+            "en":"Shukuya waterfall",
+            "jp":"宿谷の滝"
+          },
+        "name": "shukuya",
         "type": "waterfall"
       },
       "geometry": {
@@ -647,8 +659,11 @@
       "type": "Feature",
       "properties": {
         "type": "summit",
-        "name": "Monomi-san",
-        "jp_name": "物見山",
+        "name": "monomi-san",
+        "label":{
+            "en":"Monomi-san",
+            "jp":"物見山"
+          },
         "elevation": "375"
       },
       "geometry": {
@@ -663,7 +678,7 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "toilet"
+        "type": "toilets"
       },
       "geometry": {
         "type": "Point",
@@ -678,9 +693,12 @@
       "type": "Feature",
       "properties": {
         "type": "lake",
-        "jp_name": "鎌北湖",
-        "elevation": "",
-        "name": "Kamakita lake"
+        "name": "kamakita",
+        "label":{
+          "jp": "鎌北湖",
+          "en": "Kamakita lake"
+          },
+        "elevation": ""
       },
       "geometry": {
         "type": "Point",

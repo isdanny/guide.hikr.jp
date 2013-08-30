@@ -7,7 +7,7 @@ map:
 author: JAMBO International
 license: CC-BY-NC
 info:
-  level: 2
+  level: beginner
   walking_time: 3.5h
   highest_point: 270m
   lowest_point: 110m

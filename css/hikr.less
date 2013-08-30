@@ -4,6 +4,8 @@
 @sea3: #4A5A61;
 @accent: #E95223;
 
+@import url(maki-sprite.css);
+
 body, html{
   height: 100%;
   background: white;
@@ -16,6 +18,38 @@ body, html{
 .huge{
   font-size: 64px;
 }
+
+.maki-icon{
+  color: #222;
+  text-shadow: 
+    0 0 0px #fff, 
+    1px 0 0px #fff, 
+    0 1px 0px #fff,
+    -1px 0 0px #fff, 
+    0 -1px 0px #fff;
+    -webkit-text-stroke: 1px white outside;
+  display: block;
+  font: 13px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  z-index: 6;
+  text-indent: 26px;
+  span{ display: none; }
+}
+
+.hide-labels{
+  .maki-icon{
+    overflow: hidden;
+  }
+}
+
+.en{ .maki-icon span.lang-en{ display: inline; } }
+.jp{ .maki-icon span.lang-jp{ display: inline; } }
 
 header{
   position: absolute;
@@ -52,11 +86,6 @@ header{
   }
 }
 
-#plot{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
 .logo-float{
   position: fixed;
   top: 20px;
@@ -81,33 +110,20 @@ header{
 .column{
 }
 .header{
-  &.hero{
-    img{
-      width: 100%;
-    }
-  }
   width: 100%;
   min-height: 120px;
-  background: @sea1;
   position: relative;
+  padding-top: 40px;
   h1{
-    position: absolute;
-    bottom: 0px;
-    text-shadow: 0 0 3px black, 1px 0 2px black,0 1px 2px black;
-    background: fadeout(@sea2,50%);
-    width: 100%;
-    padding: 5px 0;
-    margin: 0;
-    text-indent: 20px;
-    font-family: helvetica, Arial, sans-serif;
-    color: white;
-    font-weight: bold;
+    margin: 0 20px 0 20px;
   }
 }
 .info{
   min-height: 80px;
-  background-color: @sea3;
   position: relative;
+  display: table;
+  width: auto;
+  margin: 0 20px;
   .col{
     width: 50%;
     margin: 0;
@@ -115,27 +131,44 @@ header{
   }
   #infobox{
     font-family: helvetica, Arial, sans-serif;
-    padding: 10px 20px;
-    color: @sea1;
+    padding: 10px 10px;
+    color: @sea3;
     font-weight: bold;
     line-height: 25px;
-    strong{
-      display: inline-block;
-      width: 50%;
-      text-align: right;
-      font-weight: 100!important;
-      text-transform: uppercase;
+    margin: 10px 10px;
+    display: table-row;
+    width: 100%;
+    .infopoint{
+      display: table-cell;
+      padding-right: 20px;
+      &.level{
+        div{
+          font-size: 18px;
+          line-height: 45px;
+        }
+      }
+      label{
+        margin-top: 15px;
+        display: block;
+        font-size: 10px;
+        font-weight: 100;
+        line-height: 9px;
+        border-bottom: 1px solid fadeout(@sea3, 50%);
+        text-transform: uppercase;
+      }
+      div{
+        font-size: 33px;
+        line-height: 45px;
+      }
     }
   }
   #plot{
-    background-color: @sea1;
-    float: left;
+    display: table-row;
+    height: 120px;
+    padding: 0 10px;
     position: relative;
-    height: 100%;
-    min-height: 120px;
     canvas{
-      position: absolute;
-      bottom: 0;
+      display: table-cell;
     }
   }
 }
@@ -153,6 +186,12 @@ header{
     height: 100%;
     width: 50%;
     position: fixed;
+    .coords{
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      z-index: 100;
+    }
   }
   .map-column{
     height: 100%;
@@ -171,10 +210,22 @@ header{
 }
 
 .article{
-  font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
-  font-weight: 400;
-  font-size: 16px;
+  max-width: 600px;
+  font-weight: 200;
+  font-size: 14px;
   line-height: 1.8;
+  h1, h2, h3, h4, h5{
+    text-transform: uppercase;
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+    margin-bottom: 0.3em;
+    border-top: 1px solid fadeout(@sea3, 50%);
+  }
+  h1 { font-size: 150%; }
+  h2 { font-size: 120%; }
+  h3 { font-size: 110%; }
+  h4 { font-size: 100%; }
+  h5 { font-size: 90%; }
   a{
     color: @sea1;
   }
@@ -190,7 +241,6 @@ header{
   img{
     max-width: 100%;
     border-radius: 3px;
-    border: 6px solid white;
   }
   h1, h2{
     color: #820;

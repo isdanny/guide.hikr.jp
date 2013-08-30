@@ -1,24 +1,5 @@
 .leaflet-label {
-	background-clip: padding-box;
-	color: #222;
-	text-shadow: 
-		0 0 0px #fff, 
-		1px 0 0px #fff, 
-		0 1px 0px #fff,
-		-1px 0 0px #fff, 
-		0 -1px 0px #fff;
-		  -webkit-text-stroke: 1px white outside;
-	display: block;
-	font: 13px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	padding: 1px 3px;
-	position: absolute;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-	white-space: nowrap;
-	z-index: 6;
+
 }
 
 .leaflet-label.leaflet-clickable {

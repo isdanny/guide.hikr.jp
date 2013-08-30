@@ -429,7 +429,7 @@
         "name": "shiotsu station",
         "type": "station",
         "elevation": "",
-        "label": "四方津駅"
+        "label": { "jp": "四方津駅", "en": "Shiotsu station" }
       },
       "geometry": {
         "type": "Point",
@@ -446,7 +446,7 @@
         "name": "takatsuyama",
         "type": "summit",
         "elevation": "733",
-        "label": "高津山"
+        "label": { "jp": "高津山", "en": "Takatsu yama" }
       },
       "geometry": {
         "type": "Point",
@@ -459,11 +459,21 @@
     },
     {
       "type": "Feature",
+      "properties":{
+        "type": "swimming"
+      },
+      "geometry":{
+        "type": "Point",
+        "coordinates": [139.071894,35.612441]
+      }
+    },
+    {
+      "type": "Feature",
       "properties": {
         "elevation": "730",
         "type": "pass",
         "name": "daimaru pass",
-        "label": "新大地峠"
+        "label": { "jp": "新大地峠", "en": "Daimaru pass" }
       },
       "geometry": {
         "type": "Point",

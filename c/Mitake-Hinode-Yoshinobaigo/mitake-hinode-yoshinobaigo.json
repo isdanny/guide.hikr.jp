@@ -386,7 +386,11 @@
       "type": "Feature",
       "properties": {
         "name": "Yoshino Baigo",
-        "type": "park"
+        "type": "park",
+        "label": {
+          "jp": "吉野梅郷",
+          "en": "Yoshino baigo"
+        }
       },
       "geometry": {
         "type": "Point",
@@ -402,7 +406,7 @@
       "properties": {
         "name": "Mimuroyama",
         "elevation": "646.9",
-        "jname": "三室山",
+        "label": { "jp": "三室山", "en": "Mimuro yama" },
         "type": "summit"
       },
       "geometry": {
@@ -420,7 +424,7 @@
         "name": "Hinodeyama",
         "type": "summit",
         "elevation": "902",
-        "jname": "日出山"
+        "label":{ "jp": "日出山", "en": "Hinode yama" }
       },
       "geometry": {
         "type": "Point",
@@ -437,7 +441,10 @@
         "name": "Mitakesan",
         "type": "summit",
         "elevation": "929",
-        "jname": "御岳山"
+        "label":{
+          "jp":"御岳山",
+          "en":"Mitake-san"
+        }
       },
       "geometry": {
         "type": "Point",
@@ -454,7 +461,10 @@
         "name": "Ootsukayama",
         "type": "summit",
         "elevation": "920",
-        "jname": "大塚山"
+        "label":{
+          "jp":"大塚山",
+          "en":"Ootsuka yama"
+        }
       },
       "geometry": {
         "type": "Point",
@@ -471,7 +481,9 @@
         "name": "Kori",
         "type": "station",
         "elevation": "",
-        "jname": "古里"
+        "label": {
+          "jp": "古里",
+          "en": "Kori station"}
       },
       "geometry": {
         "type": "Point",

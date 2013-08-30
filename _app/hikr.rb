@@ -8,25 +8,13 @@ get "/" do
   File.read(File.join("_site","index.html"))
 end
 
-
 get '/c/:page' do
-  path = File.join("_site/c", params[:page])
-  p path
-  if File.exists? File.join(path,"index.html")
-    File.read File.join(path,"index.html") 
+  file_path = File.join('_site/c',  params[:page] )
+  file_path = File.join(file_path, 'index.html') unless file_path =~ /\.[a-z]+$/i  
+  p file_path
+  if File.exists? file_path
+    File.read file_path 
   else 
-    404
-  end
-end
-
-get '/c/:page/' do
-  path = File.join("_site/c", params[:page])
-  p path
-  if File.exists? File.join(path,"index.html")
-    File.read File.join(path,"index.html") 
-  elsif File.exists? path
-    File.read path
-  else
     404
   end
 end

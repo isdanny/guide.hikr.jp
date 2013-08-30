@@ -7,17 +7,22 @@ map:
 author: hikr.jp
 hero: 8547970375_7af97466c1_c.jpg
 license: CC-BY-NC
-level: 4
-time: 6 hours
+info:
+  level: intermediate
+  walking_time: 6h
+  highest_point: 929m
+  lowest_point: 239m
 tags: [flowers, onsen]
 area: Okutama
 
 ---
 
-**Access**:
+## Access ##
+
 From Shinjuku, take the JR Chuo line going towards Okutama. 
 
-**Course**:
+## Course ##
+
 From Kori station go South (there's a 7-11 on the way), follow signs pointing to Ootsukayama. 
 
 There's a nice lunch place between Ootsukayama and Mitake. Alternatively, you can stop for lunch at the top station of the Mitake cable car, enjoy the viewpoint there.
@@ -36,6 +41,7 @@ Yoshino Baigo will be on your right. The entrance fee is ¥200, free at times. O
 
 Optionally, on the way back, you can stop at Kabe onsen (Kabe station).
 
-**When to go**:
+## When to go ##
+
 The course is not hard and Mitake shrine is interesting in all four seasons, so any time of year is good for this hike.
 
