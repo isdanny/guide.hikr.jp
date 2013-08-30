@@ -1,6 +1,7 @@
 safe:        true
 auto:        true
 baseurl:    /
+exclude:     _app, config.ru
 # url: http://guide.hikr.jp
 destination: ./_site
 plugins:     ./_plugins
