@@ -4,7 +4,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": ""
+        "name": "",
+        "method": "hand-drawn",
+        "source": "Day Walks Near Tokyo by Gary D'A. Walters"
       },
       "geometry": {
         "type": "LineString",
