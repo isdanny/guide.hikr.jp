@@ -14,10 +14,10 @@ info:
   lowest_point: 
 ---
 
-**Access**:
+## Access ##
 Higashiagano station is on the Seibu line. 
 
-**Points of Interest**: 
+## Points of Interest ##
 
  - Yugate forest (ユガテ森) (actually, sunflower patch)
  - Kamakita lake (鎌北湖)
@@ -25,7 +25,7 @@ Higashiagano station is on the Seibu line.
  - mt. Monomi (物見山)
  - Gojo waterfall (五常の滝)
 
-**Course**:
+## Course ##
 From Higashiagano station follow signs to Yugate (ユガテ). Along the road be careful not to miss the small pole-shaped sign where you should turn right. There will be a lot of concrete, but be patient. 
 
 Yugate (ユガテ) is a patch of sunflowers. A very good place for a lunch break. There's a small toilet.
