@@ -5,14 +5,19 @@ layout: guide
   textarea#article_md{
     width: 100%;
     border: none;
-    font-family: Andale Mono, monospace;
-    font-size: 15px;
-    line-height: 1.5;
+
   }
   #article_md:focus{
     border: none;
     box-shadow: none;
     outline: none;
+  }
+  #article_form input, #article_form textarea{
+    font-family: Andale Mono, monospace;
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+    background: white;
   }
 </style>
 <script src="/js/jquery.autosize.js"></script>
@@ -22,28 +27,44 @@ layout: guide
   </div>
 
   <div class="article-container">
-    <textarea id="article_md">
-    </textarea>
+    <form id="article_form">
+      <fieldset>
+        <input id="article_title" type="text">
+        <textarea id="article_md">
+        </textarea>
+      </fieldset>
+    </form>
   </div>
+  <div id="plot"></div>
 </div>
 
 <script type="text/javascript">
-var query = window.location.search;
-console.log(query);
+
 
   window.API_URL = "http://localhost:9393";
 
   function initEdit(){
+    var hash = window.location.hash || "#"
+    var path = hash.replace(/#/,'');
     $("#article_md").autosize();
-    $.getJSON(API_URL+"/api/src?path=kamakita-lake/index.md&callback=?", function(data){
+    $.getJSON(API_URL+"/api/src?path="+path+"/index.md"+"&callback=?", function(data){
       console.log(data);
+      $("#article_title").val(data.meta.title);
       $("#article_md").val(data.markdown).trigger("autosize.resize");
+      var maps = data.meta.map;
+      for(var i in maps){
+        maps[i] = '/c/'+path+'/'+maps[i];
+      }
+      console.log(data.meta.map);
+
+      hikr = new Hikr("map");
+      hikr.loadMaps(maps,function(){
+        hikr.makeEditable();
+      });
     })
   }
 
   window.onload = function(){
-    var maps = [ {% for url in page.map %} "{{url}}", {% endfor %} false];
-    hikr = new Hikr(maps, "map");
     $('textarea').autosize();   
     initEdit();
   };
