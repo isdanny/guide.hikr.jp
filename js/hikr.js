@@ -8,6 +8,7 @@ var Hikr = function(maps, container){
 
       //http://a.tiles.mapbox.com/v3/hikr.map-bcefinb2/page.html
       //'http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png
+    //      http://{S}tile.stamen.com/", layer, "/{Z}/{X}/{Y}
   this.lineStyle = {
     "color": "#ff4400",
     "weight": 4,
@@ -28,6 +29,7 @@ var Hikr = function(maps, container){
     var lng = Math.round(center.lng*1000000)/1000000.0;
     console.log(lng+","+lat);
   });
+  //
   var bg = L.tileLayer('http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://mapbox.com">MapBox</a>, Photos from Panoramio are copyright of their respective authors.',
       maxZoom: 16

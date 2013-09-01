@@ -1,0 +1,51 @@
+---
+layout: guide
+---
+<style type="text/css">
+  textarea#article_md{
+    width: 100%;
+    border: none;
+    font-family: Andale Mono, monospace;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  #article_md:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+</style>
+<script src="/js/jquery.autosize.js"></script>
+<div class="map-on-left">
+  <div id="map">
+    <div class="coords"></div>
+  </div>
+
+  <div class="article-container">
+    <textarea id="article_md">
+    </textarea>
+  </div>
+</div>
+
+<script type="text/javascript">
+var query = window.location.search;
+console.log(query);
+
+  window.API_URL = "http://localhost:9393";
+
+  function initEdit(){
+    $("#article_md").autosize();
+    $.getJSON(API_URL+"/api/src?path=kamakita-lake/index.md&callback=?", function(data){
+      console.log(data);
+      $("#article_md").val(data.markdown).trigger("autosize.resize");
+    })
+  }
+
+  window.onload = function(){
+    var maps = [ {% for url in page.map %} "{{url}}", {% endfor %} false];
+    hikr = new Hikr(maps, "map");
+    $('textarea').autosize();   
+    initEdit();
+  };
+
+</script>

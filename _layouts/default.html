@@ -3,6 +3,7 @@
 <head>
   <title>Hikr - {{ page.title }} </title>
   <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta name="author" value="Leszek Rybicki, Copyright by hikr.jp">
   <meta name="keywords" value="hiking, geocaching, japan">
   <meta name="description" value="">
@@ -13,14 +14,15 @@
   <link rel="stylesheet" href="{{site.url}}/css/tuktuk.icons.css"/>
   <link rel="stylesheet" href="{{site.url}}/css/tuktuk.theme.css"/> 
   <link rel="stylesheet" href="{{site.url}}/css/hikr.css"/>
+  <script type="text/javascript" src="{{site.url}}/js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="{{site.url}}/js/jquery.flot.js"></script>
+  <script type="text/javascript" src="{{site.url}}/js/leaflet.js"></script>
 </head>
 <body class="en">
 
   {{content}}
 
-  <script type="text/javascript" src="{{site.url}}/js/jquery-2.0.3.min.js"></script>
-  <script type="text/javascript" src="{{site.url}}/js/jquery.flot.js"></script>
-  <script type="text/javascript" src="{{site.url}}/js/leaflet.js"></script>
+
   <!-- // <script type="text/javascript" src="{{site.url}}/js/Panoramio.js"></script> -->
   <script type="text/javascript" src="{{site.url}}/js/hikr.js"></script>
   <script type="text/javascript">

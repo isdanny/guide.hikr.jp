@@ -46,6 +46,6 @@ From the top, signs will point at Musashi Yokote station (武蔵横手駅). When
 
 ![Gojo waterfall](DSC01565.JPG)
 
-Gojo waterfall is smaller, but none theless picturesque. You can take the hiking path along the stream, it will take you back to the paved road. The road will take you to Musashi Yokote station. 
+Gojo waterfall is smaller, but nonetheless picturesque. You can take the hiking path along the stream, it will take you back to the paved road. The road will take you to Musashi Yokote station. 
 
-
+One final attraction are the goats residing next to Musashi Yokote station.
