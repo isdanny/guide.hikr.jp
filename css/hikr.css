@@ -1,5 +1,6 @@
 @import url(maki-sprite.css);
 body,html{height:100%;background:#fff;margin:0;padding:0}
+ul,menu,dir{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-start:0}
 .huge{font-size:64px}
 .maki-icon{color:#222;text-shadow:0 0 0 #fff,1px 0 0 #fff,0 1px 0 #fff,-1px 0 0 #fff,0 -1px 0 #fff;-webkit-text-stroke:1px #fff outside;display:block;font:13px/20px "Helvetica Neue",Arial,Helvetica,sans-serif;font-weight:bold;position:absolute;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:6;text-indent:26px}.maki-icon span{display:none}
 .hide-labels .maki-icon{overflow:hidden}
