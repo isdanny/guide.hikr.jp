@@ -4,10 +4,15 @@ body,html{height:100%;background:#fff;margin:0;padding:0}
 .maki-icon{color:#222;text-shadow:0 0 0 #fff,1px 0 0 #fff,0 1px 0 #fff,-1px 0 0 #fff,0 -1px 0 #fff;-webkit-text-stroke:1px #fff outside;display:block;font:13px/20px "Helvetica Neue",Arial,Helvetica,sans-serif;font-weight:bold;position:absolute;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:6;text-indent:26px}.maki-icon span{display:none}
 .hide-labels .maki-icon{overflow:hidden}
 .en .maki-icon span.lang-en{display:inline}
+.en .maki-icon span.lang-jp{display:none}
 .jp .maki-icon span.lang-jp{display:inline}
+.jp .maki-icon span.lang-en{display:none}
 header{position:absolute;width:100%;top:0;margin:0;background:rgba(255,255,255,0.9);border-bottom:1px solid #fff;box-shadow:0 0 5px rgba(0,0,0,0.5)}header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:baseline !important}
 .hero{background:url(../img/trees.jpg);min-height:400px;background-size:cover;background-position:center}.hero .row{position:relative;top:160px}.hero .row .on-photo{color:#fff;text-shadow:0 0 3px #000,0 0 3px #000,0 0 12px #000}
 .hero img{max-width:100%}
+.leaflet-control-language{font-size:15px;line-height:22px}
+.leaflet-control-language-interior:before{content:"あ"}
+.jp .leaflet-control-language-interior:before{content:"A"}
 header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:baseline !important}
 .header{width:100%;min-height:120px;position:relative;padding-top:40px}.header h1{margin:0 20px 0 20px}
 .info{min-height:80px;position:relative;display:table;width:auto;margin:0 20px}.info .col{width:50%;margin:0;float:left}
@@ -39,3 +44,4 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .article p{line-height:1.8;color:#222;text-shadow:2px 2px 0 #fff !important;margin:1em 0}
 .article img{max-width:100%;border-radius:3px}
 .article h1,.article h2{color:#820;text-shadow:2px 2px 0 #fff !important}
+.leaflet-control-language-interior{width:25px;height:25px;background-position:50% 50%;background-repeat:no-repeat;display:block;padding:3px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;cursor:pointer;text-align:center;background-color:#fff}

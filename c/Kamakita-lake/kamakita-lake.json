@@ -544,7 +544,7 @@
         "label":{
             "en":"Higashi Agano station",
             "jp":"東吾野駅"
-          } 
+          }
       },
       "geometry": {
         "type": "Point",
@@ -605,8 +605,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Yugate",
-        "jp_name": "ユガテ"
+        "label": {
+          "en":"Yugate",
+          "jp": "ユガテ"
+        }
       },
       "geometry": {
         "type": "Point",
@@ -625,7 +627,7 @@
         "label":{
           "jp":"武蔵横手駅",
           "en":"Musashi Yokote station"
-          } 
+          }
       },
       "geometry": {
         "type": "Point",

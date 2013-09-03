@@ -321,7 +321,7 @@
       "type": "Feature",
       "properties": {
         "name": "tenran",
-        "label": { "jp": "天覧山", "en": "Tenran san" },
+        "label": { "jp": "天覧山", "en": "Tenran-zan" },
         "type": "summit"
       },
       "geometry": {

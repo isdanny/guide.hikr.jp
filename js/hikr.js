@@ -6,6 +6,31 @@
 
 var Hikr = function(container){
 
+L.Control.Language = L.Control.extend({
+    options: {
+        position: 'topright',
+        click: function(){}
+    },
+
+    onAdd: function (map) {
+      var controlDiv = L.DomUtil.create('div', 'leaflet-control-language leaflet-control leaflet-bar');
+      L.DomEvent
+        .addListener(controlDiv, 'click', L.DomEvent.stopPropagation)
+        .addListener(controlDiv, 'click', L.DomEvent.preventDefault)
+        .addListener(controlDiv, 'dblclick', L.DomEvent.preventDefault)
+        .addListener(controlDiv, 'dblclick', L.DomEvent.stopPropagation)
+        .addListener(controlDiv, 'click', this.options.click );
+      var controlUI = L.DomUtil.create('a', 'leaflet-control-language-interior', controlDiv);
+      controlUI.href="#";
+      controlUI.title = 'Language';
+      return controlDiv;
+    }
+});
+
+L.control.language = function (options) {
+    return new L.Control.Language(options);
+};
+
       //http://a.tiles.mapbox.com/v3/hikr.map-bcefinb2/page.html
       //'http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png
     //      http://{S}tile.stamen.com/", layer, "/{Z}/{X}/{Y}
@@ -17,7 +42,9 @@ var Hikr = function(container){
 
   this.container = $(container);
   this.map = L.map(container).setView([ 35.358, 138.731], 6);
+
   var map = this.map;
+
   var self = this;
   this.fg = new L.FeatureGroup([]);
   map.on("zoomend", function(){
@@ -34,6 +61,15 @@ var Hikr = function(container){
       maxZoom: 16
   });
   map.zoomControl.setPosition("topright");
+  var languageControl = new L.Control.Language({ click: function(){
+    var c = $("#map");
+    if(c.hasClass("jp")) c.removeClass("jp");
+    else c.addClass("jp");
+    if(c.hasClass("en")) c.removeClass("en");
+    else c.addClass("en");
+    return false;
+  }});
+  this.map.addControl(languageControl);
    // var panoramio = new L.Panoramio({maxLoad: 50, maxTotal: 250});
   map.addLayer(bg);
   map.addLayer(this.fg);
@@ -101,7 +137,7 @@ var Hikr = function(container){
 
 
  Hikr.prototype.loadMaps = function(maps, callback){
-
+    callback = callback || function(){};
     this.maps = maps;
     var map = this.map;
     var app = this;

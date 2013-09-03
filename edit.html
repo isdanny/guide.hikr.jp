@@ -47,7 +47,7 @@ layout: guide
     var hash = window.location.hash || "#"
     var path = hash.replace(/#/,'');
     $("#article_md").autosize();
-    $.getJSON(API_URL+"/api/src?path="+path+"/index.md"+"&callback=?", function(data){
+    $.getJSON(API_URL+"/api/article/"+path+"?callback=?", function(data){
       console.log(data);
       $("#article_title").val(data.meta.title);
       $("#article_md").val(data.markdown).trigger("autosize.resize");
