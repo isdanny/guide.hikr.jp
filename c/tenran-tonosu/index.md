@@ -20,7 +20,7 @@ Hannou Station on the SeibuIkebukuro Line
 ## Points of Interest ##
 
  - Mt. Tenran （天覧山）
- - Mt. Tounosu　（多
+ - Mt. Tonosu (多峯主山)　
  - Iruma River　（入間川）
 
 ## Course ##

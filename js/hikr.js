@@ -4,6 +4,10 @@
 (function(){
 
 
+
+
+
+
 var Hikr = function(container){
 
 L.Control.Language = L.Control.extend({

@@ -15,36 +15,72 @@
         %a{ :href=>"/groups" }
           %span.icon.group
           &nbsp;Groups
+      %li.divider
+      %li
+        %a{ :href=>"/login" }
+          %span.icon.user
+          &nbsp;Log in
 .map-on-left
   #map
     .coords
 
   .article-container
-    .header
-      %h1= meta["title"]
-      .info
-        #plot
-        #infobox
-          .infopoint.level
-            %label level
-            %div= meta["info"]["level"]
-          .infopoint.walking_time
-            %label walking time
-            %div= meta["info"]["walking_time"]
-          .infopoint.highest_point
-            %label highest point
-            %div= meta["info"]["highest_point"]
-          .infopoint.lowest_point
-            %label lowest point
-            %div= meta["info"]["lowest_point"]
+    .nav.nav-tabs#myTab
+      %li
+        %a{ :href=>"#article", :"data-toggle"=>"tab" } 
+          %span.icon.icon-book &nbsp;
+      %li
+        %a{ :href=>"#info", :"data-toggle"=>"tab" } 
+          %span.icon.icon-bar-chart &nbsp;
+      %li
+        %a{ :href=>"#weather", :"data-toggle"=>"tab" } 
+          %span.icon.icon-cloud &nbsp;
+      %li
+        %a{ :href=>"#schedule", :"data-toggle"=>"tab" }
+          %span.icon.icon-calendar &nbsp;
+      %li.active
+        %a{ :href=>"#comments", :"data-toggle"=>"tab" }
+          %span.icon.icon-comments &nbsp;
 
-        %br.clear
-        //{% include infobox.html %}
-    .article
-      =body
-      .author
-        by #{meta["author"]}
+    .tab-content
+      .tab-pane#article
+        .article
+          %h1= meta["title"]
+          =body
+          .author
+            by #{meta["author"]}
+      .tab-pane#info 
+        .info
+          #plot
+          #infobox
+            .infopoint.level
+              %label level
+              %div= meta["info"]["level"]
+            .infopoint.walking_time
+              %label walking time
+              %div= meta["info"]["walking_time"]
+            .infopoint.highest_point
+              %label highest point
+              %div= meta["info"]["highest_point"]
+            .infopoint.lowest_point
+              %label lowest point
+              %div= meta["info"]["lowest_point"]
+      .tab-pane#weather   
+        =haml :weather
+      .tab-pane#schedule ..mres
+      .tab-pane.active#comments
+        =haml :comments
+
 :javascript
+
+  $(document).ready(function(){
+    $('#myTab a').click(function (e) {
+      e.preventDefault();
+      $("#myTab .active").removeClass("active");
+      $(this).tab('show');
+    });
+  })
+
   window.onload = function(){
     var maps = #{ meta["map"].to_json };
     hikr = new Hikr("map");

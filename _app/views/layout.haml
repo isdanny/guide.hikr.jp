@@ -1,7 +1,7 @@
 !!!html
 %html
   %head
-    %title Hikr -
+    %title Hikr
     %meta{:charset => "utf-8"}/
     %meta{:content => "initial-scale=1,maximum-scale=1,user-scalable=no", :name => "viewport"}/
     %meta{:name => "author", :value => "Leszek Rybicki, Copyright by hikr.jp"}/
@@ -13,19 +13,24 @@
     %link{:href => "/css/leaflet.draw.css", :rel => "stylesheet"}/
     %link{:href => "/css/bootstrap.min.css", :rel => "stylesheet"}/
     %link{:href => "/css/bootstrap-theme.css", :rel => "stylesheet"}/
+    %link{:href => "/font-awesome/css/font-awesome.min.css", :rel => "stylesheet"}/
+    %link{:href => "/forecast/iconvault-preview.css", :rel => "stylesheet"}/
     %link{:href => "/css/hikr.css", :rel => "stylesheet"}/
     %script{:src => "/js/jquery-2.0.3.min.js", :type => "text/javascript"}
     %script{:src => "/js/jquery.flot.js", :type => "text/javascript"}
     %script{:src => "/js/leaflet.js", :type => "text/javascript"}
     %script{:src => "/js/leaflet.draw.js", :type => "text/javascript"}
-    %script{:src => "/js/bootstrap.min.js", :type => "text/javascript"}
+    %script{:src => "/js/bootstrap.js", :type => "text/javascript"}
+    %script{:src => "/js/handlebars.js", :type => "text/javascript"}
+    %script{:src => "/js/moment.js", :type => "text/javascript"}
+    %script{:src => "/js/parse-1.2.9.js", :type => "text/javascript"}
   %body.en
     =yield
 
     / // <script type="text/javascript" src="/js/Panoramio.js"></script>
     %script{:src => "/js/hikr.js", :type => "text/javascript"}
     :javascript
-      var _gaq = _gaq || [];
+          var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-2132560-9']);
           _gaq.push(['_setDomainName', 'hikr.jp']);
           _gaq.push(['_trackPageview']);

@@ -3,10 +3,16 @@ require 'sinatra'
 require 'json'
 require 'yaml'
 require 'rdiscount'
+require 'grit'
+require 'sass'
 YAML::ENGINE.yamler = 'psych'
 
-set :public_folder, "_site"
+set :public_folder, "."
 set :static, true
+
+class Asset
+  attr_accessor :name
+end
 
 class Article
   attr_accessor :body
@@ -37,11 +43,22 @@ get '/edit' do
   haml :edit
 end
 
-get '/c/:page/' do
+
+get '/:page/' do
   if article = Article.get(params[:page])
     md =  RDiscount.new(article.body, :smart, :filter_html)
     p article.meta.to_json
     haml :article, :locals=>{ :body=>md.to_html, :meta=>article.meta, :maps=>article.meta.map.to_json }
+  else
+    404
+  end
+end
+
+get '/:page/:file', :provides=> :json do
+  #FIXME check file type, serve correct headers
+  file_path = File.join('c',params[:page],params[:file])
+  if File.exists? file_path
+    File.read file_path
   else
     404
   end
@@ -68,4 +85,9 @@ get '/api/article/:path', :provides => :json do
   else
     404
   end
+end
+
+
+get '/:page/index.html' do
+  redirect "/c/#{params[:page]}/"
 end

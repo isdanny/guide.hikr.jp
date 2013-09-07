@@ -1,0 +1,72 @@
+#comments
+  .comments
+  .your-comment
+    %form#comment_form
+      %textarea{ :name=>"comment" }
+      %input.btn{ :type=>"submit", :value=>"Send"}
+
+:javascript
+  Parse.initialize("8rQBmsZtwJ6dK8e2NfV5vKuVSu3Xs2itGCg06VKW", "9eCdVPXKYYWZcHYlleq2lowex4uvh7Odcvgn0Qpm");
+  var currentUser = Parse.User.current();
+
+  if(currentUser){
+
+  }else{
+    Parse.User.logIn("leszek", "test123", {
+      success: function(user) {
+        alert("ok");
+      },
+      error: function(user, error) {
+        alert("ng");
+      }
+    });
+  }
+
+  var CommentView = Parse.View.extend({
+    initialize: function(){
+      this.model.bind("change:myData", "myHandler", this);
+      console.log("attached");
+    },
+    render: function(){
+      this.$el.html( this.model.get("text") );
+    },
+    myHandler: function(){
+      // update vie
+      console.log("modified")
+    }
+  });
+
+
+  var Comment = Parse.Object.extend({className:"Comment"});
+
+  $(document).ready(function(){
+    var thisPage = document.location.href;
+    var query = new Parse.Query(Comment);
+    query.equalTo("page",thisPage).find({
+      success:function(results){
+        for(var i in results){
+          var cmt = results[i];
+          var v = new CommentView({model: cmt});
+          v.render();
+          $(".comments").append(v.$el);
+          var user = cmt.get("user");
+        }
+        console.log(results);
+      }
+    })
+
+    $("#comment_form").on("submit",function(e){
+      e.preventDefault();
+      var c = new Comment();
+      c.set("text",$(this).find("[name=comment]").val());
+      c.set("user",Parse.User.current);
+      c.set("page",thisPage);
+      c.save(null, {success:function(cmt){
+        var v = new CommentView({model: cmt});
+        v.render();
+        $(".comments").append(v.$el);
+        $("[name=comment]").val("");
+      }});
+      return false;
+    })
+  });

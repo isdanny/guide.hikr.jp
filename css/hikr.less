@@ -13,6 +13,11 @@ body, html{
   margin: 0;
   padding: 0;
   a{
+    text-decoration: none;
+    color: @accent;
+  }
+  a:hover{
+    text-decoration: none;
   }
 }
 
@@ -213,8 +218,8 @@ header{
     left: 0;
     bottom: 0;
     width: 160px;
-    background-color: rgba(255,255,255,0.9);
-    border-right: 1px solid white;
+    background-color: @sea3;
+    border-right: 1px solid @sea3;
     box-shadow: 0 0 16px rgba(0,0,0,0.5);
     -webkit-transform: translate3d(-160px,0,0);
     -webkit-transition: -webkit-transform, 0.25s;
@@ -222,8 +227,8 @@ header{
     ul{
       margin-top: 100px;
       list-style: none none;
-      border-bottom: 1px solid rgba(0,0,0,0.1);
-      border-top: 1px solid rgba(255,255,255,0.9);
+      border-top: 1px solid rgba(0,0,0,0.2);
+      border-bottom: 1px solid rgba(255,255,255,0.2);
       li{
         position: relative;
         left: 1px;
@@ -232,16 +237,17 @@ header{
         &.active{
           border-right: 4px solid @accent;
           a{
-            background-color: white;
-            color: black;
-          }
-          a:hover{
-            background-color: white;
+            background-color: darken(@sea3,1);
+            color: white;
+            &:hover{
+              background-color: black;
+              text-decoration: none;
+            }
           }
         }
         a{
-          border-top: 1px solid rgba(0,0,0,0.1);
-          border-bottom: 1px solid rgba(255,255,255,0.9);
+          border-bottom: 1px solid rgba(0,0,0,0.2);
+          border-top: 1px solid rgba(255,255,255,0.2);
           padding-left: 15px;
           display: block;
           color: @sea2;
@@ -249,8 +255,9 @@ header{
           text-transform: uppercase;
           clear: both;
           &:hover{
-            color: black;
-            background-color: rgba(255,255,255,0.5);
+            color: white;
+            background-color: rgba(0,0,0,0.5);
+            text-decoration: none;
           }
           .icon{
             display: block;

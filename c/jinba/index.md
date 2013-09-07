@@ -5,6 +5,8 @@ center: [ 139.151930809021, 35.61606986594179]
 map: 
  - jinba.json
 info:
+  level:
+  
 tags: []
 author: hikr.jp
 license: CC-BY-NC

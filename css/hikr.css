@@ -1,5 +1,6 @@
 @import url(maki-sprite.css);
-body,html{height:100%;background:#fff;margin:0;padding:0}
+body,html{height:100%;background:#fff;margin:0;padding:0}body a,html a{text-decoration:none;color:#e95223}
+body a:hover,html a:hover{text-decoration:none}
 ul,menu,dir{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-start:0}
 .huge{font-size:64px}
 .maki-icon{color:#222;text-shadow:0 0 0 #fff,1px 0 0 #fff,0 1px 0 #fff,-1px 0 0 #fff,0 -1px 0 #fff;-webkit-text-stroke:1px #fff outside;display:block;font:13px/20px "Helvetica Neue",Arial,Helvetica,sans-serif;font-weight:bold;position:absolute;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:6;text-indent:26px}.maki-icon span{display:none}
@@ -22,9 +23,8 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .info #infobox .infopoint div{font-size:33px;line-height:45px}
 .info #plot{display:table-row;height:120px;padding:0 10px;position:relative}.info #plot canvas{display:table-cell}
 .hikr-sidebar{position:fixed;top:0;left:0;z-index:8}.hikr-sidebar .logo-float{position:fixed;top:20px;left:20px;display:block;width:120px;height:80px;z-index:20;background:url(../img/hikr-jp-big.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
-.hikr-sidebar .hikr-menu{position:fixed;top:0;left:0;bottom:0;width:160px;background-color:rgba(255,255,255,0.9);border-right:1px solid #fff;box-shadow:0 0 16px rgba(0,0,0,0.5);-webkit-transform:translate3d(-160px, 0, 0);-webkit-transition:-webkit-transform,.25s}.hikr-sidebar .hikr-menu ul{margin-top:100px;list-style:none none;border-bottom:1px solid rgba(0,0,0,0.1);border-top:1px solid rgba(255,255,255,0.9)}.hikr-sidebar .hikr-menu ul li{position:relative;left:1px;width:100%;border-right:4px solid transparent}.hikr-sidebar .hikr-menu ul li.active{border-right:4px solid #e95223}.hikr-sidebar .hikr-menu ul li.active a{background-color:#fff;color:#000}
-.hikr-sidebar .hikr-menu ul li.active a:hover{background-color:#fff}
-.hikr-sidebar .hikr-menu ul li a{border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(255,255,255,0.9);padding-left:15px;display:block;color:#738790;line-height:32px;text-transform:uppercase;clear:both}.hikr-sidebar .hikr-menu ul li a:hover{color:#000;background-color:rgba(255,255,255,0.5)}
+.hikr-sidebar .hikr-menu{position:fixed;top:0;left:0;bottom:0;width:160px;background-color:#4a5a61;border-right:1px solid #4a5a61;box-shadow:0 0 16px rgba(0,0,0,0.5);-webkit-transform:translate3d(-160px, 0, 0);-webkit-transition:-webkit-transform,.25s}.hikr-sidebar .hikr-menu ul{margin-top:100px;list-style:none none;border-top:1px solid rgba(0,0,0,0.2);border-bottom:1px solid rgba(255,255,255,0.2)}.hikr-sidebar .hikr-menu ul li{position:relative;left:1px;width:100%;border-right:4px solid transparent}.hikr-sidebar .hikr-menu ul li.active{border-right:4px solid #e95223}.hikr-sidebar .hikr-menu ul li.active a{background-color:#48575e;color:#fff}.hikr-sidebar .hikr-menu ul li.active a:hover{background-color:#000;text-decoration:none}
+.hikr-sidebar .hikr-menu ul li a{border-bottom:1px solid rgba(0,0,0,0.2);border-top:1px solid rgba(255,255,255,0.2);padding-left:15px;display:block;color:#738790;line-height:32px;text-transform:uppercase;clear:both}.hikr-sidebar .hikr-menu ul li a:hover{color:#fff;background-color:rgba(0,0,0,0.5);text-decoration:none}
 .hikr-sidebar .hikr-menu ul li a .icon{display:block;float:left;width:25px;text-align:center}
 .hikr-sidebar:hover .hikr-menu{-webkit-transform:translate3d(0, 0, 0)}
 .map-on-left,.map-on-left>.column{height:100%}

@@ -1,0 +1,129 @@
+.day.today
+  .day-label
+  .icon
+  .temperature
+.week
+  .day.day-1
+    .day-label
+    .icon
+    .temperature.max
+    .temperature.min
+  .day.day-2
+    .day-label
+    .icon
+    .temperature.max
+    .temperature.min
+  .day.day-3
+    .day-label
+    .icon
+    .temperature.max
+    .temperature.min
+  .day.day-4
+    .day-label
+    .icon
+    .temperature.max
+    .temperature.min
+  .day.day-5
+    .day-label
+    .icon
+    .temperature.max
+    .temperature.min
+  .day.day-6
+    .day-label
+    .icon
+    .temperature.max
+    .temperature.min
+  .day.day-7
+    .day-label
+    .icon
+    .temperature.max
+    .temperature.min
+
+:javascript
+  $(document).ready(function(){
+    var unit = "&deg;";
+    $.getJSON("https://api.forecast.io/forecast/d254f628aad2767b7632f7b2cf8613bd/35.886269,139.289131?units=si&callback=?",function(data){
+      $(".today .icon").addClass(data.currently.icon);
+      if(data.currently.precipIntensity<0.3) $(".today .icon").addClass("light");
+
+      $(".today .temperature").html(Math.round(parseFloat(data.currently.temperature))+unit);
+      for(var i in data["daily"].data){
+        if(i>0){
+          var day = data["daily"].data[i];
+          var $day = $(".week .day").eq(i-1);
+          $day.find(".temperature.max").html(Math.round(parseFloat(day.temperatureMax))+unit);
+          $day.find(".temperature.min").html(Math.round(parseFloat(day.temperatureMin))+unit);
+          $day.find(".icon").addClass(day.icon);
+          if(day.precipIntensity<0.5) $day.find(".icon").addClass("light");
+          $day.find(".day-label").html(moment(day.time*1000).format('ddd'));
+        }
+      }
+    })
+  });
+
+:css
+  @font-face {
+      font-family: 'MeteoconsRegular';
+      src: url('/fonts/meteocons-webfont.eot');
+      src: url('/fonts/meteocons-webfont.eot?#iefix') format('embedded-opentype'),
+           url('/fonts/meteocons-webfont.woff') format('woff'),
+           url('/fonts/meteocons-webfont.ttf') format('truetype'),
+           url('/fonts/meteocons-webfont.svg#MeteoconsRegular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+  #weather .icon{
+    margin-bottom: 0.1em;
+  }
+  #weather .day .temperature{
+    text-align: center;
+  }
+  #weather .day .temperature.max{
+    font-weight: bold;
+    font-size: 120%;
+  }
+  #weather .icon:before {
+    font-family: 'MeteoconsRegular';
+    font-size: 48px;
+    color: #666;
+  }
+  #weather .icon.clear-day:before{ content: 'B'; }
+  #weather .icon.clear-night:before { content: 'C'; }
+  #weather .icon.light.rain:before{ content: 'Q'; }
+  #weather .icon.rain:before{ content: 'R'; }
+  #weather .icon.snow:before{ content: 'U'; }
+  #weather .icon.sleet:before{ content: 'X'; }
+  #weather .icon.wind:before{ content: 'F'; }
+  #weather .icon.fog:before{ content: 'M'; }
+  #weather .icon.cloudy:before{ content: 'N'; }
+  #weather .icon.partly-cloudy-day:before{ content: 'H'; }
+  #weather .icon.partly-cloudy-night:before{ content: 'I'; }
+  #weather .day{
+    position: relative;
+  }
+  #weather .today{
+    width: 100%;
+  }
+  #weather .week .day .day-label{
+    text-align: center;
+  }
+  #weather .today .temperature{
+    font-size: 84px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  #weather .today .icon{
+    text-align: center;
+  }
+  #weather .today .icon:before{
+    font-size: 300px;
+  }
+  #weather .week .day{
+    width: 14%;
+    float: left; 
+    border-right: 1px solid #999;
+  }
+  #weather .week .day .icon{
+    text-align: center;
+  }
