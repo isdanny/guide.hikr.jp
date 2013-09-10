@@ -30,19 +30,29 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .map-on-left,.map-on-left>.column{height:100%}
 .map-on-left{width:100%;height:100%}.map-on-left #map{height:100%;position:fixed;top:0;left:0;right:600px}.map-on-left #map .coords{position:absolute;bottom:10px;left:10px;z-index:100}
 .map-on-left .map-column{height:100%}
-.map-on-left .article{padding:20px 20px}
+.map-on-left .article-content{padding:20px 20px}
 .navbar{margin-bottom:0}
 .infobox{float:right;width:200px}
 .article-container{position:absolute;right:0;padding:0 30px;width:600px}
-.article{font-weight:200;font-size:14px}.article h1,.article h2,.article h3,.article h4,.article h5{text-transform:uppercase;margin-top:1.5em;padding-top:1.5em;margin-bottom:.3em;border-top:1px solid rgba(74,90,97,0.5)}
-.article h1{font-size:150%}
-.article h2{font-size:120%}
-.article h3{font-size:110%}
-.article h4{font-size:100%}
-.article h5{font-size:90%}
-.article a{color:#a1bbc5}
-.article ul{margin:0 3em;line-height:2;color:#222}
-.article p{line-height:1.8;color:#222;text-shadow:2px 2px 0 #fff !important;margin:1em 0}
-.article img{max-width:100%;border-radius:3px}
-.article h1,.article h2{color:#820;text-shadow:2px 2px 0 #fff !important}
+.article-content{font-weight:200;font-size:14px}.article-content h1,.article-content h2,.article-content h3,.article-content h4,.article-content h5{text-transform:uppercase;margin-top:1.5em;padding-top:1.5em;margin-bottom:.3em;border-top:1px solid rgba(74,90,97,0.5)}
+.article-content h1{font-size:150%;border-top:none;margin-top:.5em}
+.article-content h2{font-size:120%}
+.article-content h3{font-size:110%}
+.article-content h4{font-size:100%}
+.article-content h5{font-size:90%}
+.article-content a{color:#a1bbc5}
+.article-content ul{margin:0 3em;line-height:2;color:#222}
+.article-content p{line-height:1.8;color:#222;text-shadow:2px 2px 0 #fff !important;margin:1em 0}
+.article-content img{max-width:100%;border-radius:3px}
+.article-content h1,.article-content h2{color:#820;text-shadow:2px 2px 0 #fff !important}
+.comment{background:#09c;padding:5px;border-radius:3px;margin:5px;color:#fff;border-top:2px solid rgba(255,255,255,0.8);border-bottom:2px solid rgba(0,0,0,0.3)}
+.tabs{margin-top:15px;list-style:none none;z-index:6}.tabs li{display:inline-block}.tabs li a{font-size:20px;padding:6px;border-radius:4px 4px 0 0;text-align:center}
+.tabs li a:hover{color:#fff}
+.tabs li.article a{color:#000;background:#fff}
+.tab-content #elevation,.tabs li.elevation a{color:#fff;background:#27ae60}
+.tab-content #schedule,.tabs li.schedule a{color:#fff;background:#f39c12}
+.tab-content #comments,.tabs li.comments a{color:#fff;background:#e74c3c}
+.tab-content #weather,.tabs li.weather a{color:#fff;background:#2980b9}
+.tab-content{z-index:9;position:fixed;right:0;bottom:0;width:600px;top:40px}
+.tab-content>div{padding:5px;z-index:9;height:100%;overflow:scroll}
 .leaflet-control-language-interior{width:25px;height:25px;background-position:50% 50%;background-repeat:no-repeat;display:block;padding:3px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;cursor:pointer;text-align:center;background-color:#fff}

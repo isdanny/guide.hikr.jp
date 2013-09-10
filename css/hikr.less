@@ -298,7 +298,7 @@ header{
   .map-column{
     height: 100%;
   }
-  .article{
+  .article-content{
     padding: 20px 20px;
   }
 }
@@ -318,7 +318,7 @@ header{
   width: 600px;
 }
 
-.article{
+.article-content{
   font-weight: 200;
   font-size: 14px;
   h1, h2, h3, h4, h5{
@@ -328,7 +328,7 @@ header{
     margin-bottom: 0.3em;
     border-top: 1px solid fadeout(@sea3, 50%);
   }
-  h1 { font-size: 150%; }
+  h1 { font-size: 150%;  border-top: none; margin-top: 0.5em; }
   h2 { font-size: 120%; }
   h3 { font-size: 110%; }
   h4 { font-size: 100%; }
@@ -357,6 +357,69 @@ header{
   }
 }
 
+.comment{
+  background: #09c;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 5px;
+  color: white;
+  border-top: 2px solid rgba(255,255,255,0.8);
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+
+}
+
+.tabs{
+  margin-top: 15px;
+  list-style: none none;
+  z-index: 6;
+  li{
+    display: inline-block;
+    a{
+      font-size: 20px;
+      padding: 6px;
+      border-radius: 4px 4px 0 0;
+      text-align: center;
+    }
+    a:hover{
+      color: white;
+    }
+    &.article a{ color: black; background: white; }
+    &.comments a{ }
+    &.weather a{  }
+  }
+}
+
+.tab-content #elevation, .tabs li.elevation a{
+  color: white; background: #27ae60;
+}
+
+.tab-content #schedule, .tabs li.schedule a{
+  color: white; background: #f39c12;
+}
+
+.tab-content #comments, .tabs li.comments a{
+   color: white; background: #e74c3c;
+}
+
+.tab-content #weather, .tabs li.weather a{
+  color: white; background: #2980b9;
+}
+
+.tab-content{
+  z-index: 9;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 600px;
+  top: 40px;
+}
+
+.tab-content > div{
+  padding: 5px;
+  z-index: 9;
+  height: 100%;
+  overflow: scroll;
+}
 .leaflet-control-language-interior
 {
     width: 25px;

@@ -5,42 +5,51 @@ layout: guide
 
 <div class="map-on-left">
   <div id="map">
-    <div class="coords"></div>
   </div>
 
   <div class="article-container">
-      <div class="header">
-        <h1>{{ page.title }}</h1>
+    <ul class="tabs">
+      <li class="tab article"><a href="#article" class="icon-file-text"></a></li>
+      <li class="tab elevation"><a href="#elevation" class="icon-bar-chart"></a></li>
+      <li class="tab schedule"><a href="#schedule" class="icon-calendar"></a></li>
+      <li class="tab weather"><a href="#weather" class="icon-cloud"></a></li>
+      <li class="tab comments"><a href="#comments" class="icon-comments"></a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="comments">
+        {% include comments.html %}
       </div>
-
-      <div class="info">
-        <div id="plot"></div>
-        <br style="clear: both">
-        {% include infobox.html %}
+      <div id="article">
+        {% include article.html %}
       </div>
-      <div class="article">
-      
-       {{ content }}
-       <div class="author">by {{page.author}}</div>
-       <br><br>
-      <!-- AddThis Button BEGIN -->
-        <div class="addthis_toolbox addthis_default_style ">
-        <a class="addthis_button_preferred_1"></a>
-        <a class="addthis_button_preferred_2"></a>
-        <a class="addthis_button_preferred_3"></a>
-        <a class="addthis_button_preferred_4"></a>
-        <a class="addthis_button_compact"></a>
-        <a class="addthis_counter addthis_bubble_style"></a>
-        </div>
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520873ed40bfdc8e"></script><br>
-        <!-- AddThis Button END -->
+      <div id="weather">
+      </div>
+      <div id="schedule">
+      </div>
+      <div id="elevation"></div>
     </div>
+
   </div>
+
 </div>
  <script type="text/javascript">
   window.onload = function(){
     var maps = [ {% for url in page.map %} "{{url}}", {% endfor %} false];
     hikr = new Hikr("map");
     hikr.loadMaps(maps);
+
+    var hashChanged = function(){
+      var target = window.location.hash;
+      $('.tab-content > div').hide();
+      $('.tab-content '+target).show();
+      $('.tabs .active').removeClass('active');
+      $('.tabs .'+target.replace(/\#/,'') ).addClass('active');
+      return false;
+    }
+
+    window.onhashchange = hashChanged;
+
+    hashChanged();
+
   };
  </script>

@@ -1,12 +1,23 @@
-#comments
-  .comments
-  .your-comment
-    %form#comment_form
-      %textarea{ :name=>"comment" }
-      %input.btn{ :type=>"submit", :value=>"Send"}
+<script type="template/html" id="comment_template">
+<%= text %>  
+</script>
 
-:javascript
+<div id="#comments">
+  <div class="comments">
+  </div>
+  <div class="your-comment">
+    <form id="comment_form">
+      <textarea name="comment"></textarea>
+      <input class="btn" type="submit" value="Send">
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript">
   Parse.initialize("8rQBmsZtwJ6dK8e2NfV5vKuVSu3Xs2itGCg06VKW", "9eCdVPXKYYWZcHYlleq2lowex4uvh7Odcvgn0Qpm");
+
+  var Comment = Parse.Object.extend("Comment");
+
   var currentUser = Parse.User.current();
 
   if(currentUser){
@@ -22,21 +33,34 @@
     });
   }
 
-  var CommentView = Parse.View.extend({
-    initialize: function(){
-      this.model.bind("change", "dataChanged", this);
-      console.log("attached");
-    },
-    render: function(){
-      this.$el.html( this.model.get("text") );
-    },
-    dataChanged: function(){
-      // update vie
-      console.log("modified")
-    }
-  });
 
-  var Comment = Parse.Object.extend({className:"Comment"});
+
+var CommentListView = Parse.View.extend({
+  el: $(".comments")[0],
+  initialize: function(){
+
+  },
+  onAdd: function(cmt){
+    this.$el.prepend(new CommentView(cmt));
+  }
+});
+
+var CommentView = Parse.View.extend({
+  template: _.template($("#comment_template").html()),
+  tagName: 'div',
+  className: 'comment',
+  initialize: function(){
+    this.model.on("change", "dataChanged", this);
+    console.log("attached");
+  },
+  render: function(){
+    this.$el.html(this.template(this.model.toJSON()) );
+    return this;
+  },
+  dataChanged: function(){
+    // update vie
+  }
+});
 
   $(document).ready(function(){
     var thisPage = document.location.href;
@@ -45,7 +69,7 @@
       success:function(results){
         for(var i in results){
           var cmt = results[i];
-          var v = new CommentView({model: cmt});
+          var v = new CommentView({model:cmt});
           v.render();
           $(".comments").append(v.$el);
           var user = cmt.get("user");
@@ -69,3 +93,5 @@
       return false;
     })
   });
+
+</script>
