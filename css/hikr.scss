@@ -1,9 +1,9 @@
-@sand: #F6F5F3;
-@sea1: #A1BBC5;
-@sea2: #738790;
-@sea3: #4A5A61;
-@theme: #A63626;
-@accent: #E95223;
+$sand: #F6F5F3;
+$sea1: #A1BBC5;
+$sea2: #738790;
+$sea3: #4A5A61;
+$theme: #A63626;
+$accent: #E95223;
 
 @import url(maki-sprite.css);
 
@@ -14,7 +14,7 @@ body, html{
   padding: 0;
   a{
     text-decoration: none;
-    color: @accent;
+    color: $accent;
   }
   a:hover{
     text-decoration: none;
@@ -151,7 +151,7 @@ header{
   #infobox{
     font-family: helvetica, Arial, sans-serif;
     padding: 10px 10px;
-    color: @sea3;
+    color: $sea3;
     font-weight: bold;
     line-height: 25px;
     margin: 10px 10px;
@@ -172,7 +172,7 @@ header{
         font-size: 10px;
         font-weight: 100;
         line-height: 9px;
-        border-bottom: 1px solid fadeout(@sea3, 50%);
+        border-bottom: 1px solid fadeout($sea3, 50%);
         text-transform: uppercase;
       }
       div{
@@ -218,8 +218,8 @@ header{
     left: 0;
     bottom: 0;
     width: 160px;
-    background-color: @sea3;
-    border-right: 1px solid @sea3;
+    background-color: $sea3;
+    border-right: 1px solid $sea3;
     box-shadow: 0 0 16px rgba(0,0,0,0.5);
     -webkit-transform: translate3d(-160px,0,0);
     -webkit-transition: -webkit-transform, 0.25s;
@@ -235,9 +235,9 @@ header{
         width: 100%;
         border-right: 4px solid transparent;
         &.active{
-          border-right: 4px solid @accent;
+          border-right: 4px solid $accent;
           a{
-            background-color: darken(@sea3,1);
+            background-color: darken($sea3,1);
             color: white;
             &:hover{
               background-color: black;
@@ -250,7 +250,7 @@ header{
           border-top: 1px solid rgba(255,255,255,0.2);
           padding-left: 15px;
           display: block;
-          color: @sea2;
+          color: $sea2;
           line-height: 32px;
           text-transform: uppercase;
           clear: both;
@@ -326,7 +326,7 @@ header{
     margin-top: 1.5em;
     padding-top: 1.5em;
     margin-bottom: 0.3em;
-    border-top: 1px solid fadeout(@sea3, 50%);
+    border-top: 1px solid fadeout($sea3, 50%);
   }
   h1 { font-size: 150%;  border-top: none; margin-top: 0.5em; }
   h2 { font-size: 120%; }
@@ -334,7 +334,7 @@ header{
   h4 { font-size: 100%; }
   h5 { font-size: 90%; }
   a{
-    color: @sea1;
+    color: $sea1;
   }
   ul{
     margin: 0 3em;
@@ -369,16 +369,20 @@ header{
 }
 
 .tabs{
-  margin-top: 15px;
+  margin-top: 5px;
   list-style: none none;
   z-index: 6;
   li{
     display: inline-block;
     a{
+      display: block;
+      min-width: 34px;
       font-size: 20px;
       padding: 6px;
+      padding-bottom: 10px;
       border-radius: 4px 4px 0 0;
       text-align: center;
+      border-top: 2px solid rgba(255,255,255,0.5);
     }
     a:hover{
       color: white;
@@ -387,6 +391,10 @@ header{
     &.comments a{ }
     &.weather a{  }
   }
+}
+
+.tab-content #article, .tabs li.article a{
+  color: #444; background: $sand;
 }
 
 .tab-content #elevation, .tabs li.elevation a{

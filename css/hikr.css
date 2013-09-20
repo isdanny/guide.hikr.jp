@@ -1,58 +1,367 @@
 @import url(maki-sprite.css);
-body,html{height:100%;background:#fff;margin:0;padding:0}body a,html a{text-decoration:none;color:#e95223}
-body a:hover,html a:hover{text-decoration:none}
-ul,menu,dir{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-start:0}
-.huge{font-size:64px}
-.maki-icon{color:#222;text-shadow:0 0 0 #fff,1px 0 0 #fff,0 1px 0 #fff,-1px 0 0 #fff,0 -1px 0 #fff;-webkit-text-stroke:1px #fff outside;display:block;font:13px/20px "Helvetica Neue",Arial,Helvetica,sans-serif;font-weight:bold;position:absolute;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:6;text-indent:26px}.maki-icon span{display:none}
-.hide-labels .maki-icon{overflow:hidden}
-.en .maki-icon span.lang-en{display:inline}
-.en .maki-icon span.lang-jp{display:none}
-.jp .maki-icon span.lang-jp{display:inline}
-.jp .maki-icon span.lang-en{display:none}
-header{position:absolute;width:100%;top:0;margin:0;background:rgba(255,255,255,0.9);border-bottom:1px solid #fff;box-shadow:0 0 5px rgba(0,0,0,0.5)}header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:baseline !important}
-.hero{background:url(../img/trees.jpg);min-height:400px;background-size:cover;background-position:center}.hero .row{position:relative;top:160px}.hero .row .on-photo{color:#fff;text-shadow:0 0 3px #000,0 0 3px #000,0 0 12px #000}
-.hero img{max-width:100%}
-.leaflet-control-language{font-size:15px;line-height:22px}
-.leaflet-control-language-interior:before{content:"あ"}
-.jp .leaflet-control-language-interior:before{content:"A"}
-header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:baseline !important}
-.header{width:100%;min-height:120px;position:relative;padding-top:40px}.header h1{margin:0 20px 0 20px}
-.info{min-height:80px;position:relative;display:table;width:auto;margin:0 20px}.info .col{width:50%;margin:0;float:left}
-.info #infobox{font-family:helvetica,Arial,sans-serif;padding:10px 10px;color:#4a5a61;font-weight:bold;line-height:25px;margin:10px 10px;display:table-row;width:100%}.info #infobox .infopoint{display:table-cell;padding-right:20px}.info #infobox .infopoint.level div{font-size:18px;line-height:45px}
-.info #infobox .infopoint label{margin-top:15px;display:block;font-size:10px;font-weight:100;line-height:9px;border-bottom:1px solid rgba(74,90,97,0.5);text-transform:uppercase}
-.info #infobox .infopoint div{font-size:33px;line-height:45px}
-.info #plot{display:table-row;height:120px;padding:0 10px;position:relative}.info #plot canvas{display:table-cell}
-.hikr-sidebar{position:fixed;top:0;left:0;z-index:8}.hikr-sidebar .logo-float{position:fixed;top:20px;left:20px;display:block;width:120px;height:80px;z-index:20;background:url(../img/hikr-jp-big.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
-.hikr-sidebar .hikr-menu{position:fixed;top:0;left:0;bottom:0;width:160px;background-color:#4a5a61;border-right:1px solid #4a5a61;box-shadow:0 0 16px rgba(0,0,0,0.5);-webkit-transform:translate3d(-160px, 0, 0);-webkit-transition:-webkit-transform,.25s}.hikr-sidebar .hikr-menu ul{margin-top:100px;list-style:none none;border-top:1px solid rgba(0,0,0,0.2);border-bottom:1px solid rgba(255,255,255,0.2)}.hikr-sidebar .hikr-menu ul li{position:relative;left:1px;width:100%;border-right:4px solid transparent}.hikr-sidebar .hikr-menu ul li.active{border-right:4px solid #e95223}.hikr-sidebar .hikr-menu ul li.active a{background-color:#48575e;color:#fff}.hikr-sidebar .hikr-menu ul li.active a:hover{background-color:#000;text-decoration:none}
-.hikr-sidebar .hikr-menu ul li a{border-bottom:1px solid rgba(0,0,0,0.2);border-top:1px solid rgba(255,255,255,0.2);padding-left:15px;display:block;color:#738790;line-height:32px;text-transform:uppercase;clear:both}.hikr-sidebar .hikr-menu ul li a:hover{color:#fff;background-color:rgba(0,0,0,0.5);text-decoration:none}
-.hikr-sidebar .hikr-menu ul li a .icon{display:block;float:left;width:25px;text-align:center}
-.hikr-sidebar:hover .hikr-menu{-webkit-transform:translate3d(0, 0, 0)}
-.map-on-left,.map-on-left>.column{height:100%}
-.map-on-left{width:100%;height:100%}.map-on-left #map{height:100%;position:fixed;top:0;left:0;right:600px}.map-on-left #map .coords{position:absolute;bottom:10px;left:10px;z-index:100}
-.map-on-left .map-column{height:100%}
-.map-on-left .article-content{padding:20px 20px}
-.navbar{margin-bottom:0}
-.infobox{float:right;width:200px}
-.article-container{position:absolute;right:0;padding:0 30px;width:600px}
-.article-content{font-weight:200;font-size:14px}.article-content h1,.article-content h2,.article-content h3,.article-content h4,.article-content h5{text-transform:uppercase;margin-top:1.5em;padding-top:1.5em;margin-bottom:.3em;border-top:1px solid rgba(74,90,97,0.5)}
-.article-content h1{font-size:150%;border-top:none;margin-top:.5em}
-.article-content h2{font-size:120%}
-.article-content h3{font-size:110%}
-.article-content h4{font-size:100%}
-.article-content h5{font-size:90%}
-.article-content a{color:#a1bbc5}
-.article-content ul{margin:0 3em;line-height:2;color:#222}
-.article-content p{line-height:1.8;color:#222;text-shadow:2px 2px 0 #fff !important;margin:1em 0}
-.article-content img{max-width:100%;border-radius:3px}
-.article-content h1,.article-content h2{color:#820;text-shadow:2px 2px 0 #fff !important}
-.comment{background:#09c;padding:5px;border-radius:3px;margin:5px;color:#fff;border-top:2px solid rgba(255,255,255,0.8);border-bottom:2px solid rgba(0,0,0,0.3)}
-.tabs{margin-top:15px;list-style:none none;z-index:6}.tabs li{display:inline-block}.tabs li a{font-size:20px;padding:6px;border-radius:4px 4px 0 0;text-align:center}
-.tabs li a:hover{color:#fff}
-.tabs li.article a{color:#000;background:#fff}
-.tab-content #elevation,.tabs li.elevation a{color:#fff;background:#27ae60}
-.tab-content #schedule,.tabs li.schedule a{color:#fff;background:#f39c12}
-.tab-content #comments,.tabs li.comments a{color:#fff;background:#e74c3c}
-.tab-content #weather,.tabs li.weather a{color:#fff;background:#2980b9}
-.tab-content{z-index:9;position:fixed;right:0;bottom:0;width:600px;top:40px}
-.tab-content>div{padding:5px;z-index:9;height:100%;overflow:scroll}
-.leaflet-control-language-interior{width:25px;height:25px;background-position:50% 50%;background-repeat:no-repeat;display:block;padding:3px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;cursor:pointer;text-align:center;background-color:#fff}
+body, html {
+  height: 100%;
+  background: white;
+  margin: 0;
+  padding: 0; }
+  body a, html a {
+    text-decoration: none;
+    color: #e95223; }
+  body a:hover, html a:hover {
+    text-decoration: none; }
+
+ul, menu, dir {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0; }
+
+.huge {
+  font-size: 64px; }
+
+.maki-icon {
+  color: #222;
+  text-shadow: 0 0 0px #fff, 1px 0 0px #fff, 0 1px 0px #fff, -1px 0 0px #fff, 0 -1px 0px #fff;
+  -webkit-text-stroke: 1px white outside;
+  display: block;
+  font: 13px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  z-index: 6;
+  text-indent: 26px; }
+  .maki-icon span {
+    display: none; }
+
+.hide-labels .maki-icon {
+  overflow: hidden; }
+
+.en .maki-icon span.lang-en {
+  display: inline; }
+.en .maki-icon span.lang-jp {
+  display: none; }
+
+.jp .maki-icon span.lang-jp {
+  display: inline; }
+.jp .maki-icon span.lang-en {
+  display: none; }
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
+  header .logo {
+    margin-top: -2px;
+    margin-right: 10px;
+    max-height: 50px;
+    vertical-align: baseline !important; }
+
+.hero {
+  background: url(../img/trees.jpg);
+  min-height: 400px;
+  background-size: cover;
+  background-position: center; }
+  .hero .row {
+    position: relative;
+    top: 160px; }
+    .hero .row .on-photo {
+      color: white;
+      text-shadow: 0px 0px 3px black, 0px 0px 3px black, 0px 0px 12px black; }
+  .hero img {
+    max-width: 100%; }
+
+.leaflet-control-language {
+  font-size: 15px;
+  line-height: 22px; }
+
+.leaflet-control-language-interior:before {
+  content: "あ"; }
+
+.jp .leaflet-control-language-interior:before {
+  content: "A"; }
+
+header .logo {
+  margin-top: -2px;
+  margin-right: 10px;
+  max-height: 50px;
+  vertical-align: baseline !important; }
+
+.header {
+  width: 100%;
+  min-height: 120px;
+  position: relative;
+  padding-top: 40px; }
+  .header h1 {
+    margin: 0 20px 0 20px; }
+
+.info {
+  min-height: 80px;
+  position: relative;
+  display: table;
+  width: auto;
+  margin: 0 20px; }
+  .info .col {
+    width: 50%;
+    margin: 0;
+    float: left; }
+  .info #infobox {
+    font-family: helvetica, Arial, sans-serif;
+    padding: 10px 10px;
+    color: #4a5a61;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 10px 10px;
+    display: table-row;
+    width: 100%; }
+    .info #infobox .infopoint {
+      display: table-cell;
+      padding-right: 20px; }
+      .info #infobox .infopoint.level div {
+        font-size: 18px;
+        line-height: 45px; }
+      .info #infobox .infopoint label {
+        margin-top: 15px;
+        display: block;
+        font-size: 10px;
+        font-weight: 100;
+        line-height: 9px;
+        border-bottom: 1px solid fadeout(#4a5a61, 50%);
+        text-transform: uppercase; }
+      .info #infobox .infopoint div {
+        font-size: 33px;
+        line-height: 45px; }
+  .info #plot {
+    display: table-row;
+    height: 120px;
+    padding: 0 10px;
+    position: relative; }
+    .info #plot canvas {
+      display: table-cell; }
+
+.hikr-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8; }
+  .hikr-sidebar .logo-float {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: block;
+    width: 120px;
+    height: 80px;
+    z-index: 20;
+    background: url(../img/hikr-jp-big.png) center center no-repeat;
+    background-size: 100%;
+    text-indent: 100%;
+    overflow: hidden; }
+  .hikr-sidebar .hikr-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 160px;
+    background-color: #4a5a61;
+    border-right: 1px solid #4a5a61;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    -webkit-transform: translate3d(-160px, 0, 0);
+    -webkit-transition: -webkit-transform, 0.25s; }
+    .hikr-sidebar .hikr-menu ul {
+      margin-top: 100px;
+      list-style: none none;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+      .hikr-sidebar .hikr-menu ul li {
+        position: relative;
+        left: 1px;
+        width: 100%;
+        border-right: 4px solid transparent; }
+        .hikr-sidebar .hikr-menu ul li.active {
+          border-right: 4px solid #e95223; }
+          .hikr-sidebar .hikr-menu ul li.active a {
+            background-color: #48575e;
+            color: white; }
+            .hikr-sidebar .hikr-menu ul li.active a:hover {
+              background-color: black;
+              text-decoration: none; }
+        .hikr-sidebar .hikr-menu ul li a {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          border-top: 1px solid rgba(255, 255, 255, 0.2);
+          padding-left: 15px;
+          display: block;
+          color: #738790;
+          line-height: 32px;
+          text-transform: uppercase;
+          clear: both; }
+          .hikr-sidebar .hikr-menu ul li a:hover {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-decoration: none; }
+          .hikr-sidebar .hikr-menu ul li a .icon {
+            display: block;
+            float: left;
+            width: 25px;
+            text-align: center; }
+  .hikr-sidebar:hover .hikr-menu {
+    -webkit-transform: translate3d(0, 0, 0); }
+
+.map-on-left, .map-on-left > .column {
+  height: 100%; }
+
+.map-on-left {
+  width: 100%;
+  height: 100%; }
+  .map-on-left #map {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 600px; }
+    .map-on-left #map .coords {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      z-index: 100; }
+  .map-on-left .map-column {
+    height: 100%; }
+  .map-on-left .article-content {
+    padding: 20px 20px; }
+
+.navbar {
+  margin-bottom: 0; }
+
+.infobox {
+  float: right;
+  width: 200px; }
+
+.article-container {
+  position: absolute;
+  right: 0;
+  padding: 0 30px;
+  width: 600px; }
+
+.article-content {
+  font-weight: 200;
+  font-size: 14px; }
+  .article-content h1, .article-content h2, .article-content h3, .article-content h4, .article-content h5 {
+    text-transform: uppercase;
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+    margin-bottom: 0.3em;
+    border-top: 1px solid fadeout(#4a5a61, 50%); }
+  .article-content h1 {
+    font-size: 150%;
+    border-top: none;
+    margin-top: 0.5em; }
+  .article-content h2 {
+    font-size: 120%; }
+  .article-content h3 {
+    font-size: 110%; }
+  .article-content h4 {
+    font-size: 100%; }
+  .article-content h5 {
+    font-size: 90%; }
+  .article-content a {
+    color: #a1bbc5; }
+  .article-content ul {
+    margin: 0 3em;
+    line-height: 2.0;
+    color: #222; }
+  .article-content p {
+    line-height: 1.8;
+    color: #222;
+    text-shadow: 2px 2px 0px white !important;
+    margin: 1em 0; }
+  .article-content img {
+    max-width: 100%;
+    border-radius: 3px; }
+  .article-content h1, .article-content h2 {
+    color: #820;
+    text-shadow: 2px 2px 0px white !important; }
+
+.comment {
+  background: #09c;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 5px;
+  color: white;
+  border-top: 2px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3); }
+
+.tabs {
+  margin-top: 5px;
+  list-style: none none;
+  z-index: 6; }
+  .tabs li {
+    display: inline-block; }
+    .tabs li a {
+      display: block;
+      min-width: 34px;
+      font-size: 20px;
+      padding: 6px;
+      padding-bottom: 10px;
+      border-radius: 4px 4px 0 0;
+      text-align: center;
+      border-top: 2px solid rgba(255, 255, 255, 0.5); }
+    .tabs li a:hover {
+      color: white; }
+    .tabs li.article a {
+      color: black;
+      background: white; }
+
+.tab-content #article, .tabs li.article a {
+  color: #444;
+  background: #f6f5f3; }
+
+.tab-content #elevation, .tabs li.elevation a {
+  color: white;
+  background: #27ae60; }
+
+.tab-content #schedule, .tabs li.schedule a {
+  color: white;
+  background: #f39c12; }
+
+.tab-content #comments, .tabs li.comments a {
+  color: white;
+  background: #e74c3c; }
+
+.tab-content #weather, .tabs li.weather a {
+  color: white;
+  background: #2980b9; }
+
+.tab-content {
+  z-index: 9;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 600px;
+  top: 40px; }
+
+.tab-content > div {
+  padding: 5px;
+  z-index: 9;
+  height: 100%;
+  overflow: scroll; }
+
+.leaflet-control-language-interior {
+  width: 25px;
+  height: 25px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 3px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #FFFFFF; }
