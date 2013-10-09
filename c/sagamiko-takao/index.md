@@ -8,10 +8,3 @@ author: hikr.jp
 license: CC-BY-NC
 info:
 ---
-
-**Access**:
-
-**Course**:
-
-**When to go**:
-
