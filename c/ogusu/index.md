@@ -5,5 +5,3 @@ map:
 title: Ogusu
 ---
 
-# Ogusu hike
-

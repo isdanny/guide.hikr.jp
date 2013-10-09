@@ -1,6 +1,6 @@
 ---
 title: Oomaru-yama
-map: 
+map:
  - oomaru.json
 layout: map-on-left
 ---

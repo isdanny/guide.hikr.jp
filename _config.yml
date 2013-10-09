@@ -1,5 +1,4 @@
-safe:        true
-auto:        true
+safe:        false
 baseurl:    /
 exclude:     _app, config.ru
 # url: http://guide.hikr.jp

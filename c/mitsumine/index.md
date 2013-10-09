@@ -1,5 +1,5 @@
 ---
-layout: map-on-left
+layout: course
 title: Mitsumine
 map: 
  - mitsumine.json
@@ -10,6 +10,8 @@ info:
   highest_point: 934.6
   lowest_point: 180
   walking_time: 4.5h  
+summary: >
+  An interesting one-day course with some challenging climbs. Expect to spend quality time with the natural environment. 
 ---
 
 ## Access ##

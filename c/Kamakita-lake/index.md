@@ -1,21 +1,23 @@
 ---
-layout: map-on-left
+layout: course
 title: Kamakita lake hike
 category: Chichibu
 center: [ 139.2893886566162, 35.91710290351792 ]
-map: 
+map:
  - kamakita-lake.json
 copyright: CC-BY-NC
 author: hikr.jp
-info: 
+info:
   level: intermediate
   walking_time: 4.5h
   highest_point: 375m
-  lowest_point: 
+  lowest_point:
+summary: >
+  A day hike with views of a lake, two waterfalls and a climb up Monomi mountain.
 ---
 
 ## Access ##
-Higashiagano station is on the Seibu line. 
+Higashiagano station is on the Seibu line.
 
 ## Points of Interest ##
 
@@ -26,7 +28,7 @@ Higashiagano station is on the Seibu line.
  - Gojo waterfall (五常の滝)
 
 ## Course ##
-From Higashiagano station follow signs to Yugate (ユガテ). Along the road be careful not to miss the small pole-shaped sign where you should turn right. There will be a lot of concrete, but be patient. 
+From Higashiagano station follow signs to Yugate (ユガテ). Along the road be careful not to miss the small pole-shaped sign where you should turn right. There will be a lot of concrete, but be patient.
 
 Yugate (ユガテ) is a patch of sunflowers. A very good place for a lunch break. There's a small toilet.
 
@@ -36,7 +38,7 @@ From Yugate, it's a nice path to Kamakita lake (鎌北胡). Before you reach the
 
 When you reach the Lakeview hotel, keep walking to the parking lot. There's a toilet and a pleasant little restaurant there. Cross the parking lot, climb the staircase and follow signs to the waterfall. The forest path goes up and then down. After you cross the road, there'll be a staircase leading to Shukuya waterfall (宿谷の滝). There will be a small place with benches. Head left from there.
 
-Shukuya waterfall is gorgeous and a great place for children to play. Families come there by car, via the nearby road. 
+Shukuya waterfall is gorgeous and a great place for children to play. Families come there by car, via the nearby road.
 
 ![Shukuya waterfall](DSC01531.JPG)
 
@@ -46,6 +48,6 @@ From the top, signs will point at Musashi Yokote station (武蔵横手駅). When
 
 ![Gojo waterfall](DSC01565.JPG)
 
-Gojo waterfall is smaller, but nonetheless picturesque. You can take the hiking path along the stream, it will take you back to the paved road. The road will take you to Musashi Yokote station. 
+Gojo waterfall is smaller, but nonetheless picturesque. You can take the hiking path along the stream, it will take you back to the paved road. The road will take you to Musashi Yokote station.
 
 One final attraction are the goats residing next to Musashi Yokote station.
