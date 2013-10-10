@@ -15,8 +15,8 @@ Ikusabata Station on the Oume Line
 ## Points of Interest:
  - Mt. Takamizu （高水山）
  - Mt. Iwatakeishi（岩茸石山
- - Mt. Soudake　（惣岳山）
- - Tama River　（多摩川）
+ - Mt. Sougaku（惣岳山）
+ - Tama River（多摩川）
 
 ## Course
 
