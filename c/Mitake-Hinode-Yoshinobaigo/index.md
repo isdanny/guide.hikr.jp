@@ -1,5 +1,5 @@
 ---
-layout: map-on-left
+layout: course
 title: Mitake - Hinode - Yoshino baigo
 center:  [139.14969921112058, 35.7830062563083]
 map: 
@@ -14,7 +14,6 @@ info:
   lowest_point: 239m
 tags: [flowers, onsen]
 area: Okutama
-
 ---
 
 ## Access ##

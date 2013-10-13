@@ -1,20 +1,19 @@
 ---
-layout: map-on-left
+layout: course
 title: Nokogiri-yama (Chiba)
 center: [139.822284579277, 35.16833575377093]
 map: 
  - nokogiri.json
 license: CC-BY-NC
 author: hikr.jp
+area: Chiba
 info:
   author: Leszek
   level: 3
 tags: [cliff]
+featured: true
+header_image: http://www.flickr.com/photos/jambodave/6663141697
+header_class: vertical
+summary: >
+  An intermediate course offering two giant Buddha statues and an amazing view of Tokyo bay from a cliff.
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

@@ -22,7 +22,15 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .info #infobox .infopoint div{font-size:33px;line-height:45px}
 .info #plot{display:table-row;height:120px;padding:0 10px;position:relative}.info #plot canvas{display:table-cell}
 .left-side{position:fixed;top:0;bottom:0;left:0;width:20%;min-width:300px;background:url('/img/mountain-hi-res.JPG');background-size:auto 100%;background-position:center center}
-.right-side{position:fixed;top:0;bottom:0;right:0;width:80%;background:#fff;box-shadow:0 0 16px rgba(0,0,0,0.5)}.right-side .container{position:fixed;left:0;top:0;bottom:0;width:80%;min-width:800px}
+h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
+.right-side{position:fixed;top:0;bottom:0;right:0;width:80%;background:#fff;box-shadow:0 0 16px rgba(0,0,0,0.5);overflow:scroll}.right-side .container{position:absolute;left:0;top:0;width:80%;min-width:800px}.right-side .container img{width:100%}
+.right-side .container .section{margin:16px;margin-top:0;padding-bottom:16px}
+.summary-box{padding-top:16px;padding-bottom:16px;border-bottom:1px solid #ccc}.summary-box .header-image{width:100%}
+.summary-box .headings{width:49%;float:left;margin-right:1%}
+.summary-box .summary{width:49%;float:left;margin-left:1%}
+.summary-box.vertical .header-image{width:47% !important;margin-right:3%;float:left;clear:left}
+.summary-box.vertical .headings{width:48%;margin-left:1%}
+.summary-box.vertical .summary{float:left;margin-top:16px;width:48%;margin-left:1%}
 .hikr-sidebar{position:fixed;top:0;left:0;z-index:8}.hikr-sidebar .logo-float{position:fixed;top:20px;left:20px;display:block;width:120px;height:80px;z-index:20;background:url(../img/hikr.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
 .hikr-sidebar .hikr-menu{position:fixed;top:0;left:0;bottom:0;width:160px;background-color:rgba(255,255,255,0.9);border-right:1px solid #fff;box-shadow:0 0 16px rgba(0,0,0,0.5);-webkit-transform:translate3d(-190px, 0, 0);-webkit-transition:-webkit-transform,.25s}.hikr-sidebar .hikr-menu ul{margin-top:100px;list-style:none none;border-bottom:1px solid rgba(0,0,0,0.1);border-top:1px solid rgba(255,255,255,0.9)}.hikr-sidebar .hikr-menu ul li{position:relative;left:1px;width:100%;border-right:4px solid transparent}.hikr-sidebar .hikr-menu ul li.active{border-right:4px solid #e95223}.hikr-sidebar .hikr-menu ul li.active a{background-color:#fff;color:#000}
 .hikr-sidebar .hikr-menu ul li.active a:hover{background-color:#fff}
@@ -32,12 +40,11 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .map-on-left,.map-on-left>.column{height:100%}
 .map-on-left{width:100%;height:100%}.map-on-left #map{height:100%;position:fixed;top:0;left:0;right:600px}.map-on-left #map .coords{position:absolute;bottom:10px;left:10px;z-index:100}
 .map-on-left .map-column{height:100%}
-.map-on-left .summary{background:#fff;padding:10px;margin:20px;line-height:200%}
 .map-on-left .article{padding:20px 20px}
 .navbar{margin-bottom:0}
 .infobox{float:right;width:200px}
-.article-container{position:absolute;right:0;padding:0 30px;width:600px}
-.article{font-weight:200;font-size:14px}.article h1,.article h2,.article h3,.article h4,.article h5{text-transform:uppercase;margin-top:1.5em;padding-top:1.5em;margin-bottom:.3em;border-top:1px solid rgba(74,90,97,0.5)}
+.article-container{position:absolute;right:0;padding:0 16px;width:600px}.article-container img{max-width:100%;border-radius:3px}
+.article{font-weight:200;font-size:14px}.article h1,.article h2,.article h3,.article h4,.article h5{text-transform:uppercase;margin-top:1.5em;padding-top:1.5em;margin-bottom:.3em}
 .article h1{font-size:150%}
 .article h2{font-size:120%}
 .article h3{font-size:110%}
@@ -46,6 +53,5 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .article a{color:#a1bbc5}
 .article ul{margin:0 3em;line-height:2;color:#222}
 .article p{line-height:1.8;color:#222;text-shadow:2px 2px 0 #fff !important;margin:1em 0}
-.article img{max-width:100%;border-radius:3px}
 .article h1,.article h2{color:#820;text-shadow:2px 2px 0 #fff !important}
 .leaflet-control-language-interior{width:25px;height:25px;background-position:50% 50%;background-repeat:no-repeat;display:block;padding:3px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;cursor:pointer;text-align:center;background-color:#fff}

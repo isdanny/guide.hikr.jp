@@ -1,12 +1,12 @@
 ---
 layout: course
 title: Kamakita lake hike
-category: Chichibu
 center: [ 139.2893886566162, 35.91710290351792 ]
 map:
  - kamakita-lake.json
 copyright: CC-BY-NC
 author: hikr.jp
+area: Chichibu
 info:
   level: intermediate
   walking_time: 4.5h

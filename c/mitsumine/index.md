@@ -5,11 +5,17 @@ map:
  - mitsumine.json
 author: hikr.jp
 license: CC-BY-NC
+area: Tanzawa
 info:
   level: intermediate
   highest_point: 934.6
   lowest_point: 180
-  walking_time: 4.5h  
+  walking_time: 4.5h
+categories:
+  - foo
+  - bar
+featured: true
+header_image: http://www.flickr.com/photos/jambodave/10033846124/
 summary: >
   An interesting one-day course with some challenging climbs. Expect to spend quality time with the natural environment. 
 ---

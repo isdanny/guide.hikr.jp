@@ -1,11 +1,12 @@
 ---
-layout: map-on-left
+layout: course
 title: Tenran - Tonosu - Kahara river
 center: [ 139.30827140808105, 35.861822036974395]
 map: 
  - tenran-tonosu.json
 author: JAMBO International
 license: CC-BY-NC
+area: Chichibu
 info:
   level: beginner
   walking_time: 3.5h

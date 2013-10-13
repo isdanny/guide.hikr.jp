@@ -22,6 +22,18 @@ title: Hiking with friends
   </div>
   <div class="right-side">
     <div class="container">
+      <div class="section">
+        {% for page in site.pages %}
+          {% if page.featured %}
+            {% include summary.html %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% for area in site.areas %}
+        {% for page in area %}
+          {{ page }}<br>
+        {% endfor %}
+      {% endfor %}
     </div>
   </div>
 </div>

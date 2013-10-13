@@ -199,6 +199,13 @@ header{
   background-position: center center;
 }
 
+h6{
+  color: @accent;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 90%;
+}
+
 .right-side{
   position: fixed;
   top:0;
@@ -207,13 +214,58 @@ header{
   width: 80%;
   background: white;
   box-shadow: 0 0 16px rgba(0,0,0,0.5);
+  overflow: scroll;
   .container{
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
-    bottom: 0;
     width: 80%;
     min-width: 800px;
+    img{
+      width: 100%;
+    }
+    .section{
+      margin: 16px;
+      margin-top: 0;
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.summary-box{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+  .header-image{
+    width: 100%;
+  }
+  .headings{
+    width: 49%;
+    float: left;
+    margin-right: 1%;
+  }
+  .summary{
+    width: 49%;
+    float: left;
+    margin-left: 1%;
+  }
+  &.vertical{
+    .header-image{
+      width: 47%!important;
+      margin-right: 3%;
+      float: left;
+      clear: left;
+    }
+    .headings{
+      width: 48%;
+      margin-left: 1%;
+    }
+    .summary{
+      float: left;
+      margin-top: 16px;
+      width: 48%;
+      margin-left: 1%;
+    }
   }
 }
 
@@ -321,12 +373,6 @@ header{
   .map-column{
     height: 100%;
   }
-  .summary{
-    background: #fff;
-    padding: 10px;
-    margin: 20px;
-    line-height: 200%;
-  }
   .article{
     padding: 20px 20px;
   }
@@ -343,8 +389,12 @@ header{
 .article-container{
   position: absolute;
   right: 0;
-  padding: 0 30px;
+  padding: 0 16px;
   width: 600px;
+  img{
+    max-width: 100%;
+    border-radius: 3px;
+  }
 }
 
 .article{
@@ -355,7 +405,7 @@ header{
     margin-top: 1.5em;
     padding-top: 1.5em;
     margin-bottom: 0.3em;
-    border-top: 1px solid fadeout(@sea3, 50%);
+    // border-top: 1px solid fadeout(@sea3, 50%);
   }
   h1 { font-size: 150%; }
   h2 { font-size: 120%; }
@@ -375,10 +425,6 @@ header{
     color: #222;
     text-shadow: 2px 2px 0px #fff!important;
     margin: 1em 0;
-  }
-  img{
-    max-width: 100%;
-    border-radius: 3px;
   }
   h1, h2{
     color: #820;

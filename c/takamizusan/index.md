@@ -5,10 +5,10 @@ map:
  - takamizu.json
 center: [139.20249939, 35.817619324]
 author: David
+area: Okutama
 summary: |
   A lower intermediate-level course with great views of the Okutama area. Recommended for late summer or early fall. 
 ---
-
 ## Starting Point 
 Ikusabata Station on the Oume Line
 
