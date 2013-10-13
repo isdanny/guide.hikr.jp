@@ -8,7 +8,13 @@ layout: course
   <a href="{{p.url}}">{{ p.title }}</a><br>
 {% endfor %}
 
-{% for a in site.areas %}
- area: {{ a }}
+{{site.areas}}
+
+{% for a in site.area_names %}
+    area: {{ a }}<br>
 {% endfor %}
+
+
+{{site.categories}}
+
 {{content}}

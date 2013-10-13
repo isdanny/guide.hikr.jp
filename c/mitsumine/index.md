@@ -11,9 +11,6 @@ info:
   highest_point: 934.6
   lowest_point: 180
   walking_time: 4.5h
-categories:
-  - foo
-  - bar
 featured: true
 header_image: http://www.flickr.com/photos/jambodave/10033846124/
 summary: >

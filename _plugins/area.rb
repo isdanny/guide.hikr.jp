@@ -10,10 +10,10 @@ module Jekyll
         self.pages.each do |page|
           if page.data.key? "area"
             area = page.data["area"]
-            if ! self.areas.key? area
+            if ! self.areas.has_key? area
               self.areas[area] = []
             end
-            self.areas[area].push(page)
+            self.areas[area] << page
           end
         end
       end
@@ -22,12 +22,11 @@ module Jekyll
 
     alias orig_site_payload site_payload
     def site_payload
-      get_areas()
-      h = orig_site_payload
-      payload = h["site"]
-      payload['areas'] = self.areas 
-      h["site"] = payload
-      h
+      areas = get_areas()
+      payload = orig_site_payload
+      payload['site']['area_names'] = areas.keys
+      payload['site']['areas'] = areas
+      payload
     end
   end
 
@@ -77,6 +76,7 @@ module Jekyll
 
     def generate(site)
       site.get_areas()
+      p site.areas.keys
       site.areas.keys.each do | area |
         site.pages << AreaPage.new(site, site.source, "area", area, site.areas[area])
         site.pages << AreaMap.new(site, site.source, "data/area", area, site.areas[area])
