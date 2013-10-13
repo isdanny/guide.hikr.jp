@@ -1,2 +1,3 @@
-require './_app/hikr.rb'
-run Sinatra::Application
+require "rack/jekyll"
+
+run Rack::Jekyll.new

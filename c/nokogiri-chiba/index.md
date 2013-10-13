@@ -11,7 +11,7 @@ info:
   author: Leszek
   level: 3
 tags: [cliff]
-featured: true
+featured: false
 header_image: http://www.flickr.com/photos/jambodave/6663141697
 header_class: vertical
 summary: >

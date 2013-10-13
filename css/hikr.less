@@ -136,8 +136,8 @@ header{
   min-height: 80px;
   position: relative;
   display: table;
-  width: auto;
-  margin: 0 20px;
+  width: 100%;
+  margin: 16px 0;
   .col{
     width: 50%;
     margin: 0;
@@ -197,6 +197,14 @@ header{
   background: url('/img/mountain-hi-res.JPG');
   background-size: auto 100%;
   background-position: center center;
+  .motto{
+    position: absolute;
+    bottom: 0;
+    margin: 16px;
+    font-size: 24px;
+    color: white;
+    text-shadow: 0 0 5px black;
+  }
 }
 
 h6{
@@ -238,6 +246,14 @@ h6{
   border-bottom: 1px solid #ccc;
   .header-image{
     width: 100%;
+    img{
+      // -webkit-filter: hue-rotate(330deg) sepia(0.1);
+    }
+    a:hover{
+      img{
+        -webkit-filter: none;
+      }
+    }
   }
   .headings{
     width: 49%;
@@ -373,9 +389,6 @@ h6{
   .map-column{
     height: 100%;
   }
-  .article{
-    padding: 20px 20px;
-  }
 }
 .navbar{
   margin-bottom: 0;
@@ -391,9 +404,10 @@ h6{
   right: 0;
   padding: 0 16px;
   width: 600px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  min-height: 100%;
   img{
     max-width: 100%;
-    border-radius: 3px;
   }
 }
 
@@ -402,8 +416,8 @@ h6{
   font-size: 14px;
   h1, h2, h3, h4, h5{
     text-transform: uppercase;
-    margin-top: 1.5em;
-    padding-top: 1.5em;
+    margin-top: 0.5em;
+    padding-top: 1.0em;
     margin-bottom: 0.3em;
     // border-top: 1px solid fadeout(@sea3, 50%);
   }
@@ -427,7 +441,7 @@ h6{
     margin: 1em 0;
   }
   h1, h2{
-    color: #820;
+    color: @accent;
     text-shadow: 2px 2px 0px #fff!important;
   }
 }

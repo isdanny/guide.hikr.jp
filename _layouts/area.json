@@ -1,0 +1,20 @@
+---
+layout: nil
+---
+{
+  "type": "FeatureCollection",
+  "features": [{% for p in page.courses %} {% if p.center %}
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='{{page.url}}'>{{page.title}}</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        {{p.center[0]}},
+        {{p.center[1]}}
+        ]
+      }
+    }, {% endif %} {% endfor %} {}
+  ]
+}

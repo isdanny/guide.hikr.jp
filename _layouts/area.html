@@ -1,6 +1,14 @@
 ---
-layout: default
+layout: course
 ---
 
 <h1>{{ page.area }}</h1>
+
+{% for p in page.courses %}
+  <a href="{{p.url}}">{{ p.title }}</a><br>
+{% endfor %}
+
+{% for a in site.areas %}
+ area: {{ a }}
+{% endfor %}
 {{content}}

@@ -2,11 +2,16 @@
 layout: default
 ---
 <div class="hikr-sidebar">
-  <a href="{{site.url}}" class="logo-float">
+  <a href="/" class="logo-float">
     hikr.jp
   </a>
   <div class="hikr-menu">
     <br>
+    <ul>
+      {% for area in site.areas.keys %}
+        <li>{{area}}</li>
+      {% endfor %}
+    </ul>
     <ul>
       <li class="active"><a href="/guide"><span class="icon map-marker"></span>&nbsp;Guide</a></li>
       <li><a href="/schedule"><span class="icon calendar"></span>&nbsp;Schedule</a></li>
