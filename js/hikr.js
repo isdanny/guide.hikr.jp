@@ -139,6 +139,7 @@ L.control.language = function (options) {
  Hikr.prototype.loadMaps = function(maps, callback){
     callback = callback || function(){};
     this.maps = maps;
+    this.maps.push("index.json");
     var map = this.map;
     var app = this;
     for(var i in this.maps){

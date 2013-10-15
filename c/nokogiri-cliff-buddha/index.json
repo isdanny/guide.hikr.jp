@@ -1192,7 +1192,10 @@
       "properties": {
         "name": "hama-kanaya-station",
         "type": "station",
-        "label": "浜金谷駅"
+        "label": {
+          "jp":"浜金谷駅",
+          "en":"Hamakanaya"
+        }
       },
       "geometry": {
         "type": "Point",
@@ -1208,7 +1211,10 @@
       "properties": {
         "name": "hota-station",
         "type": "station",
-        "label": "保田駅"
+        "label": {
+          "jp":"保田駅",
+          "en":"Hota"
+        }
       },
       "geometry": {
         "type": "Point",

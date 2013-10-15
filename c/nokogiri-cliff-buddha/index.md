@@ -2,8 +2,6 @@
 layout: course
 title: Nokogiri-yama cliff and Giant Buddha
 center: [139.822284579277, 35.16833575377093]
-map: 
- - nokogiri.json
 license: CC-BY-NC
 author: hikr.jp
 area: Chiba
@@ -37,19 +35,26 @@ From Hamanakanya station (浜金谷駅) head left following signs to Nokogiriyam
 
 The path takes you to a fork, where you have a choice to either to the top of Nokogiriyama (left) or to the stone quarry (right). The top is optional if you want to save time. The top offers a 360 degree view of Tokyo bay and Boso peninsula.
 
+
 The quarry is full of various interesting caves, but mostly amazes with the view of the mountain shaved into a vertical wall: worth seing up close. There are some benches to take a break.
 
 Carry on until a fork leading either down to Hamakanaya station (that's the hiking course you were tempted to take) or to Nihonji (日本時), sometimes pronounced Nihondera. Go to Nihonji.
 
+{{ "http://www.flickr.com/photos/jambodave/10270896826/" | flickr_image }}
+
 You'll find a ticket booth selling maps and tickets for ¥600 (adults). Just after the ticket booth, there's a giant Kwannon sculpture carved in the vertical wall. Worth stopping for a photo and to ponder the majesty.
 
 Pass the carved-out gateway and climb up. Follow signs to the viewpoint (not the ropeway). The viewpoint is a rare chance to feel the thrill of looking down from the edge of a cliff and around to see Tokyo Bay and, if weather permits, Mount Fuji. There are several interesting spots in that area so it's a good place to spend some time.
+
+{{ "http://www.flickr.com/photos/jambodave/10270854086/" | flickr_image }}
 
 Watch out for kites: hawk-like birds that like to swooop down from the sky and snatch tourists' food. 
 
 From the viewpoint area, follow signs pointing to the 1500 figues, the Giant Buddha (大仏) and Nihonji. 
 
 The Buddha is the largest such statue in Japan, measuring 31m. You can see signs of repairs after it was broken in an earthquake. 
+
+{{ "http://www.flickr.com/photos/jambodave/10270815106/" | flickr_image }}
 
 There's a toilet and some vending machines if you're in need of refreshment. If you're in a rush, or tired, you can use the ropeway. However, it will be only descent from there.
 
