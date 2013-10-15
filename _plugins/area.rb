@@ -20,10 +20,11 @@ module Jekyll
       self.areas
     end
 
-    alias orig_site_payload site_payload
-    def site_payload
+    old_payload = self.instance_method(:site_payload)
+
+    define_method(:site_payload) do
       areas = get_areas()
-      payload = orig_site_payload
+      payload = old_payload.bind(self).call
       payload['site']['area_names'] = areas.keys
       payload['site']['areas'] = areas
       payload

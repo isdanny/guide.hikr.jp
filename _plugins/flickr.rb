@@ -8,12 +8,10 @@ Fleakr.auth_token    = ""
 CACHED_IMAGES = {}
 
 module Flickr
-  def flickr_image(url)
-    "<img alt='#{image_object(url).title}' src='#{image_object(url).large.url}'>"
-  end
-
-  def flickr_medium_image(url)
-    "<img alt='#{image_object(url).title}' src='#{image_object(url).medium.url}'>"
+  def flickr_image(url,size="large")
+    img = image_object(url)
+    imgfile = img.send(size)
+    "<div class='flickr-photo'><a target='_blank' href='#{img.url}'><img title='#{img.title}' alt='#{img.title}' src='#{imgfile.url}'></a><div class='caption'>Image by <a target='_blank' href='#{img.owner.photos_url}'>#{img.owner.name||img.owner.username}</a> </div></div>"
   end
 
   private

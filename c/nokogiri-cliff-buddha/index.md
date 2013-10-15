@@ -31,6 +31,7 @@ Hamakanaya station (浜金谷駅) is accessible from Chiba station via the Uchib
 
 ### Course
 
+
 From Hamanakanya station (浜金谷駅) head left following signs to Nokogiriyama (鋸山). Take care NOT to take the staircase marked Nokogiriyama Hiking Course (鋸山ハイキングコース) though, as you'll miss some attractions on the way. When you reach it, head left instead, on the road and get on the course that starts a bit later.
 
 The path takes you to a fork, where you have a choice to either to the top of Nokogiriyama (left) or to the stone quarry (right). The top is optional if you want to save time. The top offers a 360 degree view of Tokyo bay and Boso peninsula.
