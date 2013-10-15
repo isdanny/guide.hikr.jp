@@ -4,22 +4,49 @@
 (function(){
 
 
-var Hikr = function(maps, container){
+var Hikr = function(container){
+
+L.Control.Language = L.Control.extend({
+    options: {
+        position: 'topright',
+        click: function(){}
+    },
+
+    onAdd: function (map) {
+      var controlDiv = L.DomUtil.create('div', 'leaflet-control-language leaflet-control leaflet-bar');
+      L.DomEvent
+        .addListener(controlDiv, 'click', L.DomEvent.stopPropagation)
+        .addListener(controlDiv, 'click', L.DomEvent.preventDefault)
+        .addListener(controlDiv, 'dblclick', L.DomEvent.preventDefault)
+        .addListener(controlDiv, 'dblclick', L.DomEvent.stopPropagation)
+        .addListener(controlDiv, 'click', this.options.click );
+      var controlUI = L.DomUtil.create('a', 'leaflet-control-language-interior', controlDiv);
+      controlUI.href="#";
+      controlUI.title = 'Language';
+      return controlDiv;
+    }
+});
+
+L.control.language = function (options) {
+    return new L.Control.Language(options);
+};
 
       //http://a.tiles.mapbox.com/v3/hikr.map-bcefinb2/page.html
       //'http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png
+    //      http://{S}tile.stamen.com/", layer, "/{Z}/{X}/{Y}
   this.lineStyle = {
     "color": "#ff4400",
     "weight": 4,
     "opacity": 0.7
   };
 
-  this.maps = maps;
-
   this.container = $(container);
   this.map = L.map(container).setView([ 35.358, 138.731], 6);
+
   var map = this.map;
+
   var self = this;
+  this.fg = new L.FeatureGroup([]);
   map.on("zoomend", function(){
     self.adjustInterface();
   }).on("click", function(e){
@@ -28,25 +55,58 @@ var Hikr = function(maps, container){
     var lng = Math.round(center.lng*1000000)/1000000.0;
     console.log(lng+","+lat);
   });
+  //
   var bg = L.tileLayer('http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://mapbox.com">MapBox</a>, Photos from Panoramio are copyright of their respective authors.',
       maxZoom: 16
   });
   map.zoomControl.setPosition("topright");
+  var languageControl = new L.Control.Language({ click: function(){
+    var c = $("#map");
+    if(c.hasClass("jp")) c.removeClass("jp");
+    else c.addClass("jp");
+    if(c.hasClass("en")) c.removeClass("en");
+    else c.addClass("en");
+    return false;
+  }});
+  this.map.addControl(languageControl);
    // var panoramio = new L.Panoramio({maxLoad: 50, maxTotal: 250});
   map.addLayer(bg);
+  map.addLayer(this.fg);
   // map.addLayer(panoramio);
   var layers = { "Map": bg };
-  // var overlays = { "Photos": panoramio };
-  // var control_layers = new L.Control.Layers(layers, overlays).addTo(map);
-
-  this.loadMaps(maps);
 
 };
 
- Hikr.prototype.loadMaps = function(){
 
-  var makeMarker = function(feature, latlng){
+  Hikr.onEachFeature = function(feature, latlng){
+      function d(a,b){
+        return Math.sqrt((a[0]-b[0])*(a[0]-b[0])+(a[1]-b[1])*(a[1]-b[1]));
+      }
+
+      if(feature.geometry.type!="Point"){
+        var plot = [];
+        var dist = 0;
+        var previous = feature.geometry.coordinates[0];
+
+        for(var i in feature.geometry.coordinates){
+          var dd = d(previous, feature.geometry.coordinates[i]);
+          if(dd>0.0005 && feature.geometry.coordinates[i][2]<4000){
+            dist += dd;
+            plot.push([dist,feature.geometry.coordinates[i][2]]);
+            previous = feature.geometry.coordinates[i];
+          }
+        }
+        try{
+          $.plot("#plot",
+            [{ data:plot, lines:{fillColor: "#4A5A61", show:true, fill:true}} ],
+            {colors: ["#4A5A61"], grid:{show:true, markings: { xaxis: false }, borderWidth: 0}, yaxis: { max: 1500} }
+            );
+        }catch(e){}
+      }
+    };
+
+  Hikr.makeMarker = function(feature, latlng){
       var label = '';
 
       if(feature.properties.hasOwnProperty("label")){
@@ -75,56 +135,72 @@ var Hikr = function(maps, container){
       return marker;
   };
 
-    var onEachFeature = function(feature, latlng){
-      function d(a,b){
-        return Math.sqrt((a[0]-b[0])*(a[0]-b[0])+(a[1]-b[1])*(a[1]-b[1]));
-      }
-      if(feature.geometry.type!="Point"){
-        var plot = [];
-        var dist = 0;
-        var previous = feature.geometry.coordinates[0];
 
-        for(var i in feature.geometry.coordinates){
-          var dd = d(previous, feature.geometry.coordinates[i]);
-          if(dd>0.0005 && feature.geometry.coordinates[i][2]<4000){
-            dist += dd;
-            plot.push([dist,feature.geometry.coordinates[i][2]]);
-            previous = feature.geometry.coordinates[i];
-          }
-        }
-        $.plot("#plot",
-            [{ data:plot, lines:{color: "red", show:true, fill:true}} ],
-            {colors: ["#4A5A61"], grid:{show:false}, yaxis: { max: 1500} });
-      }
-    };
-
-
-
+ Hikr.prototype.loadMaps = function(maps, callback){
+    callback = callback || function(){};
+    this.maps = maps;
     var map = this.map;
     var app = this;
     for(var i in this.maps){
       var url = this.maps[i];
       if(url) $.get(url,function(data){
-        var geojsonFeature = data;
-        // L.geoJson(geojsonFeature).addTo(map);
+        console.log(data);
         var myLayer = L.geoJson(data,{
           style: app.lineStyle,
-          pointToLayer: makeMarker,
-          onEachFeature: onEachFeature
-        }).addTo(map);
+          pointToLayer: Hikr.makeMarker,
+          onEachFeature: Hikr.onEachFeature
+        });
+        for(var i in myLayer.getLayers()){
+          myLayer.getLayers()[i].addTo(app.fg);
+        }
         // myLayer.addData(geojsonFeature).setStyle(myStyle);
         var bounds = myLayer.getBounds();
         map.fitBounds(bounds);
-      } ); // get
+        callback.call(app);
+      }); // get
     }// for
- }
+ };
 
- Hikr.prototype.adjustInterface = function(){
-    var zoom = this.map.getZoom();
-    if(zoom<13) this.container.addClass("hide-labels");
-    else this.container.removeClass("hide-labels");
-  };
+Hikr.prototype.adjustInterface = function(){
+  var zoom = this.map.getZoom();
+  if(zoom<13) this.container.addClass("hide-labels");
+  else this.container.removeClass("hide-labels");
+};
 
-  window.Hikr = Hikr;
+Hikr.prototype.makeEditable = function(){
+  var app = this;
+  var drawControl = new L.Control.Draw({
+      edit: {
+          featureGroup: this.fg
+      },
+      position: "topright",
+      draw:{
+        rectangle: false,
+        polygon: false,
+        circle: false,
+        polyline:{
+          shapeOptions: app.lineStyle
+        },
+        marker:{
+          icon: L.divIcon({
+            className:"maki-icon marker",
+            html:"",
+            iconSize: [26,24]
+          })
+        }
+      }
+  });
+  this.map.on('draw:created', function (e) {
+    var type = e.layerType,
+        layer = e.layer;
+    if (type === 'marker') {
+    }
+    // Do whatever else you need to. (save to db, add to map etc)
+    app.fg.addLayer(layer);
+  });
+  this.map.addControl(drawControl);
+};
 
-})()
+window.Hikr = Hikr;
+
+})();

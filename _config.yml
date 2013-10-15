@@ -1,7 +1,6 @@
-safe:        true
-auto:        true
+safe:        false
 baseurl:    /
-exclude:     _app, config.ru
+exclude:     [_app, config.ru]
 # url: http://guide.hikr.jp
 destination: ./_site
 plugins:     ./_plugins
@@ -10,6 +9,8 @@ lsi:         false
 pygments:    true
 markdown:    redcarpet
 permalink:   /:year-:month-:day/:title.html
+flickr:
+  api_key: 06a5a0dfe07d9d2d0af5ae6fe74bad03
 categories:
  - Chichibu
  - Okutama

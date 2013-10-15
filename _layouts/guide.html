@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="hikr-sidebar">
+  <a href="/" class="logo-float">
+    hikr.jp
+  </a>
+  <div class="hikr-menu">
+    <br>
+    <ul>
+      {% for a in site.areas.keys %}
+        <li>{{a}}</li>
+      {% endfor %}
+    </ul>
+    <ul>
+      <li class="active"><a href="/guide"><span class="icon map-marker"></span>&nbsp;Guide</a></li>
+      <li><a href="/schedule"><span class="icon calendar"></span>&nbsp;Schedule</a></li>
+      <li><a href="/groups"><span class="icon group"></span>&nbsp;Groups</a></li>
+    </ul>
+  </div>
+</div>
+{{ content }}

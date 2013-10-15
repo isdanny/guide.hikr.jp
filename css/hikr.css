@@ -1,29 +1,50 @@
 @import url(maki-sprite.css);
 body,html{height:100%;background:#fff;margin:0;padding:0}
+ul,menu,dir{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-start:0}
 .huge{font-size:64px}
 .maki-icon{color:#222;text-shadow:0 0 0 #fff,1px 0 0 #fff,0 1px 0 #fff,-1px 0 0 #fff,0 -1px 0 #fff;-webkit-text-stroke:1px #fff outside;display:block;font:13px/20px "Helvetica Neue",Arial,Helvetica,sans-serif;font-weight:bold;position:absolute;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:6;text-indent:26px}.maki-icon span{display:none}
 .hide-labels .maki-icon{overflow:hidden}
 .en .maki-icon span.lang-en{display:inline}
+.en .maki-icon span.lang-jp{display:none}
 .jp .maki-icon span.lang-jp{display:inline}
+.jp .maki-icon span.lang-en{display:none}
 header{position:absolute;width:100%;top:0;margin:0;background:rgba(255,255,255,0.9);border-bottom:1px solid #fff;box-shadow:0 0 5px rgba(0,0,0,0.5)}header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:baseline !important}
 .hero{background:url(../img/trees.jpg);min-height:400px;background-size:cover;background-position:center}.hero .row{position:relative;top:160px}.hero .row .on-photo{color:#fff;text-shadow:0 0 3px #000,0 0 3px #000,0 0 12px #000}
 .hero img{max-width:100%}
-.logo-float{position:fixed;top:20px;left:20px;display:block;width:120px;height:80px;z-index:20;background:url(../img/hikr-jp-big.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
+.leaflet-control-language{font-size:15px;line-height:22px}
+.leaflet-control-language-interior:before{content:"あ"}
+.jp .leaflet-control-language-interior:before{content:"A"}
 header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:baseline !important}
 .header{width:100%;min-height:120px;position:relative;padding-top:40px}.header h1{margin:0 20px 0 20px}
-.info{min-height:80px;position:relative;display:table;width:auto;margin:0 20px}.info .col{width:50%;margin:0;float:left}
+.info{min-height:80px;position:relative;display:table;width:100%;margin:16px 0}.info .col{width:50%;margin:0;float:left}
 .info #infobox{font-family:helvetica,Arial,sans-serif;padding:10px 10px;color:#4a5a61;font-weight:bold;line-height:25px;margin:10px 10px;display:table-row;width:100%}.info #infobox .infopoint{display:table-cell;padding-right:20px}.info #infobox .infopoint.level div{font-size:18px;line-height:45px}
 .info #infobox .infopoint label{margin-top:15px;display:block;font-size:10px;font-weight:100;line-height:9px;border-bottom:1px solid rgba(74,90,97,0.5);text-transform:uppercase}
 .info #infobox .infopoint div{font-size:33px;line-height:45px}
 .info #plot{display:table-row;height:120px;padding:0 10px;position:relative}.info #plot canvas{display:table-cell}
+.left-side{position:fixed;top:0;bottom:0;left:0;width:20%;min-width:300px;background:url('/img/mountain-hi-res.JPG');background-size:auto 100%;background-position:center center}.left-side .motto{position:absolute;bottom:0;margin:16px;font-size:24px;color:#fff;text-shadow:0 0 5px #000}
+h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
+.right-side{position:fixed;top:0;bottom:0;right:0;width:80%;background:#fff;box-shadow:0 0 16px rgba(0,0,0,0.5);overflow:scroll}.right-side .container{position:absolute;left:0;top:0;width:80%;min-width:800px}.right-side .container img{width:100%}
+.right-side .container .section{margin:16px;margin-top:0;padding-bottom:16px}
+.summary-box{padding-top:16px;padding-bottom:16px;border-bottom:1px solid #ccc}.summary-box .header-image{width:100%}
+.summary-box .header-image a:hover img{-webkit-filter:none}
+.summary-box .headings{width:49%;float:left;margin-right:1%}
+.summary-box .summary{width:49%;float:left;margin-left:1%}
+.summary-box.vertical .header-image{width:47% !important;margin-right:3%;float:left;clear:left}
+.summary-box.vertical .headings{width:48%;margin-left:1%}
+.summary-box.vertical .summary{float:left;margin-top:16px;width:48%;margin-left:1%}
+.hikr-sidebar{position:fixed;top:0;left:0;z-index:8}.hikr-sidebar .logo-float{position:fixed;top:20px;left:20px;display:block;width:120px;height:80px;z-index:20;background:url(../img/hikr.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
+.hikr-sidebar .hikr-menu{position:fixed;top:0;left:0;bottom:0;width:160px;background-color:rgba(255,255,255,0.9);border-right:1px solid #fff;box-shadow:0 0 16px rgba(0,0,0,0.5);-webkit-transform:translate3d(-190px, 0, 0);-webkit-transition:-webkit-transform,.25s}.hikr-sidebar .hikr-menu ul{margin-top:100px;list-style:none none;border-bottom:1px solid rgba(0,0,0,0.1);border-top:1px solid rgba(255,255,255,0.9)}.hikr-sidebar .hikr-menu ul li{position:relative;left:1px;width:100%;border-right:4px solid transparent}.hikr-sidebar .hikr-menu ul li.active{border-right:4px solid #e95223}.hikr-sidebar .hikr-menu ul li.active a{background-color:#fff;color:#000}
+.hikr-sidebar .hikr-menu ul li.active a:hover{background-color:#fff}
+.hikr-sidebar .hikr-menu ul li a{border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(255,255,255,0.9);padding-left:15px;display:block;color:#738790;line-height:32px;text-transform:uppercase;clear:both}.hikr-sidebar .hikr-menu ul li a:hover{color:#000;background-color:rgba(255,255,255,0.5)}
+.hikr-sidebar .hikr-menu ul li a .icon{display:block;float:left;width:25px;text-align:center}
+.hikr-sidebar:hover .hikr-menu{-webkit-transform:translate3d(0, 0, 0)}
 .map-on-left,.map-on-left>.column{height:100%}
 .map-on-left{width:100%;height:100%}.map-on-left #map{height:100%;position:fixed;top:0;left:0;right:600px}.map-on-left #map .coords{position:absolute;bottom:10px;left:10px;z-index:100}
 .map-on-left .map-column{height:100%}
-.map-on-left .article{padding:20px 20px}
 .navbar{margin-bottom:0}
 .infobox{float:right;width:200px}
-.article-container{position:absolute;right:0;padding:0 30px;width:600px}
-.article{font-weight:200;font-size:14px}.article h1,.article h2,.article h3,.article h4,.article h5{text-transform:uppercase;margin-top:1.5em;padding-top:1.5em;margin-bottom:.3em;border-top:1px solid rgba(74,90,97,0.5)}
+.article-container{position:absolute;right:0;padding:0 16px;width:600px;box-shadow:0 0 16px rgba(0,0,0,0.5);min-height:100%}.article-container img{max-width:100%}
+.article{font-weight:200;font-size:14px}.article h1,.article h2,.article h3,.article h4,.article h5{text-transform:uppercase;margin-top:.5em;padding-top:1em;margin-bottom:.3em}
 .article h1{font-size:150%}
 .article h2{font-size:120%}
 .article h3{font-size:110%}
@@ -32,5 +53,5 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .article a{color:#a1bbc5}
 .article ul{margin:0 3em;line-height:2;color:#222}
 .article p{line-height:1.8;color:#222;text-shadow:2px 2px 0 #fff !important;margin:1em 0}
-.article img{max-width:100%;border-radius:3px}
-.article h1,.article h2{color:#820;text-shadow:2px 2px 0 #fff !important}
+.article h1,.article h2{color:#e95223;text-shadow:2px 2px 0 #fff !important}
+.leaflet-control-language-interior{width:25px;height:25px;background-position:50% 50%;background-repeat:no-repeat;display:block;padding:3px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;cursor:pointer;text-align:center;background-color:#fff}

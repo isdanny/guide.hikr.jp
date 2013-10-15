@@ -1,13 +1,14 @@
 ---
-layout: map-on-left
+layout: course
 title: Takatsuyama hike and swim
 center: [139.08901691436768, 35.59450649082071]
 map: 
  - takatsuyama.json
+area: Ootsuki
 author: JAMBO International
 license: CC-BY-NC
 info:
-  level: 4
+  level: intermediate
   walking_time: 4.5h
   highest_point: 730m
   lowest_point: 230m

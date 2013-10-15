@@ -2,6 +2,7 @@
 @sea1: #A1BBC5;
 @sea2: #738790;
 @sea3: #4A5A61;
+@theme: #A63626;
 @accent: #E95223;
 
 @import url(maki-sprite.css);
@@ -15,17 +16,25 @@ body, html{
   }
 }
 
+ul, menu, dir{
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+-webkit-margin-start: 0;
+-webkit-margin-end: 0;
+-webkit-padding-start: 0;
+}
+
 .huge{
   font-size: 64px;
 }
 
 .maki-icon{
   color: #222;
-  text-shadow: 
-    0 0 0px #fff, 
-    1px 0 0px #fff, 
+  text-shadow:
+    0 0 0px #fff,
+    1px 0 0px #fff,
     0 1px 0px #fff,
-    -1px 0 0px #fff, 
+    -1px 0 0px #fff,
     0 -1px 0px #fff;
     -webkit-text-stroke: 1px white outside;
   display: block;
@@ -48,8 +57,14 @@ body, html{
   }
 }
 
-.en{ .maki-icon span.lang-en{ display: inline; } }
-.jp{ .maki-icon span.lang-jp{ display: inline; } }
+.en{
+  .maki-icon span.lang-en{ display: inline; }
+  .maki-icon span.lang-jp{ display: none; }
+}
+.jp{
+  .maki-icon span.lang-jp{ display: inline; }
+  .maki-icon span.lang-en{ display: none; }
+}
 
 header{
   position: absolute;
@@ -86,19 +101,18 @@ header{
   }
 }
 
-.logo-float{
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  display: block;
-  width: 120px;
-  height: 80px;
-  z-index: 20;
-  background: url(../img/hikr-jp-big.png) center center no-repeat;
-  background-size: 100%;
-  text-indent: 100%;
-  overflow: hidden;
+.leaflet-control-language{
+  font-size: 15px;
+  line-height: 22px;
 }
+.leaflet-control-language-interior:before{
+  content: "あ";
+}
+
+.jp .leaflet-control-language-interior:before{
+  content: "A";
+}
+
 header{
   .logo{
     margin-top: -2px;
@@ -122,8 +136,8 @@ header{
   min-height: 80px;
   position: relative;
   display: table;
-  width: auto;
-  margin: 0 20px;
+  width: 100%;
+  margin: 16px 0;
   .col{
     width: 50%;
     margin: 0;
@@ -172,6 +186,187 @@ header{
     }
   }
 }
+
+.left-side{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  min-width: 300px;
+  background: url('/img/mountain-hi-res.JPG');
+  background-size: auto 100%;
+  background-position: center center;
+  .motto{
+    position: absolute;
+    bottom: 0;
+    margin: 16px;
+    font-size: 24px;
+    color: white;
+    text-shadow: 0 0 5px black;
+  }
+}
+
+h6{
+  color: @accent;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+.right-side{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.5);
+  overflow: scroll;
+  .container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    min-width: 800px;
+    img{
+      width: 100%;
+    }
+    .section{
+      margin: 16px;
+      margin-top: 0;
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.summary-box{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+  .header-image{
+    width: 100%;
+    img{
+      // -webkit-filter: hue-rotate(330deg) sepia(0.1);
+    }
+    a:hover{
+      img{
+        -webkit-filter: none;
+      }
+    }
+  }
+  .headings{
+    width: 49%;
+    float: left;
+    margin-right: 1%;
+  }
+  .summary{
+    width: 49%;
+    float: left;
+    margin-left: 1%;
+  }
+  &.vertical{
+    .header-image{
+      width: 47%!important;
+      margin-right: 3%;
+      float: left;
+      clear: left;
+    }
+    .headings{
+      width: 48%;
+      margin-left: 1%;
+    }
+    .summary{
+      float: left;
+      margin-top: 16px;
+      width: 48%;
+      margin-left: 1%;
+    }
+  }
+}
+
+.hikr-sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+
+  .logo-float{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: block;
+    width: 120px;
+    height: 80px;
+    z-index: 20;
+    background: url(../img/hikr.png) center center no-repeat;
+    background-size: 100%;
+    text-indent: 100%;
+    overflow: hidden;
+  }
+
+  .hikr-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 160px;
+    background-color: rgba(255,255,255,0.9);
+    border-right: 1px solid white;
+    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+    -webkit-transform: translate3d(-190px,0,0);
+    -webkit-transition: -webkit-transform, 0.25s;
+
+    ul{
+      margin-top: 100px;
+      list-style: none none;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      border-top: 1px solid rgba(255,255,255,0.9);
+      li{
+        position: relative;
+        left: 1px;
+        width: 100%;
+        border-right: 4px solid transparent;
+        &.active{
+          border-right: 4px solid @accent;
+          a{
+            background-color: white;
+            color: black;
+          }
+          a:hover{
+            background-color: white;
+          }
+        }
+        a{
+          border-top: 1px solid rgba(0,0,0,0.1);
+          border-bottom: 1px solid rgba(255,255,255,0.9);
+          padding-left: 15px;
+          display: block;
+          color: @sea2;
+          line-height: 32px;
+          text-transform: uppercase;
+          clear: both;
+          &:hover{
+            color: black;
+            background-color: rgba(255,255,255,0.5);
+          }
+          .icon{
+            display: block;
+            float: left;
+            width: 25px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  &:hover{
+    .hikr-menu{
+      -webkit-transform: translate3d(0,0,0);
+    }
+  }
+}
+
 .map-on-left, .map-on-left > .column{
   height: 100%;
 }
@@ -194,9 +389,6 @@ header{
   .map-column{
     height: 100%;
   }
-  .article{
-    padding: 20px 20px;
-  }
 }
 .navbar{
   margin-bottom: 0;
@@ -210,8 +402,13 @@ header{
 .article-container{
   position: absolute;
   right: 0;
-  padding: 0 30px;
-  width: 600px;  
+  padding: 0 16px;
+  width: 600px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  min-height: 100%;
+  img{
+    max-width: 100%;
+  }
 }
 
 .article{
@@ -219,10 +416,10 @@ header{
   font-size: 14px;
   h1, h2, h3, h4, h5{
     text-transform: uppercase;
-    margin-top: 1.5em;
-    padding-top: 1.5em;
+    margin-top: 0.5em;
+    padding-top: 1.0em;
     margin-bottom: 0.3em;
-    border-top: 1px solid fadeout(@sea3, 50%);
+    // border-top: 1px solid fadeout(@sea3, 50%);
   }
   h1 { font-size: 150%; }
   h2 { font-size: 120%; }
@@ -243,12 +440,25 @@ header{
     text-shadow: 2px 2px 0px #fff!important;
     margin: 1em 0;
   }
-  img{
-    max-width: 100%;
-    border-radius: 3px;
-  }
   h1, h2{
-    color: #820;
+    color: @accent;
     text-shadow: 2px 2px 0px #fff!important;
   }
 }
+
+.leaflet-control-language-interior
+{
+    width: 25px;
+    height: 25px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    padding: 3px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+

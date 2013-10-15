@@ -1,0 +1,19 @@
+<div class="summary-box {{ page.header_class }}">
+      {% if page.header_image %}
+        <div class="header-image"> 
+          <a href="{{page.url}}">{{ page.header_image | flickr_image }}</a>
+        </div>
+      {% endif %}
+      <div class="headings">
+        {% if page.featured %}<h6>Featured course</h6>{% endif %}
+        <a href="{{page.url}}"><h2>{{page.title}}</h2></a>
+        <a href="/area/{{page.area}}.html"><h4 class="area">{{page.area}}</h4></a>
+        <div class="author">by {{page.author}} </div>
+      </div>
+      {% if page.summary %}
+      <div class="summary">
+        {{page.summary | markdownify }}
+      </div>
+      {% endif %}
+      <br class="clear">
+    </div>
