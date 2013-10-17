@@ -23,7 +23,7 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .info #infobox .infopoint label{margin-top:15px;display:block;font-size:10px;font-weight:100;line-height:9px;border-bottom:1px solid rgba(74,90,97,0.5);text-transform:uppercase}
 .info #infobox .infopoint div{font-size:33px;line-height:45px}
 .info #plot{display:table-row;height:120px;padding:0 10px;position:relative}.info #plot canvas{display:table-cell}
-.left-side{position:fixed;top:0;bottom:0;left:0;width:20%;min-width:300px;background:url('http://farm9.staticflickr.com/8335/8129859292_f3a41cee65_o.jpg');background-size:auto 100%;background-position:center center}.left-side .motto{position:absolute;bottom:0;margin:16px;font-size:24px;color:#fff;text-shadow:0 0 5px #000}
+.left-side{position:fixed;top:0;bottom:0;left:0;width:20%;min-width:300px;background:url('/img/mountain-hi-res.JPG');background-size:auto 100%;background-position:center center}.left-side .motto{position:absolute;bottom:0;margin:16px;font-size:24px;color:#fff;text-shadow:0 0 5px #000}
 h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 .right-side{position:fixed;top:0;bottom:0;right:0;width:80%;background:#f8f8f8;box-shadow:0 0 16px rgba(0,0,0,0.5);overflow:scroll}.right-side .container{position:absolute;left:0;top:0;width:80%;min-width:800px}.right-side .container img{width:100%}
 .section{margin:16px;padding-bottom:16px;border-bottom:1px solid #ccc}
