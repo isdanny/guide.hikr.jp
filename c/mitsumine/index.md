@@ -3,7 +3,7 @@ layout: course
 title: Mitsumine
 map: 
  - mitsumine.json
-author: hikr.jp
+author: Leszek
 license: CC-BY-NC
 area: Tanzawa
 info:

@@ -1,11 +1,10 @@
 ---
 layout: course
-title: Mitake - Hinode - Yoshino baigo
+title: Mitake, Hinode, Yoshino plum park
 center:  [139.14969921112058, 35.7830062563083]
 map: 
- - mitake-hinode-yoshinobaigo.json
-author: hikr.jp
-hero: 8547970375_7af97466c1_c.jpg
+author: Leszek
+header_image: http://www.flickr.com/photos/jambodave/8547970375
 license: CC-BY-NC
 info:
   level: intermediate
@@ -14,33 +13,38 @@ info:
   lowest_point: 239m
 tags: [flowers, onsen]
 area: Okutama
+summary: >
+  Mount Mitake is a popular destination due to the temple on the top and Hinode offers a 360 degree view of the Okutama area.  While the course itself isn't hard, it takes 6 hours so it's recommended for beginners, provided they can keep a good pace. During the plum blossom season, around February and March, the Yoshino plum park is particularly picturesque.
 ---
 
 ## Access ##
 
-From Shinjuku, take the JR Chuo line going towards Okutama. 
+From Shinjuku, take the JR Chuo line going towards Okutama. The course starts from Kori station (古里駅).
 
 ## Course ##
 
-From Kori station go South (there's a 7-11 on the way), follow signs pointing to Ootsukayama. 
+From Kori station go South. There's a 7-11 on the way. Follow signs pointing to Ootsukayama (大塚山). 
 
-There's a nice lunch place between Ootsukayama and Mitake. Alternatively, you can stop for lunch at the top station of the Mitake cable car, enjoy the viewpoint there.
+The course from Oorsukayama to Mitake is well marked and devoid of forks.
+
+There's a nice lunch place between Ootsukayama and Mitake (御岳山). Alternatively, you can stop for lunch at the top station of the Mitake cable car, enjoy the viewpoint there. The various shops and facilities around Mitake Shrine sell snacks and coffee. There are toilets and souvenirs.
 
 On top of Mitake, be sure to visit Mitake Shrine and note the ancient tree.
 
-Follow signs to Hinode-yama (日の出山). 
+{% flickr http://www.flickr.com/photos/jambodave/8547965265/ %}
 
-![Gate on the way](8547965265_2899193332_c.jpg)
+Follow signs to Hinode-yama (日の出山). The course is very well marked and doesn't require much physical strength. You'll see a gate on your way, some benches and what looks like a hotel. There's a viewpoint behind the hotel building. The top of Hinode is not far.
 
-From the top of Hinode, take the path leading to Mimuro-yama.
+On the top, there are some benches under a roof and a relief map of the Okutama area.
+
+{% flickr http://www.flickr.com/photos/jambodave/8547965743/ %}
+
+From Hinode, take the path leading to Mimuro-yama (三室山).
 
 Yoshino Baigo will be on your right. The entrance fee is ¥200, free at times. Opposite of Yoshino Baigo, there's a nice little local food place with beer. Not too expensive.
 
-![Yoshino Plum Park](8547968767_75e8289014_c.jpg)
+{% flickr http://www.flickr.com/photos/jambodave/8547968767/ %}
 
-Optionally, on the way back, you can stop at Kabe onsen (Kabe station).
+Optionally, on the way back, you can stop at Kabe onsen (壁の湯) near Kabe station.
 
-## When to go ##
-
-The course is not hard and Mitake shrine is interesting in all four seasons, so any time of year is good for this hike.
 

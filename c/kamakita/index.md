@@ -1,9 +1,9 @@
 ---
 layout: course
-title: Kamakita lake hike
+title: Kamakita lake, mt. Monomi and waterfalls
 center: [ 139.2893886566162, 35.91710290351792 ]
 map:
- - kamakita-lake.json
+header_image: http://www.flickr.com/photos/jambodave/9538720490/
 copyright: CC-BY-NC
 author: hikr.jp
 area: Chichibu
@@ -13,7 +13,7 @@ info:
   highest_point: 375m
   lowest_point:
 summary: >
-  A day hike with views of a lake, two waterfalls and a climb up Monomi mountain.
+  A day hike with a lake, two gorgeous waterfalls and a climb up Monomi mountain. Except for the top of Monomi-yama, most of the course is relatively easy. Recommended for beginners.
 ---
 
 ## Access ##
