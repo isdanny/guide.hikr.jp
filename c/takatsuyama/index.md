@@ -7,6 +7,7 @@ map:
 area: Ootsuki
 author: JAMBO International
 license: CC-BY-NC
+tags: [river]
 info:
   level: intermediate
   walking_time: 4.5h
@@ -16,7 +17,7 @@ info:
 
 ### Starting Point ###
 
-Shiotsu Station on the Chuo Line
+Shiotsu Station on the Chuo Line.
 
 ### Points of Interest ###
 

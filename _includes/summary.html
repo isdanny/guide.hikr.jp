@@ -9,6 +9,11 @@
         <a href="{{page.url}}"><h2>{{page.title}}</h2></a>
         <a href="/area/{{page.area}}.html"><h4 class="area">{{page.area}}</h4></a>
         <div class="author">by {{page.author}} </div>
+        <div class="tags">
+          {% for tag in page.tags %}
+           <a href="/tag/{{tag}}.html"><span class="tag">{{tag}}</span></a>
+          {% endfor %}
+        </div>
       </div>
       {% if page.summary %}
       <div class="summary">

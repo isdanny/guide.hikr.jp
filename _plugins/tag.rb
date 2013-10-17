@@ -53,6 +53,7 @@ module Jekyll
       site.get_tags()
       p site.page_tags
       site.page_tags.keys.each do | tag |
+        p "adding page #{tag}"
         site.pages << TagPage.new(site, site.source, "tag", tag, site.page_tags[tag] )
       end
     end

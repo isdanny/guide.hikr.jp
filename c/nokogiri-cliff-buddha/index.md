@@ -8,7 +8,7 @@ area: Chiba
 info:
   author: Leszek
   level: 3
-tags: [cliff]
+tags: [ cliff, statues ]
 featured: false
 header_image: http://www.flickr.com/photos/jambodave/6663141697
 header_class: vertical

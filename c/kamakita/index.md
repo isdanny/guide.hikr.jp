@@ -7,6 +7,7 @@ header_image: http://www.flickr.com/photos/jambodave/9538720490/
 copyright: CC-BY-NC
 author: hikr.jp
 area: Chichibu
+tags: [ waterfall, lake ]
 info:
   level: intermediate
   walking_time: 4.5h

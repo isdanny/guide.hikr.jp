@@ -3,10 +3,11 @@ layout: course
 title: Takamizusan-zan
 map: 
  - takamizu.json
+tags: [ ]
 center: [139.20249939, 35.817619324]
 author: David
 area: Okutama
-summary: |
+summary: >
   A lower intermediate-level course with great views of the Okutama area. Recommended for late summer or early fall. 
 ---
 ## Starting Point 
@@ -14,7 +15,7 @@ Ikusabata Station on the Oume Line
 
 ## Points of Interest:
  - Mt. Takamizu （高水山）
- - Mt. Iwatakeishi（岩茸石山
+ - Mt. Iwatakeishi（岩茸石山)
  - Mt. Sougaku（惣岳山）
  - Tama River（多摩川）
 

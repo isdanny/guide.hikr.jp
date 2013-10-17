@@ -7,5 +7,5 @@ author: hikr.jp
 license: CC-BY-NC
 info:
   level: intermediate
-tags: [river]
+tags: [ river ]
 ---

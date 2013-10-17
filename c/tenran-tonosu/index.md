@@ -7,11 +7,14 @@ map:
 author: JAMBO International
 license: CC-BY-NC
 area: Chichibu
+tags: [ river, statue ]
 info:
   level: beginner
   walking_time: 3.5h
   highest_point: 270m
   lowest_point: 110m
+summary: >
+  This is a gentle hike with 2 beautiful viewpoints and places to swim in a clean river. Definitely good for beginner hikers. Best in hot summer: the river is very refreshing.
 ---
 
 ## Starting Point ##
@@ -21,12 +24,10 @@ Hannou Station on the SeibuIkebukuro Line
 ## Points of Interest ##
 
  - Mt. Tenran （天覧山）
- - Mt. Tounosu　（多
- - Iruma River　（入間川）
+ - Mt. Tounosu（東濃須山)
+ - Iruma River（入間川）
 
 ## Course ##
-
-This is a gentle hike with 2 beautiful viewpoints and places to swim in a clean river.
 
 From Hannou Station, walk down the stairs of the North Exit.  At the bottom of the stairs, turn left (going north) and walk up this street to the first traffic light.  Turn left there (Ginza Street, with shops on both sides) and go about 5 minutes to the light (after the road veers to the right.  At the light, take a left onto a big street.  Walk to the next light and turn right.  At the first light, there will be a 7-11 on your right.  Turn left there, walking by an elementary school on your right.  Pass the first traffic light and follow a small road, which veers to the right past a small park (on your left).  This road comes to a big road, which you cross (be careful as there is no light there).  When you cross the road, there is a small pond on your right and store on your left.  Right after the pond, there’s a road going up a hill on your left. Follow the road about 1-2 minutes and there will be a sign for Mt. Tenran on your right.  However, before going up that path, go straight ahead to a beautiful temple with interesting statues, then return back to take the Mt. Tenran Hiking Course.
 
