@@ -76,12 +76,12 @@ module Jekyll
     safe true
 
     def generate(site)
-      site.get_areas()
-      p site.areas.keys
-      site.areas.keys.each do | area |
+      #site.get_areas()
+      #p site.areas.keys
+      #site.areas.keys.each do | area |
         #site.pages << AreaPage.new(site, site.source, "area", area, site.areas[area])
-        site.pages << AreaMap.new(site, site.source, "data/area", area, site.areas[area])
-      end
+        # site.pages << AreaMap.new(site, site.source, "data/area", area, site.areas[area])
+      #end
     end
   end
 

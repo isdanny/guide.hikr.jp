@@ -1,0 +1,4 @@
+---
+layout: area
+title: Areas
+---

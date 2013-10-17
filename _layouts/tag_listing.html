@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<h1>{{page.tag_listing}}</h1>
+<ul>
+{% for p in site.tags[page.tag_listing] %}
+  <li>{{p.title}}</li>
+{% endfor %}
+</ul>

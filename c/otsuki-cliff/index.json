@@ -1551,7 +1551,7 @@
       "properties": {
         "name": "iwadono-san",
         "type": "summit",
-        "label": "岩殿山",
+        "label": {"jp":"岩殿山","en":"Mt. Iwadono"},
         "elevation": "634"
       },
       "geometry": {
@@ -1568,7 +1568,7 @@
       "properties": {
         "name": "otsuki-station",
         "type": "station",
-        "label": "大月駅"
+        "label": {"jp":"大月駅","en":"Ootsuki"}
       },
       "geometry": {
         "type": "Point",

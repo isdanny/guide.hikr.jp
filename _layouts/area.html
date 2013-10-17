@@ -2,7 +2,7 @@
 layout: course
 ---
 
-<h1>{{ page.area }}</h1>
+<h1>{{ page.area_listing }}</h1>
 
 {% for p in page.courses %}
   <a href="{{p.url}}">{{ p.title }}</a><br>
@@ -13,7 +13,6 @@ layout: course
 {% for a in site.area_names %}
     area: {{ a }}<br>
 {% endfor %}
-
 
 {{site.categories}}
 

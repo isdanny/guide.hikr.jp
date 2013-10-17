@@ -1,6 +1,6 @@
 ---
 layout: course
-title: Iwadono and cliff
+title: Mount Iwadono and cliff
 center: [138.94816875457764, 35.620639996677504]
 map: 
 author: hikr.jp
