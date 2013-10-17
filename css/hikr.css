@@ -1,8 +1,9 @@
 @import url(maki-sprite.css);
-body,html{height:100%;background:#fff;margin:0;padding:0}
+body,html{height:100%;background:#f8f8f8;margin:0;padding:0}
 ul,menu,dir{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-start:0}
 .huge{font-size:64px}
-.flickr-photo .caption{color:#738790;font-size:90%;text-align:right}
+.flickr-photo{position:relative}.flickr-photo .caption{color:#fff;padding:1px 3px;font-size:70%;text-align:right;position:absolute;bottom:4px;-webkit-transition:background,.5s;right:0}.flickr-photo .caption a{color:#fff !important}
+.flickr-photo:hover .caption{background:rgba(0,0,0,0.7);-webkit-transition:background,.5s}
 .maki-icon{color:#222;text-shadow:0 0 0 #fff,1px 0 0 #fff,0 1px 0 #fff,-1px 0 0 #fff,0 -1px 0 #fff;-webkit-text-stroke:1px #fff outside;display:block;font:13px/20px "Helvetica Neue",Arial,Helvetica,sans-serif;font-weight:bold;position:absolute;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:6;text-indent:26px}.maki-icon span{display:none}
 .hide-labels .maki-icon{overflow:hidden}
 .en .maki-icon span.lang-en{display:inline}
@@ -22,11 +23,11 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .info #infobox .infopoint label{margin-top:15px;display:block;font-size:10px;font-weight:100;line-height:9px;border-bottom:1px solid rgba(74,90,97,0.5);text-transform:uppercase}
 .info #infobox .infopoint div{font-size:33px;line-height:45px}
 .info #plot{display:table-row;height:120px;padding:0 10px;position:relative}.info #plot canvas{display:table-cell}
-.left-side{position:fixed;top:0;bottom:0;left:0;width:20%;min-width:300px;background:url('/img/mountain-hi-res.JPG');background-size:auto 100%;background-position:center center}.left-side .motto{position:absolute;bottom:0;margin:16px;font-size:24px;color:#fff;text-shadow:0 0 5px #000}
+.left-side{position:fixed;top:0;bottom:0;left:0;width:20%;min-width:300px;background:url('http://farm9.staticflickr.com/8335/8129859292_f3a41cee65_o.jpg');background-size:auto 100%;background-position:center center}.left-side .motto{position:absolute;bottom:0;margin:16px;font-size:24px;color:#fff;text-shadow:0 0 5px #000}
 h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
-.right-side{position:fixed;top:0;bottom:0;right:0;width:80%;background:#fff;box-shadow:0 0 16px rgba(0,0,0,0.5);overflow:scroll}.right-side .container{position:absolute;left:0;top:0;width:80%;min-width:800px}.right-side .container img{width:100%}
-.right-side .container .section{margin:16px;margin-top:0;padding-bottom:16px}
-.summary-box{padding-top:16px;padding-bottom:16px;border-bottom:1px solid #ccc}.summary-box .header-image{width:100%}
+.right-side{position:fixed;top:0;bottom:0;right:0;width:80%;background:#f8f8f8;box-shadow:0 0 16px rgba(0,0,0,0.5);overflow:scroll}.right-side .container{position:absolute;left:0;top:0;width:80%;min-width:800px}.right-side .container img{width:100%}
+.section{margin:16px;padding-bottom:16px;border-bottom:1px solid #ccc}
+.summary-box .header-image{width:100%}.summary-box .header-image img{width:100%}
 .summary-box .header-image a:hover img{-webkit-filter:none}
 .summary-box .headings{width:49%;float:left;margin-right:1%}
 .summary-box .summary{width:49%;float:left;margin-left:1%}
@@ -36,7 +37,7 @@ h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 .hikr-sidebar{position:fixed;top:0;left:0;z-index:8}.hikr-sidebar .logo-float{position:fixed;top:20px;left:20px;display:block;width:120px;height:80px;z-index:20;background:url(../img/hikr.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
 .hikr-sidebar .hikr-menu{position:fixed;top:0;left:0;bottom:0;width:160px;background-color:rgba(255,255,255,0.9);border-right:1px solid #fff;box-shadow:0 0 16px rgba(0,0,0,0.5);-webkit-transform:translate3d(-190px, 0, 0);-webkit-transition:-webkit-transform,.25s}.hikr-sidebar .hikr-menu ul{margin-top:100px;list-style:none none;border-bottom:1px solid rgba(0,0,0,0.1);border-top:1px solid rgba(255,255,255,0.9)}.hikr-sidebar .hikr-menu ul li{position:relative;left:1px;width:100%;border-right:4px solid transparent}.hikr-sidebar .hikr-menu ul li.active{border-right:4px solid #e95223}.hikr-sidebar .hikr-menu ul li.active a{background-color:#fff;color:#000}
 .hikr-sidebar .hikr-menu ul li.active a:hover{background-color:#fff}
-.hikr-sidebar .hikr-menu ul li a{border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(255,255,255,0.9);padding-left:15px;display:block;color:#738790;line-height:32px;text-transform:uppercase;clear:both}.hikr-sidebar .hikr-menu ul li a:hover{color:#000;background-color:rgba(255,255,255,0.5)}
+.hikr-sidebar .hikr-menu ul li a{border-bottom:1px solid rgba(0,0,0,0.1);border-top:1px solid rgba(255,255,255,0.9);padding-left:15px;display:block;color:#738790;line-height:32px;text-transform:uppercase;clear:both}.hikr-sidebar .hikr-menu ul li a:hover{color:#000;background-color:rgba(255,255,255,0.5)}
 .hikr-sidebar .hikr-menu ul li a .icon{display:block;float:left;width:25px;text-align:center}
 .hikr-sidebar:hover .hikr-menu{-webkit-transform:translate3d(0, 0, 0)}
 .map-on-left,.map-on-left>.column{height:100%}
@@ -44,8 +45,9 @@ h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 .map-on-left .map-column{height:100%}
 .navbar{margin-bottom:0}
 .infobox{float:right;width:200px}
-.article-container{position:absolute;right:0;padding:0 16px;width:600px;box-shadow:0 0 16px rgba(0,0,0,0.5);min-height:100%}.article-container img{max-width:100%}
-.article{font-weight:200;font-size:14px}.article h1,.article h2,.article h3,.article h4,.article h5{text-transform:uppercase;margin-top:.5em;padding-top:1em;margin-bottom:.3em}
+.article-container{position:absolute;right:0;width:600px;box-shadow:0 0 16px rgba(0,0,0,0.5);min-height:100%}.article-container img{max-width:100%}
+.article{font-weight:200;font-size:15px}.article .flickr-photo{width:100%}.article .flickr-photo img{width:100%}
+.article h1,.article h2,.article h3,.article h4,.article h5{text-transform:uppercase;margin-top:.5em;padding-top:1em;margin-bottom:.3em}
 .article h1{font-size:150%}
 .article h2{font-size:120%}
 .article h3{font-size:110%}

@@ -4,12 +4,13 @@
 @sea3: #4A5A61;
 @theme: #A63626;
 @accent: #E95223;
+@white: #f8f8f8;
 
 @import url(maki-sprite.css);
 
 body, html{
   height: 100%;
-  background: white;
+  background: @white;
   margin: 0;
   padding: 0;
   a{
@@ -29,12 +30,28 @@ ul, menu, dir{
 }
 
 .flickr-photo{
+  position: relative;
   .caption{
-    color: @sea2;
-    font-size: 90%;
+    color: white;
+    padding: 1px 3px;
+    font-size: 70%;
     text-align: right;
+    position: absolute;
+    bottom: 4px;
+    -webkit-transition: background, 0.5s;
+    right: 0px;
+    a{
+      color: white!important;
+    }
+  }
+  &:hover{
+    .caption{
+      background: rgba(0,0,0,0.7);
+      -webkit-transition: background, 0.5s;
+    }
   }
 }
+
 
 .maki-icon{
   color: #222;
@@ -202,7 +219,7 @@ header{
   left: 0;
   width: 20%;
   min-width: 300px;
-  background: url('/img/mountain-hi-res.JPG');
+  background: url('http://farm9.staticflickr.com/8335/8129859292_f3a41cee65_o.jpg');
   background-size: auto 100%;
   background-position: center center;
   .motto{
@@ -228,7 +245,7 @@ h6{
   bottom: 0;
   right: 0;
   width: 80%;
-  background: white;
+  background: @white;
   box-shadow: 0 0 16px rgba(0,0,0,0.5);
   overflow: scroll;
   .container{
@@ -240,21 +257,21 @@ h6{
     img{
       width: 100%;
     }
-    .section{
-      margin: 16px;
-      margin-top: 0;
-      padding-bottom: 16px;
-    }
+
   }
 }
 
-.summary-box{
-  padding-top: 16px;
+.section{
+  margin: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ccc;
+}
+
+.summary-box{
   .header-image{
     width: 100%;
     img{
+      width: 100%;
       // -webkit-filter: hue-rotate(330deg) sepia(0.1);
     }
     a:hover{
@@ -346,8 +363,8 @@ h6{
           }
         }
         a{
-          border-top: 1px solid rgba(0,0,0,0.1);
-          border-bottom: 1px solid rgba(255,255,255,0.9);
+          border-bottom: 1px solid rgba(0,0,0,0.1);
+          border-top: 1px solid rgba(255,255,255,0.9);
           padding-left: 15px;
           display: block;
           color: @sea2;
@@ -410,7 +427,6 @@ h6{
 .article-container{
   position: absolute;
   right: 0;
-  padding: 0 16px;
   width: 600px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
   min-height: 100%;
@@ -421,7 +437,13 @@ h6{
 
 .article{
   font-weight: 200;
-  font-size: 14px;
+  font-size: 15px;
+  .flickr-photo{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
   h1, h2, h3, h4, h5{
     text-transform: uppercase;
     margin-top: 0.5em;

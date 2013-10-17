@@ -1,7 +1,7 @@
 <div class="summary-box {{ page.header_class }}">
       {% if page.header_image %}
         <div class="header-image"> 
-          <a href="{{page.url}}">{{ page.header_image | flickr_image }}</a>
+          <a href="{{page.url}}">{{ page.header_image | flickr : "large" }}</a>
         </div>
       {% endif %}
       <div class="headings">

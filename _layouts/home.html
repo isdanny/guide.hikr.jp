@@ -1,6 +1,5 @@
 ---
 layout: guide
-title: Hiking with friends
 ---
 
 <div class="hikr-content">
@@ -10,17 +9,21 @@ title: Hiking with friends
   <div class="right-side">
     <div class="container">
       <div class="section">
+        {{ content }}
+      </div>
+      <div class="section">
         {% for page in site.pages %}
           {% if page.featured %}
             {% include summary.html %}
           {% endif %}
         {% endfor %}
       </div>
-      {% for area in site.areas %}
-        {% for page in area %}
-          {{ page }}<br>
+      <div class="section">
+        {% for area in site.area_names %}
+        {{ area }}<br>
         {% endfor %}
-      {% endfor %}
+
+      </div>
     </div>
   </div>
 </div>

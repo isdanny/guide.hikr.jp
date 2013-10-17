@@ -12,9 +12,10 @@ info:
   lowest_point: 180
   walking_time: 4.5h
 featured: true
+tags: [ chains, onsen ]
 header_image: http://www.flickr.com/photos/jambodave/10033846124/
 summary: >
-  An interesting one-day course with some challenging climbs. Expect to spend quality time with the natural environment. 
+  Mount Mitsumine in Tanzawa offers an untamed hiking course, marked by chains, ladders and, seasonally, various local fauna. Expect to spend quality time with the natural environment. 
 ---
 
 ## Access ##
