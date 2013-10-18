@@ -31,7 +31,6 @@ def image_template(url, size, klass='' )
         f.puts YAML::dump(img)
     end
   end
-  p img
   "<div class='flickr-photo #{klass}'><a target='_blank' href='#{img[:url]}'><img title='#{img[:title]}' alt='#{img[:title]}' src='#{img[":#{size}"]}'></a><div class='caption'>Photo by <a target='_blank' href='#{img[:owner_url]}'>#{img[:owner_name]}</a> </div></div>"
 end
 
