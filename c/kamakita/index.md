@@ -5,7 +5,7 @@ center: [ 139.2893886566162, 35.91710290351792 ]
 map:
 header_image: http://www.flickr.com/photos/jambodave/9538720490/
 copyright: CC-BY-NC
-author: hikr.jp
+author: Leszek
 area: Chichibu
 tags: [ waterfall, lake ]
 info:
