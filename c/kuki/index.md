@@ -7,6 +7,7 @@ author: Leszek
 header_image: http://www.flickr.com/photos/jambodave/4676989879/in/set-72157624095987015
 header_class: vertical
 license: CC-BY-NC
+area: Otsuki
 info:
   level: intermediate
 tags: [ fuji view ]

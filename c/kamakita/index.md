@@ -35,7 +35,7 @@ Yugate (ユガテ) is a patch of sunflowers. A very good place for a lunch break
 
 From Yugate, it's a nice path to Kamakita lake (鎌北胡). Before you reach the lake, you'll see a toilet on your right. Head left towards the parking lots and cross the second one. You'll find a small bridge across the river. This takes you to a pleasant hiking path around the lake - much better than the hot road on the other side.
 
-![Kamakita lake](DSC01517.JPG)
+{% flickr http://www.flickr.com/photos/jambodave/9535922001/ %}
 
 When you reach the Lakeview hotel, keep walking to the parking lot. There's a toilet and a pleasant little restaurant there. Cross the parking lot, climb the staircase and follow signs to the waterfall. The forest path goes up and then down. After you cross the road, there'll be a staircase leading to Shukuya waterfall (宿谷の滝). There will be a small place with benches. Head left from there.
 
@@ -47,7 +47,7 @@ Climb back up the staircase to the benches and take the path with the small 小�
 
 From the top, signs will point at Musashi Yokote station (武蔵横手駅). When you reach gardens, take the path going down. At some point the path will become a paved road, head left (you want to descend anyway). Watch out for the small sign pointing at the Gojo waterfall (五常の滝).
 
-![Gojo waterfall](DSC01565.JPG)
+{% flickr http://www.flickr.com/photos/jambodave/9535948809/ %}
 
 Gojo waterfall is smaller, but nonetheless picturesque. You can take the hiking path along the stream, it will take you back to the paved road. The road will take you to Musashi Yokote station.
 

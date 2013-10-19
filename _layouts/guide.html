@@ -8,10 +8,12 @@ layout: default
   <div class="hikr-menu">
     <br>
     <ul>
-      <li class="active"><a href="/"><span class="icon home"></span>&nbsp;Guide</a></li>
-      <li><a href="/area/"><span class="icon map-marker"></span>&nbsp;Areas</a></li>
-      <li><a href="/tags/"><span class="icon tag"></span>&nbsp;Tags</a></li>
+      <li class="{{ page.menu.guide }}"><a href="/"><span class="icon home"></span>&nbsp;Guide</a></li>
+      <li class="{{ page.menu.areas }}"><a href="/area/"><span class="icon map-marker"></span>&nbsp;Areas</a></li>
+      <li class="{{ page.menu.tags }}"><a href="/tag/"><span class="icon tag"></span>&nbsp;Tags</a></li>
+      <li class="{{ page.news.active }}"><a href="{{site.posts[0].url}}"><span class="icon quote-right"></span>&nbsp;News</a></li>
     </ul>
   </div>
 </div>
+
 {{ content }}

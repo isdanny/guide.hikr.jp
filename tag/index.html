@@ -1,12 +1,21 @@
 ---
-layout: default
+layout: guide
 ---
-
-{% for tag in site.tag_names %}
-<h2>{{tag}}</h2>
-<ul>
-{% for p in site.tags[tag] %}
-  <li><a href="{{p.url}}">{{p.title}}</a>&nbsp; &nbsp; {{p.area}}</li>
-{% endfor %}
-</ul>
-{% endfor %}
+<div class="hikr-content">
+  <div class="left-side">
+    <div class="motto">Hiking. With friends.</div>
+  </div>
+  <div class="right-side">
+    <div class="container">
+      <div class="section">
+        {% for tag in site.tag_names %}
+        <span class="tag">{{tag}}</span><br>
+        {% for p in site.tags[tag] %}
+          <a href="{{p.url}}">{{p.title}}</a> (<span class="area">{{p.area}}</span>)<br>
+        {% endfor %}
+        <hr>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
