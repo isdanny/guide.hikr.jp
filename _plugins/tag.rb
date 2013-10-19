@@ -27,7 +27,7 @@ module Jekyll
     define_method(:site_payload) do
       tags = get_tags()
       payload = old_payload.bind(self).call
-      payload['site']['tag_names'] = tags.keys
+      payload['site']['tag_names'] = tags.keys.sort
       payload['site']['tags'] = tags
       payload
     end
