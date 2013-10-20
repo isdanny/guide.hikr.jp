@@ -8,7 +8,8 @@ area: Okutama
 header_image: http://www.flickr.com/photos/jambodave/8359426703/ 
 license: CC-BY-NC
 info:
-tags: []
+tags: [ shrine ]
+featured: also
 area: Okutama
 summary: >
   The ups and downs give Nokogiri-yama its name (the Saw mountain). Starting with a prayer at Atago Shrine, this course offers a variety of terrain, from staricases, though chains and ladders, to flat paths and concrete roads. Recommended for intermediate hikers.

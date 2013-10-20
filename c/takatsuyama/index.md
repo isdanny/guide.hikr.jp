@@ -6,6 +6,8 @@ map:
  - takatsuyama.json
 area: Ootsuki
 author: JAMBO International
+header_image: http://www.flickr.com/photos/jambodave/9593450445/
+header_class: vertical
 license: CC-BY-NC
 tags: [river]
 info:
@@ -15,18 +17,18 @@ info:
   lowest_point: 230m
 ---
 
-### Starting Point ###
+## Starting Point ##
 
 Shiotsu Station on the Chuo Line.
 
-### Points of Interest ###
+## Points of Interest ##
 
  - Cedar Forest (杉林）
  - Katsuragawa River（桂川）
  - Nice Views of Shiotsu River Valley and nearby mountains
  - Mt. Takatsuka（高柄山）(optional)
 
-### Course ###
+## Course ##
 
 This is a pleasant, well-marked course.
 

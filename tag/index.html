@@ -9,7 +9,7 @@ layout: guide
     <div class="container">
       <div class="section">
         {% for tag in site.tag_names %}
-        <span class="tag">{{tag}}</span><br>
+        <a href="/tag/{{tag}}.html" class="tag">{{tag}}</a><br>
         {% for p in site.tags[tag] %}
           <a href="{{p.url}}">{{p.title}}</a> (<span class="area">{{p.area}}</span>)<br>
         {% endfor %}

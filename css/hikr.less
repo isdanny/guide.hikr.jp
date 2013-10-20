@@ -6,7 +6,11 @@
 @accent: #E95223;
 @white: #f8f8f8;
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
 @import url(maki-sprite.css);
+
+body{color:#222;font-size:16px;font-family:"Open sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300;background:#fff}
 
 body, html{
   height: 100%;
@@ -15,6 +19,10 @@ body, html{
   padding: 0;
   a{
   }
+}
+
+.section{
+  clear: both;
 }
 
 ul, menu, dir{
@@ -260,8 +268,7 @@ h6{
     position: absolute;
     left: 0;
     top: 0;
-    width: 80%;
-    min-width: 800px;
+    width: 960px;
     img{
       width: 100%;
     }
@@ -273,6 +280,86 @@ h6{
   margin: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ccc;
+}
+
+
+.row{
+  width: 990px;
+  position: relative;
+  left: -32px;
+}
+
+.column-6{
+  width: 463px;
+  float: left;
+  margin-left: 16px;
+  padding-left: 15px;
+  border-left: 1px solid #ccc;
+  &.first{
+    border-left: none;
+    padding-left: 16px;
+  }
+}
+
+.column-3{
+  width: 240px;
+  float: left;
+  padding: 0;
+}
+
+.footer{
+  background-color: white;
+  border-top: 1px solid #bbb;
+}
+
+.thumb-box{
+  width: 160px;
+  float: left;
+  background: white;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  .header-image{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  .headings{
+    margin: 8px;
+    height: 40px;
+    overflow: hidden;
+    h2{
+      font-size: 14px;
+    }
+  }
+}
+
+.blurb-box{
+  border-left: 1px solid #ccc;
+  font-size: 90%;
+  margin-left: 16px;
+  min-height: 310px;
+  .blurb-inside{
+    margin-left: 16px;
+  }
+  &.first{
+    border: 0;
+    .blurb-inside{
+    }
+  } 
+  h2{
+    font-size: 120%;
+  }
+  h4{
+    font-size: 90%;
+  }
+}
+
+.area{
+  color: @theme;
+  font-size: 90%;
 }
 
 .summary-box{

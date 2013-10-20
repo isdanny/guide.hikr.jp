@@ -1,12 +1,13 @@
 ---
 layout: course
-title: Tenran - Tounosu - Kahara river
+title: Tenran - Tounosu
 center: [ 139.30827140808105, 35.861822036974395]
 map: 
  - tenran-tonosu.json
 author: JAMBO International
 license: CC-BY-NC
 area: Chichibu
+featured: also
 tags: [ river, statue, temple ]
 header_image: http://www.flickr.com/photos/jambodave/9651060026
 header_class: vertical

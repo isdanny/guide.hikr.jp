@@ -5,7 +5,7 @@ gem 'sinatra'
 gem 'haml'
 gem 'nokogiri'
 gem 'typhoeus'
-gem 'fleakr'
+gem 'fleakr', :git => "git://github.com/rfc2616/fleakr.git"
 gem 'jekyll-less'
 gem 'therubyracer'
 gem 'rack-jekyll'

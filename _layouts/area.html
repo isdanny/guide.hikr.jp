@@ -1,21 +1,29 @@
 ---
-layout: course
+layout: default
 menu:
   areas: active
 ---
 
+<div class="map-on-left">
+  <div id="map">
+    <div class="coords"></div>
+  </div>
+
+  <div class="article-container">
+    <div class="section">
 <h1>{{ page.area_listing }}</h1>
-
-{% for p in page.courses %}
-  <a href="{{p.url}}">{{ p.title }}</a><br>
+{% assign courses = page.courses %}
+{% for page in site.areas[page.area_listing] %}
+{% include thumb.html %}
 {% endfor %}
-
-{{site.areas}}
-
-{% for a in site.area_names %}
-    area: {{ a }}<br>
-{% endfor %}
-
-{{site.categories}}
-
-{{content}}
+<br class="clear">
+    </div>
+  </div>
+</div>
+ <script type="text/javascript">
+  window.onload = function(){
+    var maps = [ {% for url in page.map %} "{{url}}", {% endfor %} false];
+    hikr = new Hikr("map");
+    hikr.loadMaps(maps);
+  };
+ </script>

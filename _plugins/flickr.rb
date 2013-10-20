@@ -16,6 +16,7 @@ def image_template(url, size, klass='' )
     img = YAML::load( File.open( path ) )
     p "reading #{path}"
   else
+    p "getting #{url}"
     fimg = Fleakr.resource_from_url(url)
     img = {
       'url'=>fimg.url,
@@ -23,15 +24,17 @@ def image_template(url, size, klass='' )
       'owner_url'=>fimg.owner.photos_url,
       'owner_name'=>fimg.owner.name||fimg.owner.username,
     }
-    ['square', 'thumbnail', 'small', 'medium', 'large', 'original'].each do |size|
-      img[size] = fimg.send(size).url
+    [:square, :large_square, :thumbnail, :small, :small_320, :medium, :medium_640, :medium_800, :large, :large_1600, :large_2048, :original].each do |size|
+      if s = fimg.send(size)
+        img[size.to_s] = s.url
+      end
     end
     p "writing #{path}"
     File.open(path, 'w+') do |f|
         f.puts YAML::dump(img)
     end
   end
-  "<div class='flickr-photo #{klass}'><a target='_blank' href='"+img['url']+"'><img title='"+img['title']+"' alt='"+img['title']+"' src='"+img[size]+"'></a><div class='caption'>Photo by <a target='_blank' href='"+img['owner_url']+"'>"+img['owner_name']+"</a> </div></div>"
+  "<div class='flickr-photo #{klass}'><img title='"+img['title']+"' alt='"+img['title']+"' src='"+img[size]+"'><div class='caption'>Photo by <a target='_blank' href='"+img['url']+"'>"+img['owner_name']+"</a> </div></div>"
 end
 
 module Jekyll

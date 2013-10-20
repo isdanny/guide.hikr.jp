@@ -40,8 +40,7 @@ module Jekyll
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'area.html')
-      self.data['area'] = area
-      self.data['courses'] = pages
+      self.data['area_listing'] = area
       self.data['map'] = ['/data/area/'+area+'.json']
     end
   end
@@ -76,12 +75,12 @@ module Jekyll
     safe true
 
     def generate(site)
-      #site.get_areas()
-      #p site.areas.keys
-      #site.areas.keys.each do | area |
-        #site.pages << AreaPage.new(site, site.source, "area", area, site.areas[area])
-        # site.pages << AreaMap.new(site, site.source, "data/area", area, site.areas[area])
-      #end
+      site.get_areas()
+      p site.areas.keys
+      site.areas.keys.each do | area |
+        site.pages << AreaPage.new(site, site.source, "area", area, site.areas[area])
+        site.pages << AreaMap.new(site, site.source, "data/area", area, site.areas[area])
+      end
     end
   end
 

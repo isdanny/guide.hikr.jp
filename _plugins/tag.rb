@@ -42,7 +42,6 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'tag_listing.html')
       self.data["tag_listing"] = tag
-
     end
   end
 

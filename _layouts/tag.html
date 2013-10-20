@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<h1>Courses tagged: {{page.tag_listing}}</h1>
+<ul>
+{% for p in site.tags[page.tag_listing] %}
+  <li><a href="{{p.url}}">{{p.title}}</a>&nbsp; &nbsp; {{p.area}}</li>
+{% endfor %}
+</ul>

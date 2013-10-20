@@ -6,6 +6,7 @@ map:
 author: Leszek
 header_image: http://www.flickr.com/photos/jambodave/8547970375
 license: CC-BY-NC
+featured: also
 info:
   level: intermediate
   walking_time: 6h
