@@ -10,9 +10,8 @@ license: CC-BY-NC
 area: Otsuki
 info:
   level: intermediate
-tags: [ fuji view ]
-summary: >
-
+tags: [ fuji view, draft ]
+summary: 
 ---
 {% flickr http://www.flickr.com/photos/jambodave/4676988507/ %}
 

@@ -8,15 +8,14 @@ Fleakr.auth_token    = ""
 
 ROOT = File.absolute_path(".")
 
-
-def image_template(url, size, klass='' )
+def flickr_image(url)
   hash = Digest::MD5.base64digest(url).delete!("=").gsub("/","_")
   path = File.join(ROOT,"_cache","img-#{hash}.yml")
   if File.exist? path 
     img = YAML::load( File.open( path ) )
-    p "reading #{path}"
+    # p "reading #{path}"
   else
-    p "getting #{url}"
+    # p "getting #{url}"
     fimg = Fleakr.resource_from_url(url)
     img = {
       'url'=>fimg.url,
@@ -34,13 +33,17 @@ def image_template(url, size, klass='' )
         f.puts YAML::dump(img)
     end
   end
+  return img
+end
+
+def image_template(url, size, klass='' )
+  img = flickr_image(url)
   "<div class='flickr-photo #{klass}'><img title='"+img['title']+"' alt='"+img['title']+"' src='"+img[size]+"'><div class='caption'>Photo by <a target='_blank' href='"+img['url']+"'>"+img['owner_name']+"</a> </div></div>"
 end
 
 module Jekyll
 
   class FlickrTag < Liquid::Tag
-
     def initialize(tag_name, text, tokens)
       super
       @text = text
@@ -53,13 +56,39 @@ module Jekyll
       image_template(url, size )
     end
   end
+
+  class FurlTag < Liquid::Tag
+    def initialize(tag_name, text, tokens)
+      super
+      p "furl!"
+      @text = text
+    end
+
+    def render(context)
+      params = @text.split(/\s/)
+      p params
+      url = params[0]
+      size = params[1] || 'medium'
+      img = flickr_image(url)
+      img[size]
+    end
+  end
 end
 
 module Flickr
   def flickr(url, size = 'medium' )
     image_template(url, size||'medium', "")
   end
+  def furl(url)
+    p url 
+    size = "square"
+    img = flickr_image(url)
+    img[size]
+  end
 end
 
+
+Liquid::Template.register_tag('furl', Jekyll::FurlTag)
 Liquid::Template.register_tag('flickr', Jekyll::FlickrTag)
 Liquid::Template.register_filter(Flickr)
+

@@ -6,6 +6,7 @@ map:
 author: Leszek
 license: CC-BY-NC
 area: Tanzawa
+center: [139.2451000213623, 35.46413043654055]
 info:
   level: intermediate
   highest_point: 934.6

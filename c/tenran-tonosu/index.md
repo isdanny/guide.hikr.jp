@@ -6,7 +6,7 @@ map:
  - tenran-tonosu.json
 author: JAMBO International
 license: CC-BY-NC
-area: Chichibu
+area: Hanno
 featured: also
 tags: [ river, statue, temple ]
 header_image: http://www.flickr.com/photos/jambodave/9651060026

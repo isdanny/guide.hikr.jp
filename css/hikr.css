@@ -7,6 +7,10 @@ ul,menu,dir{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:
 .huge{font-size:64px}
 .flickr-photo{position:relative}.flickr-photo .caption{color:#fff;padding:1px 3px;font-size:70%;text-align:right;position:absolute;bottom:4px;-webkit-transition:background,.5s;right:0}.flickr-photo .caption a{color:#fff !important}
 .flickr-photo:hover .caption{background:rgba(0,0,0,0.7);-webkit-transition:background,.5s}
+.preview-box .inside{background:#222;position:absolute;bottom:15px;left:-1px;margin-left:-50%;border-radius:3px;overflow:hidden;border:1px solid #222;z-index:9}.preview-box .inside .title{display:block;line-height:13px;padding:8px;padding-top:4px;font-size:90%;z-index:15;background:#222;font-weight:bold;color:#f8f8f8}
+.preview-box .inside a{min-height:0}.preview-box .inside a img{min-width:96px;width:100%}
+.preview-box .inside a:hover{color:#e95223}
+.preview-box:before{content:" ";transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);display:block;border-radius:3px;position:absolute;background:#222;width:15px;height:15px;left:6px;bottom:9px;z-index:18}
 .maki-icon{color:#222;text-shadow:0 0 0 #fff,1px 0 0 #fff,0 1px 0 #fff,-1px 0 0 #fff,0 -1px 0 #fff;-webkit-text-stroke:1px #fff outside;display:block;font:13px/20px "Helvetica Neue",Arial,Helvetica,sans-serif;font-weight:bold;position:absolute;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:6;text-indent:26px}.maki-icon span{display:none}
 .hide-labels .maki-icon{overflow:hidden}
 .en .maki-icon span.lang-en{display:inline}
@@ -35,7 +39,7 @@ h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 .column-6{width:463px;float:left;margin-left:16px;padding-left:15px;border-left:1px solid #ccc}.column-6.first{border-left:none;padding-left:16px}
 .column-3{width:240px;float:left;padding:0}
 .footer{background-color:#fff;border-top:1px solid #bbb}
-.thumb-box{width:160px;float:left;background:#fff;border-radius:2px;border:1px solid #ccc;margin-right:16px;margin-bottom:16px}.thumb-box .header-image{width:100%}.thumb-box .header-image img{width:100%}
+.thumb-box{width:160px;float:left;background:#fff;border-radius:3px;border:1px solid #ccc;margin-right:16px;margin-bottom:16px}.thumb-box .header-image{width:100%;height:160px}.thumb-box .header-image img{width:100%}
 .thumb-box .headings{margin:8px;height:40px;overflow:hidden}.thumb-box .headings h2{font-size:14px}
 .blurb-box{border-left:1px solid #ccc;font-size:90%;margin-left:16px;min-height:310px}.blurb-box .blurb-inside{margin-left:16px}
 .blurb-box.first{border:0}

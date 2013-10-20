@@ -12,7 +12,6 @@ menu:
   <div class="article-container">
     <div class="section">
 <h1>{{ page.area_listing }}</h1>
-{% assign courses = page.courses %}
 {% for page in site.areas[page.area_listing] %}
 {% include thumb.html %}
 {% endfor %}
@@ -22,7 +21,7 @@ menu:
 </div>
  <script type="text/javascript">
   window.onload = function(){
-    var maps = [ {% for url in page.map %} "{{url}}", {% endfor %} false];
+    var maps = [ "/data/area/{{page.area_listing}}.json", {% for url in page.map %} "{{url}}", {% endfor %} false];
     hikr = new Hikr("map");
     hikr.loadMaps(maps);
   };

@@ -8,5 +8,5 @@ license: CC-BY-NC
 area: Otsuki
 info:
   level: intermediate
-tags: [ river ]
+tags: [ river, draft ]
 ---

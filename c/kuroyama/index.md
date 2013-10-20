@@ -8,5 +8,5 @@ license: CC-BY-NC
 area: Chichibu
 info:
   level: intermediate
-tags: [ waterfall ]
+tags: [ waterfall, draft ]
 ---

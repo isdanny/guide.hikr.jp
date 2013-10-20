@@ -33,6 +33,20 @@ module Jekyll
     end
   end
 
+
+  class TagMap < Page
+    def initialize(site,base,dir,tag, pages)
+      @site = site
+      @base = base
+      @dir = dir
+      @name = tag+'.json'
+      self.process(@name)
+      self.read_yaml(File.join(base, '_layouts'), 'tagmap.json')
+      self.data['listing'] = tag
+      self.data["tag_listing"] = tag
+    end
+  end
+
   class TagPage < Page
     def initialize(site,base,dir,tag, pages)
       @site = site
@@ -54,6 +68,7 @@ module Jekyll
       site.page_tags.keys.each do | tag |
         p "adding page #{tag}"
         site.pages << TagPage.new(site, site.source, "tag", tag, site.page_tags[tag] )
+        site.pages << TagMap.new(site, site.source, "data/tag", tag, site.page_tags[tag])
       end
     end
   end

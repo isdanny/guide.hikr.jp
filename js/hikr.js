@@ -108,8 +108,14 @@ L.control.language = function (options) {
 
   Hikr.makeMarker = function(feature, latlng){
       var label = '';
-
+      var className = '';
+      if(feature.properties.hasOwnProperty("popup")){
+        className = 'preview-box';
+        label = "<div class='inside'>"+feature.properties.popup+"</div>";
+        console.log(label);
+      }
       if(feature.properties.hasOwnProperty("label")){
+        className = "maki-icon "+feature.properties.type;
         if(typeof(feature.properties.label)==="string")
           label = feature.properties.label;
         else if(typeof(feature.properties.label)=="object"){
@@ -127,7 +133,7 @@ L.control.language = function (options) {
         label += " ("+ele+"m)";
       }
       var icon = L.divIcon({
-          className:"maki-icon "+feature.properties.type,
+          className: className,
           html:label,
           iconSize: [26,24]
       });

@@ -51,9 +51,9 @@ module Jekyll
       @base = base
       @dir = dir
       @name = area+'.json'
-
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'area.json')
+      self.read_yaml(File.join(base, '_layouts'), 'areamap.json')
+      self.data['area_listing'] = area
       self.data['area'] = area
       self.data['courses'] = pages
     end
