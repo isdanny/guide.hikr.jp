@@ -1,0 +1,20 @@
+---
+layout: nil
+---
+{
+  "type": "FeatureCollection",
+  "features": [{% for p in site.tags[page.tag_listing] %} {% if p.center %}
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='{{p.url}}'>{% if p.header_image %}<img src='{{ p.header_image | furl square}}'>{% endif %}<span class='title'>{{p.title}}</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        {{p.center[0]}},
+        {{p.center[1]}}
+        ]
+      }
+    }, {% endif %} {% endfor %} {}
+  ]
+}

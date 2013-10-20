@@ -5,10 +5,11 @@ center: [139.822284579277, 35.16833575377093]
 license: CC-BY-NC
 author: hikr.jp
 area: Chiba
+prefecture: Chiba
 info:
   author: Leszek
   level: 3
-tags: [ cliff, statue ]
+tags: [ cliff, statue, seaside ]
 featured: false
 header_image: http://www.flickr.com/photos/jambodave/6663141697
 header_class: vertical

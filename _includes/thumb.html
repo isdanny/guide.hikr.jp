@@ -1,0 +1,16 @@
+<div class="thumb-box {{ page.header_class }} {{ include.classes }}">
+  <div class="thumb-inside">
+    <div class="header-image"> 
+      <a href="{{page.url}}">
+         {% if page.header_image %}
+         {{ page.header_image | flickr : "large_square" }}
+         {% else %}
+         <img src="/img/noimg.png">
+         {% endif %}
+       </a>
+    </div>
+  <div class="headings">
+    <a href="{{page.url}}"><h2>{{page.title}}</h2></a>
+  </div>
+  </div>
+</div>

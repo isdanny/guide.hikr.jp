@@ -6,7 +6,11 @@
 @accent: #E95223;
 @white: #f8f8f8;
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
 @import url(maki-sprite.css);
+
+body{color:#222;font-size:16px;font-family:"Open sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300;background:#fff}
 
 body, html{
   height: 100%;
@@ -15,6 +19,10 @@ body, html{
   padding: 0;
   a{
   }
+}
+
+.section{
+  clear: both;
 }
 
 ul, menu, dir{
@@ -52,6 +60,58 @@ ul, menu, dir{
   }
 }
 
+
+.preview-box{
+  .inside{
+    background: #222;
+    position: absolute;
+    bottom: 15px;
+    left: -1px;
+    margin-left: -50%;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid #222;
+    .title{
+      display: block;
+      line-height: 13px;
+      padding: 8px;
+      padding-top: 4px;
+      font-size: 90%;
+      z-index: 15;
+      background: #222;
+      font-weight: bold;
+      color: @white;
+    }
+    a{
+      min-height: 0;
+      img{
+        min-width: 96px; 
+        width: 100%;
+      }
+    }
+    a:hover{
+      color: @accent;
+    }
+    z-index: 9;
+  }
+  &:before{
+    content: " ";
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    display: block;
+    border-radius: 3px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: #222;    
+    width: 15px;
+    height: 15px;
+    left: 6px;
+    bottom: 9px;
+    z-index: 18;
+  }
+}
 
 .maki-icon{
   color: #222;
@@ -232,6 +292,19 @@ header{
   }
 }
 
+.two-cols{
+  columns:100px 3;
+  -webkit-columns:100px 3; /* Safari and Chrome */
+  -moz-columns:100px 3; /* Firefox */
+  .tag-listing{
+    display: inline-block;
+    width: 100%;
+    li{
+      display: block;
+    }
+  }
+}
+
 h6{
   color: @accent;
   text-transform: uppercase;
@@ -240,6 +313,7 @@ h6{
 }
 
 :not(.icon).tag{
+  display: inline-block;
   background-color: @sea1;
   &:hover{
     background-color: @sea2;
@@ -260,8 +334,7 @@ h6{
     position: absolute;
     left: 0;
     top: 0;
-    width: 80%;
-    min-width: 800px;
+    width: 960px;
     img{
       width: 100%;
     }
@@ -273,6 +346,92 @@ h6{
   margin: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ccc;
+}
+
+
+.row{
+  width: 990px;
+  position: relative;
+  left: -32px;
+}
+
+.column-6{
+  width: 463px;
+  float: left;
+  margin-left: 16px;
+  padding-left: 15px;
+  border-left: 1px solid #ccc;
+  &.first{
+    border-left: none;
+    padding-left: 16px;
+  }
+}
+
+.column-3{
+  width: 240px;
+  float: left;
+  padding: 0;
+}
+
+.footer{
+  background-color: white;
+  border-top: 1px solid #bbb;
+}
+
+.thumb-box{
+  width: 160px;
+  float: left;
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  .header-image{
+    width: 100%;
+    height: 160px;
+    img{
+      width: 100%;
+    }
+  }
+  .headings{
+    margin: 8px;
+    height: 40px;
+    overflow: hidden;
+    h2{
+      font-size: 14px;
+    }
+  }
+}
+
+.blurb-box{
+  border-left: 1px solid #ccc;
+  font-size: 90%;
+  margin-left: 16px;
+  min-height: 310px;
+  .blurb-inside{
+    margin-left: 16px;
+  }
+  &.first{
+    border: 0;
+    .blurb-inside{
+    }
+  } 
+  h2{
+    font-size: 120%;
+  }
+  h4{
+    font-size: 90%;
+  }
+}
+
+.area{
+  a{
+    color: @theme!important;
+  }
+  a:hover{
+      color: @accent!important;
+  }
+  font-size: 90%;
 }
 
 .summary-box{
@@ -343,15 +502,29 @@ h6{
     top: 0;
     left: 0;
     bottom: 0;
-    width: 160px;
+    width: 180px;
     background-color: rgba(0,0,0,0.8);
     border-right: 1px solid black;
     box-shadow: 0 0 16px rgba(0,0,0,0.5);
     -webkit-transform: translate3d(-190px,0,0);
     -webkit-transition: -webkit-transform, 0.25s;
-
-    ul{
+    #main-menu{
       margin-top: 100px;
+      .submenu{
+        display: none;
+        margin: 0;
+        border-bottom: 1px solid rgba(0,0,0,0.9);
+        border-top: 1px solid rgba(255,255,255,0.1);
+        font-size: 90%;
+        a{
+          text-transform: none;
+          border: none;
+          line-height: 18px;
+          padding-left: 40px;
+        }
+      }
+    }
+    #main-menu{
       list-style: none none;
       border-top: 1px solid rgba(0,0,0,0.9);
       border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -371,8 +544,8 @@ h6{
           }
         }
         a{
-          border-tops: 1px solid rgba(0,0,0,0.9);
-          border-bottom: 1px solid rgba(255,255,255,0.1);
+          border-bottom: 1px solid rgba(0,0,0,0.9);
+          border-top: 1px solid rgba(255,255,255,0.1);
           padding-left: 15px;
           display: block;
           color: @sea1;
@@ -380,7 +553,7 @@ h6{
           text-transform: uppercase;
           clear: both;
           &:hover{
-            color: black;
+            color: white;
             background-color: rgba(0,0,0,0.5);
           }
           .icon{

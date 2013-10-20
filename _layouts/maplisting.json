@@ -6,7 +6,7 @@ layout: nil
   "features": [{% for p in page.courses %} {% if p.center %}
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='{{page.url}}'>{{page.title}}</a>"
+        "popup": "<a href='{{p.url}}'>{% if p.header_image %}<img src='{{ p.header_image | furl square}}'>{% endif %}<span class='title'>{{p.title}}</span></a>"
       },
       "geometry": {
         "type": "Point",

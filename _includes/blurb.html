@@ -1,0 +1,15 @@
+<div class="blurb-box {{ page.header_class }} {{ include.classes }}">
+  <div class="blurb-inside">
+  {% if page.header_image %}
+    <div class="header-image"> 
+      <a href="{{page.url}}">{{ page.header_image | flickr : "large_square" }}</a>
+    </div>
+  {% endif %}
+  <div class="headings">
+    <a href="{{page.url}}"><h2>{{page.title}}</h2></a>
+    <a href="/area/{{page.area}}.html"><h4 class="area">{{page.area}}</h4></a>
+    <div class="author">by {{page.author}} </div>
+  </div>
+  <br class="clear">
+  </div>
+</div>

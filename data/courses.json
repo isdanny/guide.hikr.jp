@@ -6,7 +6,7 @@ layout: nil
   "features": [{% for page in site.pages %} {% if page.center %}
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='{{page.url}}'>{{page.title}}</a>"
+        "popup": "<a href='{{page.url}}'><span class='title'>{{page.title}}</span></a>"
       },
       "geometry": {
         "type": "Point",

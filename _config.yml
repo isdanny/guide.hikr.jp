@@ -10,4 +10,4 @@ pygments:    true
 markdown:    redcarpet
 flickr:
   api_key: 06a5a0dfe07d9d2d0af5ae6fe74bad03
-permalink: pretty
+permalink: none

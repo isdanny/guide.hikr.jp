@@ -6,12 +6,14 @@ map:
 author: Leszek
 license: CC-BY-NC
 area: Tanzawa
+prefecture: Kanagawa
+center: [139.2451000213623, 35.46413043654055]
 info:
   level: intermediate
   highest_point: 934.6
   lowest_point: 180
   walking_time: 4.5h
-featured: true
+featured: header
 tags: [ chains, onsen ]
 header_image: http://www.flickr.com/photos/jambodave/10033846124/
 summary: >

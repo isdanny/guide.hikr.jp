@@ -56,6 +56,7 @@ L.control.language = function (options) {
     console.log(lng+","+lat);
   });
   //
+  this.zoomClass = "zoom-16";
   var bg = L.tileLayer('http://{s}.tiles.mapbox.com/v3/hikr.map-gtn520tv/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://mapbox.com">MapBox</a>, Photos from Panoramio are copyright of their respective authors.',
       maxZoom: 16
@@ -108,8 +109,14 @@ L.control.language = function (options) {
 
   Hikr.makeMarker = function(feature, latlng){
       var label = '';
-
+      var className = '';
+      if(feature.properties.hasOwnProperty("popup")){
+        className = 'preview-box';
+        label = "<div class='inside'>"+feature.properties.popup+"</div>";
+        console.log(label);
+      }
       if(feature.properties.hasOwnProperty("label")){
+        className = "maki-icon "+feature.properties.type;
         if(typeof(feature.properties.label)==="string")
           label = feature.properties.label;
         else if(typeof(feature.properties.label)=="object"){
@@ -127,7 +134,7 @@ L.control.language = function (options) {
         label += " ("+ele+"m)";
       }
       var icon = L.divIcon({
-          className:"maki-icon "+feature.properties.type,
+          className: className,
           html:label,
           iconSize: [26,24]
       });
@@ -163,7 +170,10 @@ L.control.language = function (options) {
  };
 
 Hikr.prototype.adjustInterface = function(){
+  this.container.removeClass(this.zoomClass);
   var zoom = this.map.getZoom();
+  this.zoomClass = "zoom-"+zoom;
+  this.container.addClass(this.zoomClass);
   if(zoom<13) this.container.addClass("hide-labels");
   else this.container.removeClass("hide-labels");
 };

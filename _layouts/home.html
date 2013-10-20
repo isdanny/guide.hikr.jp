@@ -11,20 +11,36 @@ menu:
   <div class="right-side">
     <div class="container">
       <div class="section">
-        {{ content }}
+        <div class="row">
+          <div class="column-6 first">
+            {{ content }}
+            <h4>Prefectures</h4>
+            {% for pref in site.prefecture_names %}
+              <a href="/pref/{{pref}}.html">{{ pref }}</a>&nbsp;
+            {% endfor %}
+            <hr>
+              <h4>Tags</h4>
+            {% for tag in site.tag_names %}
+              <a href="/tag/{{tag}}.html" class="tag">{{site.tags[tag].size}} | {{ tag }}</a>
+            {% endfor %}
+          </div>
+          <div class="column-6">{% for page in site.pages %} {% if page.featured == 'header' %} {% include summary.html %}{% endif %}{% endfor %} </div>
+        </div>
       </div>
       <div class="section">
-        {% for page in site.pages %}
-          {% if page.featured %}
-            {% include summary.html %}
-          {% endif %}
-        {% endfor %}
+        <div class="row">
+        {% assign c = 'first' %}
+        {% for page in site.pages %} {% if page.featured == 'also' %}
+          <div class="column-3 {{c}}">
+            {% include blurb.html classes=c %}
+            {% assign c = '' %}
+          </div>
+          {% endif %} {% endfor %}
+        <br class="clear">
+        </div>
       </div>
-      <div class="section">
-        {% for area in site.area_names %}
-        {{ area }}<br>
-        {% endfor %}
-
+      <div class="footer">
+        foo - ter
       </div>
     </div>
   </div>

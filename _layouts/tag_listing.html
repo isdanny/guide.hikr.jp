@@ -1,10 +1,27 @@
 ---
 layout: default
 ---
+<div class="map-on-left">
+  <div id="map">
+    <div class="coords"></div>
+  </div>
+  <div class="article-container">
+    <div class="section">
+    <h2><a href="/tag/">Tags</a> / {{page.area_listing}}</h2>
+    <br>
+      {% for page in page.courses %}
+      {% include thumb.html %}
+      <!-- <li><a href="{{p.url}}">{{p.title}}</a>&nbsp; &nbsp; {{p.area}} {{p.center}}</li> -->
+      {% endfor %}
+      <br class="clear">
+    </div>
+  </div>
+</div>
+ <script type="text/javascript">
+  window.onload = function(){
+    var maps = [ "/data/tag/{{page.tag_listing}}.json", {% for url in page.map %} "{{url}}", {% endfor %} false];
+    hikr = new Hikr("map");
+    hikr.loadMaps(maps);
+  };
+ </script>
 
-<h1>Courses tagged: {{page.tag_listing}}</h1>
-<ul>
-{% for p in site.tags[page.tag_listing] %}
-  <li><a href="{{p.url}}">{{p.title}}</a>&nbsp; &nbsp; {{p.area}}</li>
-{% endfor %}
-</ul>
