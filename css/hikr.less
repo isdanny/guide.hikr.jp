@@ -6,6 +6,8 @@
 @accent: #E95223;
 @white: #f8f8f8;
 
+@footerHeight: auto;
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 @import url(maki-sprite.css);
@@ -324,11 +326,12 @@ h6{
 }
 
 .right-side{
-  position: fixed;
+  position: absolute;
   top:0;
   bottom: 0;
   right: 0;
   width: 80%;
+  height: 100%;
   background: @white;
   border-left: 1px solid white;
   box-shadow: 0 0 16px rgba(0,0,0,0.5);
@@ -342,16 +345,43 @@ h6{
 }
 
 .section{
+  border-bottom: 1px solid #ccc;
   margin: 16px;
   padding-bottom: 16px;
-  border-bottom: 1px solid #ccc;
+  &:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+  }
 }
-
 
 .row{
   width: 990px;
   position: relative;
   left: -32px;
+  margin: 0;
+}
+
+.column-3{
+  width: 224px;
+  float: left;
+  margin-left: 16px;
+  padding-left: 15px!important;
+  border-left: 1px solid #ccc;
+  &:first-child{
+    padding-left: 16px;
+    border-left: none;
+  }
+}
+
+.column-4{
+  width: 300px;
+  float: left;
+  margin-left: 16px;
+  padding-left: 15px;
+  &:first-child{
+    padding-left: 16px;
+    border-left: none;
+  }
 }
 
 .column-6{
@@ -360,21 +390,46 @@ h6{
   margin-left: 16px;
   padding-left: 15px;
   border-left: 1px solid #ccc;
-  &.first{
+  &:first-child{
     border-left: none;
     padding-left: 16px;
   }
 }
 
-.column-3{
-  width: 240px;
+.column-8{
+  width: 640px;
   float: left;
-  padding: 0;
+  margin-left: 16px;
+  padding-left: 15px;
+  &:first-child{
+    padding-left: 16px;
+    border-left: none;
+  }
+}
+
+.column-9{
+  width: 700px;
+  float: left;
+  margin-left: 16px;
+  padding-left: 15px;
 }
 
 .footer{
+  width: 100%;
+  bottom: 0;
+  height: @footerHeight;
+  margin-bottom: 0;
   background-color: white;
   border-top: 1px solid #bbb;
+  font-size: 12px;
+  color: #444;
+  padding: 8px 16px;
+  .menu{
+    list-style: none none;
+  }
+  p{
+    margin-bottom: 0.5em;
+  }
 }
 
 .thumb-box{
@@ -403,12 +458,9 @@ h6{
 }
 
 .blurb-box{
-  border-left: 1px solid #ccc;
   font-size: 90%;
-  margin-left: 16px;
   min-height: 310px;
   .blurb-inside{
-    margin-left: 16px;
   }
   &.first{
     border: 0;
@@ -615,6 +667,23 @@ h6{
   }
 }
 
+.post{
+  .date, .author{
+    font-size: 15px;
+    color: @sea2;
+  }
+  .date{
+    float: right;
+  }
+  p{
+    margin-bottom: 0.5em;
+  }
+  .content{
+    margin-top: 0.5em;
+    text-align: justify;
+  }
+}
+
 .article{
   font-weight: 200;
   font-size: 15px;
@@ -647,6 +716,7 @@ h6{
   p{
     line-height: 1.8;
     color: #222;
+    text-align: justify;
     text-shadow: 2px 2px 0px #fff!important;
     margin: 1em 0;
   }

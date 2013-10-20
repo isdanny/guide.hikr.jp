@@ -9,7 +9,7 @@ license: CC-BY-NC
 area: Hanno
 prefecture: Saitama
 featured: also
-tags: [ river, statue, temple ]
+tags: [ river swim, statue, temple ]
 header_image: http://www.flickr.com/photos/jambodave/9651060026
 header_class: vertical
 info:

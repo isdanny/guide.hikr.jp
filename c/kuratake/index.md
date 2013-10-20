@@ -9,5 +9,5 @@ area: Otsuki
 prefecture: Yamanashi
 info:
   level: intermediate
-tags: [ river, .draft ]
+tags: [ river swim, .draft ]
 ---
