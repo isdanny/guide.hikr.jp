@@ -53,7 +53,6 @@ L.control.language = function (options) {
     var center = e.latlng; //this.mouseEventToLatLng(e.latlng);
     var lat = Math.round(center.lat*1000000)/1000000.0;
     var lng = Math.round(center.lng*1000000)/1000000.0;
-    console.log(lng+","+lat);
   });
   //
   this.zoomClass = "zoom-16";
@@ -113,7 +112,6 @@ L.control.language = function (options) {
       if(feature.properties.hasOwnProperty("popup")){
         className = 'preview-box';
         label = "<div class='inside'>"+feature.properties.popup+"</div>";
-        console.log(label);
       }
       if(feature.properties.hasOwnProperty("label")){
         className = "maki-icon "+feature.properties.type;
@@ -152,7 +150,6 @@ L.control.language = function (options) {
     for(var i in this.maps){
       var url = this.maps[i];
       if(url) $.get(url,function(data){
-        console.log(data);
         var myLayer = L.geoJson(data,{
           style: app.lineStyle,
           pointToLayer: Hikr.makeMarker,

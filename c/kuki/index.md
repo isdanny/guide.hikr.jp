@@ -11,7 +11,7 @@ area: Otsuki
 prefecture: Yamanashi
 info:
   level: intermediate
-tags: [ fuji view, draft ]
+tags: [ fuji view, .draft ]
 summary: 
 ---
 {% flickr http://www.flickr.com/photos/jambodave/4676988507/ %}

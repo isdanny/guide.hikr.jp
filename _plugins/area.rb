@@ -64,6 +64,7 @@ module Jekyll
       payload['site']['areas'] = self.areas
       payload['site']['tag_names'] = self.page_tags.keys.sort{ |b,a| self.page_tags[a].size <=> self.page_tags[b].size }
       payload['site']['tags'] = self.page_tags
+      payload['site']['tag_names'].delete('.draft')
       payload
     end
   end

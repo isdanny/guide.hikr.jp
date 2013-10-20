@@ -8,7 +8,7 @@ prefecture: Saitama
 layout: course
 author: hikr.jp
 license: CC-BY-NC
-tags: [draft]
+tags: [.draft]
 ---
 
 ## Access

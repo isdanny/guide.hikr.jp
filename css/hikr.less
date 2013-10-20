@@ -318,6 +318,9 @@ h6{
   &:hover{
     background-color: @sea2;
   }
+  &.large{
+    font-size: 10px!important;
+  }
 }
 
 .right-side{
@@ -331,14 +334,10 @@ h6{
   box-shadow: 0 0 16px rgba(0,0,0,0.5);
   overflow: scroll;
   .container{
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 960px;
     img{
       width: 100%;
     }
-
   }
 }
 
@@ -654,6 +653,40 @@ h6{
   h1, h2{
     color: @accent;
     text-shadow: 2px 2px 0px #fff!important;
+  }
+}
+
+.leaflet-bar{
+  border-radius: 2px!important;
+  // border: 1px solid rgba(0,0,0,0.5);
+  box-shadow: none;
+  overflow: hidden;
+  a, a:hover{
+    border-radius: 0!important;
+    font-size: 140%;
+    line-height: 29px;
+    width: 32px;
+    height: 32px;
+  }
+  a{
+    color: #eee!important;
+    background-color: rgba(0,0,0,0.3);
+    -webkit-transition: background-color, 0.2s;
+  }
+  a:hover{
+    color: white!important;
+    background-color: rgba(0,0,0,0.9)!important;
+    -webkit-transition: background-color, 0.2s;
+    box-shadow: 0 0 7px black;
+  }
+  a.leaflet-disabled{
+    background-color: transparent;
+    color: transparent!important;
+    &:hover{
+      background-color: rgba(0,0,0,0.1);
+      box-shadow: none;
+      color: #eee!important;
+    }
   }
 }
 

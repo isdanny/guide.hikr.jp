@@ -9,5 +9,5 @@ area: Chichibu
 prefecture: Saitama
 info:
   level: intermediate
-tags: [ waterfall, draft ]
+tags: [ waterfall, .draft ]
 ---
