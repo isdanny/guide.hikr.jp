@@ -79,4 +79,7 @@ h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 .article ul{margin:0 3em;line-height:2;color:#222}
 .article p{line-height:1.8;color:#222;text-shadow:2px 2px 0 #fff !important;margin:1em 0}
 .article h1,.article h2{color:#e95223;text-shadow:2px 2px 0 #fff !important}
+.leaflet-bar{border-radius:2px !important;box-shadow:none}.leaflet-bar a,.leaflet-bar a:hover{font-size:140%;line-height:29px;width:32px;height:32px}
+.leaflet-bar a{color:#eee !important;background-color:rgba(0,0,0,0.3);-webkit-transition:background-color,.2s}
+.leaflet-bar a:hover{color:#fff !important;background-color:rgba(0,0,0,0.9) !important;-webkit-transition:background-color,.2s;box-shadow:0 0 7px #000}
 .leaflet-control-language-interior{width:25px;height:25px;background-position:50% 50%;background-repeat:no-repeat;display:block;padding:3px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;cursor:pointer;text-align:center;background-color:#fff}
