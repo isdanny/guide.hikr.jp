@@ -35,15 +35,19 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 :not(.icon).tag{display:inline-block;background-color:#a1bbc5}:not(.icon).tag:hover{background-color:#738790}
 :not(.icon).tag.large{font-size:10px !important}
-.right-side{position:fixed;top:0;bottom:0;right:0;width:80%;background:#f8f8f8;border-left:1px solid #fff;box-shadow:0 0 16px rgba(0,0,0,0.5);overflow:scroll}.right-side .container{width:960px}.right-side .container img{width:100%}
-.section{margin:16px;padding-bottom:16px;border-bottom:1px solid #ccc}
-.row{width:990px;position:relative;left:-32px}
-.column-6{width:463px;float:left;margin-left:16px;padding-left:15px;border-left:1px solid #ccc}.column-6.first{border-left:none;padding-left:16px}
-.column-3{width:240px;float:left;padding:0}
-.footer{background-color:#fff;border-top:1px solid #bbb}
+.right-side{position:absolute;top:0;bottom:0;right:0;width:80%;height:100%;background:#f8f8f8;border-left:1px solid #fff;box-shadow:0 0 16px rgba(0,0,0,0.5);overflow:scroll}.right-side .container{width:960px}.right-side .container img{width:100%}
+.section{border-bottom:1px solid #ccc;margin:16px;padding-bottom:16px}.section:last-child{border-bottom:none;padding-bottom:0}
+.row{width:990px;position:relative;left:-32px;margin:0}
+.column-3{width:224px;float:left;margin-left:16px;padding-left:15px !important;border-left:1px solid #ccc}.column-3:first-child{padding-left:16px;border-left:none}
+.column-4{width:300px;float:left;margin-left:16px;padding-left:15px}.column-4:first-child{padding-left:16px;border-left:none}
+.column-6{width:463px;float:left;margin-left:16px;padding-left:15px;border-left:1px solid #ccc}.column-6:first-child{border-left:none;padding-left:16px}
+.column-8{width:640px;float:left;margin-left:16px;padding-left:15px}.column-8:first-child{padding-left:16px;border-left:none}
+.column-9{width:700px;float:left;margin-left:16px;padding-left:15px}
+.footer{width:100%;bottom:0;height:auto;margin-bottom:0;background-color:#fff;border-top:1px solid #bbb;font-size:12px;color:#444;padding:8px 16px}.footer .menu{list-style:none none}
+.footer p{margin-bottom:.5em}
 .thumb-box{width:160px;float:left;background:#fff;border-radius:3px;border:1px solid #ccc;margin-right:16px;margin-bottom:16px}.thumb-box .header-image{width:100%;height:160px}.thumb-box .header-image img{width:100%}
 .thumb-box .headings{margin:8px;height:40px;overflow:hidden}.thumb-box .headings h2{font-size:14px}
-.blurb-box{border-left:1px solid #ccc;font-size:90%;margin-left:16px;min-height:310px}.blurb-box .blurb-inside{margin-left:16px}
+.blurb-box{font-size:90%;min-height:310px}
 .blurb-box.first{border:0}
 .blurb-box h2{font-size:120%}
 .blurb-box h4{font-size:90%}
@@ -69,6 +73,10 @@ h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 .navbar{margin-bottom:0}
 .infobox{float:right;width:200px}
 .article-container{position:absolute;right:0;width:600px;box-shadow:0 0 16px rgba(0,0,0,0.5);min-height:100%}.article-container img{max-width:100%}
+.post .date,.post .author{font-size:15px;color:#738790}
+.post .date{float:right}
+.post p{margin-bottom:.5em}
+.post .content{margin-top:.5em;text-align:justify}
 .article{font-weight:200;font-size:15px}.article .flickr-photo{width:100%}.article .flickr-photo img{width:100%}
 .article h1,.article h2,.article h3,.article h4,.article h5{text-transform:uppercase;margin-top:.5em;padding-top:1em;margin-bottom:.3em}
 .article h1{font-size:150%}
@@ -78,7 +86,7 @@ h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 .article h5{font-size:90%}
 .article a{color:#a1bbc5}
 .article ul{margin:0 3em;line-height:2;color:#222}
-.article p{line-height:1.8;color:#222;text-shadow:2px 2px 0 #fff !important;margin:1em 0}
+.article p{line-height:1.8;color:#222;text-align:justify;text-shadow:2px 2px 0 #fff !important;margin:1em 0}
 .article h1,.article h2{color:#e95223;text-shadow:2px 2px 0 #fff !important}
 .leaflet-bar{border-radius:2px !important;box-shadow:none;overflow:hidden}.leaflet-bar a,.leaflet-bar a:hover{border-radius:0 !important;font-size:140%;line-height:29px;width:32px;height:32px}
 .leaflet-bar a{color:#eee !important;background-color:rgba(0,0,0,0.3);-webkit-transition:background-color,.2s}

@@ -10,7 +10,7 @@ author: JAMBO International
 header_image: http://www.flickr.com/photos/jambodave/9593450445/
 header_class: vertical
 license: CC-BY-NC
-tags: [river]
+tags: [river swim]
 info:
   level: intermediate
   walking_time: 4.5h
