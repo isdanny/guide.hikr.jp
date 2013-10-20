@@ -60,9 +60,9 @@ ul, menu, dir{
   }
 }
 
+
 .preview-box{
   .inside{
-
     background: #222;
     position: absolute;
     bottom: 15px;
@@ -292,6 +292,19 @@ header{
   }
 }
 
+.two-cols{
+  columns:100px 3;
+  -webkit-columns:100px 3; /* Safari and Chrome */
+  -moz-columns:100px 3; /* Firefox */
+  .tag-listing{
+    display: inline-block;
+    width: 100%;
+    li{
+      display: block;
+    }
+  }
+}
+
 h6{
   color: @accent;
   text-transform: uppercase;
@@ -300,6 +313,7 @@ h6{
 }
 
 :not(.icon).tag{
+  display: inline-block;
   background-color: @sea1;
   &:hover{
     background-color: @sea2;
@@ -411,7 +425,12 @@ h6{
 }
 
 .area{
-  color: @theme;
+  a{
+    color: @theme!important;
+  }
+  a:hover{
+      color: @accent!important;
+  }
   font-size: 90%;
 }
 
@@ -483,15 +502,29 @@ h6{
     top: 0;
     left: 0;
     bottom: 0;
-    width: 160px;
+    width: 180px;
     background-color: rgba(0,0,0,0.8);
     border-right: 1px solid black;
     box-shadow: 0 0 16px rgba(0,0,0,0.5);
     -webkit-transform: translate3d(-190px,0,0);
     -webkit-transition: -webkit-transform, 0.25s;
-
-    ul{
+    #main-menu{
       margin-top: 100px;
+      .submenu{
+        display: none;
+        margin: 0;
+        border-bottom: 1px solid rgba(0,0,0,0.9);
+        border-top: 1px solid rgba(255,255,255,0.1);
+        font-size: 90%;
+        a{
+          text-transform: none;
+          border: none;
+          line-height: 18px;
+          padding-left: 40px;
+        }
+      }
+    }
+    #main-menu{
       list-style: none none;
       border-top: 1px solid rgba(0,0,0,0.9);
       border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -511,8 +544,8 @@ h6{
           }
         }
         a{
-          border-tops: 1px solid rgba(0,0,0,0.9);
-          border-bottom: 1px solid rgba(255,255,255,0.1);
+          border-bottom: 1px solid rgba(0,0,0,0.9);
+          border-top: 1px solid rgba(255,255,255,0.1);
           padding-left: 15px;
           display: block;
           color: @sea1;
@@ -520,7 +553,7 @@ h6{
           text-transform: uppercase;
           clear: both;
           &:hover{
-            color: black;
+            color: white;
             background-color: rgba(0,0,0,0.5);
           }
           .icon{

@@ -8,13 +8,20 @@ layout: guide
   <div class="right-side">
     <div class="container">
       <div class="section">
-        {% for tag in site.tag_names %}
-        <a href="/tag/{{tag}}.html" class="tag">{{tag}}</a><br>
-        {% for p in site.tags[tag] %}
-          <a href="{{p.url}}">{{p.title}}</a> (<span class="area">{{p.area}}</span>)<br>
-        {% endfor %}
-        <hr>
-        {% endfor %}
+        <h1>Courses by tag</h1>
+        <div class="two-cols">
+          {% for tag in site.tag_names %}
+          <div class="tag-listing">
+            <a href="/tag/{{tag}}.html" class="tag">{{tag}}</a><br>
+            <ul>
+            {% for p in site.tags[tag] %}
+              <li><a href="{{p.url}}">{{p.title}}</a></li>
+            {% endfor %}
+            </ul>
+            <hr>
+          </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>

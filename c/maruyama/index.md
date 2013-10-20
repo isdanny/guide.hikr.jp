@@ -1,9 +1,10 @@
 ---
-title: Maruyama hike
+title: Maruyama
 center: [139.15995597839355, 35.9884762566153]
 map: 
  - maruyama.json
 area: Hanno
+prefecture: Saitama
 layout: course
 author: hikr.jp
 license: CC-BY-NC

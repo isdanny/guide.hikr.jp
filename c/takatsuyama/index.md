@@ -1,10 +1,11 @@
 ---
 layout: course
-title: Takatsuyama hike and swim
+title: Takatsuyama
 center: [139.08901691436768, 35.59450649082071]
 map: 
  - takatsuyama.json
-area: Ootsuki
+prefecture: Yamanashi
+area: Otsuki
 author: JAMBO International
 header_image: http://www.flickr.com/photos/jambodave/9593450445/
 header_class: vertical

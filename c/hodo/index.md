@@ -5,6 +5,7 @@ author: Leszek
 header_image: http://www.flickr.com/photos/jambodave/8488645196/
 tags: [temple, flowers, shrine]
 area: Chichibu
+prefecture: Saitama
 center: [139.0926218032837, 36.09329130533463]
 summary: >
   Hodo-san, which could be translated as "Treasure Mountain" is an easy to climb mountain with an orchard of allspice trees. Recommended in late January or early February when the trees are in bloom.

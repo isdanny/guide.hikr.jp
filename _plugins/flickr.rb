@@ -60,7 +60,6 @@ module Jekyll
   class FurlTag < Liquid::Tag
     def initialize(tag_name, text, tokens)
       super
-      p "furl!"
       @text = text
     end
 
@@ -80,7 +79,6 @@ module Flickr
     image_template(url, size||'medium', "")
   end
   def furl(url)
-    p url 
     size = "square"
     img = flickr_image(url)
     img[size]

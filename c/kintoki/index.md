@@ -1,6 +1,7 @@
 ---
-title: Kintoki-yama hike
+title: Kintoki-yama
 area: Hakone
+prefecture: Yamanashi
 layout: course
 author: Leszek
 tags: [draft]

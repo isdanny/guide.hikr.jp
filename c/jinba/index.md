@@ -8,4 +8,5 @@ tags: [ statue, draft ]
 author: hikr.jp
 license: CC-BY-NC
 area: Hachioji
+prefecture: Tokyo
 ---

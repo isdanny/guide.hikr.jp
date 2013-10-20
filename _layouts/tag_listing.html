@@ -7,8 +7,9 @@ layout: default
   </div>
   <div class="article-container">
     <div class="section">
-    <h2><a href="/tag/">Tags</a> / {{page.tag_listing}}</h2>
-      {% for page in site.tags[page.tag_listing] %}
+    <h2><a href="/tag/">Tags</a> / {{page.area_listing}}</h2>
+    <br>
+      {% for page in page.courses %}
       {% include thumb.html %}
       <!-- <li><a href="{{p.url}}">{{p.title}}</a>&nbsp; &nbsp; {{p.area}} {{p.center}}</li> -->
       {% endfor %}

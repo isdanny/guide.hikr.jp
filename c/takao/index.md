@@ -7,6 +7,7 @@ map:
  - takao.json
 author: hikr.jp
 area: Hachioji
+prefecture: Tokyo
 license: CC-BY-NC
 info:
 ---

@@ -5,6 +5,7 @@ center: [139.10592555999756, 35.77921138227575]
 map: 
 author: Leszek
 area: Okutama
+prefecture: Tokyo
 header_image: http://www.flickr.com/photos/jambodave/8359426703/ 
 license: CC-BY-NC
 info:

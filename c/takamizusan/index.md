@@ -10,6 +10,7 @@ header_image: http://www.flickr.com/photos/104745110@N03/10354395866/
 header_class: vertical
 author: David
 area: Okutama
+prefecture: Tokyo
 summary: >
   A lower-intermediate level course including three mountain tops with great views of the Okutama area. Recommended for late summer or early fall. 
 ---

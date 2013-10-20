@@ -1,11 +1,12 @@
 ---
 layout: course
-title: Kuratake hike
+title: Kuratake
 center: [ 139.01978373527527, 35.583923308165026 ]
 map: 
 author: hikr.jp
 license: CC-BY-NC
 area: Otsuki
+prefecture: Yamanashi
 info:
   level: intermediate
 tags: [ river, draft ]

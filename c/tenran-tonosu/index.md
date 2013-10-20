@@ -7,6 +7,7 @@ map:
 author: JAMBO International
 license: CC-BY-NC
 area: Hanno
+prefecture: Saitama
 featured: also
 tags: [ river, statue, temple ]
 header_image: http://www.flickr.com/photos/jambodave/9651060026

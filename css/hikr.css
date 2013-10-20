@@ -31,8 +31,9 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .info #infobox .infopoint div{font-size:33px;line-height:45px}
 .info #plot{display:table-row;height:120px;padding:0 10px;position:relative}.info #plot canvas{display:table-cell}
 .left-side{position:fixed;top:0;bottom:0;left:0;width:20%;min-width:300px;background:url('http://farm6.staticflickr.com/5471/10270896826_63c810d7c3_k.jpg');background-size:auto 100%;background-position:center center}.left-side .motto{position:absolute;bottom:0;margin:16px;font-size:24px;color:#fff;text-shadow:0 0 5px #000}
+.two-cols{columns:100px 3;-webkit-columns:100px 3;-moz-columns:100px 3;}.two-cols .tag-listing{display:inline-block;width:100%}.two-cols .tag-listing li{display:block}
 h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
-:not(.icon).tag{background-color:#a1bbc5}:not(.icon).tag:hover{background-color:#738790}
+:not(.icon).tag{display:inline-block;background-color:#a1bbc5}:not(.icon).tag:hover{background-color:#738790}
 .right-side{position:fixed;top:0;bottom:0;right:0;width:80%;background:#f8f8f8;border-left:1px solid #fff;box-shadow:0 0 16px rgba(0,0,0,0.5);overflow:scroll}.right-side .container{position:absolute;left:0;top:0;width:960px}.right-side .container img{width:100%}
 .section{margin:16px;padding-bottom:16px;border-bottom:1px solid #ccc}
 .row{width:990px;position:relative;left:-32px}
@@ -45,7 +46,8 @@ h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 .blurb-box.first{border:0}
 .blurb-box h2{font-size:120%}
 .blurb-box h4{font-size:90%}
-.area{color:#a63626;font-size:90%}
+.area{font-size:90%}.area a{color:#a63626 !important}
+.area a:hover{color:#e95223 !important}
 .summary-box .header-image{width:100%}.summary-box .header-image img{width:100%}
 .summary-box .header-image a:hover img{-webkit-filter:none}
 .summary-box .headings{width:49%;float:left;margin-right:1%}
@@ -54,10 +56,11 @@ h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 .summary-box.vertical .headings{width:48%;margin-left:1%}
 .summary-box.vertical .summary{float:left;margin-top:16px;width:48%;margin-left:1%}
 .hikr-sidebar{position:fixed;top:0;left:0;z-index:8}.hikr-sidebar .logo-float{position:fixed;top:20px;left:20px;display:block;width:125px;height:75px;z-index:20;background:url(../img/logo-mini.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
-.hikr-sidebar .hikr-menu{position:fixed;top:0;left:0;bottom:0;width:160px;background-color:rgba(0,0,0,0.8);border-right:1px solid #000;box-shadow:0 0 16px rgba(0,0,0,0.5);-webkit-transform:translate3d(-190px, 0, 0);-webkit-transition:-webkit-transform,.25s}.hikr-sidebar .hikr-menu ul{margin-top:100px;list-style:none none;border-top:1px solid rgba(0,0,0,0.9);border-bottom:1px solid rgba(255,255,255,0.1)}.hikr-sidebar .hikr-menu ul li{position:relative;left:1px;width:100%;border-right:4px solid transparent}.hikr-sidebar .hikr-menu ul li.active{border-right:4px solid #e95223}.hikr-sidebar .hikr-menu ul li.active a{background-color:#000;color:#fff}
-.hikr-sidebar .hikr-menu ul li.active a:hover{background-color:#000}
-.hikr-sidebar .hikr-menu ul li a{border-tops:1px solid rgba(0,0,0,0.9);border-bottom:1px solid rgba(255,255,255,0.1);padding-left:15px;display:block;color:#a1bbc5;line-height:32px;text-transform:uppercase;clear:both}.hikr-sidebar .hikr-menu ul li a:hover{color:#000;background-color:rgba(0,0,0,0.5)}
-.hikr-sidebar .hikr-menu ul li a .icon{display:block;float:left;width:25px;text-align:center}
+.hikr-sidebar .hikr-menu{position:fixed;top:0;left:0;bottom:0;width:180px;background-color:rgba(0,0,0,0.8);border-right:1px solid #000;box-shadow:0 0 16px rgba(0,0,0,0.5);-webkit-transform:translate3d(-190px, 0, 0);-webkit-transition:-webkit-transform,.25s}.hikr-sidebar .hikr-menu #main-menu{margin-top:100px}.hikr-sidebar .hikr-menu #main-menu .submenu{display:none;margin:0;border-bottom:1px solid rgba(0,0,0,0.9);border-top:1px solid rgba(255,255,255,0.1);font-size:90%}.hikr-sidebar .hikr-menu #main-menu .submenu a{text-transform:none;border:none;line-height:18px;padding-left:40px}
+.hikr-sidebar .hikr-menu #main-menu{list-style:none none;border-top:1px solid rgba(0,0,0,0.9);border-bottom:1px solid rgba(255,255,255,0.1)}.hikr-sidebar .hikr-menu #main-menu li{position:relative;left:1px;width:100%;border-right:4px solid transparent}.hikr-sidebar .hikr-menu #main-menu li.active{border-right:4px solid #e95223}.hikr-sidebar .hikr-menu #main-menu li.active a{background-color:#000;color:#fff}
+.hikr-sidebar .hikr-menu #main-menu li.active a:hover{background-color:#000}
+.hikr-sidebar .hikr-menu #main-menu li a{border-bottom:1px solid rgba(0,0,0,0.9);border-top:1px solid rgba(255,255,255,0.1);padding-left:15px;display:block;color:#a1bbc5;line-height:32px;text-transform:uppercase;clear:both}.hikr-sidebar .hikr-menu #main-menu li a:hover{color:#fff;background-color:rgba(0,0,0,0.5)}
+.hikr-sidebar .hikr-menu #main-menu li a .icon{display:block;float:left;width:25px;text-align:center}
 .hikr-sidebar:hover .hikr-menu{-webkit-transform:translate3d(0, 0, 0)}
 .map-on-left,.map-on-left>.column{height:100%}
 .map-on-left{width:100%;height:100%}.map-on-left #map{height:100%;position:fixed;top:0;left:0;right:600px}.map-on-left #map .coords{position:absolute;bottom:10px;left:10px;z-index:100}

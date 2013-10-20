@@ -2,7 +2,8 @@
 layout: course
 map:
 title: Ogusu
-area: Miura
+area: Kanagawa
+prefecture: Kanagawa
 author: Leszek
 header_image: http://www.flickr.com/photos/jambodave/6855658110/
 tags: [seaside, onsen, flowers, draft]

@@ -6,6 +6,7 @@ map:
 author: hikr.jp
 license: CC-BY-NC
 area: Chichibu
+prefecture: Saitama
 info:
   level: intermediate
 tags: [ waterfall, draft ]
