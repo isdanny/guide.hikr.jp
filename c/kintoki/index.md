@@ -4,7 +4,7 @@ area: Hakone
 prefecture: Yamanashi
 layout: course
 author: Leszek
-tags: [draft]
+tags: [.draft]
 center: [139.00464534759521, 35.289873071558816]
 header_image: http://www.flickr.com/photos/104745110@N03/10373749914/
 summary: >

@@ -6,7 +6,7 @@ area: Kanagawa
 prefecture: Kanagawa
 author: Leszek
 header_image: http://www.flickr.com/photos/jambodave/6855658110/
-tags: [seaside, onsen, flowers, draft]
+tags: [seaside, onsen, flowers, .draft]
 center: [139.62820529937744, 35.25045562186181]
 summary:
   An easy hike, recommended for spring. Mt Ogusu (大楠山) is covered with fields of rapeseed flowers, which blossom in March. From the obervation point on top, you can see a panoramic view of the bay and end the course at the beach, or in the local onsen.

@@ -1,5 +1,8 @@
 ---
 layout: guide
+title: tags
+menu:
+  tags: active
 ---
 <div class="hikr-content">
   <div class="left-side">
@@ -9,10 +12,11 @@ layout: guide
     <div class="container">
       <div class="section">
         <h1>Courses by tag</h1>
+        <br>
         <div class="two-cols">
           {% for tag in site.tag_names %}
           <div class="tag-listing">
-            <a href="/tag/{{tag}}.html" class="tag">{{tag}}</a><br>
+            <a href="/tag/{{tag}}.html" class="tag large">{{tag}}</a><br>
             <ul>
             {% for p in site.tags[tag] %}
               <li><a href="{{p.url}}">{{p.title}}</a></li>
