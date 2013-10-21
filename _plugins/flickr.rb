@@ -1,6 +1,7 @@
-require 'liquid'
-require 'fleakr'
+require 'rubygems' 
+require 'bundler/setup'
 require 'digest'
+require 'fleakr'
 
 Fleakr.api_key       = "06a5a0dfe07d9d2d0af5ae6fe74bad03"
 Fleakr.shared_secret = "c211ffcb95dc9680"
