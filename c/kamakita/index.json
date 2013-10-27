@@ -660,26 +660,6 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "summit",
-        "name": "monomi-san",
-        "label":{
-            "en":"Monomi-san",
-            "jp":"物見山"
-          },
-        "elevation": "375"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.29357290267944,
-          35.90314725809316,
-          350
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "type": "toilets"
       },
       "geometry": {

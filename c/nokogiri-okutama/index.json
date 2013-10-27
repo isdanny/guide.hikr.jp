@@ -902,23 +902,6 @@
           329
         ]
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "nokogiri-yama",
-        "label": "鋸山",
-        "elevation": 1109,
-        "type": "summit"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.10590142011642,
-          35.77920920626392,
-          1043
-        ]
-      }
     }
   ]
 }

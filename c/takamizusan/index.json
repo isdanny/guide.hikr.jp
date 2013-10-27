@@ -1882,54 +1882,6 @@
           35.801246975086364
         ]
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "elevation": 756,
-        "name": "高水山",
-        "label": {"en":"Takamizu", "jp":"高水山"}
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.17773365974426,
-          35.819205117558695, 756
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "elevation": 793,
-        "name": "岩茸石山",
-        "label": {"en":"Iwatakeishi", "jp":"岩茸石山"}
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.1788387298584,
-          35.83068784688831,
-          793
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "elevation": 759,
-        "name": "sougaku",
-        "type": "peak",
-        "label":{ "jp": "惣岳山","en":"Sougaku"}
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.189031124115,
-          35.82872198230881,
-          759
-        ]
-      }
     }
   ]
 }

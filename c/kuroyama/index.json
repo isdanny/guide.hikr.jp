@@ -1191,22 +1191,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "kuroyama",
-        "type": "summit",
-        "label": { "en": "Kuroyama", "jp":"黒山"}
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.243426322937,
-          35.93572976634639,
-          771
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "kuroyma santaki",
         "type": "waterfall",
         "label": { "en": "Kuroyama Waterfalls", "jp":"黒山三滝"}

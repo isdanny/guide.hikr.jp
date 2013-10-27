@@ -6,25 +6,43 @@
 @accent: #E95223;
 @white: #f8f8f8;
 
-@footerHeight: auto;
+@footerHeight: 135px;
+@leftSideWidth: 250px;
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,200);
 
 @import url(maki-sprite.css);
 
-body{color:#222;font-size:16px;font-family:"Open sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300;background:#fff}
+body{
+font-family:"Open sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight:200;
+color: #444;
+}
+
+hr{
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-weight:200;vertical-align:baseline}
+
+.clear{
+  clear:both;
+}
 
 body, html{
   height: 100%;
   background: @white;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   a{
   }
 }
 
-.section{
-  clear: both;
+a{
+  text-decoration: none;
+  color: @sea3;
 }
 
 ul, menu, dir{
@@ -48,6 +66,7 @@ ul, menu, dir{
     text-align: right;
     position: absolute;
     bottom: 4px;
+    opacity: 0.2;
     -webkit-transition: background, 0.5s;
     right: 0px;
     a{
@@ -57,6 +76,7 @@ ul, menu, dir{
   &:hover{
     .caption{
       background: rgba(0,0,0,0.7);
+      opacity: 1;
       -webkit-transition: background, 0.5s;
     }
   }
@@ -125,8 +145,13 @@ ul, menu, dir{
     0 -1px 0px #fff;
     -webkit-text-stroke: 1px white outside;
   display: block;
-  font: 13px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Open sans";
+  font-weight: 400;
+  span{
+    font-weight: 400;
+  }
   position: absolute;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -191,6 +216,9 @@ header{
 .leaflet-control-language{
   font-size: 15px;
   line-height: 22px;
+  .leaflet-control-language-interior{
+    padding: 0;
+  }
 }
 .leaflet-control-language-interior:before{
   content: "あ";
@@ -279,8 +307,7 @@ header{
   top: 0;
   bottom: 0;
   left: 0;
-  width: 20%;
-  min-width: 300px;
+  width: @leftSideWidth;
   background: url('http://farm6.staticflickr.com/5471/10270896826_63c810d7c3_k.jpg');
   background-size: auto 100%;
   background-position: center center;
@@ -326,16 +353,24 @@ h6{
 }
 
 .right-side{
+  height: 100%;
+  overflow: scroll;
   position: absolute;
   top:0;
   bottom: 0;
   right: 0;
-  width: 80%;
-  height: 100%;
+  left: @leftSideWidth;
+  min-height: 100%;
   background: @white;
   border-left: 1px solid white;
   box-shadow: 0 0 16px rgba(0,0,0,0.5);
-  overflow: scroll;
+  main{
+    min-height: 100%;
+    position: relative;
+    .footer-pusher{
+      height: @footerHeight;
+    }
+  }
   .container{
     width: 960px;
     img{
@@ -344,11 +379,37 @@ h6{
   }
 }
 
-.section{
+footer, .footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: @footerHeight;
+  margin-bottom: 0;
+  background-color: white;
+  border-top: 1px solid #bbb;
+  font-size: 12px;
+  color: #444;
+  // padding: 8px 16px;
+  .menu{
+    list-style: none none;
+  }
+  p{
+    margin-bottom: 0.5em;
+  }
+}
+
+.tag{
+  color: @white;
+  padding: 0 3px;
+  border-radius: 2px;
+}
+
+.section, section{
+  clear: both;
   border-bottom: 1px solid #ccc;
   margin: 16px;
   padding-bottom: 16px;
-  &:last-child{
+  &:last-of-type{
     border-bottom: none;
     padding-bottom: 0;
   }
@@ -359,10 +420,12 @@ h6{
   position: relative;
   left: -32px;
   margin: 0;
+  display: block;
+  overflow: hidden;
 }
 
 .column-3{
-  width: 224px;
+  width: 208px;
   float: left;
   margin-left: 16px;
   padding-left: 15px!important;
@@ -385,7 +448,7 @@ h6{
 }
 
 .column-6{
-  width: 463px;
+  width: 447px;
   float: left;
   margin-left: 16px;
   padding-left: 15px;
@@ -414,23 +477,6 @@ h6{
   padding-left: 15px;
 }
 
-.footer{
-  width: 100%;
-  bottom: 0;
-  height: @footerHeight;
-  margin-bottom: 0;
-  background-color: white;
-  border-top: 1px solid #bbb;
-  font-size: 12px;
-  color: #444;
-  padding: 8px 16px;
-  .menu{
-    list-style: none none;
-  }
-  p{
-    margin-bottom: 0.5em;
-  }
-}
 
 .thumb-box{
   width: 160px;
@@ -525,6 +571,41 @@ h6{
       width: 48%;
       margin-left: 1%;
     }
+  }
+}
+
+@media only screen and (min-width:1200px){
+  // large
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px){
+  // desktop
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+  // tablet
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  // phone
+}
+
+@media only screen and (max-width: 767px){
+  .left-side{
+    display: none;
+  }
+  .right-side{
+    left: 0;
+    padding-top: 48px;
+    .container{
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hikr-sidebar{
+    
   }
 }
 
@@ -668,6 +749,8 @@ h6{
 }
 
 .post{
+  max-width: 600px;
+  margin: 0 auto;
   .date, .author{
     font-size: 15px;
     color: @sea2;
@@ -705,9 +788,7 @@ h6{
   h3 { font-size: 110%; }
   h4 { font-size: 100%; }
   h5 { font-size: 90%; }
-  a{
-    color: @sea1;
-  }
+
   ul{
     margin: 0 3em;
     line-height: 2.0;
@@ -719,6 +800,10 @@ h6{
     text-align: justify;
     text-shadow: 2px 2px 0px #fff!important;
     margin: 1em 0;
+    a{
+      color: @sea1;
+      text-decoration: underline;
+    }
   }
   h1, h2{
     color: @accent;

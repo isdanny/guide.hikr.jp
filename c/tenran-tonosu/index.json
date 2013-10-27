@@ -320,39 +320,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "tenran",
-        "label": { "jp": "天覧山", "en": "Tenran-zan" },
-        "type": "summit"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.30827140808105,
-          35.861822036974395,
-          141
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "tonosu",
-        "label": { "jp": "多峯主山", "en": "Tonosu yama" },
-        "elevation": "",
-        "type": "summit"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.29792881011963,
-          35.86787352175523,
-          232
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "type": "station",
         "name": "hanno",
         "label": { "jp": "飯能駅", "en": "Hanno station" }

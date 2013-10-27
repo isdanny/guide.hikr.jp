@@ -2,7 +2,10 @@
 layout: course
 title: Takamizusan-zan
 map: 
- - takamizu.json
+features: 
+  - /mt/takamizu.html
+  - /mt/iwatakeishi.html
+  - /mt/sougaku.html
 tags: [ ]
 featured: also
 center: [139.20249939, 35.817619324]

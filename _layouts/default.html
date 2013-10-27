@@ -11,14 +11,15 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="{{site.url}}/css/leaflet.css"/>
   <link rel="stylesheet" href="{{site.url}}/css/leaflet.draw.css"/>
-  <link rel="stylesheet" href="{{site.url}}/css/tuktuk.css"/>
+   <!-- <link rel="stylesheet" href="{{site.url}}/css/tuktuk.css"/>  -->
   <link rel="stylesheet" href="{{site.url}}/css/tuktuk.icons.css"/>
-  <link rel="stylesheet" href="{{site.url}}/css/tuktuk.theme.css"/> 
+    <!-- <link rel="stylesheet" href="{{site.url}}/css/tuktuk.theme.css"/>  -->
   <link rel="stylesheet" href="{{site.url}}/css/hikr.css"/>
-  <script type="text/javascript" src="{{site.url}}/js/jquery-2.0.3.min.js"></script>
-  <script type="text/javascript" src="{{site.url}}/js/jquery.flot.js"></script>
-  <script type="text/javascript" src="{{site.url}}/js/leaflet.js"></script>
-  <script type="text/javascript" src="{{site.url}}/js/leaflet.draw.js"></script>
+  <script type="text/javascript" src="{{site.url}}/js/vendor/modernizr-latest.js"></script>
+  <script type="text/javascript" src="{{site.url}}/js/vendor/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="{{site.url}}/js/vendor/jquery.flot.js"></script>
+  <script type="text/javascript" src="{{site.url}}/js/vendor/leaflet.js"></script>
+  <script type="text/javascript" src="{{site.url}}/js/vendor/leaflet.draw.js"></script>
 </head>
 <body class="en">
 
@@ -38,7 +39,7 @@
           </ul>
         </li>
         <li class="{{ page.menu.tags }}"><a href="/tag/"><span class="icon tag"></span>&nbsp;Tags</a></li>
-        <li class="{{ page.news.active }}"><a href="{{site.posts[0].url}}"><span class="icon quote-right"></span>&nbsp;News</a></li>
+        <li class="{{ page.news.active }}"><a href="/news/"><span class="icon quote-right"></span>&nbsp;News</a></li>
       </ul>
     </div>
   </div>

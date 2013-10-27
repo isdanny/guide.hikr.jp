@@ -1109,7 +1109,7 @@
       "properties": {
         "name": "ogusu",
         "label": "大楠山",
-        "label": {"ja":"大楠山","en":"Ogusu"},
+        "label": {"jp":"大楠山","en":"Ogusu"},
         "type": "summit"
       },
       "geometry": {
@@ -1125,7 +1125,7 @@
       "type": "Feature",
       "properties": {
         "name": "kinugasaki",
-        "label": {"ja":"衣笠駅","en":"Kinugasaki"},
+        "label": {"jp":"衣笠駅","en":"Kinugasaki"},
         "type": "station"
       },
       "geometry": {
@@ -1140,7 +1140,7 @@
       "type": "Feature",
       "properties": {
         "name": "ogusu-onsen",
-        "label": {"ja":"大楠温泉","en":"Ogusu onsen"},
+        "label": {"jp":"大楠温泉","en":"Ogusu onsen"},
         "time": 0,
         "type": "onsen"
       },

@@ -2,9 +2,7 @@
 	Hikr - Hiking. With friends.
 */
 (function(){
-
-
-var Hikr = function(container){
+var Hikr = function(container, features){
 
 L.Control.Language = L.Control.extend({
     options: {
@@ -41,8 +39,9 @@ L.control.language = function (options) {
   };
 
   this.container = $(container);
+  this.features = features;
   this.map = L.map(container).setView([ 35.358, 138.731], 6);
-
+  this.map.scrollWheelZoom.disable();
   var map = this.map;
 
   var self = this;
@@ -114,7 +113,7 @@ L.control.language = function (options) {
         label = "<div class='inside'>"+feature.properties.popup+"</div>";
       }
       if(feature.properties.hasOwnProperty("label")){
-        className = "maki-icon "+feature.properties.type;
+        className = className+ " maki-icon "+feature.properties.type;
         if(typeof(feature.properties.label)==="string")
           label = feature.properties.label;
         else if(typeof(feature.properties.label)=="object"){
@@ -137,19 +136,19 @@ L.control.language = function (options) {
           iconSize: [26,24]
       });
       var marker = L.marker(latlng, {icon: icon});
+      if(feature.properties.url){
+        marker.url = feature.properties.url;
+        marker.on("click",function(){
+          window.location = this.url;
+        });
+      }
       return marker;
   };
 
-
- Hikr.prototype.loadMaps = function(maps, callback){
-    callback = callback || function(){};
-    this.maps = maps;
-    this.maps.push("index.json");
-    var map = this.map;
-    var app = this;
-    for(var i in this.maps){
-      var url = this.maps[i];
-      if(url) $.get(url,function(data){
+ Hikr.prototype.loadMap = function(url, callback, getBounds){
+  var app = this;
+  var map = this.map;
+  $.get(url,function(data){
         var myLayer = L.geoJson(data,{
           style: app.lineStyle,
           pointToLayer: Hikr.makeMarker,
@@ -159,11 +158,23 @@ L.control.language = function (options) {
           myLayer.getLayers()[i].addTo(app.fg);
         }
         // myLayer.addData(geojsonFeature).setStyle(myStyle);
-        var bounds = myLayer.getBounds();
-        map.fitBounds(bounds);
+        if(getBounds){
+          var bounds = myLayer.getBounds();
+          map.fitBounds(bounds);
+        }
         callback.call(app);
-      }); // get
-    }// for
+  });
+ };
+
+ Hikr.prototype.loadMaps = function(maps, callback){
+    callback = callback || function(){};
+    this.maps = maps;
+    var getBounds = true;
+    for(var i in this.maps){
+      var url = this.maps[i];
+      if(url) this.loadMap(url, callback, getBounds);
+      getBounds = false;
+    }
  };
 
 Hikr.prototype.adjustInterface = function(){

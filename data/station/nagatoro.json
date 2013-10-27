@@ -1,0 +1,24 @@
+---
+layout: nil
+---
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature",
+      "properties": {
+        "type": "station",
+        "label":{ "en": "Nagatoro", "jp":"長瀞駅"},
+        "elevation": "",
+        "peopup": "<a href=''><span class='title'></span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.11086082458496,
+        36.11166856202867,
+        
+        ]
+      }
+    }
+  ]
+}

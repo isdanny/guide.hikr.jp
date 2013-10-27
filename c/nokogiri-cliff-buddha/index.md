@@ -4,7 +4,7 @@ title: Nokogiri-yama cliff and Giant Buddha
 center: [139.822284579277, 35.16833575377093]
 license: CC-BY-NC
 author: hikr.jp
-area: Chiba
+area: Kyonan
 prefecture: Chiba
 info:
   author: Leszek

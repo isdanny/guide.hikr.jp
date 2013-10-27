@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: default
 menu:
   guide: active
 ---
@@ -57,8 +57,9 @@ menu:
 </div>
  <script type="text/javascript">
   window.onload = function(){
-    var maps = [ {% for url in page.map %} "{{url}}", {% endfor %} false];
-    hikr = new Hikr("map");
+    var maps = [ "index.json", {% if page.area %} "/data/area/{{page.area}}.json", {% endif %} {% for url in page.map %} "{{url}}", {% endfor %}  false];
+    var features = [ {% for feature in page.features %} "{{feature}}", {%endfor%} false];
+    hikr = new Hikr("map", features);
     hikr.loadMaps(maps);
   };
  </script>

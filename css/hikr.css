@@ -1,17 +1,21 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,200);
 @import url(maki-sprite.css);
-body{color:#222;font-size:16px;font-family:"Open sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300;background:#fff}
-body,html{height:100%;background:#f8f8f8;margin:0;padding:0}
-.section{clear:both}
+body{font-family:"Open sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200;color:#444}
+hr{border:0;border-top:1px solid #ccc}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-weight:200;vertical-align:baseline}
+.clear{clear:both}
+body,html{height:100%;background:#f8f8f8;margin:0;padding:0;box-sizing:border-box}
+a{text-decoration:none;color:#4a5a61}
 ul,menu,dir{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-start:0}
 .huge{font-size:64px}
-.flickr-photo{position:relative}.flickr-photo .caption{color:#fff;padding:1px 3px;font-size:70%;text-align:right;position:absolute;bottom:4px;-webkit-transition:background,.5s;right:0}.flickr-photo .caption a{color:#fff !important}
-.flickr-photo:hover .caption{background:rgba(0,0,0,0.7);-webkit-transition:background,.5s}
+.flickr-photo{position:relative}.flickr-photo .caption{color:#fff;padding:1px 3px;font-size:70%;text-align:right;position:absolute;bottom:4px;opacity:.2;-webkit-transition:background,.5s;right:0}.flickr-photo .caption a{color:#fff !important}
+.flickr-photo:hover .caption{background:rgba(0,0,0,0.7);opacity:1;-webkit-transition:background,.5s}
 .preview-box .inside{background:#222;position:absolute;bottom:15px;left:-1px;margin-left:-50%;border-radius:3px;overflow:hidden;border:1px solid #222;z-index:9}.preview-box .inside .title{display:block;line-height:13px;padding:8px;padding-top:4px;font-size:90%;z-index:15;background:#222;font-weight:bold;color:#f8f8f8}
 .preview-box .inside a{min-height:0}.preview-box .inside a img{min-width:96px;width:100%}
 .preview-box .inside a:hover{color:#e95223}
 .preview-box:before{content:" ";transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);display:block;border-radius:3px;position:absolute;background:#222;width:15px;height:15px;left:6px;bottom:9px;z-index:18}
-.maki-icon{color:#222;text-shadow:0 0 0 #fff,1px 0 0 #fff,0 1px 0 #fff,-1px 0 0 #fff,0 -1px 0 #fff;-webkit-text-stroke:1px #fff outside;display:block;font:13px/20px "Helvetica Neue",Arial,Helvetica,sans-serif;font-weight:bold;position:absolute;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:6;text-indent:26px}.maki-icon span{display:none}
+.maki-icon{color:#222;text-shadow:0 0 0 #fff,1px 0 0 #fff,0 1px 0 #fff,-1px 0 0 #fff,0 -1px 0 #fff;-webkit-text-stroke:1px #fff outside;display:block;font-size:15px;line-height:20px;font-family:"Open sans";font-weight:400;position:absolute;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:6;text-indent:26px}.maki-icon span{font-weight:400}
+.maki-icon span{display:none}
 .hide-labels .maki-icon{overflow:hidden}
 .en .maki-icon span.lang-en{display:inline}
 .en .maki-icon span.lang-jp{display:none}
@@ -20,7 +24,7 @@ ul,menu,dir{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:
 header{position:absolute;width:100%;top:0;margin:0;background:rgba(255,255,255,0.9);border-bottom:1px solid #fff;box-shadow:0 0 5px rgba(0,0,0,0.5)}header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:baseline !important}
 .hero{background:url(../img/trees.jpg);min-height:400px;background-size:cover;background-position:center}.hero .row{position:relative;top:160px}.hero .row .on-photo{color:#fff;text-shadow:0 0 3px #000,0 0 3px #000,0 0 12px #000}
 .hero img{max-width:100%}
-.leaflet-control-language{font-size:15px;line-height:22px}
+.leaflet-control-language{font-size:15px;line-height:22px}.leaflet-control-language .leaflet-control-language-interior{padding:0}
 .leaflet-control-language-interior:before{content:"あ"}
 .jp .leaflet-control-language-interior:before{content:"A"}
 header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:baseline !important}
@@ -30,21 +34,23 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .info #infobox .infopoint label{margin-top:15px;display:block;font-size:10px;font-weight:100;line-height:9px;border-bottom:1px solid rgba(74,90,97,0.5);text-transform:uppercase}
 .info #infobox .infopoint div{font-size:33px;line-height:45px}
 .info #plot{display:table-row;height:120px;padding:0 10px;position:relative}.info #plot canvas{display:table-cell}
-.left-side{position:fixed;top:0;bottom:0;left:0;width:20%;min-width:300px;background:url('http://farm6.staticflickr.com/5471/10270896826_63c810d7c3_k.jpg');background-size:auto 100%;background-position:center center}.left-side .motto{position:absolute;bottom:0;margin:16px;font-size:24px;color:#fff;text-shadow:0 0 5px #000}
+.left-side{position:fixed;top:0;bottom:0;left:0;width:250px;background:url('http://farm6.staticflickr.com/5471/10270896826_63c810d7c3_k.jpg');background-size:auto 100%;background-position:center center}.left-side .motto{position:absolute;bottom:0;margin:16px;font-size:24px;color:#fff;text-shadow:0 0 5px #000}
 .two-cols{columns:100px 3;-webkit-columns:100px 3;-moz-columns:100px 3;}.two-cols .tag-listing{display:inline-block;width:100%}.two-cols .tag-listing li{display:block}
 h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 :not(.icon).tag{display:inline-block;background-color:#a1bbc5}:not(.icon).tag:hover{background-color:#738790}
 :not(.icon).tag.large{font-size:10px !important}
-.right-side{position:absolute;top:0;bottom:0;right:0;width:80%;height:100%;background:#f8f8f8;border-left:1px solid #fff;box-shadow:0 0 16px rgba(0,0,0,0.5);overflow:scroll}.right-side .container{width:960px}.right-side .container img{width:100%}
-.section{border-bottom:1px solid #ccc;margin:16px;padding-bottom:16px}.section:last-child{border-bottom:none;padding-bottom:0}
-.row{width:990px;position:relative;left:-32px;margin:0}
-.column-3{width:224px;float:left;margin-left:16px;padding-left:15px !important;border-left:1px solid #ccc}.column-3:first-child{padding-left:16px;border-left:none}
+.right-side{height:100%;overflow:scroll;position:absolute;top:0;bottom:0;right:0;left:250px;min-height:100%;background:#f8f8f8;border-left:1px solid #fff;box-shadow:0 0 16px rgba(0,0,0,0.5)}.right-side main{min-height:100%;position:relative}.right-side main .footer-pusher{height:135px}
+.right-side .container{width:960px}.right-side .container img{width:100%}
+footer,.footer{width:100%;position:absolute;bottom:0;height:135px;margin-bottom:0;background-color:#fff;border-top:1px solid #bbb;font-size:12px;color:#444}footer .menu,.footer .menu{list-style:none none}
+footer p,.footer p{margin-bottom:.5em}
+.tag{color:#f8f8f8;padding:0 3px;border-radius:2px}
+.section,section{clear:both;border-bottom:1px solid #ccc;margin:16px;padding-bottom:16px}.section:last-of-type,section:last-of-type{border-bottom:none;padding-bottom:0}
+.row{width:990px;position:relative;left:-32px;margin:0;display:block;overflow:hidden}
+.column-3{width:208px;float:left;margin-left:16px;padding-left:15px !important;border-left:1px solid #ccc}.column-3:first-child{padding-left:16px;border-left:none}
 .column-4{width:300px;float:left;margin-left:16px;padding-left:15px}.column-4:first-child{padding-left:16px;border-left:none}
-.column-6{width:463px;float:left;margin-left:16px;padding-left:15px;border-left:1px solid #ccc}.column-6:first-child{border-left:none;padding-left:16px}
+.column-6{width:447px;float:left;margin-left:16px;padding-left:15px;border-left:1px solid #ccc}.column-6:first-child{border-left:none;padding-left:16px}
 .column-8{width:640px;float:left;margin-left:16px;padding-left:15px}.column-8:first-child{padding-left:16px;border-left:none}
 .column-9{width:700px;float:left;margin-left:16px;padding-left:15px}
-.footer{width:100%;bottom:0;height:auto;margin-bottom:0;background-color:#fff;border-top:1px solid #bbb;font-size:12px;color:#444;padding:8px 16px}.footer .menu{list-style:none none}
-.footer p{margin-bottom:.5em}
 .thumb-box{width:160px;float:left;background:#fff;border-radius:3px;border:1px solid #ccc;margin-right:16px;margin-bottom:16px}.thumb-box .header-image{width:100%;height:160px}.thumb-box .header-image img{width:100%}
 .thumb-box .headings{margin:8px;height:40px;overflow:hidden}.thumb-box .headings h2{font-size:14px}
 .blurb-box{font-size:90%;min-height:310px}
@@ -60,7 +66,7 @@ h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 .summary-box.vertical .header-image{width:47% !important;margin-right:3%;float:left;clear:left}
 .summary-box.vertical .headings{width:48%;margin-left:1%}
 .summary-box.vertical .summary{float:left;margin-top:16px;width:48%;margin-left:1%}
-.hikr-sidebar{position:fixed;top:0;left:0;z-index:8}.hikr-sidebar .logo-float{position:fixed;top:20px;left:20px;display:block;width:125px;height:75px;z-index:20;background:url(../img/logo-mini.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
+@media only screen and (min-width:1200px){}@media only screen and (min-width:960px) and (max-width:1199px){}@media only screen and (min-width:768px) and (max-width:959px){}@media only screen and (min-width:480px) and (max-width:767px){}@media only screen and (max-width:767px){.left-side{display:none} .right-side{left:0;padding-top:48px}.right-side .container{width:100%}}@media only screen and (min-width:768px){}.hikr-sidebar{position:fixed;top:0;left:0;z-index:8}.hikr-sidebar .logo-float{position:fixed;top:20px;left:20px;display:block;width:125px;height:75px;z-index:20;background:url(../img/logo-mini.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
 .hikr-sidebar .hikr-menu{position:fixed;top:0;left:0;bottom:0;width:180px;background-color:rgba(0,0,0,0.8);border-right:1px solid #000;box-shadow:0 0 16px rgba(0,0,0,0.5);-webkit-transform:translate3d(-190px, 0, 0);-webkit-transition:-webkit-transform,.25s}.hikr-sidebar .hikr-menu #main-menu{margin-top:100px}.hikr-sidebar .hikr-menu #main-menu .submenu{display:none;margin:0;border-bottom:1px solid rgba(0,0,0,0.9);border-top:1px solid rgba(255,255,255,0.1);font-size:90%}.hikr-sidebar .hikr-menu #main-menu .submenu a{text-transform:none;border:none;line-height:18px;padding-left:40px}
 .hikr-sidebar .hikr-menu #main-menu{list-style:none none;border-top:1px solid rgba(0,0,0,0.9);border-bottom:1px solid rgba(255,255,255,0.1)}.hikr-sidebar .hikr-menu #main-menu li{position:relative;left:1px;width:100%;border-right:4px solid transparent}.hikr-sidebar .hikr-menu #main-menu li.active{border-right:4px solid #e95223}.hikr-sidebar .hikr-menu #main-menu li.active a{background-color:#000;color:#fff}
 .hikr-sidebar .hikr-menu #main-menu li.active a:hover{background-color:#000}
@@ -73,7 +79,7 @@ h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 .navbar{margin-bottom:0}
 .infobox{float:right;width:200px}
 .article-container{position:absolute;right:0;width:600px;box-shadow:0 0 16px rgba(0,0,0,0.5);min-height:100%}.article-container img{max-width:100%}
-.post .date,.post .author{font-size:15px;color:#738790}
+.post{max-width:600px;margin:0 auto}.post .date,.post .author{font-size:15px;color:#738790}
 .post .date{float:right}
 .post p{margin-bottom:.5em}
 .post .content{margin-top:.5em;text-align:justify}
@@ -84,9 +90,8 @@ h6{color:#e95223;text-transform:uppercase;font-weight:bold;font-size:90%}
 .article h3{font-size:110%}
 .article h4{font-size:100%}
 .article h5{font-size:90%}
-.article a{color:#a1bbc5}
 .article ul{margin:0 3em;line-height:2;color:#222}
-.article p{line-height:1.8;color:#222;text-align:justify;text-shadow:2px 2px 0 #fff !important;margin:1em 0}
+.article p{line-height:1.8;color:#222;text-align:justify;text-shadow:2px 2px 0 #fff !important;margin:1em 0}.article p a{color:#a1bbc5;text-decoration:underline}
 .article h1,.article h2{color:#e95223;text-shadow:2px 2px 0 #fff !important}
 .leaflet-bar{border-radius:2px !important;box-shadow:none;overflow:hidden}.leaflet-bar a,.leaflet-bar a:hover{border-radius:0 !important;font-size:140%;line-height:29px;width:32px;height:32px}
 .leaflet-bar a{color:#eee !important;background-color:rgba(0,0,0,0.3);-webkit-transition:background-color,.2s}

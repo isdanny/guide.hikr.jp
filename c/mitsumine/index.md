@@ -2,11 +2,13 @@
 layout: course
 title: Mitsumine
 map: 
- - mitsumine.json
 author: Leszek
 license: CC-BY-NC
 area: Tanzawa
 prefecture: Kanagawa
+features:
+  - /mt/mitsumine.html
+  - /p/nanasawa-onsen.html
 center: [139.2451000213623, 35.46413043654055]
 info:
   level: intermediate
@@ -26,9 +28,9 @@ From Shinjuku, take the Odakyu line express to Odawara, stopping at Hon-Atsugi (
 
 ## Points of interest ##
 
- - Mitsumine,
+ - [Mitsumine](/mt/mitsumine.html),
  - adventurous course with chains, ladders and various animals,
- - Onsen (Nanasawa or Kotakuji)
+ - Onsen ([Nanasawa](/p/nanasawa-onsen.html) or Kotakuji)
 
 ## Course ##
 

@@ -95,6 +95,17 @@ module Jekyll
     end
   end
 
+  class PlaceMap < Page
+    def initialize(site,base,dir,name)
+      @site = site
+      @base = base
+      @dir = dir
+      @name = area+'.json'
+      self.process(@name)
+      self.read_yaml(File.join(base, '_layouts'), 'placemap.json')
+    end
+  end
+
   class HikrGenerator < Generator
     safe true
 
@@ -116,6 +127,16 @@ module Jekyll
         site.pages << ListingMap.new(site, site.source, "data/pref", pref, site.prefs[pref])
       end
 
+      #templateFile = File.read(File.join(site.source, '_layouts','placemap.json'))
+      #template = Liquid::Template.parse(templateFile)
+      #site.pages.each do | page |
+      #  if page.data.has_key? "location"
+      #    path = File.join(site.source, page.dir, page.basename+".json")
+      #    if !File.exists? path
+      #      File.write(File.join(site.source, "data", page.dir, page.basename+".json"), template.render({"page"=>page.data}))
+      #    end
+      #  end
+      #end
     end
   end
 

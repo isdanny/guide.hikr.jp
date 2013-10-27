@@ -157,22 +157,6 @@
           35.57482222299722
         ]
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "kuki",
-        "type": "summit",
-        "label": { "en": "Kuki", "jp": "九鬼山" }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.95097970962524,
-          35.57661983472023,
-          970.3
-        ]
-      }
     }
   ]
 }

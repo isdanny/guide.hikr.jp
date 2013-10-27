@@ -1,0 +1,25 @@
+---
+layout: nil
+---
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature",
+      "properties": {
+        "type": "{{page.type}}",
+        "label":{ "en": "{{page.label.en}}", "jp":"{{page.label.jp}}"},
+        "elevation": "{{page.elevation}}",
+        "url": "{{page.url}}",
+        "peopup": "<a href='{{p.url}}'>{% if page.header_image %}<img src='{{ page.header_image | furl square}}'>{% endif %}<span class='title'>{{page.title}}</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        {{page.location[0]}},
+        {{page.location[1]}},
+        {{page.elevation}}
+        ]
+      }
+    }
+  ]
+}

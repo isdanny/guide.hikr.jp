@@ -7595,23 +7595,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "momokurayama",
-        "type": "summit",
-        "label": "百蔵山",
-        "elevation": "1003"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.9810848236084,
-          35.63832498777987,
-          959
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "saruhashi-station",
         "type": "station",
         "label": "猿箸駅"

@@ -19,7 +19,7 @@ The local Tobu Tojo line doesn't accept Suica cards and is quite expensive so ma
 
 {% flickr http://www.flickr.com/photos/jambodave/8488644634/ %}
 
-##　Course
+## Course
 
 From Nagatoro station exit walk straight, towards the shrine. Ignore the sign pointing left to the orchard, it takes you to the parking lot near the cablecar entrance. Go directly to the hiking course. 
 

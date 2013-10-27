@@ -270,45 +270,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "mitsumine",
-        "type": "summit",
-        "elevation": 934.6,
-        "label": {
-          "jp": "三峰山",
-          "en": "Mitsumine san"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.2451000213623,
-          35.46413043654055,
-          878
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "nanasawa onsen",
-        "type": "onsen",
-        "label": {
-          "jp": "七沢温泉",
-          "en": "Nanasawa onsen"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.27720069885254,
-          35.45455256831708,
-          207
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "type": "bus"
       },
       "geometry": {

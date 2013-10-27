@@ -3,16 +3,20 @@ layout: nil
 ---
 {
   "type": "FeatureCollection",
-  "features": [{% for p in page.courses %} {% if p.center %}
+  "features": [{% for p in page.courses %} {% if p.location %}
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='{{p.url}}'>{% if p.header_image %}<img src='{{ p.header_image | furl square}}'>{% endif %}<span class='title'>{{p.title}}</span></a>"
+        "type": "{{p.type}}",
+        "label":{ "en": "{{p.label.en}}", "jp":"{{p.label.jp}}"},
+        "elevation": "{{p.elevation}}",
+        "name": "{{p.basename}}",
+        "url": "{{p.url}}"
+        {% if p.header_image %}, "popup": "<a href='{{p.url}}'>{% if p.header_image %}<img src='{{ p.header_image | furl square}}'>{% endif %}<span class='title'>{{p.title}}</span></a>" {% endif %}
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-        {{p.center[0]}},
-        {{p.center[1]}}
+        {{p.location[0]}}, {{p.location[1]}} {% if p.elevation %}, {{p.elevation}} {% endif %}
         ]
       }
     }, {% endif %} {% endfor %} {}

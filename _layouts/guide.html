@@ -1,5 +1,18 @@
 ---
 layout: default
 ---
-
-{{ content }}
+<div class="hikr-content">
+  <div class="left-side">
+    <div class="motto">Hiking. With friends.</div>
+  </div>
+  <div class="right-side">
+    <main>
+      <div class="container">
+        {{ content }}
+        <br class="clear">
+      </div>
+      <div class="footer-pusher">&nbsp;</div>
+      {% include footer.html %}
+    </main>
+  </div>
+</div>

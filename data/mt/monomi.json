@@ -1,0 +1,24 @@
+---
+layout: nil
+---
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature",
+      "properties": {
+        "type": "summit",
+        "label":{ "en": "Monomi-san", "jp":"物見山"},
+        "elevation": "375",
+        "peopup": "<a href=''><span class='title'></span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.29357290267944,
+        35.90314725809316,
+        375
+        ]
+      }
+    }
+  ]
+}

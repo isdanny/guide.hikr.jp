@@ -14,7 +14,9 @@ menu:
 <h1>{{ page.area_listing }} Prefecture</h1>
 <br>
 {% for page in page.courses %}
+{% if page.layout == "course" %}
 {% include thumb.html %}
+{% endif %}
 {% endfor %}
 <br class="clear">
     </div>
@@ -22,7 +24,7 @@ menu:
 </div>
  <script type="text/javascript">
   window.onload = function(){
-    var maps = [ "/data/area/{{page.area_listing}}.json", {% for url in page.map %} "{{url}}", {% endfor %} false];
+    var maps = [ "/data/pref/{{page.area_listing}}.json", {% for url in page.map %} "{{url}}", {% endfor %} false];
     hikr = new Hikr("map");
     hikr.loadMaps(maps);
   };

@@ -2,7 +2,7 @@
 layout: course
 map:
 title: Ogusu
-area: Kanagawa
+area: Yokohama
 prefecture: Kanagawa
 author: Leszek
 header_image: http://www.flickr.com/photos/jambodave/6855658110/
