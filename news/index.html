@@ -2,8 +2,27 @@
 layout: guide
 ---
 
-{% for post in site.posts %}
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
 <section>
 {% include post.html%}
 </section>
+{% endfor %}
+
+<section>
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="/news/page-{{ paginator.previous_page }}" class="btn previous">← Prev</a>
+  {% else %}
+    <span class="btn previous disabled">← Prev</span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="/news/page-{{ paginator.next_page }}" class="btn next">Next →</a>
+  {% else %}
+    <span class="btn disabled next ">Next →</span>
+  {% endif %}
+</div>
+</section>
+{% for post in site.posts %}
 {% endfor %}

@@ -7,6 +7,7 @@ label:
 location: [139.166667, 35.652222]
 elevation: 859
 area: Sagamihara
+tags: [ statue ]
 prefecture: Kanagawa
 ---
 

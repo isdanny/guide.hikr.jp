@@ -106,14 +106,14 @@ L.control.language = function (options) {
     };
 
   Hikr.makeMarker = function(feature, latlng){
-      var label = '';
+      var label = ' ';
       var className = '';
       if(feature.properties.hasOwnProperty("popup")){
         className = 'preview-box';
         label = "<div class='inside'>"+feature.properties.popup+"</div>";
       }
       if(feature.properties.hasOwnProperty("label")){
-        className = className+ " maki-icon "+feature.properties.type;
+        className = className+ " hikricon-"+feature.properties.type;
         if(typeof(feature.properties.label)==="string")
           label = feature.properties.label;
         else if(typeof(feature.properties.label)=="object"){
@@ -132,7 +132,7 @@ L.control.language = function (options) {
       }
       var icon = L.divIcon({
           className: className,
-          html:label,
+          html: label,
           iconSize: [26,24]
       });
       var marker = L.marker(latlng, {icon: icon});
@@ -202,7 +202,7 @@ Hikr.prototype.makeEditable = function(){
         },
         marker:{
           icon: L.divIcon({
-            className:"maki-icon marker",
+            className:"icon marker",
             html:"",
             iconSize: [26,24]
           })
