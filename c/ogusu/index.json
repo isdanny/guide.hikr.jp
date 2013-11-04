@@ -1107,23 +1107,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "ogusu",
-        "label": "大楠山",
-        "label": {"jp":"大楠山","en":"Ogusu"},
-        "type": "summit"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.62820529937744,
-          35.25045562186181,
-          241.3
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "kinugasaki",
         "label": {"jp":"衣笠駅","en":"Kinugasaki"},
         "type": "station"

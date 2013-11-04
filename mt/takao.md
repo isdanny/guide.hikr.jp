@@ -2,7 +2,7 @@
 layout: place
 type: summit
 label:
-  en: Takao
+  en: Takao-san
   jp: 高尾山
 location: [139.243611, 35.625278]
 elevation: 599

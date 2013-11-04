@@ -13,24 +13,21 @@ menu:
     {% include mainmenu.html %}
     <div class="head section">
       {% include summary.html %} 
-      <!--<div class="info">
-        <div id="plot"></div>
-        <br style="clear: both">
-        {% include infobox.html %}
-      </div>-->
-        <!-- AddThis Button BEGIN 
-        <div class="addthis_toolbox addthis_default_style ">
-        <a class="addthis_button_preferred_1"></a>
-        <a class="addthis_button_preferred_2"></a>
-        <a class="addthis_button_preferred_3"></a>
-        <a class="addthis_button_preferred_4"></a>
-        <a class="addthis_button_compact"></a>
-        <a class="addthis_counter addthis_bubble_style"></a>
-        </div>
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520873ed40bfdc8e"></script><br>
-        <!-- AddThis Button END -->
     </div>
-    <div class="section">
+  <div class="section">
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520873ed40bfdc8e"></script>
+<!-- AddThis Button END -->
       <div class="article">      
        {{ content }}
        <br>
@@ -56,6 +53,19 @@ menu:
 
   </div>
 </div>
+<svg height="0" xmlns="http://www.w3.org/2000/svg">
+<filter id="dropshadow">
+<feGaussianBlur in="SourceAlpha" stdDeviation="6.2"/>
+<feOffset dx="2" dy="2" result="offsetblur"/>
+<feFlood flood-color="rgba(0.5,0.5,0.5,0.2)"/>
+<feComposite in2="offsetblur" operator="in"/>
+<feMerge>
+<feMergeNode/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+</svg>
+
  <script type="text/javascript">
   window.onload = function(){
     var maps = [ "index.json", {% if page.area %} "/data/area/{{page.area}}.json", {% endif %} {% for url in page.map %} "{{url}}", {% endfor %}  false];

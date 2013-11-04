@@ -134,7 +134,7 @@ ul, menu, dir{
   .caption{
     color: white;
     padding: 1px 3px;
-    font-size: 70%;
+    font-size: 50%;
     text-align: right;
     position: absolute;
     bottom: 4px;
@@ -608,6 +608,9 @@ footer, .footer{
   .header-image{
     width: 100%;
     height: 160px;
+    .caption{
+      display: none;
+    }
     img{
       width: 100%;
       border-bottom: 3px solid @theme;
@@ -628,6 +631,10 @@ footer, .footer{
   min-height: 320px;
   background-color: @sea4;
   border-radius: 2px;
+  color: @white;
+  .caption{
+    display: none;
+  }
   a{
     color: @sea1;
     img{
@@ -720,7 +727,7 @@ footer, .footer{
   z-index: 8;
 
   .logo-float{
-    position: fixed;
+    position: relative;
     top: 20px;
     left: 20px;
     display: block;
@@ -753,7 +760,7 @@ footer, .footer{
     border-bottom: 1px solid white;
     position: absolute;
     right: 0;
-    top: 0;
+    bottom: -3px;
   }
   #main-menu{
     list-style: none none;
@@ -822,8 +829,8 @@ footer, .footer{
 
 .article-container{
   position: absolute;
-  right: 0;
   width: 600px;
+  right: 0;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
   min-height: 100%;
   img{
@@ -908,6 +915,13 @@ footer, .footer{
   }
 }
 
+.leaflet-zoom-animated{
+  path{
+    // -webkit-svg-shadow: 2px 2px 4px #000;
+    filter: url(#dropshadow);
+  }
+}
+
 .leaflet-bar{
   border-radius: 2px!important;
   // border: 1px solid rgba(0,0,0,0.5);
@@ -962,46 +976,116 @@ footer, .footer{
 
 @media only screen and (min-width:1200px){
   // large
+  .right-side{
+    #main-menu{
+      left: 0;
+      width: 960px;
+      text-align: right;
+    }
+    .container{
+      width: 960px;
+    }
+  }
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1199px){
   // desktop
+  .left-side{
+    width: 200px;
+  }
+  .right-side{
+    left: 200px;
+    .hikr-menu{
+      #main-menu{
+        left: 0;
+        width: 740px;
+        text-align: right;
+      }
+    }
+    .container{
+      width: 740px;
+    }
+    .row{
+      width: 750px;
+    }
+    .column-6{
+      width: 340px;
+    }
+    .column-3{
+      width: 165px;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px){
   // tablet
+  .hikr-sidebar{
+    position: absolute;
+    .logo-float{
+      top: 0px;
+      left: 16px;
+      width: 100px;
+      height: 60px;
+    }
+  }
+  .left-side{
+    width: 0;
+  }
+  .right-side{
+    .hikr-menu{
+      height: 48px;
+      #main-menu{
+      }
+    }
+    left: 0;
+    .container{
+      width: 740px;
+    }
+    .row{
+      width: 750px;
+    }
+    .column-6{
+      width: 340px;
+    }
+    .column-3{
+      width: 165px;
+    }
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
-  // phone
-}
-
-@media only screen and (max-width: 767px){
-  .left-side{
-    display: none;
+  // tablet-vertical
+  .hikr-sidebar{
+    position: absolute;
+    .logo-float{
+      top: 0px;
+      left: 16px;
+      width: 100px;
+      height: 60px;
+    }
+  }
+.left-side{
+    width: 0;
   }
   .right-side{
-    left: 0;
-    padding-top: 48px;
-    #main-menu{
-      width: 960px;
+    .hikr-menu{
+      height: 48px;
+      #main-menu{
+      }
     }
+    left: 0;
     .container{
+      width: 740px;
+    }
+    .row{
       width: 100%;
     }
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .hikr-sidebar{
-    
-  }
-  .right-side{
-    #main-menu{
-      width: 960px;
-      left: 0;
-      text-align: right;
-    }    
+    .column-6{
+      width: auto;
+    }
+   .column-3{
+      width: 22%;
+    }
   }
 }
 
