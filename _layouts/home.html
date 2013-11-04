@@ -22,6 +22,7 @@ menu:
         <a href="/tag/{{tag}}.html" class="tag large">{{site.tags[tag].size}} | {{ tag }}</a>
       {% endfor %}
       <hr>
+      <h6>Featured course</h6>
       {% for page in site.pages %} {% if page.featured == 'header' %} {% include summary.html %}{% endif %}{% endfor %} </div>
   </div>
 </div>

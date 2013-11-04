@@ -58,20 +58,23 @@ footer,.footer{width:100%;position:absolute;bottom:0;height:135px;margin-bottom:
 footer p,.footer p{margin-bottom:.5em}
 .section,section{clear:both;border-bottom:1px solid #ccc;margin:16px;padding-bottom:16px}.section:last-of-type,section:last-of-type{border-bottom:none;padding-bottom:0}
 .row{width:990px;position:relative;left:-32px;margin:0;display:block;overflow:hidden}
-.column-3{width:208px;float:left;margin-left:16px;padding-left:15px !important;border-left:1px solid #ccc}.column-3:first-child{padding-left:16px;border-left:none}
+.column-3{width:220px;float:left;margin-left:16px}.column-3.border{width:208px;padding-left:15px !important;border-left:1px solid #ccc}
+.column-3:first-child{padding-left:16px;border-left:none}
 .column-4{width:300px;float:left;margin-left:16px;padding-left:15px}.column-4:first-child{padding-left:16px;border-left:none}
 .column-6{width:447px;float:left;margin-left:16px;padding-left:15px;border-left:1px solid #ccc}.column-6:first-child{border-left:none;padding-left:16px}
 .column-8{width:640px;float:left;margin-left:16px;padding-left:15px}.column-8:first-child{padding-left:16px;border-left:none}
 .column-9{width:700px;float:left;margin-left:16px;padding-left:15px}
-.thumb-box{width:160px;float:left;background:#fff;border-radius:3px;border:1px solid #ccc;margin-right:16px;margin-bottom:16px}.thumb-box .header-image{width:100%;height:160px}.thumb-box .header-image img{width:100%}
+.thumb-box{width:160px;float:left;background:#111;border-radius:2px;padding:5px;margin-right:16px;margin-bottom:16px}.thumb-box a{color:#a1bbc5}
+.thumb-box .header-image{width:100%;height:160px}.thumb-box .header-image img{width:100%;border-bottom:3px solid #a63626}
 .thumb-box .headings{margin:8px;height:40px;overflow:hidden}.thumb-box .headings h2{font-size:14px}
-.blurb-box{font-size:90%;min-height:310px}
-.blurb-box.first{border:0}
+.blurb-box{font-size:90%;min-height:320px;background-color:#111;border-radius:2px;}.blurb-box a{color:#a1bbc5}.blurb-box a img{border-bottom:5px solid #a63626}
+.blurb-box a:hover{color:#f8f8f8}.blurb-box a:hover img{border-bottom:5px solid #e95223}
+.blurb-box .headings{padding:4px}
 .blurb-box h2{font-size:120%}
 .blurb-box h4{font-size:90%}
 .area{font-size:90%}.area a{color:#a63626 !important}
 .area a:hover{color:#e95223 !important}
-.summary-box .header-image{width:100%}.summary-box .header-image img{width:100%}
+.summary-box .header-image{width:100%}.summary-box .header-image img{width:100%;border-radius:2px}
 .summary-box .header-image a:hover img{-webkit-filter:none}
 .summary-box .headings{width:49%;float:left;margin-right:1%}
 .summary-box .summary{width:49%;float:left;margin-left:1%}
@@ -80,7 +83,7 @@ footer p,.footer p{margin-bottom:.5em}
 .summary-box.vertical .summary{float:left;margin-top:16px;width:48%;margin-left:1%}
 .hikr-sidebar{position:fixed;top:0;left:0;z-index:8}.hikr-sidebar .logo-float{position:fixed;top:20px;left:20px;display:block;width:125px;height:75px;z-index:20;background:url(../img/logo-mini.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
 .hikr-sidebar:hover .hikr-menu{-webkit-transform:translate3d(0, 0, 0)}
-.hikr-menu{position:relative;top:0;left:0;right:0;height:32px;background-color:#fff;border-bottom:1px solid #ccc}.hikr-menu #main-menu{position:absolute;right:0;top:0}
+.hikr-menu{position:relative;top:0;left:0;right:0;height:32px;background-color:#fff;border-bottom:1px solid #ccc}.hikr-menu #main-menu{border-bottom:1px solid #fff;position:absolute;right:0;top:0}
 .hikr-menu #main-menu{list-style:none none}.hikr-menu #main-menu li{display:inline-block;position:relative;top:0}.hikr-menu #main-menu li.active a{color:#000;border-bottom:2px solid #e95223}
 .hikr-menu #main-menu li.active a:hover{color:#000}
 .hikr-menu #main-menu li a{border-bottom:2px solid transparent;display:block;color:#a1bbc5;line-height:32px;padding:0 .5em;text-transform:uppercase;clear:both}.hikr-menu #main-menu li a:hover{color:#444}
@@ -92,7 +95,7 @@ footer p,.footer p{margin-bottom:.5em}
 .article-container{position:absolute;right:0;width:600px;box-shadow:0 0 16px rgba(0,0,0,0.5);min-height:100%}.article-container img{max-width:100%}
 .pagination{text-align:center}
 .post-column{width:600px;float:left}
-.post-sidebar{width:340px;margin-left:16px;float:left}
+.post-sidebar{width:340px;min-height:400px;margin-left:16px;float:left}
 .post .date,.post .author{font-size:15px;color:#738790}
 .post .date{float:right}
 .post p{margin-bottom:.5em}

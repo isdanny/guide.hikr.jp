@@ -5,9 +5,8 @@
         </div>
       {% endif %}
       <div class="headings">
-        {% if page.featured %}<h6>Featured course</h6>{% endif %}
         <a href="{{page.url}}"><h2>{{page.title}}</h2></a>
-        <h4 class="area"><a href="/area/{{page.area}}.html">{{page.area}}</a>, <a href="/pref/{{page.prefecture}}.html">{{page.prefecture}}</a></h4></a>
+        <h4 class="area"><a href="/area/{{page.area}}.html">{{page.area}}</a>, <a href="/pref/{{page.prefecture}}.html">{{page.prefecture}}</a></h4>
         <div class="author">by {{page.author}} </div>
         <div class="tags">
           {% for tag in page.tags %}
