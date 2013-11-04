@@ -78,13 +78,12 @@ footer p,.footer p{margin-bottom:.5em}
 .summary-box.vertical .header-image{width:47% !important;margin-right:3%;float:left;clear:left}
 .summary-box.vertical .headings{width:48%;margin-left:1%}
 .summary-box.vertical .summary{float:left;margin-top:16px;width:48%;margin-left:1%}
-@media only screen and (min-width:1200px){}@media only screen and (min-width:960px) and (max-width:1199px){}@media only screen and (min-width:768px) and (max-width:959px){}@media only screen and (min-width:480px) and (max-width:767px){}@media only screen and (max-width:767px){.left-side{display:none} .right-side{left:0;padding-top:48px}.right-side .container{width:100%}}@media only screen and (min-width:768px){}.hikr-sidebar{position:fixed;top:0;left:0;z-index:8}.hikr-sidebar .logo-float{position:fixed;top:20px;left:20px;display:block;width:125px;height:75px;z-index:20;background:url(../img/logo-mini.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
-.hikr-sidebar .hikr-menu{position:fixed;top:0;left:0;bottom:0;width:180px;background-color:rgba(0,0,0,0.8);border-right:1px solid #000;box-shadow:0 0 16px rgba(0,0,0,0.5);-webkit-transform:translate3d(-190px, 0, 0);-webkit-transition:-webkit-transform,.25s}.hikr-sidebar .hikr-menu #main-menu{margin-top:100px}.hikr-sidebar .hikr-menu #main-menu .submenu{display:none;margin:0;border-bottom:1px solid rgba(0,0,0,0.9);border-top:1px solid rgba(255,255,255,0.1);font-size:90%}.hikr-sidebar .hikr-menu #main-menu .submenu a{text-transform:none;border:none;line-height:18px;padding-left:40px}
-.hikr-sidebar .hikr-menu #main-menu{list-style:none none;border-top:1px solid rgba(0,0,0,0.9);border-bottom:1px solid rgba(255,255,255,0.1)}.hikr-sidebar .hikr-menu #main-menu li{position:relative;left:1px;width:100%;border-right:4px solid transparent}.hikr-sidebar .hikr-menu #main-menu li.active{border-right:4px solid #e95223}.hikr-sidebar .hikr-menu #main-menu li.active a{background-color:#000;color:#fff}
-.hikr-sidebar .hikr-menu #main-menu li.active a:hover{background-color:#000}
-.hikr-sidebar .hikr-menu #main-menu li a{border-bottom:1px solid rgba(0,0,0,0.9);border-top:1px solid rgba(255,255,255,0.1);padding-left:15px;display:block;color:#a1bbc5;line-height:32px;text-transform:uppercase;clear:both}.hikr-sidebar .hikr-menu #main-menu li a:hover{color:#fff;background-color:rgba(0,0,0,0.5)}
-.hikr-sidebar .hikr-menu #main-menu li a .icon{display:block;float:left;width:25px;text-align:center}
+.hikr-sidebar{position:fixed;top:0;left:0;z-index:8}.hikr-sidebar .logo-float{position:fixed;top:20px;left:20px;display:block;width:125px;height:75px;z-index:20;background:url(../img/logo-mini.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
 .hikr-sidebar:hover .hikr-menu{-webkit-transform:translate3d(0, 0, 0)}
+.hikr-menu{position:relative;top:0;left:0;right:0;height:32px;background-color:#fff;border-bottom:1px solid #ccc}.hikr-menu #main-menu{position:absolute;right:0;top:0}
+.hikr-menu #main-menu{list-style:none none}.hikr-menu #main-menu li{display:inline-block;position:relative;top:0}.hikr-menu #main-menu li.active a{color:#000;border-bottom:2px solid #e95223}
+.hikr-menu #main-menu li.active a:hover{color:#000}
+.hikr-menu #main-menu li a{border-bottom:2px solid transparent;display:block;color:#a1bbc5;line-height:32px;padding:0 .5em;text-transform:uppercase;clear:both}.hikr-menu #main-menu li a:hover{color:#444}
 .map-on-left,.map-on-left>.column{height:100%}
 .map-on-left{width:100%;height:100%}.map-on-left #map{height:100%;position:fixed;top:0;left:0;right:600px}.map-on-left #map .coords{position:absolute;bottom:10px;left:10px;z-index:100}
 .map-on-left .map-column{height:100%}
@@ -92,7 +91,9 @@ footer p,.footer p{margin-bottom:.5em}
 .infobox{float:right;width:200px}
 .article-container{position:absolute;right:0;width:600px;box-shadow:0 0 16px rgba(0,0,0,0.5);min-height:100%}.article-container img{max-width:100%}
 .pagination{text-align:center}
-.post{max-width:600px;margin:0 auto}.post .date,.post .author{font-size:15px;color:#738790}
+.post-column{width:600px;float:left}
+.post-sidebar{width:340px;margin-left:16px;float:left}
+.post .date,.post .author{font-size:15px;color:#738790}
 .post .date{float:right}
 .post p{margin-bottom:.5em}
 .post .content{margin-top:.5em;text-align:justify}
@@ -111,3 +112,4 @@ footer p,.footer p{margin-bottom:.5em}
 .leaflet-bar a:hover{color:#fff !important;background-color:rgba(0,0,0,0.9) !important;-webkit-transition:background-color,.2s;box-shadow:0 0 7px #000}
 .leaflet-bar a.leaflet-disabled{background-color:transparent;color:transparent !important}.leaflet-bar a.leaflet-disabled:hover{background-color:rgba(0,0,0,0.1);box-shadow:none;color:#eee !important}
 .leaflet-control-language-interior{width:25px;height:25px;background-position:50% 50%;background-repeat:no-repeat;display:block;padding:3px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;cursor:pointer;text-align:center;background-color:#fff}
+@media only screen and (min-width:1200px){}@media only screen and (min-width:960px) and (max-width:1199px){}@media only screen and (min-width:768px) and (max-width:959px){}@media only screen and (min-width:480px) and (max-width:767px){}@media only screen and (max-width:767px){.left-side{display:none} .right-side{left:0;padding-top:48px}.right-side #main-menu{width:960px} .right-side .container{width:100%}}@media only screen and (min-width:768px){.right-side #main-menu{width:960px;left:0;text-align:right}}

@@ -12,11 +12,13 @@ info:
   walking_time: 6h
   highest_point: 929m
   lowest_point: 239m
-tags: [ flowers, onsen, temple ]
+tags: [ flowers, onsen, shrine ]
+features:
+  - /p/mitake-shrine.html
 area: Okutama
 prefecture: Tokyo
 summary: >
-  Mount Mitake is a popular destination due to the temple on the top and Hinode offers a 360 degree view of the Okutama area.  While the course itself isn't hard, it takes 6 hours so it's recommended for beginners, provided they can keep a good pace. During the plum blossom season, around February and March, the Yoshino plum park is particularly picturesque.
+  Mount Mitake is a popular destination due to the shrine on the top and Hinode offers a 360 degree view of the Okutama area.  While the course itself isn't hard, it takes 6 hours so it's recommended for beginners, provided they can keep a good pace. During the plum blossom season, around February and March, the Yoshino plum park is particularly picturesque.
 ---
 
 ## Access ##

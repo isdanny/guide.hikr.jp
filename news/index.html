@@ -1,6 +1,9 @@
 ---
-layout: guide
+layout: news
+menu:
+  news: active
 ---
+
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
@@ -10,7 +13,6 @@ layout: guide
 {% endfor %}
 
 <section>
-<!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="/news/page-{{ paginator.previous_page }}" class="btn previous">← Prev</a>
@@ -24,5 +26,3 @@ layout: guide
   {% endif %}
 </div>
 </section>
-{% for post in site.posts %}
-{% endfor %}

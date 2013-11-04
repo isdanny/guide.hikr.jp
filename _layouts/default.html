@@ -27,21 +27,6 @@
     <a href="/" class="logo-float">
       hikr.jp
     </a>
-    <div class="hikr-menu">
-      <br>
-      <ul id="main-menu">
-        <li class="{{ page.menu.guide }}"><a href="/"><span class="icon home"></span>&nbsp;Guide</a></li>
-        <li class="{{ page.menu.areas }}"><a href="/area/"><span class="icon map-marker"></span>&nbsp;Areas</a>
-          <ul class="submenu">
-            {% for area in site.area_names %}
-              <li class=""><a href="/area/{{area}}.html">{{ area }}</a></li>
-            {% endfor %}
-          </ul>
-        </li>
-        <li class="{{ page.menu.tags }}"><a href="/tag/"><span class="icon tag"></span>&nbsp;Tags</a></li>
-        <li class="{{ page.news.active }}"><a href="/news/"><span class="icon quote-right"></span>&nbsp;News</a></li>
-      </ul>
-    </div>
   </div>
 
   {{content}}

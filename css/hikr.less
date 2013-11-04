@@ -686,40 +686,6 @@ footer, .footer{
   }
 }
 
-@media only screen and (min-width:1200px){
-  // large
-}
-
-@media only screen and (min-width: 960px) and (max-width: 1199px){
-  // desktop
-}
-
-@media only screen and (min-width: 768px) and (max-width: 959px){
-  // tablet
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px){
-  // phone
-}
-
-@media only screen and (max-width: 767px){
-  .left-side{
-    display: none;
-  }
-  .right-side{
-    left: 0;
-    padding-top: 48px;
-    .container{
-      width: 100%;
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .hikr-sidebar{
-    
-  }
-}
 
 .hikr-sidebar{
   position: fixed;
@@ -741,75 +707,6 @@ footer, .footer{
     overflow: hidden;
   }
 
-  .hikr-menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 180px;
-    background-color: rgba(0,0,0,0.8);
-    border-right: 1px solid black;
-    box-shadow: 0 0 16px rgba(0,0,0,0.5);
-    -webkit-transform: translate3d(-190px,0,0);
-    -webkit-transition: -webkit-transform, 0.25s;
-    #main-menu{
-      margin-top: 100px;
-      .submenu{
-        display: none;
-        margin: 0;
-        border-bottom: 1px solid rgba(0,0,0,0.9);
-        border-top: 1px solid rgba(255,255,255,0.1);
-        font-size: 90%;
-        a{
-          text-transform: none;
-          border: none;
-          line-height: 18px;
-          padding-left: 40px;
-        }
-      }
-    }
-    #main-menu{
-      list-style: none none;
-      border-top: 1px solid rgba(0,0,0,0.9);
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-      li{
-        position: relative;
-        left: 1px;
-        width: 100%;
-        border-right: 4px solid transparent;
-        &.active{
-          border-right: 4px solid @accent;
-          a{
-            background-color: black;
-            color: white;
-          }
-          a:hover{
-            background-color: black;
-          }
-        }
-        a{
-          border-bottom: 1px solid rgba(0,0,0,0.9);
-          border-top: 1px solid rgba(255,255,255,0.1);
-          padding-left: 15px;
-          display: block;
-          color: @sea1;
-          line-height: 32px;
-          text-transform: uppercase;
-          clear: both;
-          &:hover{
-            color: white;
-            background-color: rgba(0,0,0,0.5);
-          }
-          .icon{
-            display: block;
-            float: left;
-            width: 25px;
-            text-align: center;
-          }
-        }
-      }
-    }
-  }
   &:hover{
     .hikr-menu{
       -webkit-transform: translate3d(0,0,0);
@@ -817,6 +714,53 @@ footer, .footer{
   }
 }
 
+
+.hikr-menu{
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  #main-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #main-menu{
+    list-style: none none;
+    li{
+      display: inline-block;        
+      position: relative;
+      top: 0px;
+      &.active{
+        a{
+          // background-color: @white;
+          color: black;
+          border-bottom: 2px solid @accent;
+          // border-left: 1px solid #ccc;
+          // border-right: 1px solid #ccc;
+        }
+        a:hover{
+          color: black;
+        }
+      }
+      a{
+        border-bottom: 2px solid transparent;
+        display: block;
+        color: @sea1;
+        line-height: 32px;
+        padding: 0 0.5em;
+        text-transform: uppercase;
+        clear: both;
+        &:hover{
+          color: #444;
+        }
+      }
+    }
+  }
+}
 .map-on-left, .map-on-left > .column{
   height: 100%;
 }
@@ -864,9 +808,18 @@ footer, .footer{
   text-align: center;
 }
 
+.post-column{
+  width: 600px;
+  float: left;
+}
+
+.post-sidebar{
+  width: 340px;
+  margin-left: 16px;
+  float: left;
+}
+
 .post{
-  max-width: 600px;
-  margin: 0 auto;
   .date, .author{
     font-size: 15px;
     color: @sea2;
@@ -975,5 +928,52 @@ footer, .footer{
     cursor: pointer;
     text-align: center;
     background-color: #FFFFFF;
+}
+
+
+
+@media only screen and (min-width:1200px){
+  // large
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px){
+  // desktop
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+  // tablet
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  // phone
+}
+
+@media only screen and (max-width: 767px){
+  .left-side{
+    display: none;
+  }
+  .right-side{
+    left: 0;
+    padding-top: 48px;
+    #main-menu{
+      width: 960px;
+    }
+    .container{
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hikr-sidebar{
+    
+  }
+  .right-side{
+    #main-menu{
+      width: 960px;
+      left: 0;
+      text-align: right;
+    }    
+  }
 }
 

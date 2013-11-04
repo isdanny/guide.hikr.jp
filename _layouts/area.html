@@ -10,16 +10,17 @@ menu:
   </div>
 
   <div class="article-container">
+    {% include mainmenu.html %}
     <div class="section">
-<h1>Area: {{ page.area_listing }}</h1>
-<br>
-{{content}}
-{% for page in page.courses %}
-{% if page.layout == "course" %}
-{% include thumb.html %}
-{% endif %}
-{% endfor %}
-<br class="clear">
+      <h1>Area: {{ page.area_listing }}</h1>
+      <br>
+      {{content}}
+      {% for page in page.courses %}
+      {% if page.layout == "course" %}
+      {% include thumb.html %}
+      {% endif %}
+      {% endfor %}
+      <br class="clear">
     </div>
   </div>
 </div>
