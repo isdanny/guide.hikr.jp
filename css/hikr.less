@@ -719,6 +719,17 @@ footer, .footer{
   }
 }
 
+.logo-menu{
+  display: none;
+  top: 0px;
+  left: 16px;
+  width: 100px;
+  height: 60px;
+  text-indent: 100%;
+  overflow: hidden;
+  background: url(../img/logo-mini.png) center center no-repeat;
+  background-size: 100%;
+}
 
 .hikr-sidebar{
   position: fixed;
@@ -756,7 +767,32 @@ footer, .footer{
   height: 32px;
   background-color: white;
   border-bottom: 1px solid #ccc;
+  .search-bar{
+    position: absolute;
+    float: left;
+    padding-left: 8px;
+    z-index: 2;
+    input{
+      padding-left: 8px;
+      color: @sea2;
+      font: inherit;
+      font-size: 20px;
+      line-height: 22px;
+      width: 200px;
+      border: none;
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+      &:focus{
+        background: @white;
+      }
+      &::-webkit-input-placeholder { color: #ddd; text-transform: uppercase; line-height: 28px; }
+      &::-moz-placeholder { color: #ddd; text-transform: uppercase; line-height: inherit; } /* firefox 19+ */
+      &:-ms-input-placeholder { color: #ddd; text-transform: uppercase; line-height: inherit; } /* ie */
+      &input:-moz-placeholder { color: #ddd; text-transform: uppercase; line-height: inherit; }
+    }
+  }
   #main-menu{
+    z-index: 1;
     border-bottom: 1px solid white;
     position: absolute;
     right: 0;
@@ -917,14 +953,12 @@ footer, .footer{
 
 .leaflet-zoom-animated{
   path{
-    // -webkit-svg-shadow: 2px 2px 4px #000;
     filter: url(#dropshadow);
   }
 }
 
 .leaflet-bar{
   border-radius: 2px!important;
-  // border: 1px solid rgba(0,0,0,0.5);
   box-shadow: none;
   overflow: hidden;
   a, a:hover{
@@ -1020,13 +1054,7 @@ footer, .footer{
 @media only screen and (min-width: 768px) and (max-width: 959px){
   // tablet
   .hikr-sidebar{
-    position: absolute;
-    .logo-float{
-      top: 0px;
-      left: 16px;
-      width: 100px;
-      height: 60px;
-    }
+    display: none;
   }
   .left-side{
     width: 0;
@@ -1034,6 +1062,14 @@ footer, .footer{
   .right-side{
     .hikr-menu{
       height: 48px;
+      .logo-menu{
+        display: block;
+      }
+      .search-bar{
+        position: absolute;
+        bottom: 0;
+        left: 116px;
+      }
       #main-menu{
       }
     }
@@ -1056,19 +1092,21 @@ footer, .footer{
 @media only screen and (min-width: 480px) and (max-width: 767px){
   // tablet-vertical
   .hikr-sidebar{
-    position: absolute;
-    .logo-float{
-      top: 0px;
-      left: 16px;
-      width: 100px;
-      height: 60px;
-    }
+    display: none;
   }
 .left-side{
     width: 0;
   }
   .right-side{
     .hikr-menu{
+      .logo-menu{
+        display: block;
+      }
+      .search-bar{
+        position: absolute;
+        bottom: 0;
+        left: 116px;
+      }
       height: 48px;
       #main-menu{
       }
