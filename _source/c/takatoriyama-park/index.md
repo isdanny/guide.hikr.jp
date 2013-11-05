@@ -7,7 +7,11 @@ header_class: vertical
 map:
 area: Miura
 prefecture: Kanagawa
-tags: [ temple, shrine, seaside, park, statue ]
+tags: [ temple, shrine, seaside, park, statue, 360 view ]
+summary: |
+  A two-part course involving a park, various shrines and temples and a 360 degree view. 
+
+  **The map presented here needs to be updated**
 ---
 
 ## Starting Point ##
