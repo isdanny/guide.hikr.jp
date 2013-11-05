@@ -2,7 +2,7 @@
 layout: course
 title: Takatoriyama Park course
 author: JAMBO International
-header-image: http://www.flickr.com/photos/jambodave/10658570516/
+header_image: http://www.flickr.com/photos/jambodave/10658570516/
 header_class: vertical
 map:
 area: Miura
