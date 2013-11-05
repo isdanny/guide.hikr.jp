@@ -1,0 +1,257 @@
+{
+  "type": "FeatureCollection",
+  "features": [                 
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/hodo/index.html'><span class='title'>Hodo-san</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.0926218032837,
+        36.09329130533463
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/jinba/index.html'><span class='title'>Jinba</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.151930809021,
+        35.61606986594179
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/kamakita/index.html'><span class='title'>Kamakita lake, mt. Monomi and waterfalls</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.2893886566162,
+        35.91710290351792
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/kintoki/index.html'><span class='title'>Kintoki-yama</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.00464534759521,
+        35.289873071558816
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/kuki/index.html'><span class='title'>Kuki-yama</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        138.95097970962524,
+        35.57661983472023
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/kuratake/index.html'><span class='title'>Kuratake</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.01978373527527,
+        35.583923308165026
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/kuroyama/index.html'><span class='title'>Kuroyama waterfalls</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.2451000213623,
+        35.94076799566985
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/maruyama/index.html'><span class='title'>Maruyama</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.15995597839355,
+        35.9884762566153
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/mitake-hinode/index.html'><span class='title'>Mitake, Hinode, Yoshino plum park</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.14969921112058,
+        35.7830062563083
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/mitsumine/index.html'><span class='title'>Mitsumine</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.2451000213623,
+        35.46413043654055
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/momokurayama/index.html'><span class='title'>Momokurayama</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        138.9810848236084,
+        35.63832498777987
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/nokogiri-cliff-buddha/index.html'><span class='title'>Nokogiri-yama cliff and Giant Buddha</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.822284579277,
+        35.16833575377093
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/nokogiri-okutama/index.html'><span class='title'>Mt. Nokogiri</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.10592555999756,
+        35.77921138227575
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/ogusu/index.html'><span class='title'>Ogusu</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.62820529937744,
+        35.25045562186181
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/oomaru-yama/index.html'><span class='title'>Oomaru-yama</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.0776014328003,
+        35.59007446257271
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/otsuki-cliff/index.html'><span class='title'>Otsuki cliff</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        138.94816875457764,
+        35.620639996677504
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/sagamiko-takao/index.html'><span class='title'>Sagamiko - Takao</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.2429542541504,
+        35.62472149570727
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/takamizusan/index.html'><span class='title'>Takamizusan-zan</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.20249939,
+        35.817619324
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/takao/index.html'><span class='title'>Takao-san</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.2158317565918,
+        35.645788484330524
+        ]
+      }
+    },     
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/takatsuyama/index.html'><span class='title'>Takatsuyama</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.08901691436768,
+        35.59450649082071
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "popup": "<a href='/c/tenran-tonosu/index.html'><span class='title'>Tenran - Tounosu</span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.30827140808105,
+        35.861822036974395
+        ]
+      }
+    },                                                                                                                                                                                                                                                                       {}
+  ]
+}

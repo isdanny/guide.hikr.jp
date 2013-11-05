@@ -1,0 +1,19 @@
+/* TEAM */
+
+Project Lead: Leszek Rybicki
+Site: http://leszek.rybicki.cc
+Twitter: @leszekr
+Location: Tokyo, Japan
+
+/* THANKS */
+
+GitHub
+Jekyll
+MapBox
+Jambo International
+
+/* PROJECT */
+
+Software: Sublime Text, MAC OS X
+
+Source: https://github.com/leszekr/guide.hikr.jp

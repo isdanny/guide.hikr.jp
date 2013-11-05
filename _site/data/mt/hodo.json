@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature",
+      "properties": {
+        "type": "summit",
+        "label":{ "en": "Houdou-san", "jp":"宝登山"},
+        "elevation": "497",
+        "peopup": "<a href=''><span class='title'></span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.0926218032837,
+        36.09329130533463,
+        497
+        ]
+      }
+    }
+  ]
+}

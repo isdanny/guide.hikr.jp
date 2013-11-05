@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
-gem 'sinatra'
 gem 'haml'
 #gem 'shotgun'
 gem 'nokogiri'
@@ -10,4 +9,9 @@ gem 'typhoeus'
 gem 'fleakr', :git => "git://github.com/rfc2616/fleakr.git"
 gem 'jekyll-less'
 gem 'therubyracer'
+
+
+gem 'jekyll'
 gem 'rack-jekyll'
+gem 'RedCloth'
+gem 'thin'

@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+  <title>Hikr</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="author" value="Leszek Rybicki, Copyright by hikr.jp">
+  <meta name="keywords" value="hiking, japan">
+  <meta name="description" value="">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/leaflet.css"/>
+  <link rel="stylesheet" href="/css/leaflet.draw.css"/>
+<!--  <link rel="stylesheet" href="/css/tuktuk.css"/> -->
+  <link rel="stylesheet" href="/css/tuktuk.icons.css"/>
+    <!-- <link rel="stylesheet" href="/css/tuktuk.theme.css"/>  -->
+  <link rel="stylesheet" href="/css/hikr.css"/>
+  <script type="text/javascript" src="/js/vendor/modernizr-latest.js"></script>
+  <script type="text/javascript" src="/js/vendor/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="/js/vendor/jquery.flot.js"></script>
+  <script type="text/javascript" src="/js/vendor/leaflet.js"></script>
+  <script type="text/javascript" src="/js/vendor/leaflet.draw.js"></script>
+</head>
+<body class="en">
+
+  <div class="hikr-sidebar">
+    <a href="/" class="logo-float">
+      hikr.jp
+    </a>
+  </div>
+
+  <div class="hikr-content">
+  <div class="left-side">
+    <div class="motto">Hiking. With friends.</div>
+  </div>
+  <div class="right-side">
+    <main>
+    <div class="hikr-menu">
+  <a href="/" class="logo-menu">hikr.jp</a>
+  <ul id="main-menu">
+    <li class=""><a href="/">Guide</a></li>
+    <li class=""><a href="/area/">Areas</a></li>
+    <li class=""><a href="/tag/">Tags</a></li>
+    <li class=""><a href="/news/">News</a></li>
+  </ul>
+  <div class="search-bar">
+    <input name="search" placeholder="Search">
+  </div>
+</div>
+      <div class="container">
+        <style type="text/css">
+  textarea#article_md{
+    width: 100%;
+    border: none;
+
+  }
+  #article_md:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  #article_form input, #article_form textarea{
+    font-family: Andale Mono, monospace;
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+    background: white;
+  }
+</style>
+<script src="/js/jquery.autosize.js"></script>
+<div class="map-on-left">
+  <div id="map">
+    <div class="coords"></div>
+  </div>
+
+  <div class="article-container">
+    <form id="article_form">
+      <fieldset>
+        <input id="article_title" type="text">
+        <textarea id="article_md">
+        </textarea>
+      </fieldset>
+    </form>
+  </div>
+  <div id="plot"></div>
+</div>
+
+<script type="text/javascript">
+
+
+  window.API_URL = "http://localhost:9393";
+
+  function initEdit(){
+    var hash = window.location.hash || "#"
+    var path = hash.replace(/#/,'');
+    $("#article_md").autosize();
+    $.getJSON(API_URL+"/api/article/"+path+"?callback=?", function(data){
+      console.log(data);
+      $("#article_title").val(data.meta.title);
+      $("#article_md").val(data.markdown).trigger("autosize.resize");
+      var maps = data.meta.map;
+      for(var i in maps){
+        maps[i] = '/c/'+path+'/'+maps[i];
+      }
+      console.log(data.meta.map);
+
+      hikr = new Hikr("map");
+      hikr.loadMaps(maps,function(){
+        hikr.makeEditable();
+      });
+    })
+  }
+
+  window.onload = function(){
+    $('textarea').autosize();   
+    initEdit();
+  };
+
+</script>
+        <br class="clear">
+      </div>
+      <div class="footer-pusher">&nbsp;</div>
+      <footer>
+  <section>
+  <div class="row">
+  <div class="column-3">
+    <ul class="menu">
+      <li><a href="/about/index.html">About Hikr</a></li>
+      <li><a href="/about/team.html">Team</a></li>
+      <li><a href="/about/support.html">Support</a></li>
+      <li><a href="/about/contact.html">Contact</a></li>
+    </ul>
+    <br>
+    <a target="_blank" href="http://twitter.com/hikr_jp" class="icon twitter">&nbsp;</a>
+    <a target="_blank" href="http://www.flickr.com/photos/104745110@N03/" class="icon flickr">&nbsp;</a>
+  </div>
+  <div class="column-9">
+    <p><strong>Hikr.jp</strong> is a growing collection of hiking courses in Japan. We are currently in open beta. If you'd like to contribute or report bugs, mistakes or say "GOOD JOB!", <a href="/about/contact.html">contact us</a>.</p>
+    <p>Copyright &copy; by hikr.jp. Articles are copyright of their respective authors, released under a <a target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons 3.0 Attribution Share-alike license</a>. Pictures are copyright of their respective authors and used with permission.</p>
+    <div id="mc_embed_signup">
+      <form action="http://hikr.us7.list-manage.com/subscribe/post?u=ed00142426b464246887fc6d2&amp;id=cf8be08c43" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <fieldset>
+          <input class="email" placeholder="Sign up for updates" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          <button class="button alert icon envelope"  type="submit" value="" name="subscribe"></button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <br class="clear">
+  </div>
+  </section>
+</footer>
+
+    </main>
+  </div>
+</div>
+
+
+
+  <!-- // <script type="text/javascript" src="/js/Panoramio.js"></script> -->
+  <script type="text/javascript" src="/js/hikr.js"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2132560-9']);
+      _gaq.push(['_setDomainName', 'hikr.jp']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
+</body>
+</html>

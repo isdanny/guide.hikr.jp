@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature",
+      "properties": {
+        "type": "summit",
+        "label":{ "en": "Mitsumine san", "jp":"三峰山"},
+        "elevation": "943.6",
+        "peopup": "<a href=''><span class='title'></span></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.2451000213623,
+        35.46413043654055,
+        943.6
+        ]
+      }
+    }
+  ]
+}
