@@ -86,7 +86,7 @@ footer p,.footer p{margin-bottom:.5em}
 .logo-menu{display:none;top:0;left:16px;width:100px;height:60px;text-indent:100%;overflow:hidden;background:url(../img/logo-mini.png) center center no-repeat;background-size:100%}
 .hikr-sidebar{position:fixed;top:0;left:0;z-index:8}.hikr-sidebar .logo-float{position:relative;top:20px;left:20px;display:block;width:125px;height:75px;z-index:20;background:url(../img/logo-mini.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
 .hikr-sidebar:hover .hikr-menu{-webkit-transform:translate3d(0, 0, 0)}
-.hikr-menu{position:relative;top:0;left:0;right:0;height:32px;background-color:#fff;border-bottom:1px solid #ccc}.hikr-menu .search-bar{position:absolute;float:left;padding-left:8px;z-index:2}.hikr-menu .search-bar input{padding-left:8px;color:#738790;font:inherit;font-size:20px;line-height:22px;width:200px;border:none;outline:none;-webkit-tap-highlight-color:transparent;}.hikr-menu .search-bar input:focus{background:#f8f8f8}
+.hikr-menu{position:relative;top:0;left:0;right:0;height:32px;background-color:#fff;border-bottom:1px solid #ccc}.hikr-menu .search-bar{position:absolute;float:left;padding-left:8px;z-index:2}.hikr-menu .search-bar input{padding-left:8px;color:#738790;font:inherit;font-size:20px;line-height:22px;width:260px;border:none;outline:none;-webkit-tap-highlight-color:transparent;}.hikr-menu .search-bar input:focus{background:#f8f8f8}
 .hikr-menu .search-bar input::-webkit-input-placeholder{color:#ddd;text-transform:uppercase;line-height:28px}
 .hikr-menu .search-bar input::-moz-placeholder{color:#ddd;text-transform:uppercase;line-height:inherit}
 .hikr-menu .search-bar input:-ms-input-placeholder{color:#ddd;text-transform:uppercase;line-height:inherit}
