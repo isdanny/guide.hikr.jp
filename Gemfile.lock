@@ -6,10 +6,17 @@ GIT
       hpricot (>= 0.6.164)
       loggable (>= 0.2.0)
 
+GIT
+  remote: https://github.com/adaoraul/rack-jekyll.git
+  revision: 4a77cbb4e4ef44fc5b13eccb7c9f53c940d35637
+  specs:
+    rack-jekyll (0.4.1)
+      jekyll (>= 0.12.0, < 2.0)
+      rack (~> 1.5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
-    RedCloth (4.2.9)
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
     colorator (0.1)
@@ -56,9 +63,6 @@ GEM
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     rack (1.5.2)
-    rack-jekyll (0.4.1)
-      jekyll (>= 0.12.0, < 2.0)
-      rack (~> 1.5.0)
     redcarpet (2.2.2)
     ref (1.0.5)
     safe_yaml (0.7.1)
@@ -78,14 +82,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  RedCloth
   fleakr!
   haml
   jekyll
   jekyll-less
   liquid (>= 2.5.3)
   nokogiri
-  rack-jekyll
+  rack-jekyll!
   redcarpet (= 2.2.2)
   therubyracer
   thin
