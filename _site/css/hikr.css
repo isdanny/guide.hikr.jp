@@ -1079,7 +1079,7 @@ section:last-of-type {
   line-height: 1.8;
   color: #222;
   text-align: justify;
-  text-shadow: 2px 2px 0px #fff!important;
+  text-shadow: 1px 1px 0px #fff!important;
   margin: 1em 0;
 }
 .article p a {
@@ -1089,7 +1089,7 @@ section:last-of-type {
 .article h1,
 .article h2 {
   color: #e95223;
-  text-shadow: 2px 2px 0px #fff!important;
+  text-shadow: 1px 1px 0px #fff!important;
 }
 .leaflet-zoom-animated path {
   filter: url(#dropshadow);

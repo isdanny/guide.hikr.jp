@@ -6,5 +6,6 @@ label:
   jp: 氷川キャンプ場
   en: Hikawa capsite
 area: Okutama
+tags: [ camp ]
 prefecture: Tokyo
 ---

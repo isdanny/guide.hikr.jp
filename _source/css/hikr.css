@@ -116,8 +116,8 @@ footer p,.footer p{margin-bottom:.5em}
 .article h4{font-size:100%}
 .article h5{font-size:90%}
 .article ul{margin:0 3em;line-height:2;color:#222}
-.article p{line-height:1.8;color:#222;text-align:justify;text-shadow:2px 2px 0 #fff !important;margin:1em 0}.article p a{color:#a1bbc5;text-decoration:underline}
-.article h1,.article h2{color:#e95223;text-shadow:2px 2px 0 #fff !important}
+.article p{line-height:1.8;color:#222;text-align:justify;text-shadow:1px 1px 0 #fff !important;margin:1em 0}.article p a{color:#a1bbc5;text-decoration:underline}
+.article h1,.article h2{color:#e95223;text-shadow:1px 1px 0 #fff !important}
 .leaflet-zoom-animated path{filter:url(#dropshadow)}
 .leaflet-bar{border-radius:2px !important;box-shadow:none;overflow:hidden}.leaflet-bar a,.leaflet-bar a:hover{border-radius:0 !important;font-size:18px;line-height:32px;width:32px;height:32px}
 .leaflet-bar a{color:#eee !important;background-color:rgba(0,0,0,0.3);-webkit-transition:background-color,.2s}

@@ -6,7 +6,7 @@ features:
   - /mt/takamizu.html
   - /mt/iwatakeishi.html
   - /mt/sougaku.html
-tags: [ ]
+tags: [ river swim ]
 featured: also
 center: [139.20249939, 35.817619324]
 header_image: http://www.flickr.com/photos/104745110@N03/10354395866/

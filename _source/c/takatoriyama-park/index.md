@@ -53,7 +53,7 @@ Plan to spend an hour or two in the park since there are several hiking courses 
 
 {% flickr http://www.flickr.com/photos/jambodave/10658544415/ %}
 
-After that, follow the clearly marked signs to Jinmuji （神武寺）.  Take this course for about 40 minutes, along rocky cliffs where you must use a chain at times, to Jinmuji Shrine, a rustic shrine with a mossy landscape.  From there, follow the signs to Jinmuji Station （神武寺駅）which will take you a scenic creek valley to a main road.  At this road, turn left and you’ll come to the station in about 10-15 minutes. 
+After that, follow the clearly marked signs to Jinmuji （神武寺）.  Take this course for about 40 minutes, along rocky cliffs where you must use a chain at times, to Jinmuji Temple, a rustic temple with a mossy landscape.  From there, follow the signs to Jinmuji Station （神武寺駅）which will take you a scenic creek valley to a main road.  At this road, turn left and you’ll come to the station in about 10-15 minutes. 
 
 {% flickr http://www.flickr.com/photos/jambodave/10658591896/ %}
 

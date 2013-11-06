@@ -1,6 +1,7 @@
 ---
 layout: place
 type: temple
+tags: [ temple, statue ]
 label: 
   en: Jinmuji temple
   jp: 神武寺
