@@ -1,10 +1,1 @@
----
-- :title: About
-  :url: /about/index.html
-  :layout: page
-- :title: Areas
-  :url: /area/index.html
-  :layout: area
-- :title: Atago Shrine
-  :url: /p/atago-shrine.html
-  :layout: place
+{"About":[{"title":"About","url":"/about/index.html","layout":"page"}],"Areas":[{"title":"Areas","url":"/area/index.html","layout":"area"}],"area":[{"title":"Tokyo area","url":"/area/Tokyo.html","layout":"area"}]}

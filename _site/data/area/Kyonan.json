@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [   
+    {"type": "Feature",
+      "properties": {
+        "type": "summit",
+        "label":{ "en": "Nokogiri-yama", "jp":"鋸山"},
+        "elevation": "329.4",
+        "name": "",
+        "url": "/mt/nokogiri-chiba.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.840556, 35.160278 , 329.4 
+        ]
+      }
+    },   {}
+  ]
+}

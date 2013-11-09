@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [       
+    {"type": "Feature",
+      "properties": {
+        "type": "temple",
+        "label":{ "en": "Jinmuji temple", "jp":"神武寺"},
+        "elevation": "",
+        "name": "",
+        "url": "/p/jinmuji-temple.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.60792779922485, 35.30484667292013 
+        ]
+      }
+    },   {}
+  ]
+}

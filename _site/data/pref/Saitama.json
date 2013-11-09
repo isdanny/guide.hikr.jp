@@ -1,0 +1,101 @@
+{
+  "type": "FeatureCollection",
+  "features": [           
+    {"type": "Feature",
+      "properties": {
+        "type": "summit",
+        "label":{ "en": "Houdou-san", "jp":"宝登山"},
+        "elevation": "497",
+        "name": "",
+        "url": "/mt/hodo.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.0926218032837, 36.09329130533463 , 497 
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "type": "summit",
+        "label":{ "en": "Kuroyama", "jp":"黒山"},
+        "elevation": "771",
+        "name": "",
+        "url": "/mt/kuroyama.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.243426322937, 35.93572976634639 , 771 
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "type": "summit",
+        "label":{ "en": "Maru-yama", "jp":"丸山"},
+        "elevation": "960",
+        "name": "",
+        "url": "/mt/maruyama.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.15995597839355, 35.9884762566153 , 960 
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "type": "summit",
+        "label":{ "en": "Monomi-san", "jp":"物見山"},
+        "elevation": "375",
+        "name": "",
+        "url": "/mt/monomi.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.29357290267944, 35.90314725809316 , 375 
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "type": "summit",
+        "label":{ "en": "Tenran-zan", "jp":"天覧山"},
+        "elevation": "141",
+        "name": "",
+        "url": "/mt/tenran.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.30827140808105, 35.861822036974395 , 141 
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "type": "summit",
+        "label":{ "en": "Tonosu-yama", "jp":"多峯主山"},
+        "elevation": "232",
+        "name": "",
+        "url": "/mt/tonosu.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.29792881011963, 35.86787352175523 , 232 
+        ]
+      }
+    },   {}
+  ]
+}

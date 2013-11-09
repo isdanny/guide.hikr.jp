@@ -62,13 +62,23 @@
   content: "\e609";
 }
 body {
-  font-family: "Open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  color: #444;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #666;
 }
 hr {
   border: 0;
   border-top: 1px solid #ccc;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input {
+  font-family: "Open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200!important;
 }
 html,
 body,
@@ -154,8 +164,8 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-weight: 200;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 .clear {
   clear: both;
@@ -170,7 +180,10 @@ html {
 }
 a {
   text-decoration: none;
-  color: #4a5a61;
+  color: #033649;
+}
+a:hover {
+  color: #e95223;
 }
 ul,
 menu,
@@ -230,9 +243,9 @@ form select,
 .form select,
 form textarea,
 .form textarea {
-  width: 320px;
-  border: 1px solid #a1bbc5;
-  background: #f8f8f8;
+  width: 240px;
+  border: 1px solid #ccc;
+  background: white;
   font-family: inherit;
   font-size: 15px;
   line-height: 25px;
@@ -350,18 +363,29 @@ button {
   border-radius: 3px;
   color: white!important;
   background: #e95223;
-  box-shadow: 0px 3px 0px #a63626;
   border: 0;
   line-height: 25px;
   min-width: 48px;
   text-align: center;
 }
+a.btn:hover,
+span.btn:hover,
+button:hover {
+  top: -5px;
+  box-shadow: 0px 3px 0px #a63626;
+}
 a.btn.disabled,
 span.btn.disabled,
 button.disabled {
-  background: #738790;
-  box-shadow: 0px 3px 0px #4a5a61;
-  color: #a1bbc5 !important;
+  background: #a1bbc5;
+  color: #f8f8f8 !important;
+}
+a.btn.disabled:hover,
+span.btn.disabled:hover,
+button.disabled:hover {
+  top: -2px;
+  box-shadow: none !important;
+  cursor: default;
 }
 .preview-box .inside {
   background: #222;
@@ -572,8 +596,10 @@ header .logo {
 }
 .left-side .motto {
   position: absolute;
-  bottom: 0;
-  margin: 16px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5) !important;
+  text-align: center;
+  bottom: 16px;
   font-size: 24px;
   color: white;
   text-shadow: 0 0 5px black;
@@ -595,23 +621,43 @@ header .logo {
   display: block;
 }
 h6 {
-  color: #e95223;
+  color: #f8f8f8;
+  background: #e95223;
+  padding-left: 16px;
+  margin-left: -16px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 300;
   font-size: 90%;
+  position: relative;
+  margin-bottom: 16px;
+}
+h6:before,
+h6:after {
+  position: absolute;
+  bottom: -16px;
+  left: 16px;
+  border: 8px solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+}
+h6:after {
+  border-top-color: #e95223;
 }
 .tag {
   display: inline-block;
   background-color: #738790;
-  box-shadow: 0px 1px 0px #4a5a61;
-  text-shadow: 0px 0px 1px black;
+  position: relative;
   color: #f8f8f8;
-  padding: 0 3px;
+  padding: 0 0.5em;
   border-radius: 2px;
   font-size: 11px!important;
+  text-shadow: 0px 0px 1px black;
 }
 .tag:hover {
+  box-shadow: 0px 1px 0px #4a5a61;
   color: white;
+  top: -1px;
 }
 .tag.large {
   font-size: 12px!important;
@@ -626,7 +672,6 @@ h6 {
   left: 250px;
   min-height: 100%;
   background: #f8f8f8;
-  border-left: 1px solid white;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
 }
 .right-side main {
@@ -675,17 +720,17 @@ section:last-of-type {
   padding-bottom: 0;
 }
 .row {
-  width: 990px;
+  width: 960px;
   position: relative;
-  left: -32px;
+  left: -16px;
   margin: 0;
   display: block;
   overflow: hidden;
 }
 .column-3 {
-  width: 220px;
+  width: 25%;
   float: left;
-  margin-left: 16px;
+  padding-left: 16px;
 }
 .column-3.border {
   width: 208px;
@@ -693,29 +738,31 @@ section:last-of-type {
   border-left: 1px solid #ccc;
 }
 .column-3:first-child {
-  padding-left: 16px;
   border-left: none;
 }
 .column-4 {
-  width: 300px;
+  width: 33%;
   float: left;
-  margin-left: 16px;
-  padding-left: 15px;
+  padding-left: 16px;
 }
 .column-4:first-child {
   padding-left: 16px;
   border-left: none;
 }
 .column-6 {
-  width: 447px;
+  width: 50%;
   float: left;
-  margin-left: 16px;
   padding-left: 15px;
-  border-left: 1px solid #ccc;
 }
 .column-6:first-child {
   border-left: none;
   padding-left: 16px;
+}
+.column-6.border-left {
+  width: 47%;
+  border-left: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-left: 16px;
 }
 .column-8 {
   width: 640px;
@@ -769,6 +816,7 @@ section:last-of-type {
   min-height: 320px;
   background-color: #111111;
   border-radius: 2px;
+  margin-bottom: 16px;
   color: #f8f8f8;
   /*  &.first{
     border: 0;
@@ -826,12 +874,13 @@ section:last-of-type {
   margin-right: 1%;
 }
 .summary-box .summary {
+  font-weight: 200;
   width: 49%;
   float: left;
   margin-left: 1%;
 }
 .summary-box.vertical .header-image {
-  width: 47%!important;
+  width: 47%;
   margin-right: 3%;
   float: left;
   clear: left;
@@ -895,6 +944,7 @@ section:last-of-type {
   z-index: 2;
 }
 .hikr-menu .search-bar input {
+  font-weight: 200;
   padding-left: 8px;
   color: #738790;
   font: inherit;
@@ -908,9 +958,6 @@ section:last-of-type {
 
   /* ie */
 
-}
-.hikr-menu .search-bar input:focus {
-  background: #f8f8f8;
 }
 .hikr-menu .search-bar input::-webkit-input-placeholder {
   color: #ddd;
@@ -933,10 +980,11 @@ section:last-of-type {
   line-height: inherit;
 }
 .hikr-menu #main-menu {
+  font-weight: 200;
   z-index: 1;
   border-bottom: 1px solid white;
   position: absolute;
-  right: 0;
+  right: 16px;
   bottom: -3px;
 }
 .hikr-menu #main-menu {
@@ -1020,8 +1068,12 @@ section:last-of-type {
   margin-left: 16px;
   float: left;
 }
+.author {
+  font-weight: 200;
+}
 .post .date,
 .post .author {
+  font-weight: 200;
   font-size: 15px;
   color: #738790;
 }
@@ -1035,15 +1087,14 @@ section:last-of-type {
   margin-top: 0.5em;
   text-align: justify;
 }
+.flickr-photo {
+  width: 100%;
+}
+.flickr-photo img {
+  width: 100%;
+}
 .article {
-  font-weight: 200;
   font-size: 15px;
-}
-.article .flickr-photo {
-  width: 100%;
-}
-.article .flickr-photo img {
-  width: 100%;
 }
 .article h1,
 .article h2,
@@ -1079,7 +1130,6 @@ section:last-of-type {
   line-height: 1.8;
   color: #222;
   text-align: justify;
-  text-shadow: 1px 1px 0px #fff!important;
   margin: 1em 0;
 }
 .article p a {
@@ -1160,20 +1210,13 @@ section:last-of-type {
   }
   .right-side .hikr-menu #main-menu {
     left: 0;
-    width: 740px;
     text-align: right;
   }
   .right-side .container {
-    width: 740px;
+    width: 100%;
   }
   .right-side .row {
-    width: 750px;
-  }
-  .right-side .column-6 {
-    width: 340px;
-  }
-  .right-side .column-3 {
-    width: 165px;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -1183,6 +1226,18 @@ section:last-of-type {
   .left-side {
     width: 0;
   }
+  .summary-box.vertical .header-image,
+  .summary-box.vertical .headings,
+  .summary-box.vertical .summary {
+    width: 100%;
+  }
+  .map-on-left .article-container {
+    left: 50%;
+    width: 50%;
+  }
+  .map-on-left #map {
+    right: 50%;
+  }
   .right-side {
     left: 0;
   }
@@ -1198,23 +1253,27 @@ section:last-of-type {
     left: 116px;
   }
   .right-side .container {
-    width: 740px;
+    width: 100%;
   }
   .right-side .row {
-    width: 750px;
-  }
-  .right-side .column-6 {
-    width: 340px;
-  }
-  .right-side .column-3 {
-    width: 165px;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .hikr-sidebar {
     display: none;
   }
-  .left-side {
+  .section {
+    margin-right: 0px;
+  }
+  .article-container {
+    width: 100%;
+  }
+  .map-on-left #map {
+    width: 100%;
+    margin-left: -100%;
+  }
+  .map-on-left .left-side {
     width: 0;
   }
   .right-side {
@@ -1232,15 +1291,70 @@ section:last-of-type {
     left: 116px;
   }
   .right-side .container {
-    width: 740px;
+    width: 100%;
   }
   .right-side .row {
     width: 100%;
   }
   .right-side .column-6 {
-    width: auto;
+    width: 100%;
+  }
+  .right-side .column-6.border-left {
+    border-top: 1px solid #ccc;
+    border-left: none;
+    margin-left: 16px;
+    padding-left: 0;
+    padding-top: 16px;
+    margin-top: 16px;
   }
   .right-side .column-3 {
-    width: 22%;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hikr-sidebar {
+    display: none;
+  }
+  .left-side {
+    width: 0;
+  }
+  .section {
+    margin: 16px 0 0 0px;
+    padding-right: 16px;
+  }
+  .right-side {
+    left: 0;
+  }
+  .right-side .hikr-menu {
+    height: 48px;
+  }
+  .right-side .hikr-menu .logo-menu {
+    display: block;
+  }
+  .right-side .hikr-menu .search-bar {
+    position: absolute;
+    bottom: 0;
+    left: 116px;
+  }
+  .right-side .container {
+    width: 100%;
+  }
+  .right-side .row {
+    width: 100%;
+    left: 0;
+  }
+  .right-side .column-6 {
+    width: 100%;
+  }
+  .right-side .column-6.border-left {
+    border-top: 1px solid #ccc;
+    border-left: none;
+    margin-left: 16px;
+    padding-left: 0;
+    padding-top: 16px;
+    margin-top: 16px;
+  }
+  .right-side .column-3 {
+    width: 100%;
   }
 }

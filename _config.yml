@@ -1,4 +1,4 @@
-source:     ./_source
+source:     ./_content
 safe:        false
 baseurl:    /
 exclude:     [_app, config.ru]

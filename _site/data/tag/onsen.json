@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [       
+    {"type": "Feature",
+      "properties": {
+        "type": "onsen",
+        "label":{ "en": "Nanasawa onsen", "jp":"七沢温泉"},
+        "elevation": "",
+        "name": "",
+        "url": "/p/nanasawa-onsen.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.27720069885254, 35.45455256831708 
+        ]
+      }
+    },   {}
+  ]
+}

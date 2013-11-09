@@ -1,3 +1,5 @@
+require 'json'
+
 module Jekyll
 
   class SearchData < Page
@@ -6,27 +8,40 @@ module Jekyll
       @base = base
       @dir = dir
       @name = character+'.json'
+      p "writing #{dir}/#{@name}"
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'search.json')
-      self.data['courses'] = pages
+      self.data["results"] = results.to_json
+      # self.read_yaml(File.join(base, '_layouts'), 'search.json')
+      # self.data['courses'] = pages
     end
   end
 
-  class HikrGenerator < Generator
+  class SearchGenerator < Generator
     safe true
 
+    def generate(side)
+    end
+
     def generate(site)
-      ignored_keywords = [ 'and', 'the', 'a', '-', ',', '.' ]
+      p "Generating search index..."
+      ignored_keywords = [ ]
       index = Hash.new
       site.pages.each do |page|
         keywords = Array.new
         title = ''
         if page.data.has_key? 'title'
-          (keywords.concat page.data['title'].split(/\s/)).flatten!
           title = page.data['title']
+          (keywords.concat title.split(/\s/)).flatten!
         end
+        keywords.map{ |e| e.downcase.strip }
         if page.data.has_key? 'label'
           title = page.data['label']['en']
+        end
+        keywords.each do |keyword|
+          if keyword.length<4
+            keywords.delete(keyword)
+          end
         end
         ignored_keywords.each do |ign|
           keywords.delete(ign)
@@ -45,11 +60,11 @@ module Jekyll
       end
       index.keys.each do |first_letter|
         path = File.join(ROOT,'data','search',"#{first_letter}.json")
+        site.pages << SearchData.new(site, site.source, "data/search", first_letter, index[first_letter] )
         #File.open(path, 'w') do |f|
         #  f.puts YAML::dump index[first_letter]
         #end
       end
-      p index
     end
   end
 

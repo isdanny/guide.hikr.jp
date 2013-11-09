@@ -1,10 +1,1 @@
----
-- :title: Jinba
-  :url: /c/jinba/index.html
-  :layout: course
-- :title: Jinba
-  :url: /mt/jinba.html
-  :layout: place
-- :title: Jinmuji temple
-  :url: /p/jinmuji-temple.html
-  :layout: place
+{"Jinba":[{"title":"Jinba","url":"/c/jinba/index.html","layout":"course"}]}
