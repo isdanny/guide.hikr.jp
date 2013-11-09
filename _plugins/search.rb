@@ -47,6 +47,7 @@ module Jekyll
           keywords.delete(ign)
         end
         keywords.each do |keyword|
+          keyword.downcase!
           first_letter = keyword[0].downcase
           pagedata = { :title=>title, :url=>page.url, :layout=>page.data['layout'] } 
           if ! index.has_key? first_letter

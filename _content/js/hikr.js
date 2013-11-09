@@ -222,3 +222,25 @@ Hikr.prototype.makeEditable = function(){
 window.Hikr = Hikr;
 
 })();
+
+
+
+$(document).ready(function(){
+  $(".search-bar input").on("keyup",function(){
+    var term = $(this).val()
+    var letter = term[0];
+    var $results = $('.search-results');
+    $.get('/data/search/'+letter+'.json', function(data){
+      console.log("---");
+      $results.html('');
+      for(var keyword in data){
+        if(keyword.match(term)){
+          for(var i in data[keyword]){
+            $results.append('<a href="'+data[keyword][i]['url']+'">'+data[keyword][i]['title']+'</a>')
+
+          }
+        }
+      }
+    })
+  });
+})

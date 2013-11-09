@@ -630,12 +630,13 @@ h6 {
   font-size: 90%;
   position: relative;
   margin-bottom: 16px;
+  border-radius: 2px 2px 0 0;
 }
 h6:before,
 h6:after {
   position: absolute;
   bottom: -16px;
-  left: 16px;
+  left: 8px;
   border: 8px solid transparent;
   content: " ";
   height: 0;
@@ -927,6 +928,23 @@ section:last-of-type {
 }
 .hikr-sidebar:hover .hikr-menu {
   -webkit-transform: translate3d(0, 0, 0);
+}
+.search-results {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 320px;
+  padding: 0 8px;
+  margin: -1px 8px;
+  z-index: 19;
+}
+.search-results a {
+  color: #f8f8f8;
+  display: block;
+  padding: 4px 0;
+}
+.search-results a:hover {
+  background: black;
+  color: white;
 }
 .hikr-menu {
   position: relative;
