@@ -4,19 +4,13 @@ menu:
   news: active
 ---
 
-<div class="post-column">
-{{content}}
-</div>
-<div class="post-sidebar">
- <div id="mc_embed_signup">
-    <form action="http://hikr.us7.list-manage.com/subscribe/post?u=ed00142426b464246887fc6d2&amp;id=cf8be08c43" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <fieldset>
-          <input class="email" placeholder="Sign up for updates" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-          <button class="button alert icon-envelope"  type="submit" value="Subscribe" name="subscribe"></button>
-        </fieldset>
-    </form>
+<div class="container">
+<div class="row">
+  <div class="column-9">
+  {{content}}
   </div>
-
-<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hikr_jp" data-widget-id="397287791337299968">Tweets by @hikr_jp</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <div class="column-3">
+    sidebar
+  </div>
+</div>
 </div>

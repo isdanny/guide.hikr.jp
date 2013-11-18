@@ -1,4 +1,21 @@
+
+  class String
+    def urlize
+      gsub(/\s/,'_')
+    end
+  end
+
+
+
 module Jekyll
+
+  module Urlize
+    def urlize(input)
+      input.urlize
+    end
+  end
+
+
 
   class Site
 
@@ -69,12 +86,14 @@ module Jekyll
     end
   end
 
+
+
   class ListingPage < Page
     def initialize(site,base,dir,area,layout,pages)
       @site = site
       @base = base
       @dir = dir
-      @name = area+'.html'
+      @name = area.urlize+'.html'
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), layout)
       self.data['courses'] = pages
@@ -88,7 +107,7 @@ module Jekyll
       @site = site
       @base = base
       @dir = dir
-      @name = area+'.json'
+      @name = area.urlize+'.json'
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'maplisting.json')
       self.data['courses'] = pages
@@ -100,7 +119,7 @@ module Jekyll
       @site = site
       @base = base
       @dir = dir
-      @name = area+'.json'
+      @name = area.urlize+'.json'
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'placemap.json')
     end
@@ -141,3 +160,5 @@ module Jekyll
   end
 
 end
+
+Liquid::Template.register_filter(Jekyll::Urlize)

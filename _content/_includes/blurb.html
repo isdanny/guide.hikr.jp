@@ -1,14 +1,14 @@
-<div class="blurb-box {{ page.header_class }} {{ include.classes }}">
+ <div class="blurb-box {{ page.header_class }} {{ include.classes }}">
   <div class="blurb-inside">
-  {% if page.header_image %}
-    <div class="header-image"> 
-      <a href="{{page.url}}">{{ page.header_image | flickr : "large_square" }}</a>
-    </div>
-  {% endif %}
+    <a href="{{page.url}}">
+      <div class="header-image"> 
+       {% if page.header_image %} {{ page.header_image | flickr : "large_square" }}{% else %} <img src="/img/noimg.png"> {% endif %} 
+        <h2 class="blurb-title">{{page.title}}</h2>
+      </div>
+    </a>
   <div class="headings">
-    <a href="{{page.url}}"><h2>{{page.title}}</h2></a>
     <h4 class="area"><a href="/area/{{page.area}}.html">{{page.area}}</a>, <a href="/pref/{{page.prefecture}}.html">{{page.prefecture}}</a></h4>
-    <div class="author">by {{page.author}} </div>
+    <!-- <div class="author">by {{page.author}} </div> -->
   </div>
   </div>
 </div>

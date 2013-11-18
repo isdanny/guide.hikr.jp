@@ -10,12 +10,15 @@ menu:
   </div>
 
   <div class="article-container">
+    {% include mainmenu.html %}
     <div class="section">
 <h1>{{ page.area_listing }} Prefecture</h1>
 <br>
 {% for page in page.courses %}
 {% if page.layout == "course" %}
-{% include thumb.html %}
+      <div class="thumb">
+        {% include blurb.html %}
+      </div>
 {% endif %}
 {% endfor %}
 <br class="clear">

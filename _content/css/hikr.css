@@ -12,22 +12,22 @@
 .hikricon-default:before{content:"\e608"}
 .hikricon-bus:before{content:"\e609"}
 body{font-family:Helvetica,Arial,sans-serif;font-weight:normal;color:#666}
-hr{border:0;border-top:1px solid #ccc}
-h1,h2,h3,h4,h5,h6,input{font-family:"Open sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200 !important}
+hr{border:0;border-top:1px solid #ddd;border-bottom:1px solid #fff}
+h1,h2,h3,h4,h5,h6,input,.btn,button{font-family:"Open sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200 !important}
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline;box-sizing:border-box}
 .clear{clear:both}
-body,html{height:100%;background:#f8f8f8;margin:0;padding:0;box-sizing:border-box}
-a{text-decoration:none;color:#033649}a:hover{color:#e95223}
+body,html{height:100%;background:#f8f8f8;margin:0;padding:0;box-sizing:border-box}body a,html a{color:#2462af}
+a{text-decoration:none;color:#033649}a:hover{color:#d05126}
 ul,menu,dir{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-start:0}
 .huge{font-size:64px}
 .flickr-photo{position:relative}.flickr-photo .caption{color:#fff;padding:1px 3px;font-size:50%;text-align:right;position:absolute;bottom:4px;opacity:.2;-webkit-transition:background,.5s;right:0}.flickr-photo .caption a{color:#fff !important}
 .flickr-photo:hover .caption{background:rgba(0,0,0,0.7);opacity:1;-webkit-transition:background,.5s}
 form input[type="text"],.form input[type="text"],form input[type="password"],.form input[type="password"],form input[type="date"],.form input[type="date"],form input[type="datetime"],.form input[type="datetime"],form input[type="email"],.form input[type="email"],form input[type="number"],.form input[type="number"],form input[type="search"],.form input[type="search"],form input[type="tel"],.form input[type="tel"],form input[type="time"],.form input[type="time"],form input[type="url"],.form input[type="url"],form select,.form select,form textarea,.form textarea{width:240px;border:1px solid #ccc;background:#fff;font-family:inherit;font-size:15px;line-height:25px;padding:2px 6px;border-radius:3px;outline:none !important;-webkit-appearance:none;-webkit-user-select:text}form input[type="text"]::-webkit-input-placeholder,.form input[type="text"]::-webkit-input-placeholder,form input[type="password"]::-webkit-input-placeholder,.form input[type="password"]::-webkit-input-placeholder,form input[type="date"]::-webkit-input-placeholder,.form input[type="date"]::-webkit-input-placeholder,form input[type="datetime"]::-webkit-input-placeholder,.form input[type="datetime"]::-webkit-input-placeholder,form input[type="email"]::-webkit-input-placeholder,.form input[type="email"]::-webkit-input-placeholder,form input[type="number"]::-webkit-input-placeholder,.form input[type="number"]::-webkit-input-placeholder,form input[type="search"]::-webkit-input-placeholder,.form input[type="search"]::-webkit-input-placeholder,form input[type="tel"]::-webkit-input-placeholder,.form input[type="tel"]::-webkit-input-placeholder,form input[type="time"]::-webkit-input-placeholder,.form input[type="time"]::-webkit-input-placeholder,form input[type="url"]::-webkit-input-placeholder,.form input[type="url"]::-webkit-input-placeholder,form select::-webkit-input-placeholder,.form select::-webkit-input-placeholder,form textarea::-webkit-input-placeholder,.form textarea::-webkit-input-placeholder,form input[type="text"]:-moz-placeholder,.form input[type="text"]:-moz-placeholder,form input[type="password"]:-moz-placeholder,.form input[type="password"]:-moz-placeholder,form input[type="date"]:-moz-placeholder,.form input[type="date"]:-moz-placeholder,form input[type="datetime"]:-moz-placeholder,.form input[type="datetime"]:-moz-placeholder,form input[type="email"]:-moz-placeholder,.form input[type="email"]:-moz-placeholder,form input[type="number"]:-moz-placeholder,.form input[type="number"]:-moz-placeholder,form input[type="search"]:-moz-placeholder,.form input[type="search"]:-moz-placeholder,form input[type="tel"]:-moz-placeholder,.form input[type="tel"]:-moz-placeholder,form input[type="time"]:-moz-placeholder,.form input[type="time"]:-moz-placeholder,form input[type="url"]:-moz-placeholder,.form input[type="url"]:-moz-placeholder,form select:-moz-placeholder,.form select:-moz-placeholder,form textarea:-moz-placeholder,.form textarea:-moz-placeholder,form input[type="text"]::-moz-placeholder,.form input[type="text"]::-moz-placeholder,form input[type="password"]::-moz-placeholder,.form input[type="password"]::-moz-placeholder,form input[type="date"]::-moz-placeholder,.form input[type="date"]::-moz-placeholder,form input[type="datetime"]::-moz-placeholder,.form input[type="datetime"]::-moz-placeholder,form input[type="email"]::-moz-placeholder,.form input[type="email"]::-moz-placeholder,form input[type="number"]::-moz-placeholder,.form input[type="number"]::-moz-placeholder,form input[type="search"]::-moz-placeholder,.form input[type="search"]::-moz-placeholder,form input[type="tel"]::-moz-placeholder,.form input[type="tel"]::-moz-placeholder,form input[type="time"]::-moz-placeholder,.form input[type="time"]::-moz-placeholder,form input[type="url"]::-moz-placeholder,.form input[type="url"]::-moz-placeholder,form select::-moz-placeholder,.form select::-moz-placeholder,form textarea::-moz-placeholder,.form textarea::-moz-placeholder,form input[type="text"]:-ms-input-placeholder,.form input[type="text"]:-ms-input-placeholder,form input[type="password"]:-ms-input-placeholder,.form input[type="password"]:-ms-input-placeholder,form input[type="date"]:-ms-input-placeholder,.form input[type="date"]:-ms-input-placeholder,form input[type="datetime"]:-ms-input-placeholder,.form input[type="datetime"]:-ms-input-placeholder,form input[type="email"]:-ms-input-placeholder,.form input[type="email"]:-ms-input-placeholder,form input[type="number"]:-ms-input-placeholder,.form input[type="number"]:-ms-input-placeholder,form input[type="search"]:-ms-input-placeholder,.form input[type="search"]:-ms-input-placeholder,form input[type="tel"]:-ms-input-placeholder,.form input[type="tel"]:-ms-input-placeholder,form input[type="time"]:-ms-input-placeholder,.form input[type="time"]:-ms-input-placeholder,form input[type="url"]:-ms-input-placeholder,.form input[type="url"]:-ms-input-placeholder,form select:-ms-input-placeholder,.form select:-ms-input-placeholder,form textarea:-ms-input-placeholder,.form textarea:-ms-input-placeholder{color:#738790 !important}
-a.btn,span.btn,button{position:relative;top:-2px;display:inline-block;padding:2px 6px;border-radius:3px;color:#fff !important;background:#e95223;border:0;line-height:25px;min-width:48px;text-align:center}a.btn:hover,span.btn:hover,button:hover{top:-5px;box-shadow:0 3px 0 #a63626}
+a.btn,span.btn,button{position:relative;top:-2px;display:inline-block;padding:8px 32px;border-radius:3px;color:#fff !important;background:#d05126;border:0;line-height:25px;min-width:48px;text-align:center}a.btn:hover,span.btn:hover,button:hover{top:-5px;box-shadow:0 3px 0 #99320f}
 a.btn.disabled,span.btn.disabled,button.disabled{background:#a1bbc5;color:#f8f8f8 !important}a.btn.disabled:hover,span.btn.disabled:hover,button.disabled:hover{top:-2px;box-shadow:none !important;cursor:default}
 .preview-box .inside{background:#222;position:absolute;bottom:15px;left:-1px;margin-left:-50%;border-radius:3px;overflow:hidden;border:1px solid #222;z-index:9}.preview-box .inside .title{display:block;line-height:13px;padding:8px;padding-top:4px;font-size:90%;z-index:15;background:#222;font-weight:bold;color:#f8f8f8}
 .preview-box .inside a{min-height:0}.preview-box .inside a img{min-width:96px;width:100%}
-.preview-box .inside a:hover{color:#e95223}
+.preview-box .inside a:hover{color:#d05126}
 .preview-box:before{content:" ";transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);display:block;border-radius:3px;position:absolute;background:#222;width:15px;height:15px;left:6px;bottom:9px;z-index:18}
 .leaflet-marker-icon{color:#222;text-shadow:0 0 2px #fff,0 0 2px #fff,0 0 1px #fff,1px 0 0 #fff,0 1px 0 #fff,-1px 0 0 #fff,0 -1px 0 #fff;-webkit-text-stroke:2px #fff outside;display:block;font-size:14px;line-height:20px;font-weight:bold;position:absolute;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:6}.leaflet-marker-icon span{font-family:"Open sans";font-weight:bold}
 .leaflet-marker-icon span{display:none}
@@ -51,53 +51,52 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .info #plot{display:table-row;height:120px;padding:0 10px;position:relative}.info #plot canvas{display:table-cell}
 .left-side{position:fixed;top:0;bottom:0;left:0;width:250px;background:url('http://farm6.staticflickr.com/5471/10270896826_63c810d7c3_k.jpg');background-size:auto 100%;background-position:center center}.left-side .motto{position:absolute;width:100%;color:rgba(255,255,255,0.5) !important;text-align:center;bottom:16px;font-size:24px;color:#fff;text-shadow:0 0 5px #000}
 .two-cols{columns:100px 3;-webkit-columns:100px 3;-moz-columns:100px 3;}.two-cols .tag-listing{display:inline-block;width:100%}.two-cols .tag-listing li{display:block}
-h6{color:#f8f8f8;background:#e95223;padding-left:16px;margin-left:-16px;text-transform:uppercase;font-weight:300;font-size:90%;position:relative;margin-bottom:16px;border-radius:2px 2px 0 0}h6:before,h6:after{position:absolute;bottom:-16px;left:8px;border:8px solid transparent;content:" ";height:0;width:0}
-h6:after{border-top-color:#e95223}
-.tag{display:inline-block;background-color:#738790;position:relative;color:#f8f8f8;padding:0 .5em;border-radius:2px;font-size:11px !important;text-shadow:0 0 1px #000}.tag:hover{box-shadow:0 1px 0 #4a5a61;color:#fff;top:-1px}
+h6{color:#fff;background:#d05126;padding-left:16px;text-transform:uppercase;font-weight:300;font-size:90%;position:relative;margin-bottom:16px}h6:before,h6:after{position:absolute;bottom:-16px;left:8px;border:8px solid transparent;content:" ";height:0;width:0}
+h6:after{border-top-color:#d05126}
+.tag{display:inline-block;background-color:#2462af;position:relative;color:#f8f8f8;padding:0 .5em;border-radius:2px;font-size:11px !important;text-shadow:0 0 1px #000}.tag:hover{color:#fff}
 .tag.large{font-size:12px !important}
 .right-side{height:100%;overflow:scroll;position:absolute;top:0;bottom:0;right:0;left:250px;min-height:100%;background:#f8f8f8;box-shadow:0 0 16px rgba(0,0,0,0.5)}.right-side main{min-height:100%;position:relative}.right-side main .footer-pusher{height:135px}
-.right-side .container{width:960px}.right-side .container img{width:100%}
+.right-side .container{max-width:1240px}.right-side .container img{width:100%}
 footer,.footer{width:100%;position:absolute;bottom:0;height:135px;margin-bottom:0;background-color:#fff;border-top:1px solid #bbb;font-size:12px;color:#444}footer .menu,.footer .menu{list-style:none none}
 footer p,.footer p{margin-bottom:.5em}
-.section,section{clear:both;border-bottom:1px solid #ccc;margin:16px;padding-bottom:16px}.section:last-of-type,section:last-of-type{border-bottom:none;padding-bottom:0}
-.row{width:960px;position:relative;left:-16px;margin:0;display:block;overflow:hidden}
-.column-3{width:25%;float:left;padding-left:16px}.column-3.border{width:208px;padding-left:15px !important;border-left:1px solid #ccc}
+.section,section{clear:both;margin-top:8px;margin-left:16px;padding-bottom:16px}.section:last-of-type,section:last-of-type{border-bottom:none;padding-bottom:0}
+.row{position:relative;left:-16px;margin:0;display:block;overflow:hidden}
+.column-3{width:25%;float:left}.column-3.border{width:208px;padding-left:15px !important;border-left:1px solid #ccc}
 .column-3:first-child{border-left:none}
-.column-4{width:33%;float:left;padding-left:16px}.column-4:first-child{padding-left:16px;border-left:none}
-.column-6{width:50%;float:left;padding-left:15px}.column-6:first-child{border-left:none;padding-left:16px}
+.column-4{width:33%;float:left}.column-4:first-child{padding-left:16px;border-left:none}
+.column-6{width:50%;float:left}.column-6:first-child{border-left:none}
 .column-6.border-left{width:47%;border-left:1px solid #ccc;box-sizing:border-box;margin-left:16px}
-.column-8{width:640px;float:left;margin-left:16px;padding-left:15px}.column-8:first-child{padding-left:16px;border-left:none}
-.column-9{width:700px;float:left;margin-left:16px;padding-left:15px}
-.thumb-box{width:160px;float:left;background:#111;border-radius:2px;padding:5px;margin-right:16px;margin-bottom:16px}.thumb-box a{color:#a1bbc5}
-.thumb-box .header-image{width:100%;height:160px}.thumb-box .header-image .caption{display:none}
-.thumb-box .header-image img{width:100%;border-bottom:3px solid #a63626}
-.thumb-box .headings{margin:8px;height:40px;overflow:hidden}.thumb-box .headings h2{font-size:14px}
-.blurb-box{font-size:90%;min-height:320px;background-color:#111;border-radius:2px;margin-bottom:16px;color:#f8f8f8;}.blurb-box .caption{display:none}
-.blurb-box a{color:#a1bbc5}.blurb-box a img{border-bottom:5px solid #a63626}
-.blurb-box a:hover{color:#f8f8f8}.blurb-box a:hover img{border-bottom:5px solid #e95223}
+.column-8{width:66%;float:left}.column-8:first-child{border-left:none}
+.column-9{width:75%;float:left}.column-9:first-child{border-left:none}
+.thumb{width:30%;float:left;margin:0 16px 16px 0}
+.blurb-box{font-size:90%;background-color:#619405;border-radius:2px;margin-bottom:16px;color:#f8f8f8;}.blurb-box .caption{display:none}
+.blurb-box .area a{color:#fff !important}
+.blurb-box a{color:#fff}
+.blurb-box a:hover{color:#f8f8f8}
+.blurb-box .blurb-inside .header-image{position:relative}.blurb-box .blurb-inside .header-image .blurb-title{position:absolute;bottom:2px;color:#fff;background-color:rgba(0,0,0,0.4);width:100%;padding:4px;-webkit-transition:background-color .2s;font-size:16px}
+.blurb-box .blurb-inside .header-image:hover .blurb-title{background-color:rgba(0,0,0,0.8);-webkit-transition:background-color .2s}
 .blurb-box .headings{padding:4px}
 .blurb-box h2{font-size:120%}
 .blurb-box h4{font-size:90%}
-.area{font-size:90%}.area a{color:#a63626 !important}
-.area a:hover{color:#e95223 !important}
-.summary-box .header-image{width:100%}.summary-box .header-image img{width:100%;border-radius:2px}
+.area{font-size:90%}.area a{color:#619405 !important}
+.summary-box .header-image{width:100%}.summary-box .header-image img{width:100%}
 .summary-box .header-image a:hover img{-webkit-filter:none}
-.summary-box .headings{width:49%;float:left;margin-right:1%}
-.summary-box .summary{font-weight:200;width:49%;float:left;margin-left:1%}
+.summary-box .headings{width:39%;float:left;margin-right:1%}
+.summary-box .summary{font-weight:200;width:59%;float:left;margin-left:1%}
 .summary-box.vertical .header-image{width:47%;margin-right:3%;float:left;clear:left}
 .summary-box.vertical .headings{width:48%;margin-left:1%}
 .summary-box.vertical .summary{float:left;margin-top:16px;width:48%;margin-left:1%}
 .logo-menu{display:none;top:0;left:16px;width:100px;height:60px;text-indent:100%;overflow:hidden;background:url(../img/logo-mini.png) center center no-repeat;background-size:100%}
 .hikr-sidebar{position:fixed;top:0;left:0;z-index:8}.hikr-sidebar .logo-float{position:relative;top:20px;left:20px;display:block;width:125px;height:75px;z-index:20;background:url(../img/logo-mini.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
 .hikr-sidebar:hover .hikr-menu{-webkit-transform:translate3d(0, 0, 0)}
-.search-results{position:absolute;background:rgba(0,0,0,0.8);width:320px;padding:0 8px;margin:-1px 8px;z-index:19}.search-results a{color:#f8f8f8;display:block;padding:4px 0}.search-results a:hover{background:#000;color:#fff}
+.search-results{position:absolute;background:rgba(0,0,0,0.8);width:320px;padding:0 8px;margin:-1px 8px;z-index:19}.search-results a{color:#888;display:block;padding:4px 0}.search-results a:hover{background:#000;color:#fff}
 .hikr-menu{position:relative;top:0;left:0;right:0;height:32px;background-color:#fff;border-bottom:1px solid #ccc}.hikr-menu .search-bar{position:absolute;float:left;padding-left:8px;z-index:2}.hikr-menu .search-bar input{font-weight:200;padding-left:8px;color:#738790;font:inherit;font-size:20px;line-height:22px;width:260px;border:none;outline:none;-webkit-tap-highlight-color:transparent;}
 .hikr-menu .search-bar input::-webkit-input-placeholder{color:#ddd;text-transform:uppercase;line-height:28px}
 .hikr-menu .search-bar input::-moz-placeholder{color:#ddd;text-transform:uppercase;line-height:inherit}
 .hikr-menu .search-bar input:-ms-input-placeholder{color:#ddd;text-transform:uppercase;line-height:inherit}
 .hikr-menu .search-bar inputinput:-moz-placeholder{color:#ddd;text-transform:uppercase;line-height:inherit}
 .hikr-menu #main-menu{font-weight:200;z-index:1;border-bottom:1px solid #fff;position:absolute;right:16px;bottom:-3px}
-.hikr-menu #main-menu{list-style:none none}.hikr-menu #main-menu li{display:inline-block;position:relative;top:0}.hikr-menu #main-menu li.active a{color:#000;border-bottom:2px solid #e95223}
+.hikr-menu #main-menu{list-style:none none}.hikr-menu #main-menu li{display:inline-block;position:relative;top:0}.hikr-menu #main-menu li.active a{color:#000;border-bottom:2px solid #d05126}
 .hikr-menu #main-menu li.active a:hover{color:#000}
 .hikr-menu #main-menu li a{border-bottom:2px solid transparent;display:block;color:#a1bbc5;line-height:32px;padding:0 .5em;text-transform:uppercase;clear:both}.hikr-menu #main-menu li a:hover{color:#444}
 .map-on-left,.map-on-left>.column{height:100%}
@@ -105,29 +104,32 @@ footer p,.footer p{margin-bottom:.5em}
 .map-on-left .map-column{height:100%}
 .navbar{margin-bottom:0}
 .infobox{float:right;width:200px}
-.article-container{position:absolute;width:600px;right:0;box-shadow:0 0 16px rgba(0,0,0,0.5);min-height:100%}.article-container img{max-width:100%}
+.article-container{position:absolute;width:600px;right:0;box-shadow:0 0 16px rgba(0,0,0,0.5);min-height:100%}.article-container section{padding-right:16px}
+.article-container img{max-width:100%}
+.page p{margin-top:.5em}
 .pagination{text-align:center}
-.post-column{width:600px;float:left}
-.post-sidebar{width:340px;min-height:400px;margin-left:16px;float:left}
 .author{font-weight:200}
-.post .date,.post .author{font-weight:200;font-size:15px;color:#738790}
-.post .date{float:right}
-.post p{margin-bottom:.5em}
-.post .content{margin-top:.5em;text-align:justify}
+article{marign-right:32px}article .date-box{display:block;width:64px;float:left;text-align:center;color:rgba(255,255,255,0.8);text-shadow:1px 1px 6px #f8f8f8,0 0 0 #000,1px 1px 6px #f8f8f8;overflow:hidden;font-family:Open sans;font-weight:100;margin-left:16px}article .date-box .month{font-size:.7em;padding:3px;border-radius:3px 3px 0 0}
+article .date-box .day{font-size:45px;line-height:40px}
+article .date,article .author{font-weight:200;font-size:15px;color:#738790}
+article .date{float:right}
+article p{margin-bottom:.5em}
+article hr{padding-left:96px}
+article .content{margin-top:.5em;text-align:justify;padding-left:96px}
 .flickr-photo{width:100%}.flickr-photo img{width:100%}
-.article{font-size:15px}.article h1,.article h2,.article h3,.article h4,.article h5{text-transform:uppercase;margin-top:.5em;padding-top:1em;margin-bottom:.3em}
-.article h1{font-size:150%}
-.article h2{font-size:120%}
-.article h3{font-size:110%}
-.article h4{font-size:100%}
-.article h5{font-size:90%}
-.article ul{margin:0 3em;line-height:2;color:#222}
-.article p{line-height:1.8;color:#222;text-align:justify;margin:1em 0}.article p a{color:#a1bbc5;text-decoration:underline}
-.article h1,.article h2{color:#e95223;text-shadow:1px 1px 0 #fff !important}
+article{font-size:15px}article h1,article h2,article h3,article h4,article h5{margin-top:.5em;padding-top:1em;margin-bottom:.3em}
+article h1{font-size:150%}
+article h2{font-size:120%}
+article h3{font-size:110%}
+article h4{font-size:100%}
+article h5{font-size:90%}
+article ul{margin:0 3em;line-height:2;color:#222}
+article p{line-height:1.8;color:#222;text-align:justify;margin:1em 0}article p a{color:#a1bbc5;text-decoration:underline}
+article h1,article h2{color:#d05126;text-shadow:1px 1px 0 #fff !important}
 .leaflet-zoom-animated path{filter:url(#dropshadow)}
 .leaflet-bar{border-radius:2px !important;box-shadow:none;overflow:hidden}.leaflet-bar a,.leaflet-bar a:hover{border-radius:0 !important;font-size:18px;line-height:32px;width:32px;height:32px}
 .leaflet-bar a{color:#eee !important;background-color:rgba(0,0,0,0.3);-webkit-transition:background-color,.2s}
 .leaflet-bar a:hover{color:#fff !important;background-color:rgba(0,0,0,0.9) !important;-webkit-transition:background-color,.2s;box-shadow:0 0 7px #000}
 .leaflet-bar a.leaflet-disabled{background-color:transparent;color:transparent !important}.leaflet-bar a.leaflet-disabled:hover{background-color:rgba(0,0,0,0.1);box-shadow:none;color:#eee !important}
 .leaflet-control-language-interior{width:25px;height:25px;background-position:50% 50%;background-repeat:no-repeat;display:block;padding:3px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;cursor:pointer;text-align:center;background-color:#fff}
-@media only screen and (min-width:1200px){.right-side #main-menu{left:0;width:960px;text-align:right} .right-side .container{width:960px}}@media only screen and (min-width:960px) and (max-width:1199px){.left-side{width:200px} .right-side{left:200px}.right-side .hikr-menu #main-menu{left:0;text-align:right} .right-side .container{width:100%} .right-side .row{width:100%}}@media only screen and (min-width:768px) and (max-width:959px){.hikr-sidebar{display:none} .left-side{width:0} .summary-box.vertical .header-image,.summary-box.vertical .headings,.summary-box.vertical .summary{width:100%} .map-on-left .article-container{left:50%;width:50%} .map-on-left #map{right:50%} .right-side{left:0}.right-side .hikr-menu{height:48px}.right-side .hikr-menu .logo-menu{display:block} .right-side .hikr-menu .search-bar{position:absolute;bottom:0;left:116px} .right-side .container{width:100%} .right-side .row{width:100%}}@media only screen and (min-width:480px) and (max-width:767px){.hikr-sidebar{display:none} .section{margin-right:0} .article-container{width:100%} .map-on-left #map{width:100%;margin-left:-100%} .map-on-left .left-side{width:0} .right-side{left:0}.right-side .hikr-menu{height:48px}.right-side .hikr-menu .logo-menu{display:block} .right-side .hikr-menu .search-bar{position:absolute;bottom:0;left:116px} .right-side .container{width:100%} .right-side .row{width:100%} .right-side .column-6{width:100%}.right-side .column-6.border-left{border-top:1px solid #ccc;border-left:none;margin-left:16px;padding-left:0;padding-top:16px;margin-top:16px} .right-side .column-3{width:50%}}@media only screen and (max-width:480px){.hikr-sidebar{display:none} .left-side{width:0} .section{margin:16px 0 0 0;padding-right:16px} .right-side{left:0}.right-side .hikr-menu{height:48px}.right-side .hikr-menu .logo-menu{display:block} .right-side .hikr-menu .search-bar{position:absolute;bottom:0;left:116px} .right-side .container{width:100%} .right-side .row{width:100%;left:0} .right-side .column-6{width:100%}.right-side .column-6.border-left{border-top:1px solid #ccc;border-left:none;margin-left:16px;padding-left:0;padding-top:16px;margin-top:16px} .right-side .column-3{width:100%}}
+@media only screen and (min-width:1200px){.right-side #main-menu{left:0;text-align:right}}@media only screen and (min-width:960px) and (max-width:1199px){.left-side{width:200px} .right-side{left:200px}.right-side .hikr-menu #main-menu{left:0;text-align:right}}@media only screen and (min-width:768px) and (max-width:959px){.hikr-sidebar{display:none} .left-side{width:0} .summary-box.vertical .header-image,.summary-box.vertical .headings,.summary-box.vertical .summary{width:100%} .map-on-left .article-container{left:50%;width:50%} .map-on-left #map{right:50%} .right-side{left:0}.right-side .hikr-menu{height:48px}.right-side .hikr-menu .logo-menu{display:block} .right-side .hikr-menu .search-bar{position:absolute;bottom:0;left:116px}}@media only screen and (min-width:480px) and (max-width:767px){.hikr-sidebar{display:none} .section{margin-right:0} .article-container{width:100%} .map-on-left #map{width:100%;margin-left:-100%} .map-on-left .left-side{width:0} .right-side{left:0}.right-side .hikr-menu{height:48px}.right-side .hikr-menu .logo-menu{display:block} .right-side .hikr-menu .search-bar{position:absolute;bottom:0;left:116px} .right-side .column-6{width:100%}.right-side .column-6.border-left{border-top:1px solid #ccc;border-left:none;margin-left:16px;padding-left:0;padding-top:16px;margin-top:16px} .right-side .column-3{width:50%}}@media only screen and (max-width:480px){.hikr-sidebar{display:none} .left-side{width:0} .section{margin:0 8px} .right-side{left:0}.right-side .hikr-menu{height:48px}.right-side .hikr-menu .logo-menu{display:block} .right-side .hikr-menu .search-bar{position:absolute;bottom:0;left:116px} .right-side .column-6{width:100%}.right-side .column-6.border-left{border-top:1px solid #ccc;border-left:none;margin-left:16px;padding-left:0;padding-top:16px;margin-top:16px} .right-side .column-3{width:100%}}

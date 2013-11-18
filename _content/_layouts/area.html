@@ -17,7 +17,9 @@ menu:
       {{content}}
       {% for page in page.courses %}
       {% if page.layout == "course" %}
-      {% include thumb.html %}
+      <div class="thumb">
+        {% include blurb.html %}
+      </div>
       {% endif %}
       {% endfor %}
       <br class="clear">

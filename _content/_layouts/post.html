@@ -3,18 +3,19 @@ layout: news
 menu:
   news: active
 ---
+  <section>
+  <article>
+    <div class="date-box">
+      <div class="month">{{ page.date | date: "%B" }}</div>
+      <div class="day">{{ page.date | date: "%-d" }}</div>
+    </div>
+    <div class="content">
 
-<section>
-<div class="post">
-  <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-  <div class="content">
-  {{ content }}
-  <h5 class="date">{{ page.date | date: "%-d %B %Y" }}</h5>
-  <h5 class="author">by {{page.author}}</h5>
-  </div>
-</div>
-</section>
-<div class="section">
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+    <hr>
+    {{ content }}
+    <h5 class="author">by {{page.author}}</h5>
+    <hr>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
           /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -29,5 +30,7 @@ menu:
       </script>
       <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-      
-</div>
+    </div>
+
+  </article>
+  </section>

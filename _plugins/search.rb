@@ -12,7 +12,6 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'search.json')
       self.data["results"] = results.to_json
-      # self.read_yaml(File.join(base, '_layouts'), 'search.json')
       # self.data['courses'] = pages
     end
   end
@@ -62,9 +61,6 @@ module Jekyll
       index.keys.each do |first_letter|
         path = File.join(ROOT,'data','search',"#{first_letter}.json")
         site.pages << SearchData.new(site, site.source, "data/search", first_letter, index[first_letter] )
-        #File.open(path, 'w') do |f|
-        #  f.puts YAML::dump index[first_letter]
-        #end
       end
     end
   end

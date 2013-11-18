@@ -10,7 +10,7 @@
         <div class="author">by {{page.author}} </div>
         <div class="tags">
           {% for tag in page.tags %}
-           <a href="/tag/{{tag}}.html"><span class="tag">{{tag}}</span></a>
+           <a href="/tag/{{tag | urlize}}.html"><span class="tag">{{tag}}</span></a>
           {% endfor %}
         </div>
       </div>

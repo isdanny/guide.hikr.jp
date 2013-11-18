@@ -3,39 +3,45 @@ layout: guide
 menu: 
   guide: active
 ---
-
-<div class="section">
   <div class="row">
     <div class="column-6"> 
-      
-      <h6>News</h6>
-      {% assign post = site.posts[0] %}
-      {% include post.html %}
+      <section>
+        <h6>News</h6>
+        {% assign post = site.posts[0] %}
+        {% include post.html %}
+      </section>
     </div>
-    <div class="column-6 border-left">
-      <h6>Prefectures</h6>
-      {% for pref in site.prefecture_names %}
-        <a href="/pref/{{pref}}.html">{{ pref }}</a>&nbsp;
-      {% endfor %}
-      <hr>
-      <h6>Tags</h6>
-      {% for tag in site.tag_names %}
-        <a href="/tag/{{tag}}.html" class="tag large">{{site.tags[tag].size}} | {{ tag }}</a>
-      {% endfor %}
-      <hr>
-      <h6>Featured course</h6>
-      {% for page in site.pages %} {% if page.featured == 'header' %} {% include summary.html %}{% endif %}{% endfor %} </div>
+    <div class="column-6">
+      <section class="area">
+        <h6>Prefectures</h6>
+        {% for pref in site.prefecture_names %}
+          <a href="/pref/{{pref}}.html">{{ pref }}</a>&nbsp;
+        {% endfor %}
+      </section>
+      <section>
+        <h6>Tags</h6>
+        {% for tag in site.tag_names %}
+          <a href="/tag/{{tag | urlize}}.html" class="tag large">{{site.tags[tag].size}} | {{ tag }}</a>
+        {% endfor %}
+      </section>
+      <section>
+        <h6>Featured course</h6>
+        {% for page in site.pages %} {% if page.featured == 'header' %} {% include summary.html %}{% endif %}{% endfor %} 
+      </section>
+    </div>
   </div>
-</div>
-<div class="section">
+<hr>
+<section>
   <div class="row">
   {% assign c = 'first' %}
   {% for page in site.pages %} {% if page.featured == 'also' %}
     <div class="column-3 {{c}}">
+      <section>
       {% include blurb.html classes=c %}
       {% assign c = '' %}
+      </section>
     </div>
     {% endif %} {% endfor %}
   <br class="clear">
   </div>
-</div>
+</section>

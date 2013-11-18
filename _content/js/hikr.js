@@ -35,6 +35,7 @@ L.control.language = function (options) {
   this.lineStyle = {
     "color": "#ff4400",
     "weight": 4,
+    "dashArray": "5, 5",
     "opacity": 0.7
   };
 
@@ -223,11 +224,9 @@ window.Hikr = Hikr;
 
 })();
 
-
-
 $(document).ready(function(){
   $(".search-bar input").on("keyup",function(){
-    var term = $(this).val()
+    var term = $(this).val().toLowerCase();
     var letter = term[0];
     var $results = $('.search-results');
     $.get('/data/search/'+letter+'.json', function(data){
