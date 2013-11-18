@@ -1092,6 +1092,7 @@ article .date-box {
 article .date-box .month {
   font-size: 0.7em;
   padding: 3px;
+  color: #d05126;
   border-radius: 3px 3px 0 0;
 }
 article .date-box .day {

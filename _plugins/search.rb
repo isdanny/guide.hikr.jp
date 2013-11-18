@@ -11,7 +11,11 @@ module Jekyll
       p "writing #{dir}/#{@name}"
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'search.json')
-      self.data["results"] = results.to_json
+      parsed_results = []
+      results.each do | keyword, pages |
+        parsed_results << { :keyword=>keyword, :pages=>pages }
+      end
+      self.data["results"] = parsed_results.to_json
       # self.data['courses'] = pages
     end
   end
