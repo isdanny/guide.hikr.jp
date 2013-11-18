@@ -19,6 +19,14 @@ summary: |
   Legends say that Mt. Kuki's name (nine demons) is because Momotaro, the boy born from a peach, fought the devil on top of the mountain. 
 ---
 
+## Points of interest
+
+ - Mt. Kuki
+ - Mt. Madate
+ - Mt. Gozenyama
+ - breathtaking viewpoints
+ - view of Mt Fuji
+
 ## Access
 
 From Shinjuku, take the Chuo line (express, if possible) to Ootsuki (大月駅). In Ootsuki, switch to Fujikyu Railway line. **Note: IC cards don't work on this line.** You'll have to buy a ¥290 ticket from the machine, so make sure you have enough time, since there could be a line.
