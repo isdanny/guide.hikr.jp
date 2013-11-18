@@ -51,7 +51,7 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .info #infobox .infopoint label{margin-top:15px;display:block;font-size:10px;font-weight:100;line-height:9px;border-bottom:1px solid rgba(74,90,97,0.5);text-transform:uppercase}
 .info #infobox .infopoint div{font-size:33px;line-height:45px}
 .info #plot{display:table-row;height:120px;padding:0 10px;position:relative}.info #plot canvas{display:table-cell}
-.left-side{position:fixed;top:0;bottom:0;left:0;width:250px;background:url('http://farm6.staticflickr.com/5471/10270896826_63c810d7c3_k.jpg');background-size:auto 100%;background-position:center center}.left-side .motto{position:absolute;width:100%;color:rgba(255,255,255,0.5) !important;text-align:center;bottom:16px;font-size:24px;color:#fff;text-shadow:0 0 5px #000}
+.left-side{position:fixed;top:0;bottom:0;left:0;width:250px;background:url('/img/leaves.jpg');background-size:auto 100%;background-position:center center}.left-side .motto{position:absolute;width:100%;color:rgba(255,255,255,0.5) !important;text-align:center;bottom:16px;font-size:24px;color:#fff;text-shadow:0 0 5px #000}
 .two-cols{columns:100px 3;-webkit-columns:100px 3;-moz-columns:100px 3;}.two-cols .tag-listing{display:inline-block;width:100%}.two-cols .tag-listing li{display:block}
 h6{color:#fff;background:#d05126;padding-left:16px;text-transform:uppercase;font-weight:300;font-size:90%;position:relative;margin-bottom:16px}h6:before,h6:after{position:absolute;bottom:-16px;left:8px;border:8px solid transparent;content:" ";height:0;width:0}
 h6:after{border-top-color:#d05126}

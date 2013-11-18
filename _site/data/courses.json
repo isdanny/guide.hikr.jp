@@ -168,7 +168,7 @@
         35.25045562186181
         ]
       }
-    },   
+    },     
     {"type": "Feature",
       "properties": {
         "popup": "<a href='/c/oomaru-yama/index.html'><span class='title'>Oomaru-yama</span></a>"
@@ -252,6 +252,6 @@
         35.861822036974395
         ]
       }
-    },                                                                                                                                                                                                                                                                                               {}
+    },                                                                                                                                                                                                                                                                                                   {}
   ]
 }
