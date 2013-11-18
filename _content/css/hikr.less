@@ -178,22 +178,8 @@ ul, menu, dir{
 
 .flickr-photo{
   position: relative;
-  .photo-date{
-    position: absolute;
-    left: 8px;
-    bottom: 8px;
-
-  }
   .caption{
-    text-align: right;
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    a{
-      color: white!important;
-    }
-  }
-  .photo-date, .caption{
+    padding: 4px;
     text-shadow: 0 0 3px #000;
     font-size: 80%;
     opacity: 0.2;
@@ -201,9 +187,25 @@ ul, menu, dir{
     font-family: Open sans;
     color: white;
     font-weight: 100;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+      a{
+        color: white!important;
+        text-decoration: underline;
+      }
+    .photo-date{
+      float: left;
+    }
+    .copyright{
+      float: right;
+
+    }
   }
   &:hover{
-    .caption, .photo-date{
+    .caption{
+      background: rgba(0,0,0,0.5);
       opacity: 0.9;
       -webkit-transition: opacity, 0.2s;
     }

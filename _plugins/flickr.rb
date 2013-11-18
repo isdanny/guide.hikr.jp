@@ -40,7 +40,7 @@ end
 
 def image_template(url, size, klass='' )
   img = flickr_image(url)
-  "<div class='flickr-photo #{klass}'><img title='"+img['title']+"' alt='"+img['title']+"' src='"+img[size]+"'><div class='photo-date'>"+img['taken']+"</div><div class='caption'>Photo by <a target='_blank' href='"+img['url']+"'>"+img['owner_name']+"</a> </div></div>"
+  "<div class='flickr-photo #{klass}'><img title='"+img['title']+"' alt='"+img['title']+"' src='"+img[size]+"'><div class='caption'><div class='photo-date'>"+img['taken']+"</div><div class='copyright'>&copy; <a target='_blank' href='"+img['url']+"'>"+img['owner_name']+"</a></div></div></div>"
 end
 
 module Jekyll
