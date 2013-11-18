@@ -8,6 +8,7 @@ header_class:
 license: CC-BY-NC
 area: Otsuki
 prefecture: Yamanashi
+featured: header
 features:
   - /mt/kuki.html
   - /mt/gozenyama.html
