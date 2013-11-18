@@ -1,6 +1,6 @@
 ---
 layout: course
-title: Kuki-yama
+title: Kuki, Madate, Gozen-yama course
 center: [ 138.95097970962524, 35.57661983472023 ]
 author: Leszek
 header_image: http://www.flickr.com/photos/104745110@N03/10919062064/
@@ -10,13 +10,14 @@ area: Otsuki
 prefecture: Yamanashi
 features:
   - /mt/kuki.html
+  - /mt/gozenyama.html
+  - /mt/madate.html
+  - /mt/kagurayama.html
 info:
   level: intermediate
 tags: [ fuji view ]
 summary: |
-  A slightly challenging course, involving long, steep climbs and equally steep descend. Not for beginners, although frequented by older people. Best when the skies are clear, so you can see Mt Fuji from several viewpoints. About 5 hours walking time. 
-
-  Legends say that Mt. Kuki's name (nine demons) is because Momotaro, the boy born from a peach, fought the devil on top of the mountain. 
+  Legends say that Mt. Kuki's name (nine demons) is because Momotaro, the boy born from a peach, fought the devil on top of the mountain. A slightly challenging course, involving long, steep climbs and equally steep descend. Not for beginners, although frequented by older people. Best when the skies are clear, so you can see Mt Fuji from several viewpoints. About 5 hours walking time. 
 ---
 
 ## Points of interest
@@ -29,7 +30,7 @@ summary: |
 
 ## Access
 
-From Shinjuku, take the Chuo line (express, if possible) to Ootsuki (大月駅). In Ootsuki, switch to Fujikyu Railway line. **Note: IC cards don't work on this line.** You'll have to buy a ¥290 ticket from the machine, so make sure you have enough time, since there could be a line.
+From Shinjuku, take the Chuo line (express, if possible) to Otsuki (大月駅). In Otsuki, switch to Fujikyu Railway line. **Note: IC cards don't work on this line.** You'll have to buy a ¥290 ticket from the machine, so make sure you have enough time, since there could be a line.
 
 The course starts from Kasei station (禾生駅) on the Fujikyu line.
 
@@ -61,7 +62,7 @@ Before you reach Gozenyama (御前山), there's a very interesting rock formatio
 
 {% flickr http://www.flickr.com/photos/104745110@N03/10919231323/ %}
 
-The top is not along the course, you'll have to climb up and track back later, but the view from the top is the absolute highlight of the course. You'll be sitting on rocks, looking at the mountains spread around you. Ootsuki-city houses sprinkled below in the forest.
+The top is not along the course, you'll have to climb up and track back later, but the view from the top is the absolute highlight of the course. You'll be sitting on rocks, looking at the mountains spread around you. Otsuki-city houses sprinkled below in the forest.
 
 {% flickr http://www.flickr.com/photos/104745110@N03/10919236793/ %}
 

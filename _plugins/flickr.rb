@@ -21,6 +21,7 @@ def flickr_image(url)
     img = {
       'url'=>fimg.url,
       'title'=>fimg.title||"",
+      'taken'=>fimg.taken,
       'owner_url'=>fimg.owner.photos_url,
       'owner_name'=>fimg.owner.name||fimg.owner.username,
     }
@@ -39,7 +40,7 @@ end
 
 def image_template(url, size, klass='' )
   img = flickr_image(url)
-  "<div class='flickr-photo #{klass}'><img title='"+img['title']+"' alt='"+img['title']+"' src='"+img[size]+"'><div class='caption'>Photo by <a target='_blank' href='"+img['url']+"'>"+img['owner_name']+"</a> </div></div>"
+  "<div class='flickr-photo #{klass}'><img title='"+img['title']+"' alt='"+img['title']+"' src='"+img[size]+"'><div class='photo-date'>"+img['taken']+"</div><div class='caption'>Photo by <a target='_blank' href='"+img['url']+"'>"+img['owner_name']+"</a> </div></div>"
 end
 
 module Jekyll

@@ -1551,7 +1551,7 @@
       "properties": {
         "name": "otsuki-station",
         "type": "station",
-        "label": {"jp":"大月駅","en":"Ootsuki"}
+        "label": {"jp":"大月駅","en":"Otsuki"}
       },
       "geometry": {
         "type": "Point",

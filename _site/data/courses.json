@@ -51,7 +51,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/kuki/index.html'><span class='title'>Kuki-yama</span></a>"
+        "popup": "<a href='/c/kuki/index.html'><span class='title'>Kuki, Madate, Gozen-yama course</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -252,6 +252,6 @@
         35.861822036974395
         ]
       }
-    },                                                                                                                                                                                                                                                                                         {}
+    },                                                                                                                                                                                                                                                                                               {}
   ]
 }

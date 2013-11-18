@@ -207,24 +207,34 @@ dir {
 .flickr-photo {
   position: relative;
 }
+.flickr-photo .photo-date {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+}
 .flickr-photo .caption {
-  color: white;
-  padding: 1px 3px;
-  font-size: 50%;
   text-align: right;
   position: absolute;
-  bottom: 4px;
-  opacity: 0.2;
-  -webkit-transition: background, 0.5s;
-  right: 0px;
+  bottom: 8px;
+  right: 8px;
 }
 .flickr-photo .caption a {
   color: white!important;
 }
-.flickr-photo:hover .caption {
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 1;
-  -webkit-transition: background, 0.5s;
+.flickr-photo .photo-date,
+.flickr-photo .caption {
+  text-shadow: 0 0 3px #000;
+  font-size: 80%;
+  opacity: 0.2;
+  -webkit-transition: opacity, 0.2s;
+  font-family: Open sans;
+  color: white;
+  font-weight: 100;
+}
+.flickr-photo:hover .caption,
+.flickr-photo:hover .photo-date {
+  opacity: 0.9;
+  -webkit-transition: opacity, 0.2s;
 }
 form input[type="text"],
 .form input[type="text"],

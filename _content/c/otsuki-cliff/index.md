@@ -14,11 +14,11 @@ summary: >
 
 ## Access
 
-From Shinjuku, take the Chuo line to Ootsuki station (大月駅).
+From Shinjuku, take the Chuo line to Otsuki station (大月駅).
 
 ## Course
 
-From Ootsuki station, head east, keeping your eyes on Mt. Iwadono (岩殿山). It's the one with the barren rocky sides you could see from the train. Cross the river and you'll get to the highway. The hiking path starts on the other side of the highway and turns north-west sharply.
+From Otsuki station, head east, keeping your eyes on Mt. Iwadono (岩殿山). It's the one with the barren rocky sides you could see from the train. Cross the river and you'll get to the highway. The hiking path starts on the other side of the highway and turns north-west sharply.
 
 The first part of the path is mostly climbing stairs. There are some buildings including a motel, tourist information center and some religious facilities. You could climb to the top of Iwadono-san, but continue on the path to the cliff.
 
@@ -30,4 +30,4 @@ The path is mostly straightforward from there, but requires extra care at times,
 
 You'll see the main attraction of the course before you get there: the main cliff is visible from the path. Legends say, the residents of the castle (of which now not much remains), threw their children off this cliff, hoping that the long fall would be a better fate for them than the attackers.
 
-Past the cliff, head on the path back to the residential area and follow the river back to Ootsuki station.
+Past the cliff, head on the path back to the residential area and follow the river back to Otsuki station.
