@@ -7155,25 +7155,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "takao-san",
-        "label": "高尾山",
-        "elevation": "599",
-        "type": "summit"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.2436408996582,
-          35.62514009921294,
-          577
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "takaosanguchi-station",
-        "label": "高尾山口駅",
+        "label": {"en": "Takaosanguchi", "jp": "高尾山口駅" },
         "elevation": "",
         "type": "station"
       },
@@ -7190,7 +7173,7 @@
       "type": "Feature",
       "properties": {
         "name": "takao-station",
-        "label": "高尾駅",
+        "label": { "en": "Takao", "jp": "高尾駅"},
         "elevation": "",
         "type": "station"
       },
@@ -7200,23 +7183,6 @@
           139.28260803222656,
           35.64240558395492,
           180
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "kagenobu-yama",
-        "label": "景信山",
-        "elevation": "727",
-        "type": "summit"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.2158317565918,
-          35.645788484330524,
-          698
         ]
       }
     }

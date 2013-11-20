@@ -4,6 +4,22 @@
     {"type": "Feature",
       "properties": {
         "type": "summit",
+        "label":{ "en": "Houdou-san", "jp":"宝登山"},
+        "elevation": "497",
+        "name": "",
+        "url": "/mt/hodo.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.0926218032837, 36.09329130533463 , 497 
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "type": "summit",
         "label":{ "en": "Kuroyama", "jp":"黒山"},
         "elevation": "771",
         "name": "",

@@ -64,12 +64,14 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
+  overflow-x: hidden;
+  width: 100%;
   color: #666;
+  background: #738790;
 }
 hr {
   border: 0;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #ccc;
 }
 h1,
 h2,
@@ -176,6 +178,7 @@ video {
 body,
 html {
   height: 100%;
+  width: 100%;
   background: #f8f8f8;
   margin: 0;
   padding: 0;
@@ -374,7 +377,6 @@ a.btn,
 span.btn,
 button {
   position: relative;
-  top: -2px;
   display: inline-block;
   padding: 8px 32px;
   border-radius: 3px;
@@ -384,12 +386,14 @@ button {
   line-height: 25px;
   min-width: 48px;
   text-align: center;
-}
-a.btn:hover,
-span.btn:hover,
-button:hover {
   top: -5px;
   box-shadow: 0px 3px 0px #99320f;
+}
+a.btn:active,
+span.btn:active,
+button:active {
+  top: -2px;
+  box-shadow: none;
 }
 a.btn.disabled,
 span.btn.disabled,
@@ -606,8 +610,9 @@ header .logo {
   top: 0;
   bottom: 0;
   left: 0;
+  z-index: 0;
   width: 250px;
-  background: url('/img/leaves.jpg');
+  background-color: #111111;
   background-size: auto 100%;
   background-position: center center;
 }
@@ -620,6 +625,40 @@ header .logo {
   font-size: 24px;
   color: white;
   text-shadow: 0 0 5px black;
+}
+.home .left-side {
+  background-image: url('/img/leaves.jpg');
+}
+.about .left-side {
+  background-image: url('/img/sign.jpg');
+}
+.news .left-side {
+  background-image: url('/img/fog.jpg');
+}
+.right-side {
+  position: absolute;
+  min-height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 250px;
+  z-index: 3;
+  background: #f8f8f8;
+}
+.right-side main {
+  clear: both;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  min-height: 100%;
+  position: relative;
+}
+.right-side main .footer-pusher {
+  height: 135px;
+}
+.right-side .container {
+  max-width: 1240px;
+}
+.right-side .container img {
+  width: 100%;
 }
 .two-cols {
   columns: 100px 3;
@@ -640,12 +679,13 @@ header .logo {
 h6 {
   color: white;
   background: #d05126;
-  padding-left: 16px;
+  padding-left: 4px;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 90%;
+  font-size: 10px;
+  line-height: 16px;
   position: relative;
-  margin-bottom: 16px;
+  z-index: 10;
 }
 h6:before,
 h6:after {
@@ -675,31 +715,6 @@ h6:after {
 }
 .tag.large {
   font-size: 12px!important;
-}
-.right-side {
-  height: 100%;
-  overflow: scroll;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 250px;
-  min-height: 100%;
-  background: #f8f8f8;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
-}
-.right-side main {
-  min-height: 100%;
-  position: relative;
-}
-.right-side main .footer-pusher {
-  height: 135px;
-}
-.right-side .container {
-  max-width: 1240px;
-}
-.right-side .container img {
-  width: 100%;
 }
 footer,
 .footer {
@@ -734,11 +749,16 @@ section:last-of-type {
   padding-bottom: 0;
 }
 .row {
+  clear: both;
   position: relative;
   left: -16px;
   margin: 0;
   display: block;
   overflow: hidden;
+}
+.column-2 {
+  width: 17%;
+  float: left;
 }
 .column-3 {
   width: 25%;
@@ -794,10 +814,11 @@ section:last-of-type {
 }
 .blurb-box {
   font-size: 90%;
-  background-color: #619405;
+  background-color: white;
   border-radius: 2px;
   margin-bottom: 16px;
-  color: #f8f8f8;
+  color: #444;
+  box-shadow: 0 0 3px #ccc;
   /*  &.first{
     border: 0;
     .blurb-inside{
@@ -809,13 +830,13 @@ section:last-of-type {
   display: none;
 }
 .blurb-box .area a {
-  color: white!important;
+  color: #3e6000 !important;
 }
 .blurb-box a {
-  color: white;
+  color: #444;
 }
 .blurb-box a:hover {
-  color: #f8f8f8;
+  color: #18489a;
 }
 .blurb-box .blurb-inside .header-image {
   position: relative;
@@ -824,15 +845,21 @@ section:last-of-type {
   position: absolute;
   bottom: 2px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.4);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, #000000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(1%, rgba(0, 0, 0, 0)), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, #000000 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, #000000 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, #000000 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, #000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
   width: 100%;
+  height: 30%;
   padding: 4px;
-  -webkit-transition: background-color 0.2s;
-  font-size: 16px;
 }
-.blurb-box .blurb-inside .header-image:hover .blurb-title {
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transition: background-color 0.2s;
+.blurb-box .blurb-inside .header-image .blurb-title h2 {
+  position: absolute;
+  bottom: 3px;
+  font-size: 1em;
 }
 .blurb-box .headings {
   padding: 4px;
@@ -896,16 +923,13 @@ section:last-of-type {
   background: url(../img/logo-mini.png) center center no-repeat;
   background-size: 100%;
 }
-.hikr-sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 8;
+.hikr-content {
+  min-height: 100%;
 }
-.hikr-sidebar .logo-float {
+.logo-float {
   position: relative;
   top: 20px;
-  left: 20px;
+  left: 30px;
   display: block;
   width: 125px;
   height: 75px;
@@ -914,9 +938,6 @@ section:last-of-type {
   background-size: 100%;
   text-indent: 100%;
   overflow: hidden;
-}
-.hikr-sidebar:hover .hikr-menu {
-  -webkit-transform: translate3d(0, 0, 0);
 }
 .search-results {
   position: absolute;
@@ -943,21 +964,21 @@ section:last-of-type {
   height: 32px;
   background-color: white;
   border-bottom: 1px solid #ccc;
+  max-width: 1240px;
 }
 .hikr-menu .search-bar {
-  position: absolute;
-  float: left;
   padding-left: 8px;
   z-index: 2;
+  width: 50%;
 }
 .hikr-menu .search-bar input {
   font-weight: 200;
   padding-left: 8px;
   color: #738790;
+  display: block;
   font: inherit;
   font-size: 20px;
   line-height: 22px;
-  width: 260px;
   border: none;
   outline: none;
   -webkit-tap-highlight-color: transparent;
@@ -990,17 +1011,16 @@ section:last-of-type {
   font-weight: 200;
   z-index: 1;
   border-bottom: 1px solid white;
-  position: absolute;
-  right: 16px;
+  float: right;
+  margin-right: 16px;
   bottom: -3px;
-}
-.hikr-menu #main-menu {
   list-style: none none;
 }
 .hikr-menu #main-menu li {
   display: inline-block;
   position: relative;
   top: 0px;
+  z-index: 3;
 }
 .hikr-menu #main-menu li.active a {
   color: black;
@@ -1056,6 +1076,7 @@ section:last-of-type {
   position: absolute;
   width: 600px;
   right: 0;
+  top: 0;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
   min-height: 100%;
 }
@@ -1065,8 +1086,24 @@ section:last-of-type {
 .article-container img {
   max-width: 100%;
 }
+.page h1,
+.page h2,
+.page h3 {
+  color: #d05126;
+}
+.page h4,
+.page h5,
+.page h6 {
+  color: #619405;
+}
+.page > section {
+  margin: 32px;
+}
+.page hr {
+  margin: 32px 0px;
+}
 .page p {
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
 .pagination {
   text-align: center;
@@ -1082,8 +1119,9 @@ article .date-box {
   width: 64px;
   float: left;
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: 1px 1px 6px #f8f8f8, 0 0 0 #000000, 1px 1px 6px #f8f8f8;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 1.1em;
+  text-shadow: 1px 1px 6px #eee, 0 0 0 #000, 1px 1px 6px #eee;
   overflow: hidden;
   font-family: Open sans;
   font-weight: 100;
@@ -1172,9 +1210,6 @@ article h2 {
   color: #d05126;
   text-shadow: 1px 1px 0px #fff!important;
 }
-.leaflet-zoom-animated path {
-  filter: url(#dropshadow);
-}
 .leaflet-bar {
   border-radius: 2px!important;
   box-shadow: none;
@@ -1241,11 +1276,8 @@ article h2 {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  .hikr-sidebar {
-    display: none;
-  }
   .left-side {
-    width: 0;
+    display: none;
   }
   .summary-box.vertical .header-image,
   .summary-box.vertical .headings,
@@ -1275,9 +1307,6 @@ article h2 {
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .hikr-sidebar {
-    display: none;
-  }
   .section {
     margin-right: 0px;
   }
@@ -1290,6 +1319,9 @@ article h2 {
   }
   .map-on-left .left-side {
     width: 0;
+  }
+  .left-side {
+    display: none;
   }
   .right-side {
     left: 0;
@@ -1321,11 +1353,8 @@ article h2 {
   }
 }
 @media only screen and (max-width: 480px) {
-  .hikr-sidebar {
-    display: none;
-  }
   .left-side {
-    width: 0;
+    display: none;
   }
   .section {
     margin: 0px 8px;

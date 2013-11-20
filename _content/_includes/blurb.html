@@ -3,7 +3,7 @@
     <a href="{{page.url}}">
       <div class="header-image"> 
        {% if page.header_image %} {{ page.header_image | flickr : "large_square" }}{% else %} <img src="/img/noimg.png"> {% endif %} 
-        <h2 class="blurb-title">{{page.title}}</h2>
+        <div class="blurb-title"><h2>{{page.title}}</h2></div>
       </div>
     </a>
   <div class="headings">

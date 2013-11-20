@@ -1,15 +1,9 @@
 ---
-layout: default
+layout: map
 menu:
   guide: active
 ---
 
-<div class="map-on-left">
-  <div id="map">
-    <div class="coords"></div>
-  </div>
-
-  <div class="article-container">
     {% include mainmenu.html %}
     <section>
       {% include summary.html %} 
@@ -50,22 +44,7 @@ menu:
       <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
      </section>
-  </div>
-</div>
-<svg height="0" xmlns="http://www.w3.org/2000/svg">
-  <filter id="dropshadow">
-    <feGaussianBlur in="SourceAlpha" stdDeviation="6.2"/>
-    <feOffset dx="2" dy="2" result="offsetblur"/>
-    <feFlood flood-color="rgba(0.5,0.5,0.5,0.2)"/>
-    <feComposite in2="offsetblur" operator="in"/>
-    <feMerge>
-      <feMergeNode/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-  </filter>
-</svg>
-
- <script type="text/javascript">
+      <script type="text/javascript">
   window.onload = function(){
     var maps = [ "index.json", {% if page.area %} "/data/area/{{page.area}}.json", {% endif %} {% for url in page.map %} "{{url}}", {% endfor %}  false];
     var features = [ {% for feature in page.features %} "{{feature}}", {%endfor%} false];
@@ -73,3 +52,4 @@ menu:
     hikr.loadMaps(maps);
   };
  </script>
+

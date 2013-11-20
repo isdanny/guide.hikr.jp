@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta name="author" value="Leszek Rybicki, Copyright by hikr.jp">
-  <meta name="keywords" value="hiking, japan">
+  <meta name="keywords" value="hiking, japan {% if page.keywords %}, {{page.keywords | array_to_sentence_string }} {% endif %} }}">
   <meta name="description" value="">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -15,12 +15,10 @@
   <script type="text/javascript" src="{{site.url}}/js/vendor/modernizr-latest.js"></script>
   <script type="text/javascript" src="{{site.url}}/js/vendor/jquery-2.0.3.min.js"></script>
 </head>
-<body class="en">
-  <div class="hikr-sidebar">
+<body class="en {{page.bodyclass}}">
     <a href="/" class="logo-float">
       hikr.jp
     </a>
-  </div>
   {{content}}
   <script type="text/javascript" src="{{site.url}}/js/vendor/underscore-min.js"></script>
   <script type="text/javascript" src="{{site.url}}/js/vendor/backbone-min.js"></script>

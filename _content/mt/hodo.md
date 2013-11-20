@@ -6,5 +6,6 @@ label:
 type: summit
 elevation: 497
 location: [139.0926218032837, 36.09329130533463]
+area: Chichibu
 prefecture: Saitama
 ---

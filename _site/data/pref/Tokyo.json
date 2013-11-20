@@ -36,6 +36,22 @@
     {"type": "Feature",
       "properties": {
         "type": "summit",
+        "label":{ "en": "Kagenobu", "jp":"景信山"},
+        "elevation": "727",
+        "name": "",
+        "url": "/mt/kagenobu.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.2158317565918, 35.645788484330524 , 727 
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "type": "summit",
         "label":{ "en": "Mimuro yama", "jp":"三室山"},
         "elevation": "646.9",
         "name": "",

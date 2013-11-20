@@ -225,21 +225,6 @@ window.Hikr = Hikr;
 })();
 
 
-SearchResult = Backbone.Model.extend();
-
-SearchResults = Backbone.Collection.extend({
-  initialize: function(options){
-    this.first_letter = options.first_letter||'';
-  },
-  model: SearchResult,
-  url: function(){
-    return '/data/search/'+this.first_letter+'.json';
-  }
-});
-
-search = new SearchResults({ first_letter:'t'});
-search.fetch();
-
 $(document).ready(function(){
   $(".search-bar input").on("keyup",function(){
     var term = $(this).val().toLowerCase();
@@ -251,11 +236,10 @@ $(document).ready(function(){
       for(var keyword in data){
         if(keyword.match(term)){
           for(var i in data[keyword]){
-            $results.append('<a href="'+data[keyword][i]['url']+'">'+data[keyword][i]['title']+'</a>')
-
+            $results.append('<a href="'+data[keyword][i]['url']+'">'+data[keyword][i]['title']+'</a>');
           }
         }
       }
-    })
+    });
   });
-})
+});

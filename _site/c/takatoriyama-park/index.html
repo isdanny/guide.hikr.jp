@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta name="author" value="Leszek Rybicki, Copyright by hikr.jp">
-  <meta name="keywords" value="hiking, japan">
+  <meta name="keywords" value="hiking, japan  }}">
   <meta name="description" value="">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -15,19 +15,17 @@
   <script type="text/javascript" src="/js/vendor/modernizr-latest.js"></script>
   <script type="text/javascript" src="/js/vendor/jquery-2.0.3.min.js"></script>
 </head>
-<body class="en">
-  <div class="hikr-sidebar">
+<body class="en ">
     <a href="/" class="logo-float">
       hikr.jp
     </a>
-  </div>
   <div class="map-on-left">
   <div id="map">
     <div class="coords"></div>
   </div>
-
   <div class="article-container">
-    <div class="hikr-menu">
+        <form id="search_form">
+<div class="hikr-menu">
   <a href="/" class="logo-menu">hikr.jp</a>
   <ul id="main-menu">
     <li class="active"><a href="/">Guide</a></li>
@@ -40,6 +38,7 @@
 </div>
 <div class="search-results">
 </div>
+</form>
     <section>
       <div class="summary-box vertical">
       
@@ -160,8 +159,21 @@
       <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
      </section>
+      <script type="text/javascript">
+  window.onload = function(){
+    var maps = [ "index.json",  "/data/area/Miura.json",    false];
+    var features = [  false];
+    hikr = new Hikr("map", features);
+    hikr.loadMaps(maps);
+  };
+ </script>
+
+
   </div>
+  
 </div>
+
+
 <svg height="0" xmlns="http://www.w3.org/2000/svg">
   <filter id="dropshadow">
     <feGaussianBlur in="SourceAlpha" stdDeviation="6.2"/>
@@ -175,14 +187,6 @@
   </filter>
 </svg>
 
- <script type="text/javascript">
-  window.onload = function(){
-    var maps = [ "index.json",  "/data/area/Miura.json",    false];
-    var features = [  false];
-    hikr = new Hikr("map", features);
-    hikr.loadMaps(maps);
-  };
- </script>
   <script type="text/javascript" src="/js/vendor/underscore-min.js"></script>
   <script type="text/javascript" src="/js/vendor/backbone-min.js"></script>
   <script type="text/javascript" src="/js/vendor/leaflet.js"></script>

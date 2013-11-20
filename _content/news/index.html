@@ -1,5 +1,8 @@
 ---
 layout: news
+title: News
+bodyclass: news
+skip_search: true
 menu:
   news: active
 ---
@@ -9,8 +12,8 @@ menu:
 {% for post in paginator.posts %}
 <section>
 {% include post.html%}
-</section>
 <hr>
+</section>
 {% endfor %}
 
 <section>

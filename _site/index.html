@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta name="author" value="Leszek Rybicki, Copyright by hikr.jp">
-  <meta name="keywords" value="hiking, japan">
+  <meta name="keywords" value="hiking, japan  }}">
   <meta name="description" value="">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -15,19 +15,18 @@
   <script type="text/javascript" src="/js/vendor/modernizr-latest.js"></script>
   <script type="text/javascript" src="/js/vendor/jquery-2.0.3.min.js"></script>
 </head>
-<body class="en">
-  <div class="hikr-sidebar">
+<body class="en home">
     <a href="/" class="logo-float">
       hikr.jp
     </a>
-  </div>
   <div class="hikr-content">
   <div class="left-side">
-    <h2 class="motto">Hiking. With friends.</h2>
+    <h2 class="motto">Hiking. With&nbsp;friends.</h2>
   </div>
   <div class="right-side">
     <main>
-    <div class="hikr-menu">
+    <form id="search_form">
+<div class="hikr-menu">
   <a href="/" class="logo-menu">hikr.jp</a>
   <ul id="main-menu">
     <li class="active"><a href="/">Guide</a></li>
@@ -40,11 +39,11 @@
 </div>
 <div class="search-results">
 </div>
+</form>
       <div class="container">
           <div class="row">
     <div class="column-6"> 
       <section>
-        <h6>News</h6>
         
         <article class="post">
   <div class="date-box">
@@ -53,10 +52,9 @@
   </div>
   <div class="content">
     <h1>Lorem Ipsum</h1>
-    <hr>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et purus ut turpis iaculis aliquet sit amet sit amet odio. Morbi ornare, nisi ac mattis volutpat, libero nunc pretium tellus, eu eleifend magna felis sit amet elit. Aenean in tristique velit. Cras ut tortor vulputate, luctus turpis eu, volutpat elit. Donec cursus purus id purus mollis lobortis. Phasellus sagittis vitae ligula id pretium. Maecenas non eros id sapien euismod venenatis. Suspendisse ligula urna, dictum ac pellentesque a, dapibus a risus. Phasellus eget posuere magna. Suspendisse ut blandit orci. Morbi et egestas ligula. Maecenas sem urna, iaculis a nunc in, aliquet placerat mauris. Quisque ullamcorper quis augue eget sodales. Pellentesque nec arcu commodo, vestibulum nisi id, luctus nibh. Duis scelerisque tempus placerat. Morbi nec purus pellentesque, suscipit mauris vel, luctus odio.</p>
 
-    <h5 class="author">by Leszek</h5>
+    <!-- <h5 class="author">by Leszek</h5> -->
     <br class="clear">
     <a href="/news/test.html" class="btn">Read more</a>
   </div>
@@ -64,57 +62,66 @@
       </section>
     </div>
     <div class="column-6">
-      <section class="area">
-        <h6>Prefectures</h6>
-        
-          <a href="/pref/Tokyo.html">Tokyo</a>&nbsp;
-        
-          <a href="/pref/Yamanashi.html">Yamanashi</a>&nbsp;
-        
-          <a href="/pref/Saitama.html">Saitama</a>&nbsp;
-        
-          <a href="/pref/Kanagawa.html">Kanagawa</a>&nbsp;
-        
-          <a href="/pref/Chiba.html">Chiba</a>&nbsp;
-        
-      </section>
-      <section>
-        <h6>Tags</h6>
-        
-          <a href="/tag/statue.html" class="tag large">6 | statue</a>
-        
-          <a href="/tag/shrine.html" class="tag large">6 | shrine</a>
-        
-          <a href="/tag/onsen.html" class="tag large">4 | onsen</a>
-        
-          <a href="/tag/temple.html" class="tag large">4 | temple</a>
-        
-          <a href="/tag/river_swim.html" class="tag large">4 | river swim</a>
-        
-          <a href="/tag/seaside.html" class="tag large">3 | seaside</a>
-        
-          <a href="/tag/flowers.html" class="tag large">3 | flowers</a>
-        
-          <a href="/tag/waterfall.html" class="tag large">2 | waterfall</a>
-        
-          <a href="/tag/fuji_view.html" class="tag large">2 | fuji view</a>
-        
-          <a href="/tag/chains.html" class="tag large">2 | chains</a>
-        
-          <a href="/tag/cliff.html" class="tag large">2 | cliff</a>
-        
-          <a href="/tag/lake.html" class="tag large">1 | lake</a>
-        
-          <a href="/tag/park.html" class="tag large">1 | park</a>
-        
-          <a href="/tag/360_view.html" class="tag large">1 | 360 view</a>
-        
-          <a href="/tag/camp.html" class="tag large">1 | camp</a>
-        
-      </section>
-      <section>
-        <h6>Featured course</h6>
-                      <div class="summary-box ">
+        <div>
+          <div class="column-6">
+            <section class="area">
+              <h6>Prefectures</h6>
+              <br>
+              
+                <a href="/pref/Tokyo.html">Tokyo</a>&nbsp;<br>
+              
+                <a href="/pref/Yamanashi.html">Yamanashi</a>&nbsp;<br>
+              
+                <a href="/pref/Saitama.html">Saitama</a>&nbsp;<br>
+              
+                <a href="/pref/Kanagawa.html">Kanagawa</a>&nbsp;<br>
+              
+                <a href="/pref/Chiba.html">Chiba</a>&nbsp;<br>
+              
+            </section>
+          </div>
+          <div class="column-6">
+            <section>
+              <h6>Tags</h6>
+              <br>
+              
+                <a href="/tag/statue.html" class="tag large">6 | statue</a>
+              
+                <a href="/tag/shrine.html" class="tag large">6 | shrine</a>
+              
+                <a href="/tag/onsen.html" class="tag large">4 | onsen</a>
+              
+                <a href="/tag/temple.html" class="tag large">4 | temple</a>
+              
+                <a href="/tag/river_swim.html" class="tag large">4 | river swim</a>
+              
+                <a href="/tag/seaside.html" class="tag large">3 | seaside</a>
+              
+                <a href="/tag/flowers.html" class="tag large">3 | flowers</a>
+              
+                <a href="/tag/waterfall.html" class="tag large">2 | waterfall</a>
+              
+                <a href="/tag/fuji_view.html" class="tag large">2 | fuji view</a>
+              
+                <a href="/tag/chains.html" class="tag large">2 | chains</a>
+              
+                <a href="/tag/cliff.html" class="tag large">2 | cliff</a>
+              
+                <a href="/tag/lake.html" class="tag large">1 | lake</a>
+              
+                <a href="/tag/park.html" class="tag large">1 | park</a>
+              
+                <a href="/tag/360_view.html" class="tag large">1 | 360 view</a>
+              
+                <a href="/tag/camp.html" class="tag large">1 | camp</a>
+              
+              <br><br>
+            </section>
+          </div>
+        </div>
+        <section>
+          <h6>Featured course</h6>
+                        <div class="summary-box ">
       
         <div class="header-image"> 
           <a href="/c/kuki/index.html"><div class='flickr-photo '><img title='DSC02387' alt='DSC02387' src='http://farm4.staticflickr.com/3788/10919062064_abec3ff25f_b.jpg'><div class='caption'><div class='photo-date'>2013-11-16 13:15:26</div><div class='copyright'>&copy; <a target='_blank' href='http://www.flickr.com/photos/104745110@N03/10919062064/'>Hikr Photos</a></div></div></div></a>
@@ -137,23 +144,23 @@
       </div>
       
       <br class="clear">
-    </div>                                                                                                                                                                   
-      </section>
+    </div>                                                                                                                                                                     
+        </section>
     </div>
   </div>
-<hr>
-<section>
-  <div class="row">
-  
-                                   
-    <div class="column-3 first">
-      <section>
-       <div class="blurb-box  first">
+  <hr>
+  <section>
+    <div class="row">
+      
+                                       
+        <div class="column-3 first">
+          <section>
+           <div class="blurb-box  first">
   <div class="blurb-inside">
     <a href="/c/mitake-hinode/index.html">
       <div class="header-image"> 
         <div class='flickr-photo '><img title='' alt='' src='http://farm9.staticflickr.com/8229/8547970375_31f9a772d2_q.jpg'><div class='caption'><div class='photo-date'>2013-03-10 17:55:27</div><div class='copyright'>&copy; <a target='_blank' href='http://www.flickr.com/photos/jambodave/8547970375/'>Jambo International</a></div></div></div> 
-        <h2 class="blurb-title">Mitake, Hinode, Yoshino plum park</h2>
+        <div class="blurb-title"><h2>Mitake, Hinode, Yoshino plum park</h2></div>
       </div>
     </a>
   <div class="headings">
@@ -162,18 +169,18 @@
   </div>
   </div>
 </div>
-      
-      </section>
-    </div>
-            
-    <div class="column-3 ">
-      <section>
-       <div class="blurb-box  ">
+          
+          </section>
+        </div>
+                
+        <div class="column-3 ">
+          <section>
+           <div class="blurb-box  ">
   <div class="blurb-inside">
     <a href="/c/nokogiri-okutama/index.html">
       <div class="header-image"> 
         <div class='flickr-photo '><img title='' alt='' src='http://farm9.staticflickr.com/8056/8359426703_2274a033d8_q.jpg'><div class='caption'><div class='photo-date'>2013-01-03 14:43:10</div><div class='copyright'>&copy; <a target='_blank' href='http://www.flickr.com/photos/jambodave/8359426703/'>Jambo International</a></div></div></div> 
-        <h2 class="blurb-title">Mt. Nokogiri</h2>
+        <div class="blurb-title"><h2>Mt. Nokogiri</h2></div>
       </div>
     </a>
   <div class="headings">
@@ -182,18 +189,18 @@
   </div>
   </div>
 </div>
-      
-      </section>
-    </div>
-                
-    <div class="column-3 ">
-      <section>
-       <div class="blurb-box vertical ">
+          
+          </section>
+        </div>
+                    
+        <div class="column-3 ">
+          <section>
+           <div class="blurb-box vertical ">
   <div class="blurb-inside">
     <a href="/c/takamizusan/index.html">
       <div class="header-image"> 
         <div class='flickr-photo '><img title='DSC02156' alt='DSC02156' src='http://farm8.staticflickr.com/7316/10354395866_3bf04651e3_q.jpg'><div class='caption'><div class='photo-date'>2013-10-06 14:42:15</div><div class='copyright'>&copy; <a target='_blank' href='http://www.flickr.com/photos/104745110@N03/10354395866/'>Hikr Photos</a></div></div></div> 
-        <h2 class="blurb-title">Takamizusan-zan</h2>
+        <div class="blurb-title"><h2>Takamizusan-zan</h2></div>
       </div>
     </a>
   <div class="headings">
@@ -202,18 +209,18 @@
   </div>
   </div>
 </div>
-      
-      </section>
-    </div>
-            
-    <div class="column-3 ">
-      <section>
-       <div class="blurb-box vertical ">
+          
+          </section>
+        </div>
+                
+        <div class="column-3 ">
+          <section>
+           <div class="blurb-box vertical ">
   <div class="blurb-inside">
     <a href="/c/tenran-tonosu/index.html">
       <div class="header-image"> 
         <div class='flickr-photo '><img title='' alt='' src='http://farm8.staticflickr.com/7295/9651060026_4219e8b9dc_q.jpg'><div class='caption'><div class='photo-date'>2013-09-01 11:49:50</div><div class='copyright'>&copy; <a target='_blank' href='http://www.flickr.com/photos/jambodave/9651060026/'>Jambo International</a></div></div></div> 
-        <h2 class="blurb-title">Tenran - Tounosu</h2>
+        <div class="blurb-title"><h2>Tenran - Tounosu</h2></div>
       </div>
     </a>
   <div class="headings">
@@ -222,38 +229,40 @@
   </div>
   </div>
 </div>
-      
-      </section>
+          
+          </section>
+        </div>
+                                                                                                                                                                                                                                                                                                             
+      <br class="clear">
     </div>
-                                                                                                                                                                                                                                                                                                     
-  <br class="clear">
-  </div>
-</section>
+  </section>
         <br class="clear">
       </div>
       <div class="footer-pusher">&nbsp;</div>
       <footer>
-  <section>
-  <div class="row">
-  <div class="column-3">
+  <div class="container">
     <section>
-      <ul class="menu">
-        <li><a href="/about/">About Hikr</a></li>
-      </ul>
-      <br>
-      <a target="_blank" href="http://twitter.com/hikr_jp" class="icon twitter">&nbsp;</a>
-      <a target="_blank" href="http://www.flickr.com/photos/104745110@N03/" class="icon flickr">&nbsp;</a>
+      <div class="row">
+        <div class="column-3">
+          <section>
+            <ul class="menu">
+              <li><a href="/about/">About Hikr</a></li>
+            </ul>
+            <br>
+            <a target="_blank" href="http://twitter.com/hikr_jp" class="icon twitter">&nbsp;</a>
+            <a target="_blank" href="http://www.flickr.com/photos/104745110@N03/" class="icon flickr">&nbsp;</a>
+          </section>
+        </div>
+        <div class="column-9">
+          <section>
+            <p><strong>Hikr.jp</strong> is a growing collection of hiking courses in Japan. We are currently in open beta. If you'd like to contribute or report bugs, mistakes or say "GOOD JOB!", <a href="/about/contact.html">contact us</a>.</p>
+            <p>Copyright &copy; by hikr.jp. Articles are copyright of their respective authors, released under a <a target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons 3.0 Attribution Share-alike license</a>. Pictures are copyright of their respective authors and used with permission.</p>
+         </section>
+        </div>
+        <br class="clear">
+      </div>
     </section>
   </div>
-  <div class="column-9">
-    <section>
-    <p><strong>Hikr.jp</strong> is a growing collection of hiking courses in Japan. We are currently in open beta. If you'd like to contribute or report bugs, mistakes or say "GOOD JOB!", <a href="/about/contact.html">contact us</a>.</p>
-    <p>Copyright &copy; by hikr.jp. Articles are copyright of their respective authors, released under a <a target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons 3.0 Attribution Share-alike license</a>. Pictures are copyright of their respective authors and used with permission.</p>
-   </section>
-  </div>
-  <br class="clear">
-  </div>
-  </section>
 </footer>
 
     </main>

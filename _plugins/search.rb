@@ -12,10 +12,10 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'search.json')
       parsed_results = []
-      results.each do | keyword, pages |
-        parsed_results << { :keyword=>keyword, :pages=>pages }
-      end
-      self.data["results"] = parsed_results.to_json
+      # results.each do | keyword, pages |
+        # parsed_results << { :keyword=>keyword, :pages=>pages }
+      # end
+      self.data["results"] = results.to_json
       # self.data['courses'] = pages
     end
   end
@@ -31,35 +31,37 @@ module Jekyll
       ignored_keywords = [ ]
       index = Hash.new
       site.pages.each do |page|
-        keywords = Array.new
-        title = ''
-        if page.data.has_key? 'title'
-          title = page.data['title']
-          (keywords.concat title.split(/\s/)).flatten!
-        end
-        keywords.map{ |e| e.downcase.strip }
-        if page.data.has_key? 'label'
-          title = page.data['label']['en']
-        end
-        keywords.each do |keyword|
-          if keyword.length<4
-            keywords.delete(keyword)
+        unless page.data['skip_search']
+          keywords = Array.new
+          title = ''
+          if page.data.has_key? 'title'
+            title = page.data['title']
+            (keywords.concat title.split(/\s/)).flatten!
           end
-        end
-        ignored_keywords.each do |ign|
-          keywords.delete(ign)
-        end
-        keywords.each do |keyword|
-          keyword.downcase!
-          first_letter = keyword[0].downcase
-          pagedata = { :title=>title, :url=>page.url, :layout=>page.data['layout'] } 
-          if ! index.has_key? first_letter
-            index[first_letter] = Hash.new
+          keywords.map{ |e| e.downcase.strip }
+          if page.data.has_key? 'label'
+            title = page.data['label']['en']
           end
-          if ! index[first_letter].has_key? keyword
-            index[first_letter][keyword] = Array.new
+          keywords.each do |keyword|
+            if keyword.length<4
+              keywords.delete(keyword)
+            end
           end
-          index[first_letter][keyword] << pagedata
+          ignored_keywords.each do |ign|
+            keywords.delete(ign)
+          end
+          keywords.each do |keyword|
+            keyword.downcase!
+            first_letter = keyword[0].downcase
+            pagedata = { :title=>title, :url=>page.url, :layout=>page.data['layout'] } 
+            if ! index.has_key? first_letter
+              index[first_letter] = Hash.new
+            end
+            if ! index[first_letter].has_key? keyword
+              index[first_letter][keyword] = Array.new
+            end
+            index[first_letter][keyword] << pagedata
+          end
         end
       end
       index.keys.each do |first_letter|

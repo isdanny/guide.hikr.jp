@@ -1,0 +1,28 @@
+---
+layout: default
+menu:
+  guide: active
+---
+<div class="map-on-left">
+  <div id="map">
+    <div class="coords"></div>
+  </div>
+  <div class="article-container">
+    {{content}}
+  </div>
+  
+</div>
+
+
+<svg height="0" xmlns="http://www.w3.org/2000/svg">
+  <filter id="dropshadow">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="6.2"/>
+    <feOffset dx="2" dy="2" result="offsetblur"/>
+    <feFlood flood-color="rgba(0.5,0.5,0.5,0.2)"/>
+    <feComposite in2="offsetblur" operator="in"/>
+    <feMerge>
+      <feMergeNode/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</svg>
