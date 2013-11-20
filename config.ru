@@ -1,3 +1,4 @@
-require "rack/jekyll"
+require './app.rb'
+# require "rack/jekyll"
 
-run Rack::Jekyll.new
+run Sinatra::Application

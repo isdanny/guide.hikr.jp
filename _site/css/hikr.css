@@ -927,7 +927,7 @@ section:last-of-type {
   min-height: 100%;
 }
 .logo-float {
-  position: relative;
+  position: fixed;
   top: 20px;
   left: 30px;
   display: block;
