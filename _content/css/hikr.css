@@ -54,8 +54,9 @@ header .logo{margin-top:-2px;margin-right:10px;max-height:50px;vertical-align:ba
 .left-side{position:fixed;top:0;bottom:0;left:0;z-index:0;width:250px;background-color:#111;background-size:auto 100%;background-position:center center}.left-side .motto{position:absolute;width:100%;color:rgba(255,255,255,0.5) !important;text-align:center;bottom:16px;font-size:24px;color:#fff;text-shadow:0 0 5px #000}
 .home .left-side{background-image:url('/img/leaves.jpg')}
 .about .left-side{background-image:url('/img/sign.jpg')}
+.about .teamphoto{border-radius:3px;background-color:#fff;padding:7px;border:1px solid #ccc}
 .news .left-side{background-image:url('/img/fog.jpg')}
-.right-side{position:absolute;min-height:100%;top:0;bottom:0;right:0;left:250px;z-index:3;background:#f8f8f8}.right-side main{clear:both;box-shadow:0 0 16px rgba(0,0,0,0.5);min-height:100%;position:relative}.right-side main .footer-pusher{height:135px}
+.right-side{position:absolute;min-height:100%;top:0;bottom:0;right:0;left:250px;z-index:3;background:#f8f8f8}.right-side main{clear:both;box-shadow:0 0 16px rgba(0,0,0,0.5);min-height:100%;position:relative;top:-1px}.right-side main .footer-pusher{height:135px}
 .right-side .container{max-width:1240px}.right-side .container img{width:100%}
 .two-cols{columns:100px 3;-webkit-columns:100px 3;-moz-columns:100px 3;}.two-cols .tag-listing{display:inline-block;width:100%}.two-cols .tag-listing li{display:block}
 h6{color:#fff;background:#d05126;padding-left:4px;text-transform:uppercase;font-weight:300;font-size:10px;line-height:16px;position:relative;z-index:10}h6:before,h6:after{position:absolute;bottom:-16px;left:8px;border:8px solid transparent;content:" ";height:0;width:0}
@@ -64,7 +65,9 @@ h6:after{border-top-color:#d05126}
 .tag.large{font-size:12px !important}
 footer,.footer{width:100%;position:absolute;bottom:0;height:135px;margin-bottom:0;background-color:#fff;border-top:1px solid #bbb;font-size:12px;color:#444}footer .menu,.footer .menu{list-style:none none}
 footer p,.footer p{margin-bottom:.5em}
-.section,section{clear:both;margin-top:8px;margin-left:16px;padding-bottom:16px}.section:last-of-type,section:last-of-type{border-bottom:none;padding-bottom:0}
+.section,section{clear:both;margin-top:16px;margin-left:16px;padding-bottom:16px}.section:last-of-type,section:last-of-type{border-bottom:none;padding-bottom:0}
+.section.padding,section.padding{padding:32px}
+.alert{background:#d05126;color:#fff}.alert a{color:#fff;text-decoration:underline}
 .row{clear:both;position:relative;left:-16px;margin:0;display:block;overflow:hidden}
 .column-2{width:17%;float:left}
 .column-3{width:25%;float:left}.column-3.border{width:208px;padding-left:15px !important;border-left:1px solid #ccc}
@@ -95,13 +98,13 @@ footer p,.footer p{margin-bottom:.5em}
 .hikr-content{min-height:100%}
 .logo-float{position:fixed;top:20px;left:30px;display:block;width:125px;height:75px;z-index:20;background:url(../img/logo-mini.png) center center no-repeat;background-size:100%;text-indent:100%;overflow:hidden}
 .search-results{position:absolute;background:rgba(0,0,0,0.8);width:320px;padding:0 8px;margin:-1px 8px;z-index:19}.search-results a{color:#888;display:block;padding:4px 0}.search-results a:hover{background:#000;color:#fff}
-.hikr-menu{position:relative;top:0;left:0;right:0;height:32px;background-color:#fff;border-bottom:1px solid #ccc;max-width:1240px}.hikr-menu .search-bar{padding-left:8px;z-index:2;width:50%}.hikr-menu .search-bar input{font-weight:200;padding-left:8px;color:#738790;display:block;font:inherit;font-size:20px;line-height:22px;border:none;outline:none;-webkit-tap-highlight-color:transparent;}
+.hikr-menu{position:relative;top:0;left:0;right:0;height:32px;background-color:#fff;border-bottom:1px solid #ccc;max-width:1240px}.hikr-menu .search-bar{padding-left:8px;z-index:2;width:50%}.hikr-menu .search-bar input{font-weight:200;padding-left:8px;color:#738790;display:block;font:inherit;font-size:18px;line-height:20px;border:none;outline:none;-webkit-tap-highlight-color:transparent;}
 .hikr-menu .search-bar input::-webkit-input-placeholder{color:#ddd;text-transform:uppercase;line-height:28px}
 .hikr-menu .search-bar input::-moz-placeholder{color:#ddd;text-transform:uppercase;line-height:inherit}
 .hikr-menu .search-bar input:-ms-input-placeholder{color:#ddd;text-transform:uppercase;line-height:inherit}
 .hikr-menu .search-bar inputinput:-moz-placeholder{color:#ddd;text-transform:uppercase;line-height:inherit}
-.hikr-menu #main-menu{font-weight:200;z-index:1;border-bottom:1px solid #fff;float:right;margin-right:16px;bottom:-3px;list-style:none none}.hikr-menu #main-menu li{display:inline-block;position:relative;top:0;z-index:3}.hikr-menu #main-menu li.active a{color:#000;border-bottom:2px solid #d05126}
-.hikr-menu #main-menu li.active a:hover{color:#000}
+.hikr-menu #main-menu{font-weight:200;z-index:1;float:right;margin-right:16px;bottom:-3px;list-style:none none}.hikr-menu #main-menu li{display:inline-block;position:relative;top:0;z-index:3}.hikr-menu #main-menu li.active a{color:#fff;background-color:#d05126;border-bottom:2px solid #99320f}
+.hikr-menu #main-menu li.active a:hover{color:#fff}
 .hikr-menu #main-menu li a{border-bottom:2px solid transparent;display:block;color:#a1bbc5;line-height:32px;padding:0 .5em;text-transform:uppercase;clear:both}.hikr-menu #main-menu li a:hover{color:#444}
 .map-on-left,.map-on-left>.column{height:100%}
 .map-on-left{width:100%;height:100%}.map-on-left #map{height:100%;position:fixed;top:0;left:0;right:600px}.map-on-left #map .coords{position:absolute;bottom:10px;left:10px;z-index:100}
@@ -110,11 +113,11 @@ footer p,.footer p{margin-bottom:.5em}
 .infobox{float:right;width:200px}
 .article-container{position:absolute;width:600px;right:0;top:0;box-shadow:0 0 16px rgba(0,0,0,0.5);min-height:100%}.article-container section{padding-right:16px}
 .article-container img{max-width:100%}
-.page h1,.page h2,.page h3{color:#d05126}
+.page h1,.page h2,.page h3{color:#d05126;padding-bottom:1em}
 .page h4,.page h5,.page h6{color:#619405}
 .page>section{margin:32px}
-.page hr{margin:32px 0}
-.page p{margin-top:1em}
+.page hr{height:1px;margin:0 0}
+.page p{margin-bottom:1em}
 .pagination{text-align:center}
 .author{font-weight:200}
 article{marign-right:32px}article .date-box{display:block;width:64px;float:left;text-align:center;color:rgba(255,255,255,0.3);margin-top:1.1em;text-shadow:1px 1px 6px #eee,0 0 0 #000,1px 1px 6px #eee;overflow:hidden;font-family:Open sans;font-weight:100;margin-left:16px}article .date-box .month{font-size:.7em;padding:3px;color:#d05126;border-radius:3px 3px 0 0}
@@ -139,4 +142,4 @@ article h1,article h2{color:#d05126;text-shadow:1px 1px 0 #fff !important}
 .leaflet-bar a:hover{color:#fff !important;background-color:rgba(0,0,0,0.9) !important;-webkit-transition:background-color,.2s;box-shadow:0 0 7px #000}
 .leaflet-bar a.leaflet-disabled{background-color:transparent;color:transparent !important}.leaflet-bar a.leaflet-disabled:hover{background-color:rgba(0,0,0,0.1);box-shadow:none;color:#eee !important}
 .leaflet-control-language-interior{width:25px;height:25px;background-position:50% 50%;background-repeat:no-repeat;display:block;padding:3px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;cursor:pointer;text-align:center;background-color:#fff}
-@media only screen and (min-width:1200px){.right-side #main-menu{left:0;text-align:right}}@media only screen and (min-width:960px) and (max-width:1199px){.left-side{width:200px} .right-side{left:200px}.right-side .hikr-menu #main-menu{left:0;text-align:right}}@media only screen and (min-width:768px) and (max-width:959px){.left-side{display:none} .summary-box.vertical .header-image,.summary-box.vertical .headings,.summary-box.vertical .summary{width:100%} .map-on-left .article-container{left:50%;width:50%} .map-on-left #map{right:50%} .right-side{left:0}.right-side .hikr-menu{height:48px}.right-side .hikr-menu .logo-menu{display:block} .right-side .hikr-menu .search-bar{position:absolute;bottom:0;left:116px}}@media only screen and (min-width:480px) and (max-width:767px){.section{margin-right:0} .article-container{width:100%} .map-on-left #map{width:100%;margin-left:-100%} .map-on-left .left-side{width:0} .left-side{display:none} .right-side{left:0}.right-side .hikr-menu{height:48px}.right-side .hikr-menu .logo-menu{display:block} .right-side .hikr-menu .search-bar{position:absolute;bottom:0;left:116px} .right-side .column-6{width:100%}.right-side .column-6.border-left{border-top:1px solid #ccc;border-left:none;margin-left:16px;padding-left:0;padding-top:16px;margin-top:16px} .right-side .column-3{width:50%}}@media only screen and (max-width:480px){.left-side{display:none} .section{margin:0 8px} .right-side{left:0}.right-side .hikr-menu{height:48px}.right-side .hikr-menu .logo-menu{display:block} .right-side .hikr-menu .search-bar{position:absolute;bottom:0;left:116px} .right-side .column-6{width:100%}.right-side .column-6.border-left{border-top:1px solid #ccc;border-left:none;margin-left:16px;padding-left:0;padding-top:16px;margin-top:16px} .right-side .column-3{width:100%}}
+@media only screen and (min-width:1200px){.right-side #main-menu{left:0;text-align:right}}@media only screen and (min-width:960px) and (max-width:1199px){.left-side{width:200px} .right-side{left:200px}.right-side .hikr-menu #main-menu{left:0;text-align:right}}@media only screen and (min-width:768px) and (max-width:959px){.left-side{display:none} .summary-box.vertical .header-image,.summary-box.vertical .headings,.summary-box.vertical .summary{width:100%} .map-on-left .article-container{left:50%;width:50%} .map-on-left #map{right:50%} .right-side{left:0}.right-side .hikr-menu{height:48px}.right-side .hikr-menu .logo-menu{display:block} .right-side .hikr-menu .search-bar{position:absolute;bottom:0;left:116px}}@media only screen and (min-width:480px) and (max-width:767px){section{margin-right:0} .article-container{width:100%} .map-on-left #map{width:100%;margin-left:-100%} .map-on-left .left-side{width:0} .left-side{display:none} .right-side{left:0}.right-side .hikr-menu{height:48px}.right-side .hikr-menu .logo-menu{display:block} .right-side .hikr-menu .search-bar{position:absolute;bottom:0;left:116px} .right-side .column-6{width:100%}.right-side .column-6.border-left{border-top:1px solid #ccc;border-left:none;margin-left:16px;padding-left:0;padding-top:16px;margin-top:16px} .right-side .column-3{width:50%}}@media only screen and (max-width:480px){.left-side{display:none} section{margin:0 8px} .right-side{left:0}.right-side .hikr-menu{height:48px}.right-side .hikr-menu .logo-menu{display:block} .right-side .hikr-menu .search-bar{position:absolute;bottom:0;left:116px} .right-side .column-6{width:100%}.right-side .column-6.border-left{border-top:1px solid #ccc;border-left:none;margin-left:16px;padding-left:0;padding-top:16px;margin-top:16px} .right-side .column-3{width:100%}}

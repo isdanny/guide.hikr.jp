@@ -7,7 +7,7 @@
         "label":{ "en": "Hinode-yama", "jp":"日出山"},
         "elevation": "902",
         "name": "",
-        "url": "/mt/hinode.html"
+        "url": "/mt/hinode/"
         
       },
       "geometry": {
@@ -23,7 +23,7 @@
         "label":{ "en": "Iwatakeishi", "jp":"岩茸石山"},
         "elevation": "793",
         "name": "",
-        "url": "/mt/iwatakeishi.html"
+        "url": "/mt/iwatakeishi/"
         
       },
       "geometry": {
@@ -39,7 +39,7 @@
         "label":{ "en": "Mimuro yama", "jp":"三室山"},
         "elevation": "646.9",
         "name": "",
-        "url": "/mt/mimuro.html"
+        "url": "/mt/mimuro/"
         
       },
       "geometry": {
@@ -55,7 +55,7 @@
         "label":{ "en": "Mitake-san", "jp":"御岳山"},
         "elevation": "929",
         "name": "",
-        "url": "/mt/mitake.html"
+        "url": "/mt/mitake/"
         
       },
       "geometry": {
@@ -71,7 +71,7 @@
         "label":{ "en": "Nokogiri-yama", "jp":"鋸山"},
         "elevation": "1109",
         "name": "",
-        "url": "/mt/nokogiri-okutama.html"
+        "url": "/mt/nokogiri-okutama/"
         
       },
       "geometry": {
@@ -87,7 +87,7 @@
         "label":{ "en": "Ootsuka-yama", "jp":"大塚山"},
         "elevation": "920",
         "name": "",
-        "url": "/mt/ootsukayama.html"
+        "url": "/mt/ootsukayama/"
         
       },
       "geometry": {
@@ -103,7 +103,7 @@
         "label":{ "en": "Sougaku", "jp":"惣岳山"},
         "elevation": "759",
         "name": "",
-        "url": "/mt/sougaku.html"
+        "url": "/mt/sougaku/"
         
       },
       "geometry": {
@@ -119,7 +119,7 @@
         "label":{ "en": "Takamizu", "jp":"高水山"},
         "elevation": "756",
         "name": "",
-        "url": "/mt/takamizu.html"
+        "url": "/mt/takamizu/"
         
       },
       "geometry": {
@@ -135,7 +135,7 @@
         "label":{ "en": "Atago Shrine", "jp":"愛宕神社"},
         "elevation": "",
         "name": "",
-        "url": "/p/atago-shrine.html"
+        "url": "/p/atago-shrine/"
         
       },
       "geometry": {
@@ -151,7 +151,7 @@
         "label":{ "en": "Hikawa capsite", "jp":"氷川キャンプ場"},
         "elevation": "",
         "name": "",
-        "url": "/p/hikawa-campsite.html"
+        "url": "/p/hikawa-campsite/"
         
       },
       "geometry": {
@@ -167,7 +167,7 @@
         "label":{ "en": "Mitake shrine", "jp":"御嶽神社"},
         "elevation": "",
         "name": "",
-        "url": "/p/mitake-shrine.html"
+        "url": "/p/mitake-shrine/"
         
       },
       "geometry": {

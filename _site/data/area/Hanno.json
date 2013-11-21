@@ -7,7 +7,7 @@
         "label":{ "en": "Tenran-zan", "jp":"天覧山"},
         "elevation": "141",
         "name": "",
-        "url": "/mt/tenran.html"
+        "url": "/mt/tenran/"
         
       },
       "geometry": {
@@ -23,7 +23,7 @@
         "label":{ "en": "Tonosu-yama", "jp":"多峯主山"},
         "elevation": "232",
         "name": "",
-        "url": "/mt/tonosu.html"
+        "url": "/mt/tonosu/"
         
       },
       "geometry": {

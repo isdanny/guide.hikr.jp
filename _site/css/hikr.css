@@ -632,6 +632,12 @@ header .logo {
 .about .left-side {
   background-image: url('/img/sign.jpg');
 }
+.about .teamphoto {
+  border-radius: 3px;
+  background-color: white;
+  padding: 7px;
+  border: 1px solid #ccc;
+}
 .news .left-side {
   background-image: url('/img/fog.jpg');
 }
@@ -650,6 +656,7 @@ header .logo {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
   min-height: 100%;
   position: relative;
+  top: -1px;
 }
 .right-side main .footer-pusher {
   height: 135px;
@@ -739,7 +746,7 @@ footer p,
 .section,
 section {
   clear: both;
-  margin-top: 8px;
+  margin-top: 16px;
   margin-left: 16px;
   padding-bottom: 16px;
 }
@@ -747,6 +754,18 @@ section {
 section:last-of-type {
   border-bottom: none;
   padding-bottom: 0;
+}
+.section.padding,
+section.padding {
+  padding: 32px;
+}
+.alert {
+  background: #d05126;
+  color: white;
+}
+.alert a {
+  color: white;
+  text-decoration: underline;
 }
 .row {
   clear: both;
@@ -977,8 +996,8 @@ section:last-of-type {
   color: #738790;
   display: block;
   font: inherit;
-  font-size: 20px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 20px;
   border: none;
   outline: none;
   -webkit-tap-highlight-color: transparent;
@@ -1010,7 +1029,6 @@ section:last-of-type {
 .hikr-menu #main-menu {
   font-weight: 200;
   z-index: 1;
-  border-bottom: 1px solid white;
   float: right;
   margin-right: 16px;
   bottom: -3px;
@@ -1023,11 +1041,12 @@ section:last-of-type {
   z-index: 3;
 }
 .hikr-menu #main-menu li.active a {
-  color: black;
-  border-bottom: 2px solid #d05126;
+  color: white;
+  background-color: #d05126;
+  border-bottom: 2px solid #99320f;
 }
 .hikr-menu #main-menu li.active a:hover {
-  color: black;
+  color: white;
 }
 .hikr-menu #main-menu li a {
   border-bottom: 2px solid transparent;
@@ -1090,6 +1109,7 @@ section:last-of-type {
 .page h2,
 .page h3 {
   color: #d05126;
+  padding-bottom: 1em;
 }
 .page h4,
 .page h5,
@@ -1100,10 +1120,11 @@ section:last-of-type {
   margin: 32px;
 }
 .page hr {
-  margin: 32px 0px;
+  height: 1px;
+  margin: 0px 0px;
 }
 .page p {
-  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .pagination {
   text-align: center;
@@ -1307,7 +1328,7 @@ article h2 {
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .section {
+  section {
     margin-right: 0px;
   }
   .article-container {
@@ -1356,7 +1377,7 @@ article h2 {
   .left-side {
     display: none;
   }
-  .section {
+  section {
     margin: 0px 8px;
   }
   .right-side {

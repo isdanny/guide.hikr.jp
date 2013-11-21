@@ -21,7 +21,6 @@
 @accent: @red;
 @white: #f8f8f8;
 
-
 @turquoise: #1abc9c;
 @emerland: #2ecc71;
 @peter-river: #3498db;
@@ -48,6 +47,8 @@
 
 @footerHeight: 135px;
 @leftSideWidth: 250px;
+
+@spacing: 16px;
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,200);
 
@@ -430,7 +431,7 @@ header{
   position: relative;
   display: table;
   width: 100%;
-  margin: 16px 0;
+  margin: @spacing 0;
   .col{
     width: 50%;
     margin: 0;
@@ -495,7 +496,7 @@ header{
     width: 100%;
     color: rgba(255,255,255,0.5)!important;
     text-align: center;
-    bottom: 16px;
+    bottom: @spacing;
     font-size: 24px;
     color: white;
     text-shadow: 0 0 5px black;
@@ -506,8 +507,16 @@ header{
   background-image: url('/img/leaves.jpg');
 }
 
-.about .left-side{
-  background-image: url('/img/sign.jpg'); 
+.about{
+  .left-side{
+    background-image: url('/img/sign.jpg'); 
+  }
+  .teamphoto{
+    border-radius: 3px;
+    background-color:  white;
+    padding: 7px;
+    border: 1px solid #ccc;
+  }
 }
 
 .news .left-side{
@@ -529,6 +538,7 @@ header{
     box-shadow: 0 0 16px rgba(0,0,0,0.5);
     min-height: 100%;
     position: relative;
+    top: -1px;
     .footer-pusher{
       height: @footerHeight;
     }
@@ -624,19 +634,32 @@ footer, .footer{
 .section, section{
   clear: both;
   // border-bottom: 1px solid #ccc;
-  margin-top: 8px;
-  margin-left: 16px;
-  padding-bottom: 16px;
+  margin-top: @spacing;
+  margin-left: @spacing;
+  padding-bottom: @spacing;
   &:last-of-type{
     border-bottom: none;
     padding-bottom: 0;
   }
+  &.padding{
+    padding: 32px;
+  }
 }
+
+.alert{
+  background: @red;
+  a{
+    color: white;
+    text-decoration: underline;
+  }
+  color: white;
+}
+
 
 .row{
   clear: both;
   position: relative;
-  left: -16px;
+  left: -@spacing;
   margin: 0;
   display: block;
   overflow: hidden;
@@ -664,7 +687,7 @@ footer, .footer{
   width: 33%;
   float: left;
   &:first-child{
-    padding-left: 16px;
+    padding-left: @spacing;
     border-left: none;
   }
 }
@@ -679,7 +702,7 @@ footer, .footer{
     width: 47%;
     border-left: 1px solid #ccc;
     box-sizing: border-box;
-    margin-left: 16px;
+    margin-left: @spacing;
   }
 }
 
@@ -702,14 +725,14 @@ footer, .footer{
 .thumb{
   width: 30%;
   float: left;
-  margin: 0 16px 16px 0;
+  margin: 0 @spacing @spacing 0;
 }
 
 .blurb-box{
   font-size: 90%;
   background-color: white;
   border-radius: 2px;
-  margin-bottom: 16px;
+  margin-bottom: @spacing;
   color: #444;
   box-shadow: 0 0 3px #ccc;
   .caption{
@@ -823,7 +846,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     }
     .summary{
       float: left;
-      margin-top: 16px;
+      margin-top: @spacing;
       width: 48%;
       margin-left: 1%;
     }
@@ -833,7 +856,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .logo-menu{
   display: none;
   top: 0px;
-  left: 16px;
+  left: @spacing;
   width: 100px;
   height: 60px;
   text-indent: 100%;
@@ -898,8 +921,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
       color: @sea2;
       display: block;
       font: inherit;
-      font-size: 20px;
-      line-height: 22px;
+      font-size: 18px;
+      line-height: 20px;
       border: none;
       outline: none;
       -webkit-tap-highlight-color: transparent;
@@ -915,9 +938,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   #main-menu{
     font-weight: 200;
     z-index: 1;
-    border-bottom: 1px solid white;
     float: right;
-    margin-right: 16px;
+    margin-right: @spacing;
     bottom: -3px;
     list-style: none none;
     li{
@@ -928,13 +950,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
       &.active{
         a{
           // background-color: @white;
-          color: black;
-          border-bottom: 2px solid @accent;
+          color: white;
+          background-color: @red;
+          border-bottom: 2px solid @dark-red;
+          // box-shadow: 0 -3px 2px black;
           // border-left: 1px solid #ccc;
           // border-right: 1px solid #ccc;
         }
         a:hover{
-          color: black;
+          color: white;
         }
       }
       a{
@@ -990,7 +1014,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   right: 0;
   top: 0;
   section{
-    padding-right: 16px;
+    padding-right: @spacing;
   }
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
   min-height: 100%;
@@ -1002,6 +1026,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .page{
   h1, h2, h3{
     color: @red;
+    padding-bottom: 1em;
   }
   h4, h5, h6{
     color: @green;
@@ -1010,10 +1035,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     margin: 32px;
   }
   hr{
-    margin: 32px 0px;
+    height: 1px;
+    margin: 0px 0px;
   }
   p{
-    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }
 
@@ -1038,7 +1064,7 @@ article{
     overflow: hidden;
     font-family: Open sans;
     font-weight: 100;
-    margin-left: 16px;
+    margin-left: @spacing;
     .month{
       font-size: 0.7em;
       padding: 3px;
@@ -1237,7 +1263,7 @@ article{
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
   // tablet-vertical
-  .section{
+  section{
     margin-right: 0px;
   }
   .article-container{
@@ -1277,10 +1303,10 @@ article{
       &.border-left{
         border-top: 1px solid #ccc;
         border-left: none;
-        margin-left: 16px;
+        margin-left: @spacing;
         padding-left: 0;
-        padding-top: 16px;
-        margin-top: 16px;
+        padding-top: @spacing;
+        margin-top: @spacing;
       }
     }
    .column-3{
@@ -1296,7 +1322,7 @@ article{
   .left-side{
     display: none;
   }
-  .section{
+  section{
     margin: 0px 8px;
     // margin: 16px 0 0 0px;
     // padding-right: 16px;
@@ -1321,10 +1347,10 @@ article{
       &.border-left{
         border-top: 1px solid #ccc;
         border-left: none;
-        margin-left: 16px;
+        margin-left: @spacing;
         padding-left: 0;
-        padding-top: 16px;
-        margin-top: 16px;
+        padding-top: @spacing;
+        margin-top: @spacing;
       }
     }
    .column-3{

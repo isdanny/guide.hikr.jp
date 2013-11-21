@@ -7,7 +7,7 @@
         "label":{ "en": "Mitsumine san", "jp":"三峰山"},
         "elevation": "943.6",
         "name": "",
-        "url": "/mt/mitsumine.html"
+        "url": "/mt/mitsumine/"
         
       },
       "geometry": {
@@ -23,7 +23,7 @@
         "label":{ "en": "Nanasawa onsen", "jp":"七沢温泉"},
         "elevation": "",
         "name": "",
-        "url": "/p/nanasawa-onsen.html"
+        "url": "/p/nanasawa-onsen/"
         
       },
       "geometry": {

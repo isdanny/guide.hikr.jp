@@ -1,12 +1,12 @@
 "events":{ 
   [
     "date": "2013-11-15 00:00:00 +0900",
-    "url": "/news/test.html",
+    "url": "/news/2013/11/15/test/",
     "title": "Lorem Ipsum"
   ] 
   [
     "date": "2013-11-06 00:00:00 +0900",
-    "url": "/news/35.html",
+    "url": "/news/2013/11/06/35/",
     "title": "Awesome short film"
   ] 
 }

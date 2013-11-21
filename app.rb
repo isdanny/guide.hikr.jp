@@ -1,6 +1,13 @@
 require 'sinatra'
+require 'jekyll'
 
 set :public_folder, '_site'
+
+get '/foo' do
+  options = Jekyll.configuration({})
+  Jekyll::Commands::Build.process(options)
+  'bar'
+end
 
 get '/*' do
     file_name = "./_site#{request.path_info}".gsub(%r{\/+},'/')

@@ -7,7 +7,7 @@
         "label":{ "en": "Atago Shrine", "jp":"愛宕神社"},
         "elevation": "",
         "name": "",
-        "url": "/p/atago-shrine.html"
+        "url": "/p/atago-shrine/"
         
       },
       "geometry": {
@@ -23,7 +23,7 @@
         "label":{ "en": "Mitake shrine", "jp":"御嶽神社"},
         "elevation": "",
         "name": "",
-        "url": "/p/mitake-shrine.html"
+        "url": "/p/mitake-shrine/"
         
       },
       "geometry": {

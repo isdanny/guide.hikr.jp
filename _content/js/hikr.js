@@ -38,7 +38,6 @@ L.control.language = function (options) {
     "dashArray": "5, 5",
     "opacity": 0.7
   };
-
   this.container = $(container);
   this.features = features;
   this.map = L.map(container).setView([ 35.358, 138.731], 6);
@@ -178,10 +177,10 @@ L.control.language = function (options) {
  };
 
 Hikr.prototype.adjustInterface = function(){
-  this.container.removeClass(this.zoomClass);
+  $("#map").removeClass(this.zoomClass);
   var zoom = this.map.getZoom();
   this.zoomClass = "zoom-"+zoom;
-  this.container.addClass(this.zoomClass);
+  $("#map").addClass(this.zoomClass);
   if(zoom<13) this.container.addClass("hide-labels");
   else this.container.removeClass("hide-labels");
 };
