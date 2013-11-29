@@ -7,7 +7,7 @@
         "label":{ "en": "Jinba", "jp":"陣馬山"},
         "elevation": "859",
         "name": "",
-        "url": "/mt/jinba/"
+        "url": "/mt/jinba.html"
         
       },
       "geometry": {
@@ -23,7 +23,7 @@
         "label":{ "en": "Jinmuji temple", "jp":"神武寺"},
         "elevation": "",
         "name": "",
-        "url": "/p/jinmuji-temple/"
+        "url": "/p/jinmuji-temple.html"
         
       },
       "geometry": {

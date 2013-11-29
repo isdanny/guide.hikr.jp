@@ -3,7 +3,7 @@
   "features": [                 
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/hodo/'><span class='title'>Hodo-san</span></a>"
+        "popup": "<a href='/c/hodo/index.html'><span class='title'>Hodo-san</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -15,7 +15,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/jinba/'><span class='title'>Jinba</span></a>"
+        "popup": "<a href='/c/jinba/index.html'><span class='title'>Jinba</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -27,7 +27,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/kamakita/'><span class='title'>Kamakita lake, mt. Monomi and waterfalls</span></a>"
+        "popup": "<a href='/c/kamakita/index.html'><span class='title'>Kamakita lake, mt. Monomi and waterfalls</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -39,7 +39,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/kintoki/'><span class='title'>Kintoki-yama</span></a>"
+        "popup": "<a href='/c/kintoki/index.html'><span class='title'>Kintoki-yama</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -51,7 +51,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/kuki/'><span class='title'>Kuki, Madate, Gozen-yama course</span></a>"
+        "popup": "<a href='/c/kuki/index.html'><span class='title'>Kuki, Madate, Gozen-yama course</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -63,7 +63,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/kuratake/'><span class='title'>Kuratake</span></a>"
+        "popup": "<a href='/c/kuratake/index.html'><span class='title'>Kuratake</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -75,7 +75,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/kuroyama/'><span class='title'>Kuroyama waterfalls</span></a>"
+        "popup": "<a href='/c/kuroyama/index.html'><span class='title'>Kuroyama waterfalls</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -87,7 +87,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/maruyama/'><span class='title'>Maruyama</span></a>"
+        "popup": "<a href='/c/maruyama/index.html'><span class='title'>Maruyama</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -99,7 +99,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/mitake-hinode/'><span class='title'>Mitake, Hinode, Yoshino plum park</span></a>"
+        "popup": "<a href='/c/mitake-hinode/index.html'><span class='title'>Mitake, Hinode, Yoshino plum park</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -111,7 +111,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/mitsumine/'><span class='title'>Mitsumine</span></a>"
+        "popup": "<a href='/c/mitsumine/index.html'><span class='title'>Mitsumine</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -123,7 +123,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/momokurayama/'><span class='title'>Momokurayama</span></a>"
+        "popup": "<a href='/c/momokurayama/index.html'><span class='title'>Momokurayama</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -135,7 +135,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/nokogiri-cliff-buddha/'><span class='title'>Nokogiri-yama cliff and Giant Buddha</span></a>"
+        "popup": "<a href='/c/nokogiri-cliff-buddha/index.html'><span class='title'>Nokogiri-yama cliff and Giant Buddha</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -147,7 +147,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/nokogiri-okutama/'><span class='title'>Mt. Nokogiri</span></a>"
+        "popup": "<a href='/c/nokogiri-okutama/index.html'><span class='title'>Mt. Nokogiri</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -159,7 +159,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/ogusu/'><span class='title'>Ogusu</span></a>"
+        "popup": "<a href='/c/ogusu/index.html'><span class='title'>Ogusu</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -171,7 +171,7 @@
     },     
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/oomaru-yama/'><span class='title'>Oomaru-yama</span></a>"
+        "popup": "<a href='/c/oomaru-yama/index.html'><span class='title'>Oomaru-yama</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -183,7 +183,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/otsuki-cliff/'><span class='title'>Otsuki cliff</span></a>"
+        "popup": "<a href='/c/otsuki-cliff/index.html'><span class='title'>Otsuki cliff</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -195,7 +195,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/sagamiko-takao/'><span class='title'>Sagamiko - Takao</span></a>"
+        "popup": "<a href='/c/sagamiko-takao/index.html'><span class='title'>Sagamiko - Takao</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -207,7 +207,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/takamizusan/'><span class='title'>Takamizusan-zan</span></a>"
+        "popup": "<a href='/c/takamizusan/index.html'><span class='title'>Takamizusan-zan</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -219,7 +219,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/takao/'><span class='title'>Takao-san</span></a>"
+        "popup": "<a href='/c/takao/index.html'><span class='title'>Takao-san</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -231,7 +231,7 @@
     },     
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/takatsuyama/'><span class='title'>Takatsuyama</span></a>"
+        "popup": "<a href='/c/takatsuyama/index.html'><span class='title'>Takatsuyama</span></a>"
       },
       "geometry": {
         "type": "Point",
@@ -243,7 +243,7 @@
     },   
     {"type": "Feature",
       "properties": {
-        "popup": "<a href='/c/tenran-tonosu/'><span class='title'>Tenran - Tounosu</span></a>"
+        "popup": "<a href='/c/tenran-tonosu/index.html'><span class='title'>Tenran - Tounosu</span></a>"
       },
       "geometry": {
         "type": "Point",

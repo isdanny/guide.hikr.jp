@@ -7,7 +7,7 @@
         "label":{ "en": "Gozen-yama", "jp":"御前山"},
         "elevation": "730",
         "name": "",
-        "url": "/mt/gozenyama/"
+        "url": "/mt/gozenyama.html"
         
       },
       "geometry": {
@@ -23,7 +23,7 @@
         "label":{ "en": "Iwadono-san", "jp":"岩殿山"},
         "elevation": "634",
         "name": "",
-        "url": "/mt/iwadono/"
+        "url": "/mt/iwadono.html"
         
       },
       "geometry": {
@@ -39,7 +39,7 @@
         "label":{ "en": "Kagura-yama", "jp":"神楽山"},
         "elevation": "674",
         "name": "",
-        "url": "/mt/kagurayama/"
+        "url": "/mt/kagurayama.html"
         
       },
       "geometry": {
@@ -55,7 +55,7 @@
         "label":{ "en": "Kuki", "jp":"九鬼山"},
         "elevation": "970.3",
         "name": "",
-        "url": "/mt/kuki/"
+        "url": "/mt/kuki.html"
         
       },
       "geometry": {
@@ -71,7 +71,7 @@
         "label":{ "en": "Kuratake-yama", "jp":"倉岳山"},
         "elevation": "990",
         "name": "",
-        "url": "/mt/kuratake/"
+        "url": "/mt/kuratake.html"
         
       },
       "geometry": {
@@ -87,7 +87,7 @@
         "label":{ "en": "Madate-yama", "jp":"馬立山"},
         "elevation": "797",
         "name": "",
-        "url": "/mt/madate/"
+        "url": "/mt/madate.html"
         
       },
       "geometry": {
@@ -103,7 +103,7 @@
         "label":{ "en": "Momokura-yama", "jp":"百蔵山"},
         "elevation": "1003",
         "name": "",
-        "url": "/mt/momokurayama/"
+        "url": "/mt/momokurayama.html"
         
       },
       "geometry": {

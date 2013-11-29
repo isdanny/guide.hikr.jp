@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+  <title>Hikr</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="author" value="Leszek Rybicki, Copyright by hikr.jp">
+  <meta name="keywords" value="hiking, japan  }}">
+  <meta name="description" value="">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/leaflet.css"/>
+  <link rel="stylesheet" href="/css/leaflet.draw.css"/>
+  <link rel="stylesheet" href="/css/hikr.css"/>
+  <script type="text/javascript" src="/js/vendor/modernizr-latest.js"></script>
+  <script type="text/javascript" src="/js/vendor/jquery-2.0.3.min.js"></script>
+</head>
+<body class="en ">
+    <a href="/" class="logo-float">
+      hikr.jp
+    </a>
+  <div class="map-on-left">
+  <div id="map">
+    <div class="coords"></div>
+  </div>
+
+  <div class="article-container">
+    <form id="search_form">
+<div class="hikr-menu">
+  <a href="/" class="logo-menu">hikr.jp</a>
+  <ul id="main-menu">
+    <li class=""><a href="/">Guide</a></li>
+    <li class=""><a href="/about/">About</a></li>
+    <li class=""><a href="/news/">News</a></li>
+  </ul>
+  <div class="search-bar">
+    <input name="search" placeholder="Search">
+  </div>
+</div>
+<div class="search-results">
+</div>
+</form>
+    <div class="section">
+      <h1>Area: Chichibu</h1>
+      <br>
+      
+      <hr>
+      
+      
+      <div class="thumb">  <div class="blurb-box  ">
+  <div class="blurb-inside">
+    <a href="/c/hodo/index.html">
+      <div class="header-image"> 
+        <div class='flickr-photo '><img title='' alt='' src='http://farm9.staticflickr.com/8230/8488645196_c3a7d6ce68_q.jpg'><div class='caption'><div class='photo-date'>2013-02-17 12:18:33</div><div class='copyright'>&copy; <a target='_blank' href='http://www.flickr.com/photos/jambodave/8488645196/'>Jambo International</a></div></div></div> 
+        <div class="blurb-title"><h2>Hodo-san</h2></div>
+      </div>
+    </a>
+  <div class="headings">
+    <h4 class="area"><a href="/area/Chichibu.html">Chichibu</a>, <a href="/pref/Saitama.html">Saitama</a></h4>
+    <!-- <div class="author">by Leszek </div> -->
+  </div>
+  </div>
+</div> </div>
+      
+      
+      
+      <div class="thumb">  <div class="blurb-box  ">
+  <div class="blurb-inside">
+    <a href="/c/kamakita/index.html">
+      <div class="header-image"> 
+        <div class='flickr-photo '><img title='DSC01521' alt='DSC01521' src='http://farm6.staticflickr.com/5454/9538720490_e5754fa014_q.jpg'><div class='caption'><div class='photo-date'>2013-08-18 12:45:10</div><div class='copyright'>&copy; <a target='_blank' href='http://www.flickr.com/photos/jambodave/9538720490/'>Jambo International</a></div></div></div> 
+        <div class="blurb-title"><h2>Kamakita lake, mt. Monomi and waterfalls</h2></div>
+      </div>
+    </a>
+  <div class="headings">
+    <h4 class="area"><a href="/area/Chichibu.html">Chichibu</a>, <a href="/pref/Saitama.html">Saitama</a></h4>
+    <!-- <div class="author">by Leszek </div> -->
+  </div>
+  </div>
+</div> </div>
+      
+      
+      
+      <div class="thumb">  <div class="blurb-box  ">
+  <div class="blurb-inside">
+    <a href="/c/kuroyama/index.html">
+      <div class="header-image"> 
+        <img src="/img/noimg.png">  
+        <div class="blurb-title"><h2>Kuroyama waterfalls</h2></div>
+      </div>
+    </a>
+  <div class="headings">
+    <h4 class="area"><a href="/area/Chichibu.html">Chichibu</a>, <a href="/pref/Saitama.html">Saitama</a></h4>
+    <!-- <div class="author">by hikr.jp </div> -->
+  </div>
+  </div>
+</div> </div>
+      
+      
+      
+      <div class="thumb">  <div class="blurb-box  ">
+  <div class="blurb-inside">
+    <a href="/c/maruyama/index.html">
+      <div class="header-image"> 
+        <img src="/img/noimg.png">  
+        <div class="blurb-title"><h2>Maruyama</h2></div>
+      </div>
+    </a>
+  <div class="headings">
+    <h4 class="area"><a href="/area/Chichibu.html">Chichibu</a>, <a href="/pref/Saitama.html">Saitama</a></h4>
+    <!-- <div class="author">by hikr.jp </div> -->
+  </div>
+  </div>
+</div> </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <br class="clear">
+    </div>
+  </div>
+</div>
+ <script type="text/javascript">
+  window.onload = function(){
+    var maps = [ "/data/area/Chichibu.json",  "/data/area/Chichibu.json",  false];
+    hikr = new Hikr("map");
+    hikr.loadMaps(maps);
+  };
+ </script>
+
+
+
+
+  <script type="text/javascript" src="/js/vendor/underscore-min.js"></script>
+  <script type="text/javascript" src="/js/vendor/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/vendor/leaflet.js"></script>
+  <script type="text/javascript" src="/js/vendor/leaflet.draw.js"></script>
+  <script type="text/javascript" src="/js/hikr.js"></script>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2132560-9']);
+      _gaq.push(['_setDomainName', 'hikr.jp']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
+</body>
+</html>

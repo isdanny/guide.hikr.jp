@@ -7,7 +7,7 @@
         "label":{ "en": "Jinba", "jp":"陣馬山"},
         "elevation": "859",
         "name": "",
-        "url": "/mt/jinba/"
+        "url": "/mt/jinba.html"
         
       },
       "geometry": {
@@ -23,7 +23,7 @@
         "label":{ "en": "Mitsumine san", "jp":"三峰山"},
         "elevation": "943.6",
         "name": "",
-        "url": "/mt/mitsumine/"
+        "url": "/mt/mitsumine.html"
         
       },
       "geometry": {
@@ -39,7 +39,7 @@
         "label":{ "en": "Ogusu", "jp":"大楠山"},
         "elevation": "241.3",
         "name": "",
-        "url": "/mt/ogusu/"
+        "url": "/mt/ogusu.html"
         
       },
       "geometry": {
@@ -55,7 +55,7 @@
         "label":{ "en": "Jinmuji temple", "jp":"神武寺"},
         "elevation": "",
         "name": "",
-        "url": "/p/jinmuji-temple/"
+        "url": "/p/jinmuji-temple.html"
         
       },
       "geometry": {
@@ -71,7 +71,7 @@
         "label":{ "en": "Nanasawa onsen", "jp":"七沢温泉"},
         "elevation": "",
         "name": "",
-        "url": "/p/nanasawa-onsen/"
+        "url": "/p/nanasawa-onsen.html"
         
       },
       "geometry": {

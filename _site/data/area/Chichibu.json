@@ -7,7 +7,7 @@
         "label":{ "en": "Houdou-san", "jp":"宝登山"},
         "elevation": "497",
         "name": "",
-        "url": "/mt/hodo/"
+        "url": "/mt/hodo.html"
         
       },
       "geometry": {
@@ -23,7 +23,7 @@
         "label":{ "en": "Kuroyama", "jp":"黒山"},
         "elevation": "771",
         "name": "",
-        "url": "/mt/kuroyama/"
+        "url": "/mt/kuroyama.html"
         
       },
       "geometry": {
@@ -39,7 +39,7 @@
         "label":{ "en": "Maru-yama", "jp":"丸山"},
         "elevation": "960",
         "name": "",
-        "url": "/mt/maruyama/"
+        "url": "/mt/maruyama.html"
         
       },
       "geometry": {
@@ -55,7 +55,7 @@
         "label":{ "en": "Monomi-san", "jp":"物見山"},
         "elevation": "375",
         "name": "",
-        "url": "/mt/monomi/"
+        "url": "/mt/monomi.html"
         
       },
       "geometry": {
