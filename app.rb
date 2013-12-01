@@ -9,6 +9,14 @@ get '/foo' do
   'bar'
 end
 
+get '/edit' do
+  'hello'
+end
+
+get '/save/*' do
+  "param: #{params[:splat]}"
+end
+
 get '/*' do
     file_name = "./_site#{request.path_info}".gsub(%r{\/+},'/')
     if File.directory?(file_name)
