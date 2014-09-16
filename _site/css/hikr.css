@@ -15,7 +15,6 @@
   text-transform: none;
   line-height: 1;
   /* Better Font Rendering =========== */
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -671,10 +670,8 @@ header .logo {
   columns: 100px 3;
   -webkit-columns: 100px 3;
   /* Safari and Chrome */
-
   -moz-columns: 100px 3;
   /* Firefox */
-
 }
 .two-cols .tag-listing {
   display: inline-block;
@@ -843,7 +840,6 @@ section.padding {
     .blurb-inside{
     }
   } */
-
 }
 .blurb-box .caption {
   display: none;
@@ -1002,9 +998,7 @@ section.padding {
   outline: none;
   -webkit-tap-highlight-color: transparent;
   /* firefox 19+ */
-
   /* ie */
-
 }
 .hikr-menu .search-bar input::-webkit-input-placeholder {
   color: #ddd;

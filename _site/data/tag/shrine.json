@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "features": [         
+  "features": [ 
     {"type": "Feature",
       "properties": {
         "type": "shrine",
@@ -16,7 +16,7 @@
         139.09729957580566, 35.80422287822467 
         ]
       }
-    },   
+    },           
     {"type": "Feature",
       "properties": {
         "type": "shrine",

@@ -1,0 +1,23 @@
+{
+  "name": "guide.hikr.jp",
+  "version": "0.0.0",
+  "homepage": "https://github.com/leszekr/guide.hikr.jp",
+  "authors": [
+    "Leszek <leszek@rybicki.cc>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "leaflet": "~0.7.3",
+    "bootstrap": "~3.2.0",
+    "modernizr": "~2.8.3",
+    "backbone": "~1.1.2"
+  }
+}

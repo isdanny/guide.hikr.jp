@@ -9,11 +9,11 @@
   <meta name="description" value="">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/css/leaflet.css"/>
-  <link rel="stylesheet" href="/css/leaflet.draw.css"/>
+  <link rel="stylesheet" href="/lib/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="/css/hikr.css"/>
-  <script type="text/javascript" src="/js/vendor/modernizr-latest.js"></script>
-  <script type="text/javascript" src="/js/vendor/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="/lib/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/modernizr/modernizr.js"></script>
 </head>
 <body class="en news">
     <a href="/" class="logo-float">
@@ -40,7 +40,7 @@
 <div class="search-results">
 </div>
 </form>
-      <div class="container">
+      <div class="container-flexible">
         <div class="container">
 <div class="row">
   <div class="column-9">
@@ -91,10 +91,10 @@
       </div>
       <div class="footer-pusher">&nbsp;</div>
       <footer>
-  <div class="container">
+  <div class="container-flexible">
     <section>
-      <div class="row">
-        <div class="column-3">
+      <div class="row-flexible">
+        <div class="col-sm-3">
           <section>
             <ul class="menu">
               <li><a href="/about/">About Hikr</a></li>
@@ -104,7 +104,7 @@
             <a target="_blank" href="http://www.flickr.com/photos/104745110@N03/" class="icon flickr">&nbsp;</a>
           </section>
         </div>
-        <div class="column-9">
+        <div class="col-sm-9">
           <section>
             <p><strong>Hikr.jp</strong> is a growing collection of hiking courses in Japan. We are currently in open beta. If you'd like to contribute or report bugs, mistakes or say "GOOD JOB!", <a href="/about/contact.html">contact us</a>.</p>
             <p>Copyright &copy; by hikr.jp. Articles are copyright of their respective authors, released under a <a target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons 3.0 Attribution Share-alike license</a>. Pictures are copyright of their respective authors and used with permission.</p>
@@ -120,10 +120,9 @@
   </div>
 </div>
 
-  <script type="text/javascript" src="/js/vendor/underscore-min.js"></script>
-  <script type="text/javascript" src="/js/vendor/backbone-min.js"></script>
-  <script type="text/javascript" src="/js/vendor/leaflet.js"></script>
-  <script type="text/javascript" src="/js/vendor/leaflet.draw.js"></script>
+  <script type="text/javascript" src="/lib/underscore/underscore-min.js"></script>
+  <script type="text/javascript" src="/lib/backbone/backbone.js"></script>
+  <script type="text/javascript" src="/lib/leaflet/dist/leaflet.js"></script>
   <script type="text/javascript" src="/js/hikr.js"></script>
 
   <script type="text/javascript">

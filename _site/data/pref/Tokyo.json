@@ -1,6 +1,38 @@
 {
   "type": "FeatureCollection",
-  "features": [           
+  "features": [ 
+    {"type": "Feature",
+      "properties": {
+        "type": "shrine",
+        "label":{ "en": "Atago Shrine", "jp":"愛宕神社"},
+        "elevation": "",
+        "name": "",
+        "url": "/p/atago-shrine.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.09729957580566, 35.80422287822467 
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "type": "campsite",
+        "label":{ "en": "Hikawa capsite", "jp":"氷川キャンプ場"},
+        "elevation": "",
+        "name": "",
+        "url": "/p/hikawa-campsite.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.0995740890503, 35.80690283592832 
+        ]
+      }
+    },   
     {"type": "Feature",
       "properties": {
         "type": "summit",
@@ -16,7 +48,7 @@
         139.1675090789795, 35.781126249612996 , 902 
         ]
       }
-    },   
+    },             
     {"type": "Feature",
       "properties": {
         "type": "summit",
@@ -62,6 +94,22 @@
         "type": "Point",
         "coordinates": [
         139.1984510421753, 35.78641800674745 , 646.9 
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "type": "shrine",
+        "label":{ "en": "Mitake shrine", "jp":"御嶽神社"},
+        "elevation": "",
+        "name": "",
+        "url": "/p/mitake-shrine.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.15008544921875, 35.78290181265832 
         ]
       }
     },   
@@ -158,54 +206,6 @@
         "type": "Point",
         "coordinates": [
         139.243611, 35.625278 , 599 
-        ]
-      }
-    },   
-    {"type": "Feature",
-      "properties": {
-        "type": "shrine",
-        "label":{ "en": "Atago Shrine", "jp":"愛宕神社"},
-        "elevation": "",
-        "name": "",
-        "url": "/p/atago-shrine.html"
-        
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-        139.09729957580566, 35.80422287822467 
-        ]
-      }
-    },   
-    {"type": "Feature",
-      "properties": {
-        "type": "campsite",
-        "label":{ "en": "Hikawa capsite", "jp":"氷川キャンプ場"},
-        "elevation": "",
-        "name": "",
-        "url": "/p/hikawa-campsite.html"
-        
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-        139.0995740890503, 35.80690283592832 
-        ]
-      }
-    },   
-    {"type": "Feature",
-      "properties": {
-        "type": "shrine",
-        "label":{ "en": "Mitake shrine", "jp":"御嶽神社"},
-        "elevation": "",
-        "name": "",
-        "url": "/p/mitake-shrine.html"
-        
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-        139.15008544921875, 35.78290181265832 
         ]
       }
     },   {}

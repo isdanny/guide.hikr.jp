@@ -4,16 +4,16 @@ bodyclass: home
 menu: 
   guide: active
 ---
-  <div class="row">
-    <div class="column-6"> 
+  <div class="row-flexible">
+    <div class="col-sm-6"> 
       <section>
         {% assign post = site.posts[0] %}
         {% include post.html %}
       </section>
     </div>
-    <div class="column-6">
+    <div class="col-sm-6">
         <div>
-          <div class="column-6">
+          <div class="col-sm-6">
             <section class="area">
               <h6>Prefectures</h6>
               <br>
@@ -22,7 +22,7 @@ menu:
               {% endfor %}
             </section>
           </div>
-          <div class="column-6">
+          <div class="col-sm-6">
             <section>
               <h6>Tags</h6>
               <br>
@@ -41,10 +41,10 @@ menu:
   </div>
   <hr>
   <section>
-    <div class="row">
+    <div class="row-flexible">
       {% assign c = 'first' %}
       {% for page in site.pages %} {% if page.featured == 'also' %}
-        <div class="column-3 {{c}}">
+        <div class="col-sm-3 {{c}}">
           <section>
           {% include blurb.html classes=c %}
           {% assign c = '' %}

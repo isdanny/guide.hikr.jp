@@ -9,11 +9,11 @@
   <meta name="description" value="">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/css/leaflet.css"/>
-  <link rel="stylesheet" href="/css/leaflet.draw.css"/>
+  <link rel="stylesheet" href="/lib/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="/css/hikr.css"/>
-  <script type="text/javascript" src="/js/vendor/modernizr-latest.js"></script>
-  <script type="text/javascript" src="/js/vendor/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="/lib/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/modernizr/modernizr.js"></script>
 </head>
 <body class="en ">
     <a href="/" class="logo-float">
@@ -40,19 +40,39 @@
 <div class="search-results">
 </div>
 </form>
-      <div class="container">
+      <div class="container-flexible">
         <div class="section">
   <h1>Courses by tag</h1>
   <br>
   <div class="two-cols">
     
     <div class="tag-listing">
+      <a href="/tag/shrine.html" class="tag large">shrine</a><br>
+      <ul>
+      
+        <li><a href="/p/atago-shrine.html"></a></li>
+      
+        <li><a href="/c/nokogiri-okutama/index.html">Mt. Nokogiri</a></li>
+      
+        <li><a href="/c/hodo/index.html">Hodo-san</a></li>
+      
+        <li><a href="/c/takatoriyama-park/index.html">Takatoriyama Park course</a></li>
+      
+        <li><a href="/c/mitake-hinode/index.html">Mitake, Hinode, Yoshino plum park</a></li>
+      
+        <li><a href="/p/mitake-shrine.html"></a></li>
+      
+      </ul>
+      <hr>
+    </div>
+    
+    <div class="tag-listing">
       <a href="/tag/statue.html" class="tag large">statue</a><br>
       <ul>
       
-        <li><a href="/c/jinba/index.html">Jinba</a></li>
-      
         <li><a href="/c/nokogiri-cliff-buddha/index.html">Nokogiri-yama cliff and Giant Buddha</a></li>
+      
+        <li><a href="/c/jinba/index.html">Jinba</a></li>
       
         <li><a href="/c/takatoriyama-park/index.html">Takatoriyama Park course</a></li>
       
@@ -67,38 +87,34 @@
     </div>
     
     <div class="tag-listing">
-      <a href="/tag/shrine.html" class="tag large">shrine</a><br>
+      <a href="/tag/onsen.html" class="tag large">onsen</a><br>
       <ul>
       
-        <li><a href="/c/hodo/index.html">Hodo-san</a></li>
+        <li><a href="/c/mitsumine/index.html">Mitsumine</a></li>
+      
+        <li><a href="/c/ogusu/index.html">Ogusu</a></li>
       
         <li><a href="/c/mitake-hinode/index.html">Mitake, Hinode, Yoshino plum park</a></li>
       
-        <li><a href="/c/nokogiri-okutama/index.html">Mt. Nokogiri</a></li>
+        <li><a href="/p/kuroyama-onsen.html"></a></li>
       
-        <li><a href="/c/takatoriyama-park/index.html">Takatoriyama Park course</a></li>
-      
-        <li><a href="/p/atago-shrine.html"></a></li>
-      
-        <li><a href="/p/mitake-shrine.html"></a></li>
+        <li><a href="/p/nanasawa-onsen.html"></a></li>
       
       </ul>
       <hr>
     </div>
     
     <div class="tag-listing">
-      <a href="/tag/onsen.html" class="tag large">onsen</a><br>
+      <a href="/tag/river swim.html" class="tag large">river swim</a><br>
       <ul>
       
-        <li><a href="/c/mitake-hinode/index.html">Mitake, Hinode, Yoshino plum park</a></li>
+        <li><a href="/c/takamizusan/index.html">Takamizusan-zan</a></li>
       
-        <li><a href="/c/mitsumine/index.html">Mitsumine</a></li>
+        <li><a href="/c/takatsuyama/index.html">Takatsuyama</a></li>
       
-        <li><a href="/c/ogusu/index.html">Ogusu</a></li>
+        <li><a href="/c/kuratake/index.html">Kuratake</a></li>
       
-        <li><a href="/p/kuroyama-onsen.html"></a></li>
-      
-        <li><a href="/p/nanasawa-onsen.html"></a></li>
+        <li><a href="/c/tenran-tonosu/index.html">Tenran - Tounosu</a></li>
       
       </ul>
       <hr>
@@ -115,22 +131,6 @@
         <li><a href="/c/tenran-tonosu/index.html">Tenran - Tounosu</a></li>
       
         <li><a href="/p/jinmuji-temple.html"></a></li>
-      
-      </ul>
-      <hr>
-    </div>
-    
-    <div class="tag-listing">
-      <a href="/tag/river swim.html" class="tag large">river swim</a><br>
-      <ul>
-      
-        <li><a href="/c/kuratake/index.html">Kuratake</a></li>
-      
-        <li><a href="/c/takamizusan/index.html">Takamizusan-zan</a></li>
-      
-        <li><a href="/c/takatsuyama/index.html">Takatsuyama</a></li>
-      
-        <li><a href="/c/tenran-tonosu/index.html">Tenran - Tounosu</a></li>
       
       </ul>
       <hr>
@@ -156,21 +156,21 @@
       
         <li><a href="/c/hodo/index.html">Hodo-san</a></li>
       
-        <li><a href="/c/mitake-hinode/index.html">Mitake, Hinode, Yoshino plum park</a></li>
-      
         <li><a href="/c/ogusu/index.html">Ogusu</a></li>
+      
+        <li><a href="/c/mitake-hinode/index.html">Mitake, Hinode, Yoshino plum park</a></li>
       
       </ul>
       <hr>
     </div>
     
     <div class="tag-listing">
-      <a href="/tag/cliff.html" class="tag large">cliff</a><br>
+      <a href="/tag/fuji view.html" class="tag large">fuji view</a><br>
       <ul>
       
-        <li><a href="/c/nokogiri-cliff-buddha/index.html">Nokogiri-yama cliff and Giant Buddha</a></li>
+        <li><a href="/c/ono/index.html">Mt Ono</a></li>
       
-        <li><a href="/c/otsuki-cliff/index.html">Otsuki cliff</a></li>
+        <li><a href="/c/kuki/index.html">Kuki, Madate, Gozen-yama course</a></li>
       
       </ul>
       <hr>
@@ -189,10 +189,34 @@
     </div>
     
     <div class="tag-listing">
+      <a href="/tag/cliff.html" class="tag large">cliff</a><br>
+      <ul>
+      
+        <li><a href="/c/nokogiri-cliff-buddha/index.html">Nokogiri-yama cliff and Giant Buddha</a></li>
+      
+        <li><a href="/c/otsuki-cliff/index.html">Otsuki cliff</a></li>
+      
+      </ul>
+      <hr>
+    </div>
+    
+    <div class="tag-listing">
       <a href="/tag/waterfall.html" class="tag large">waterfall</a><br>
       <ul>
       
         <li><a href="/c/kamakita/index.html">Kamakita lake, mt. Monomi and waterfalls</a></li>
+      
+        <li><a href="/c/kuroyama/index.html">Kuroyama waterfalls</a></li>
+      
+      </ul>
+      <hr>
+    </div>
+    
+    <div class="tag-listing">
+      <a href="/tag/camp.html" class="tag large">camp</a><br>
+      <ul>
+      
+        <li><a href="/p/hikawa-campsite.html"></a></li>
       
       </ul>
       <hr>
@@ -203,16 +227,6 @@
       <ul>
       
         <li><a href="/c/kamakita/index.html">Kamakita lake, mt. Monomi and waterfalls</a></li>
-      
-      </ul>
-      <hr>
-    </div>
-    
-    <div class="tag-listing">
-      <a href="/tag/fuji view.html" class="tag large">fuji view</a><br>
-      <ul>
-      
-        <li><a href="/c/ono/index.html">Mt Ono</a></li>
       
       </ul>
       <hr>
@@ -238,16 +252,6 @@
       <hr>
     </div>
     
-    <div class="tag-listing">
-      <a href="/tag/camp.html" class="tag large">camp</a><br>
-      <ul>
-      
-        <li><a href="/p/hikawa-campsite.html"></a></li>
-      
-      </ul>
-      <hr>
-    </div>
-    
   </div>
 </div>
 
@@ -255,10 +259,10 @@
       </div>
       <div class="footer-pusher">&nbsp;</div>
       <footer>
-  <div class="container">
+  <div class="container-flexible">
     <section>
-      <div class="row">
-        <div class="column-3">
+      <div class="row-flexible">
+        <div class="col-sm-3">
           <section>
             <ul class="menu">
               <li><a href="/about/">About Hikr</a></li>
@@ -268,7 +272,7 @@
             <a target="_blank" href="http://www.flickr.com/photos/104745110@N03/" class="icon flickr">&nbsp;</a>
           </section>
         </div>
-        <div class="column-9">
+        <div class="col-sm-9">
           <section>
             <p><strong>Hikr.jp</strong> is a growing collection of hiking courses in Japan. We are currently in open beta. If you'd like to contribute or report bugs, mistakes or say "GOOD JOB!", <a href="/about/contact.html">contact us</a>.</p>
             <p>Copyright &copy; by hikr.jp. Articles are copyright of their respective authors, released under a <a target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons 3.0 Attribution Share-alike license</a>. Pictures are copyright of their respective authors and used with permission.</p>
@@ -284,10 +288,9 @@
   </div>
 </div>
 
-  <script type="text/javascript" src="/js/vendor/underscore-min.js"></script>
-  <script type="text/javascript" src="/js/vendor/backbone-min.js"></script>
-  <script type="text/javascript" src="/js/vendor/leaflet.js"></script>
-  <script type="text/javascript" src="/js/vendor/leaflet.draw.js"></script>
+  <script type="text/javascript" src="/lib/underscore/underscore-min.js"></script>
+  <script type="text/javascript" src="/lib/backbone/backbone.js"></script>
+  <script type="text/javascript" src="/lib/leaflet/dist/leaflet.js"></script>
   <script type="text/javascript" src="/js/hikr.js"></script>
 
   <script type="text/javascript">

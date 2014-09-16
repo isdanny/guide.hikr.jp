@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "features": [         
+  "features": [ 
     {"type": "Feature",
       "properties": {
         "type": "summit",
@@ -16,7 +16,7 @@
         138.96039962768555, 35.60274173416158 , 730 
         ]
       }
-    },   
+    },             
     {"type": "Feature",
       "properties": {
         "type": "summit",

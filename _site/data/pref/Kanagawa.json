@@ -19,38 +19,6 @@
     },   
     {"type": "Feature",
       "properties": {
-        "type": "summit",
-        "label":{ "en": "Mitsumine san", "jp":"三峰山"},
-        "elevation": "943.6",
-        "name": "",
-        "url": "/mt/mitsumine.html"
-        
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-        139.2451000213623, 35.46413043654055 , 943.6 
-        ]
-      }
-    },   
-    {"type": "Feature",
-      "properties": {
-        "type": "summit",
-        "label":{ "en": "Ogusu", "jp":"大楠山"},
-        "elevation": "241.3",
-        "name": "",
-        "url": "/mt/ogusu.html"
-        
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-        139.62820529937744, 35.25045562186181 , 241.3 
-        ]
-      }
-    },   
-    {"type": "Feature",
-      "properties": {
         "type": "temple",
         "label":{ "en": "Jinmuji temple", "jp":"神武寺"},
         "elevation": "",
@@ -67,6 +35,22 @@
     },   
     {"type": "Feature",
       "properties": {
+        "type": "summit",
+        "label":{ "en": "Mitsumine san", "jp":"三峰山"},
+        "elevation": "943.6",
+        "name": "",
+        "url": "/mt/mitsumine.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.2451000213623, 35.46413043654055 , 943.6 
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
         "type": "onsen",
         "label":{ "en": "Nanasawa onsen", "jp":"七沢温泉"},
         "elevation": "",
@@ -78,6 +62,22 @@
         "type": "Point",
         "coordinates": [
         139.27720069885254, 35.45455256831708 
+        ]
+      }
+    },   
+    {"type": "Feature",
+      "properties": {
+        "type": "summit",
+        "label":{ "en": "Ogusu", "jp":"大楠山"},
+        "elevation": "241.3",
+        "name": "",
+        "url": "/mt/ogusu.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.62820529937744, 35.25045562186181 , 241.3 
         ]
       }
     },   {}

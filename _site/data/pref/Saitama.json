@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "features": [         
+  "features": [ 
     {"type": "Feature",
       "properties": {
         "type": "summit",
@@ -14,6 +14,22 @@
         "type": "Point",
         "coordinates": [
         139.0926218032837, 36.09329130533463 , 497 
+        ]
+      }
+    },             
+    {"type": "Feature",
+      "properties": {
+        "type": "onsen",
+        "label":{ "en": "Kuroyama Onsen", "jp":"黒山温泉"},
+        "elevation": "",
+        "name": "",
+        "url": "/p/kuroyama-onsen.html"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        139.25346851348877, 35.93906545754889 
         ]
       }
     },   
@@ -94,22 +110,6 @@
         "type": "Point",
         "coordinates": [
         139.29792881011963, 35.86787352175523 , 232 
-        ]
-      }
-    },   
-    {"type": "Feature",
-      "properties": {
-        "type": "onsen",
-        "label":{ "en": "Kuroyama Onsen", "jp":"黒山温泉"},
-        "elevation": "",
-        "name": "",
-        "url": "/p/kuroyama-onsen.html"
-        
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-        139.25346851348877, 35.93906545754889 
         ]
       }
     },   {}
