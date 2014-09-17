@@ -6,14 +6,6 @@ menu:
 ---
   <div class="row-flexible">
     <div class="col-sm-6"> 
-      <section>
-        {% assign post = site.posts[0] %}
-        {% include post.html %}
-      </section>
-    </div>
-    <div class="col-sm-6">
-        <div>
-          <div class="col-sm-6">
             <section class="area">
               <h6>Prefectures</h6>
               <br>
@@ -21,8 +13,8 @@ menu:
                 <a href="/pref/{{pref}}.html">{{ pref }}</a>&nbsp;<br>
               {% endfor %}
             </section>
-          </div>
-          <div class="col-sm-6">
+    </div>
+    <div class="col-sm-6">
             <section>
               <h6>Tags</h6>
               <br>
@@ -31,8 +23,6 @@ menu:
               {% endfor %}
               <br><br>
             </section>
-          </div>
-        </div>
         <section>
           <h6>Featured course</h6>
           {% for page in site.pages %} {% if page.featured == 'header' %} {% include summary.html %}{% endif %}{% endfor %} 
@@ -40,17 +30,17 @@ menu:
     </div>
   </div>
   <hr>
-  <section>
     <div class="row-flexible">
+  <section>
       {% assign c = 'first' %}
       {% for page in site.pages %} {% if page.featured == 'also' %}
-        <div class="col-sm-3 {{c}}">
+        <div class="col-sm-3">
           <section>
           {% include blurb.html classes=c %}
           {% assign c = '' %}
           </section>
         </div>
         {% endif %} {% endfor %}
+  </section>
       <br class="clear">
     </div>
-  </section>

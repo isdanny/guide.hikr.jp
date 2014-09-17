@@ -69,8 +69,10 @@ body {
   background: #738790;
 }
 hr {
-  border: 0;
-  border-top: 1px solid #ccc;
+  clear: both;
+  margin-top: 20px;
+  height: 1px;
+  background: #ccc;
 }
 h1,
 h2,
@@ -193,6 +195,7 @@ a {
 }
 a:hover {
   color: #d05126;
+  text-decoration: none;
 }
 ul,
 menu,
@@ -438,6 +441,7 @@ button.disabled:active {
 }
 .preview-box .inside a:hover {
   color: #d05126;
+  text-decoration: none;
 }
 .preview-box:before {
   content: " ";
@@ -492,21 +496,6 @@ button.disabled:active {
 .jp .leaflet-marker-icon span.lang-en {
   display: none;
 }
-header {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  margin: 0;
-  background: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid white;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-}
-header .logo {
-  margin-top: -2px;
-  margin-right: 10px;
-  max-height: 50px;
-  vertical-align: baseline!important;
-}
 .hero {
   background: url(../img/trees.jpg);
   min-height: 400px;
@@ -537,20 +526,24 @@ header .logo {
 .jp .leaflet-control-language-interior:before {
   content: "A";
 }
-header .logo {
-  margin-top: -2px;
-  margin-right: 10px;
-  max-height: 50px;
-  vertical-align: baseline!important;
-}
-.header {
+header {
+  z-index: 100;
   width: 100%;
-  min-height: 120px;
-  position: relative;
-  padding-top: 40px;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9);
+  height: 64px;
 }
-.header h1 {
-  margin: 0 20px 0 20px;
+header .logo-menu {
+  z-index: 1000;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 16px;
+  width: 100px;
+  height: 60px;
+  text-indent: 100%;
+  background: url(../img/logo-mini.png) center center no-repeat;
+  background-size: 100%;
 }
 .info {
   min-height: 80px;
@@ -626,7 +619,7 @@ header .logo {
   text-shadow: 0 0 5px black;
 }
 .home .left-side {
-  background-image: url('/img/leaves.jpg');
+  background-image: url('/img/mountain-hi-res.JPG');
 }
 .about .left-side {
   background-image: url('/img/sign.jpg');
@@ -650,21 +643,23 @@ header .logo {
   z-index: 3;
   background: #f8f8f8;
 }
-.right-side main {
-  clear: both;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
-  min-height: 100%;
-  position: relative;
-  top: -1px;
-}
-.right-side main .footer-pusher {
-  height: 135px;
-}
 .right-side .container {
   max-width: 1240px;
 }
 .right-side .container img {
   width: 100%;
+}
+main {
+  clear: both;
+  min-height: 100%;
+  position: relative;
+  top: -1px;
+}
+main .footer-pusher {
+  height: 135px;
+}
+main > .container {
+  padding-top: 64px;
 }
 .two-cols {
   columns: 100px 3;
@@ -690,16 +685,6 @@ h6 {
   line-height: 16px;
   position: relative;
   z-index: 10;
-}
-h6:before,
-h6:after {
-  position: absolute;
-  bottom: -16px;
-  left: 8px;
-  border: 8px solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
 }
 h6:after {
   border-top-color: #d05126;
@@ -927,25 +912,14 @@ section.padding {
   width: 48%;
   margin-left: 1%;
 }
-.logo-menu {
-  display: none;
-  top: 0px;
-  left: 16px;
-  width: 100px;
-  height: 60px;
-  text-indent: 100%;
-  overflow: hidden;
-  background: url(../img/logo-mini.png) center center no-repeat;
-  background-size: 100%;
-}
 .hikr-content {
   min-height: 100%;
 }
 .logo-float {
+  display: none;
   position: fixed;
   top: 20px;
   left: 30px;
-  display: block;
   width: 125px;
   height: 75px;
   z-index: 20;
@@ -976,24 +950,28 @@ section.padding {
   top: 0;
   left: 0;
   right: 0;
-  height: 32px;
+  height: 64px;
   background-color: white;
   border-bottom: 1px solid #ccc;
   max-width: 1240px;
 }
 .hikr-menu .search-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding-left: 8px;
   z-index: 2;
-  width: 50%;
+  width: 100%;
 }
 .hikr-menu .search-bar input {
+  width: 100%;
   font-weight: 200;
   padding-left: 8px;
   color: #738790;
   display: block;
   font: inherit;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 24px;
   border: none;
   outline: none;
   -webkit-tap-highlight-color: transparent;
@@ -1023,7 +1001,9 @@ section.padding {
 .hikr-menu #main-menu {
   font-weight: 200;
   z-index: 1;
-  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   margin-right: 16px;
   bottom: -3px;
   list-style: none none;
@@ -1060,14 +1040,13 @@ section.padding {
 }
 .map-on-left {
   width: 100%;
-  height: 100%;
 }
 .map-on-left #map {
-  height: 100%;
   position: fixed;
-  top: 0;
+  top: 64px;
   left: 0;
   right: 600px;
+  bottom: 0;
 }
 .map-on-left #map .coords {
   position: absolute;
@@ -1089,7 +1068,7 @@ section.padding {
   position: absolute;
   width: 600px;
   right: 0;
-  top: 0;
+  margin-top: 64px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
   min-height: 100%;
 }
@@ -1279,135 +1258,4 @@ article h2 {
   cursor: pointer;
   text-align: center;
   background-color: #FFFFFF;
-}
-@media only screen and (min-width: 1200px) {
-  .right-side #main-menu {
-    left: 0;
-    text-align: right;
-  }
-}
-@media only screen and (min-width: 960px) and (max-width: 1199px) {
-  .left-side {
-    width: 200px;
-  }
-  .right-side {
-    left: 200px;
-  }
-  .right-side .hikr-menu #main-menu {
-    left: 0;
-    text-align: right;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .left-side {
-    display: none;
-  }
-  .summary-box.vertical .header-image,
-  .summary-box.vertical .headings,
-  .summary-box.vertical .summary {
-    width: 100%;
-  }
-  .map-on-left .article-container {
-    left: 50%;
-    width: 50%;
-  }
-  .map-on-left #map {
-    right: 50%;
-  }
-  .right-side {
-    left: 0;
-  }
-  .right-side .hikr-menu {
-    height: 48px;
-  }
-  .right-side .hikr-menu .logo-menu {
-    display: block;
-  }
-  .right-side .hikr-menu .search-bar {
-    position: absolute;
-    bottom: 0;
-    left: 116px;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  section {
-    margin-right: 0px;
-  }
-  .article-container {
-    width: 100%;
-  }
-  .map-on-left #map {
-    width: 100%;
-    margin-left: -100%;
-  }
-  .map-on-left .left-side {
-    width: 0;
-  }
-  .left-side {
-    display: none;
-  }
-  .right-side {
-    left: 0;
-  }
-  .right-side .hikr-menu {
-    height: 48px;
-  }
-  .right-side .hikr-menu .logo-menu {
-    display: block;
-  }
-  .right-side .hikr-menu .search-bar {
-    position: absolute;
-    bottom: 0;
-    left: 116px;
-  }
-  .right-side .column-6 {
-    width: 100%;
-  }
-  .right-side .column-6.border-left {
-    border-top: 1px solid #ccc;
-    border-left: none;
-    margin-left: 16px;
-    padding-left: 0;
-    padding-top: 16px;
-    margin-top: 16px;
-  }
-  .right-side .column-3 {
-    width: 50%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .left-side {
-    display: none;
-  }
-  section {
-    margin: 0px 8px;
-  }
-  .right-side {
-    left: 0;
-  }
-  .right-side .hikr-menu {
-    height: 48px;
-  }
-  .right-side .hikr-menu .logo-menu {
-    display: block;
-  }
-  .right-side .hikr-menu .search-bar {
-    position: absolute;
-    bottom: 0;
-    left: 116px;
-  }
-  .right-side .column-6 {
-    width: 100%;
-  }
-  .right-side .column-6.border-left {
-    border-top: 1px solid #ccc;
-    border-left: none;
-    margin-left: 16px;
-    padding-left: 0;
-    padding-top: 16px;
-    margin-top: 16px;
-  }
-  .right-side .column-3 {
-    width: 100%;
-  }
 }
