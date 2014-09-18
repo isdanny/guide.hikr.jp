@@ -19,7 +19,7 @@
 @theme: @dark-red;
 // @accent: #E95223;
 @accent: @red;
-@white: #f8f8f8;
+@white: #fafafa;
 
 @turquoise: #1abc9c;
 @emerland: #2ecc71;
@@ -403,7 +403,7 @@ header{
   z-index: 100;
   width: 100%;
   position: fixed;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.95);
   height: @headerHeight;
   .logo-menu{
     z-index: 1000;
@@ -547,8 +547,8 @@ main{
   .footer-pusher{
     height: @footerHeight;
   }
-  &>.container{
-    padding-top: @headerHeight;
+  &>.container, &>.container-fluid{
+    padding-top: @headerHeight+@spacing;
   }
 }
 
@@ -811,6 +811,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .summary-box{
+  background-color: white;
+  margin-bottom: @spacing;
+  border: 1px solid rgba(0,0,0,0.2);
   .header-image{
     width: 100%;
     img{
@@ -825,6 +828,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   }
   .headings{
     width: 39%;
+    padding: @spacing;
     float: left;
     margin-right: 1%;
   }
@@ -832,6 +836,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     font-weight: 200;
     width: 59%;
     float: left;
+    padding-right: @spacing;
     margin-left: 1%;
   }
   &.vertical{
@@ -898,7 +903,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   left: 0;
   right: 0;
   height: @headerHeight;
-  background-color: white;
   border-bottom: 1px solid #ccc;
   max-width: 1240px;
   .search-bar{

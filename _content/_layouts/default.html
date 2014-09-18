@@ -7,6 +7,12 @@
   <meta name="author" value="Leszek Rybicki, Copyright by hikr.jp">
   <meta name="keywords" value="hiking, japan {% if page.keywords %}, {{page.keywords | array_to_sentence_string }} {% endif %} }}">
   <meta name="description" value="">
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:type" content="{{ og.type }}" />
+  <meta property="og:url" content="{{ page.url }}" />
+  {% if page.header_image %}<meta property="og:image" content="{{ page.header_image | furl }}" /> {% endif %}
+  <meta property="og:site_name" content="Hikr" />
+  <meta property="og:description" content="{{ page.summary }}" />
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="{{site.url}}/lib/leaflet/dist/leaflet.css"/>
