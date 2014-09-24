@@ -1,7 +1,7 @@
 ---
 layout: default
 menu:
-  areas: active
+  guide: active
 ---
 
 <div class="map-on-left">
@@ -17,8 +17,8 @@ menu:
       {{content}}
       <hr>
       {% for page in page.courses %}
-      {% if page.layout == "course" %}
-      <div class="thumb"> {% include blurb.html %} </div>
+      {% if page.public and page.layout == "course" %}
+        {% include blurb.html %} 
       {% endif %}
       {% endfor %}
       

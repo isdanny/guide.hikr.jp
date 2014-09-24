@@ -1,6 +1,7 @@
 /*
 	Hikr - Hiking. With friends.
 */
+
 (function(){
 var Hikr = function(container, features){
 
@@ -225,6 +226,11 @@ window.Hikr = Hikr;
 
 
 $(document).ready(function(){
+
+  $(document).on('click', '.map-toggle-button', function(){
+    $('body').toggleClass('map');
+  });
+
   $(".search-bar input").on("keyup",function(){
     var term = $(this).val().toLowerCase();
     var letter = term[0];

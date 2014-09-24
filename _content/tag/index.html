@@ -11,15 +11,14 @@ menu:
   <br>
   <div class="two-cols">
     {% for tag in site.tag_names %}
-    <div class="tag-listing">
+    <section class="tag-listing">
       <a href="/tag/{{tag}}.html" class="tag large">{{tag}}</a><br>
       <ul>
       {% for p in site.tags[tag] %}
         <li><a href="{{p.url}}">{{p.title}}</a></li>
       {% endfor %}
       </ul>
-      <hr>
-    </div>
+    </section>
     {% endfor %}
   </div>
 </div>

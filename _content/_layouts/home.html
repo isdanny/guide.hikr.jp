@@ -4,34 +4,11 @@ bodyclass: home
 menu: 
   guide: active
 ---
+<div class="container">
   <div class="row">
-    <div class="col-sm-6"> 
-      <h6>Prefectures</h6>
-      <br>
-      {% for pref in site.prefecture_names %}
-        <a href="/pref/{{pref}}.html">{{ pref }}</a>&nbsp;<br>
-      {% endfor %}
-    </div>
-    <div class="col-sm-6">
-      <h6>Tags</h6>
-      <br>
-      {% for tag in site.tag_names %}
-        <a href="/tag/{{tag | urlize}}.html" class="tag large">{{site.tags[tag].size}} | {{ tag }}</a>
-      {% endfor %}
-      <br><br>
-      <h6>Featured course</h6>
-      {% for page in site.pages %} {% if page.featured == 'header' %} {% include summary.html %}{% endif %}{% endfor %} 
-    </div>
-  <hr>
-
-  </div>
-    <div class="row">
-      {% assign c = 'first' %}
-      {% for page in site.pages %} {% if page.featured == 'also' %}
-        <div class="col-sm-3">
-          {% include blurb.html classes=c %}
-          {% assign c = '' %}
-        </div>
+      {% for page in site.pages %} {% if page.public%}
+          {% include blurb.html %}
         {% endif %} {% endfor %}
       <br class="clear">
     </div>
+  </div>

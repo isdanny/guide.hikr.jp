@@ -1,9 +1,9 @@
-source:     ./_content
+source:      ./_content
 safe:        false
-baseurl:    /
+plugins:     ./_plugins
+baseurl:     /
 exclude:     [_app, config.ru]
 destination: ./_site
-plugins:     ./_plugins
 layouts:     ./_layouts
 future:      true
 lsi:         false

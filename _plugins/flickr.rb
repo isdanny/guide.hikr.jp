@@ -88,7 +88,6 @@ module Flickr
   end
 end
 
-
 Liquid::Template.register_tag('furl', Jekyll::FurlTag)
 Liquid::Template.register_tag('flickr', Jekyll::FlickrTag)
 Liquid::Template.register_filter(Flickr)

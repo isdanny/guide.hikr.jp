@@ -1,7 +1,7 @@
 ---
 layout: default
 menu:
-  areas: active
+  guide: active
 ---
 
 <div class="map-on-left">
@@ -15,10 +15,8 @@ menu:
 <h1>{{ page.area_listing }} Prefecture</h1>
 <br>
 {% for page in page.courses %}
-{% if page.layout == "course" %}
-      <div class="thumb">
+{% if page.public and page.layout == "course" %}
         {% include blurb.html %}
-      </div>
 {% endif %}
 {% endfor %}
 <br class="clear">
