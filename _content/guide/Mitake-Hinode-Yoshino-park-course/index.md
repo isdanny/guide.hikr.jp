@@ -2,7 +2,7 @@
 layout: course
 title: Mitake, Hinode, Yoshino plum park
 center:  [139.14969921112058, 35.7830062563083]
-map: 
+map: true
 public: true
 author: Leszek
 header_image: http://www.flickr.com/photos/jambodave/8547970375

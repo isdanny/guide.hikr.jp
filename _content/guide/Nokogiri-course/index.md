@@ -2,7 +2,7 @@
 layout: course
 title: Mt. Nokogiri
 center: [139.10592555999756, 35.77921138227575]
-map: 
+map: true
 author: Leszek
 area: Okutama
 public: true

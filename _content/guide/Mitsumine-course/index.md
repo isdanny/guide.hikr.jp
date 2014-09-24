@@ -1,7 +1,7 @@
 ---
 layout: course
 title: Mitsumine
-map: 
+map: true
 author: Leszek
 license: CC-BY-NC
 area: Tanzawa

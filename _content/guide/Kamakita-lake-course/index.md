@@ -3,7 +3,7 @@ layout: course
 title: Kamakita lake, mt. Monomi and waterfalls
 center: [ 139.2893886566162, 35.91710290351792 ]
 public: true
-map:
+map: true
 header_image: http://www.flickr.com/photos/jambodave/9538720490/
 copyright: CC-BY-NC
 author: Leszek

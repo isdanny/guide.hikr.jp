@@ -5,6 +5,7 @@ center: [ 139.2451000213623, 35.94076799566985 ]
 author: hikr.jp
 license: CC-BY-NC
 area: Chichibu
+map: true
 prefecture: Saitama
 header_image: http://www.flickr.com/photos/jambodave/11040041165/
 header_class: vertical

@@ -7,6 +7,7 @@ author: hikr.jp
 area: Kyonan
 prefecture: Chiba
 public: true
+map: true
 info:
   author: Leszek
   level: 3

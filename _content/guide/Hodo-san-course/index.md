@@ -6,6 +6,7 @@ public: true
 header_image: http://www.flickr.com/photos/jambodave/8488645196/
 tags: [temple, flowers, shrine]
 area: Chichibu
+map: true
 prefecture: Saitama
 center: [139.0926218032837, 36.09329130533463]
 summary: >

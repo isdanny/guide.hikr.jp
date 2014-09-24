@@ -13,12 +13,11 @@
            <a href="/tag/{{tag | urlize}}.html"><span class="tag">{{tag}}</span></a>
           {% endfor %}
         </div>
-        <a class="btn btn-default map-toggle-button">map</a>
+        <br>
       </div>
       {% if page.summary %}
       <div class="summary">
         {{page.summary | markdownify }}
       </div>
       {% endif %}
-      <br class="clear">
     </div>

@@ -4,7 +4,7 @@ title: Takatoriyama Park course
 author: JAMBO International
 header_image: http://www.flickr.com/photos/jambodave/10658570516/
 header_class: vertical
-map:
+map: true
 area: Miura
 public: true
 prefecture: Kanagawa

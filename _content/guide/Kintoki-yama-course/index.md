@@ -1,8 +1,7 @@
 ---
 title: Kintoki-yama
 area: Hakone
-map:
-  - /data/area/Hakone.json
+map: true
 prefecture: Yamanashi
 layout: course
 author: Leszek

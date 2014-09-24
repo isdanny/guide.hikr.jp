@@ -1,7 +1,7 @@
 ---
 layout: course
 title: Momokurayama
-map: 
+map: true
 copyright: CC-BY-NC
 area: Otsuki
 prefecture: Yamanashi

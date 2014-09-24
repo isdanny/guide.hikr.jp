@@ -10,6 +10,8 @@
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:type" content="{{ og.type }}" />
   <meta property="og:url" content="{{ page.url }}" />
+  {% if page.center %}<meta property="og:latitude" content="{{ page.center[1] }}" />
+  <meta property="og:longitude" content="{{ page.center[0] }}" />{% endif %}
   {% if page.header_image %}<meta property="og:image" content="{{ page.header_image | furl }}" /> {% endif %}
   <meta property="og:site_name" content="Hikr" />
   <meta property="og:description" content="{{ page.summary }}" />
@@ -27,6 +29,7 @@
     <form id="search_form">
     <div class="hikr-menu">
       <ul id="main-menu">
+        {% if page.map %} <li> <a class="map-toggle-button" href="#">MAP</a> </li>{% endif %}
         <li class="{{ page.menu.guide }}"><a href="/">Guide</a></li>
         <li class="{{ page.menu.about }}"><a href="/about/">About</a></li>
       </ul>

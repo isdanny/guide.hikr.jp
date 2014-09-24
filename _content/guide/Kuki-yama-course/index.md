@@ -7,14 +7,10 @@ header_image: http://www.flickr.com/photos/104745110@N03/10919062064/
 header_class: 
 license: CC-BY-NC
 area: Otsuki
+map: true
 prefecture: Yamanashi
 public: true
 featured: header
-features:
-  - /mt/kuki.html
-  - /mt/gozenyama.html
-  - /mt/madate.html
-  - /mt/kagurayama.html
 info:
   level: intermediate
 tags: [ fuji view ]

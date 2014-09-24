@@ -1,6 +1,6 @@
 ---
 layout: course
-map:
+map: true
 title: Ogusu
 area: Yokohama
 prefecture: Kanagawa

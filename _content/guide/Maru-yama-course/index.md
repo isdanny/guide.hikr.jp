@@ -1,7 +1,7 @@
 ---
 title: Maruyama
 center: [139.15995597839355, 35.9884762566153]
-map: 
+map: true
 features:
   - /mt/maruyama.html
 area: Chichibu

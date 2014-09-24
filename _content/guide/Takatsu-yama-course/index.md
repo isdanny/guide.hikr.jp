@@ -2,8 +2,7 @@
 layout: course
 title: Takatsuyama
 center: [139.08901691436768, 35.59450649082071]
-map: 
- - takatsuyama.json
+map: true
 prefecture: Yamanashi
 public: true
 area: Otsuki

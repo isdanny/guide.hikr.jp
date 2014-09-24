@@ -1,7 +1,7 @@
 ---
 layout: course
 title: Takamizusan-zan
-map: 
+map: true
 features: 
   - /mt/takamizu.html
   - /mt/iwatakeishi.html
