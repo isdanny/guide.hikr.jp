@@ -1,9 +1,8 @@
  <div class="blurb-box {{ page.header_class }} {{ include.classes }} {% if page.header_image %}{% else %} noimg {% endif %}">
   <div class="blurb-inside">
     <a href="{{page.url}}">
-      <div class="header-image"> 
-       {% if page.header_image %} {{ page.header_image | flickr : "large_square" }}{% else %} <img src="/img/noimg.png"> {% endif %} 
-        <div class="blurb-title"><h2>{{page.title}}</h2></div>
+      <div class="header-image" style="background-image: url({% if page.header_image %}{{ page.header_image | furl }}{% else %}/img/noimg.png{% endif %})"> 
+      <div class="blurb-title"><h2>{{page.title}}</h2></div>
       </div>
     </a>
   <div class="headings">

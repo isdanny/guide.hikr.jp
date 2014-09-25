@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta name="author" value="Leszek Rybicki, Copyright by hikr.jp">
-  <meta name="keywords" value="hiking, japan {% if page.keywords %}, {{page.keywords | array_to_sentence_string }} {% endif %} }}">
+  <meta name="keywords" value="hiking, japan {% if page.keywords %}, {{page.keywords | array_to_sentence_string }} {% endif %}">
   <meta name="description" value="">
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:type" content="{{ og.type }}" />
-  <meta property="og:url" content="{{ page.url }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   {% if page.center %}<meta property="og:latitude" content="{{ page.center[1] }}" />
   <meta property="og:longitude" content="{{ page.center[0] }}" />{% endif %}
   {% if page.header_image %}<meta property="og:image" content="{{ page.header_image | furl }}" /> {% endif %}

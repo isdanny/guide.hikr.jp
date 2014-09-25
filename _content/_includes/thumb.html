@@ -3,7 +3,7 @@
     <div class="header-image"> 
       <a href="{{page.url}}">
          {% if page.header_image %}
-         {{ page.header_image | flickr : "large_square" }}
+         {{ page.header_image | flickr : "small_640" }}
          {% else %}
          <img src="/img/noimg.png">
          {% endif %}

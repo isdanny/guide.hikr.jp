@@ -82,7 +82,7 @@ module Flickr
     image_template(url, size||'medium', "")
   end
   def furl(url)
-    size = "square"
+    size = "medium_640"
     img = flickr_image(url)
     img[size]
   end
