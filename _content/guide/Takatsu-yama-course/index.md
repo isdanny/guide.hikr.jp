@@ -20,7 +20,7 @@ info:
 
 ## Starting Point ##
 
-Shiotsu Station on the Chuo Line.
+Shiotsu Station (四方津駅) on the Chuo Line.
 
 ## Points of Interest ##
 

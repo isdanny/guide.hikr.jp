@@ -15,7 +15,7 @@ info:
   level: intermediate
 tags: [ fuji view ]
 summary: |
-  Legends say that Mt. Kuki's name (nine demons) is because Momotaro, the boy born from a peach, fought the devil on top of the mountain. A slightly challenging course, involving long, steep climbs and equally steep descend. Not for beginners, although frequented by older people. Best when the skies are clear, so you can see Mt Fuji from several viewpoints. About 5 hours walking time. 
+  Legends say that Mt. Kuki's name (九鬼山, nine demons) is because Momotaro, the boy born from a peach, fought the devil on top of the mountain. A slightly challenging course, involving long, steep climbs and equally steep descend. Not for beginners, although frequented by older people. Best when the skies are clear, so you can see Mt Fuji from several viewpoints. About 5 hours walking time. 
 ---
 
 ## Points of interest

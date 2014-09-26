@@ -23,7 +23,7 @@ summary: >
 
 ## Starting Point ##
 
-Hannou Station on the SeibuIkebukuro Line.
+Hannou Station (飯能駅) on the SeibuIkebukuro Line.
 
 ## Points of Interest ##
 
@@ -37,7 +37,7 @@ From Hannou Station, walk down the stairs of the North Exit.  At the bottom of t
 
 {% flickr http://www.flickr.com/photos/jambodave/9647817565/ %}
 
-The walk to Mt. Tenran is well-marked and takes only about 30 minutes.  The view from the top is wonderful - you can see Sky Tree,  Okutama and Mt. Fuji on a good day.  From here, follow the signs to Mt. Tounosu (BE CAREFUL not to follow the signs to Koma Pass (高麗峠)).
+The walk to Mt. Tenran is well-marked and takes only about 30 minutes.  The view from the top is wonderful - you can see Sky Tree, Okutama and Mt. Fuji on a good day.  From here, follow the signs to Mt. Tounosu (BE CAREFUL not to follow the signs to Koma Pass (高麗峠)).
 
 {% flickr http://www.flickr.com/photos/jambodave/9651059096/ %}
 

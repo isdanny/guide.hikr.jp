@@ -10,7 +10,7 @@ tags: [ chains, cliff ]
 area: Otsuki
 prefecture: Yamanashi
 summary: >
-  The cliffs near Iwadono mountain were, legend has it, an excelent location for a castle, making it hard to access for potential attackers. Currently, the cliffs are an attraction for hikers, looking for an exciting course. Not recommended if you have a fear of heights, or can't pull your weight up a chain.
+  The cliffs near Iwadono mountain (岩殿山) were, legend has it, an excelent location for a castle, making it hard to access for potential attackers. Currently, the cliffs are an attraction for hikers, looking for an exciting course. Not recommended if you have a fear of heights, or can't pull your weight up a chain.
 ---
 
 ## Access

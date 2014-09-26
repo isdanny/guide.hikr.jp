@@ -19,7 +19,7 @@ info:
 tags: [ chains, onsen ]
 header_image: http://www.flickr.com/photos/jambodave/10033846124/
 summary: >
-  Mount Mitsumine in Tanzawa offers an untamed hiking course, marked by chains, ladders and, seasonally, various local fauna. Expect to spend quality time with the natural environment. 
+  Mount Mitsumine (三峰山) in Tanzawa offers an untamed hiking course, marked by chains, ladders and, seasonally, various local fauna. Expect to spend quality time with the natural environment. 
 ---
 
 ## Access ##

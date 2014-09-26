@@ -13,7 +13,7 @@ info:
   level: intermediate
 tags: [ waterfall, .draft ]
 summary: >
-  Kuroyama Santaki was once a training center for monks who practice ascetism
+  Kuroyama Santaki (黒山三滝) was once a training center for monks who practice ascetism
   but now it has become a sightseeing spot for tourists. 
 
   The waterfals are just one stop in this moderate 6-hour walking course.

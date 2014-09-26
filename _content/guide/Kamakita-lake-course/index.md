@@ -16,7 +16,7 @@ info:
   highest_point: 375m
   lowest_point:
 summary: >
-  A day hike with a lake, two gorgeous waterfalls and a climb up Monomi mountain. Except for the top of Monomi-yama, most of the course is relatively easy. Recommended for beginners.
+  A day hike with a lake, two gorgeous waterfalls and a climb up Monomi mountain. Except for the top of Monomi-yama　(物見山), most of the course is relatively easy. Recommended for beginners.
 ---
 
 ## Access ##

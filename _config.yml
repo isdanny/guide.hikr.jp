@@ -3,6 +3,7 @@ safe:        false
 plugins:     ./_plugins
 baseurl:     /
 url:         http://hikr.jp
+liveurl:     http://hikr.jp
 exclude:     [_app, config.ru]
 destination: ./_site
 layouts:     ./_layouts

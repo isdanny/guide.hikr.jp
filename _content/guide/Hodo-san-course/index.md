@@ -10,7 +10,7 @@ map: true
 prefecture: Saitama
 center: [139.0926218032837, 36.09329130533463]
 summary: >
-  Hodo-san, which could be translated as "Treasure Mountain" is an easy to climb mountain with an orchard of allspice trees. Recommended in late January or early February when the trees are in bloom.
+  Hodo-san (宝登山), which could be translated as "Treasure Mountain" is an easy to climb mountain with an orchard of allspice trees. Recommended in late January or early February when the trees are in bloom.
 ---
 
 ## Access
